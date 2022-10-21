@@ -1,0 +1,1 @@
+/* Real programmers make one liners */ using Godot; using System; public class GodotSpriteToTestTheButton : Node2D { public override void _Ready() { Sprite sprite = new Sprite(); sprite.Texture = ResourceLoader.Load<Texture>("res://icon.png"); sprite.Position = new Vector2(69, 69); GetTree().Root.AddChild(sprite); }}
