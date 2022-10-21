@@ -14,6 +14,11 @@ config/name="CorporateSimulator"
 run/main_scene="res://Scenes/Level1.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Scenes/Global.tscn"
+GlobalScript="*res://Scripts/Global.cs"
+
 [display]
 
 window/size/width=1280

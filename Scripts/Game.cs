@@ -9,6 +9,8 @@ public class Game : Node2D {
             "Menu", "epok button", "GodotSpriteToTestTheButton", "left", new Vector2(0, 0)
         );
         AddChild(epokButton);
+
+        GD.Print(Global.Money);
     }
 
     public override void _Process(float delta) {
