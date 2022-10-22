@@ -13,7 +13,7 @@ public class MoneyCounter : Node2D {
     }
 
     public override void _Draw() {
-        DrawString(font, textPosition, "$" + Global.Money.ToString(), new Color(0, 0, 0));
+        DrawString(font, textPosition, "$"+String.Format("{0:n0}", Global.Money), new Color(0, 0, 0));
         base._Draw();
     }
 }

@@ -42,15 +42,19 @@ public class Button : Node2D {
     }
 
     public override void _Process(float delta) {
-        // Click
+        // Click and hover
         // Why i made my own button thing
         Vector2 mousePosition = GetViewport().GetMousePosition();
         if (mousePosition > pos && mousePosition < rightBottom) {
+            Input.SetDefaultCursorShape(Input.CursorShape.PointingHand);
+
             if (Input.IsActionJustReleased("click")) {
                 var yes = (PackedScene)ResourceLoader.Load("res://Scenes/GodotSpriteToTestTheButton.tscn");
                 Node2D OK = (Node2D)yes.Instance();
                 GetTree().Root.AddChild(OK);
             }
+        } else {
+            Input.SetDefaultCursorShape(Input.CursorShape.Arrow);
         }
 
         base._Process(delta);
