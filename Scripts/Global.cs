@@ -8,4 +8,5 @@ public class Global : Node2D {
     public static int Week = 1;
     public static bool PausedTime = false;
     public static float WeekCounterThing = 0;
+    public static int Reputation = 100;
 }

@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class MoneyCounter : Node2D {
+public class ReputationCounter : Node2D {
     DynamicFont font = new DynamicFont();
     Vector2 textPosition;
 
@@ -19,7 +19,7 @@ public class MoneyCounter : Node2D {
     }
 
     public override void _Draw() {
-        DrawString(font, textPosition, "$"+String.Format("{0:n0}", Global.Money), new Color(0, 0, 0));
+        DrawString(font, textPosition, "Reputation: "+Global.Reputation.ToString()+"%", new Color(0, 0, 0));
         base._Draw();
     }
 }

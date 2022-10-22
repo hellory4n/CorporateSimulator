@@ -13,7 +13,7 @@ public class TimeCounter : Node2D {
     }
 
     public override void _Process(float delta) {
-        // _Draw() is only called once, but we don't that, so we do this
+        // _Draw() is only called once, but we don't want that, so we do this
         Update();
         base._Process(delta);
     }

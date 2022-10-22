@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
 [ext_resource path="res://Scenes/MoneyCounter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/TimeCounter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/ReputationCounter.tscn" type="PackedScene" id=5]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -19,3 +20,6 @@ position = Vector2( 905, 25 )
 
 [node name="TimeCounter" parent="." instance=ExtResource( 4 )]
 position = Vector2( 905, 85 )
+
+[node name="ReputationCounter" parent="." instance=ExtResource( 5 )]
+position = Vector2( 905, 145 )
