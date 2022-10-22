@@ -7,6 +7,7 @@ It's like Game Dev Tycoon, but instead of making games and getting money to make
 **WARNING: THIS METHOD WAS NOT TESTED!**
 
 1. install .net and .net sdk
+2. install git
 2. download godot 3.5
 3. open this crap in godot
 4. click the play button
