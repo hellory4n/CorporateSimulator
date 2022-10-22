@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class MoneyCounter : Node2D {
+public class TimeCounter : Node2D {
     DynamicFont font = new DynamicFont();
     Vector2 textPosition;
 
@@ -19,7 +19,8 @@ public class MoneyCounter : Node2D {
     }
 
     public override void _Draw() {
-        DrawString(font, textPosition, "$"+String.Format("{0:n0}", Global.Money), new Color(0, 0, 0));
+        GD.Print("update");
+        DrawString(font, textPosition, "Y"+Global.Year+" M"+Global.Month+" W"+Global.Week, new Color(0, 0, 0));
         base._Draw();
     }
 }

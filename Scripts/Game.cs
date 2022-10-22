@@ -9,13 +9,29 @@ public class Game : Node2D {
             "Menu", "epok button", "GodotSpriteToTestTheButton", "left", new Vector2(0, 0)
         );
         AddChild(epokButton);
-
-        GD.Print(Global.Money);
     }
 
     public override void _Process(float delta) {
         if (Input.IsPhysicalKeyPressed((int)Godot.KeyList.F11))
             OS.WindowFullscreen = !OS.WindowFullscreen;
+
+        Global.WeekCounterThing += 1f * delta;
+        GD.Print("week: " + Global.Week);
+        GD.Print("week counter thing: ", Global.WeekCounterThing);
+
+        // calculate time stuff
+        if (Global.WeekCounterThing > 0.0001) {
+            Global.Week++;
+            Global.WeekCounterThing = 0;
+        }
+        if (Global.Week > 4) {
+            Global.Month++;
+            Global.Week = 1;
+        }
+        if (Global.Month > 12) {
+            Global.Year++;
+            Global.Month = 1;
+        }
 
         base._Process(delta);
     }
