@@ -14,6 +14,9 @@ public class Game : Node2D {
     }
 
     public override void _Process(float delta) {
+        if (Input.IsPhysicalKeyPressed((int)Godot.KeyList.F11))
+            OS.WindowFullscreen = !OS.WindowFullscreen;
+
         base._Process(delta);
     }
 }
