@@ -4,15 +4,9 @@ using System;
 public class Game : Node2D {
     public override void _Ready() {
         GD.Print("hi mom");
-        Button epokButton = new Button();
-        epokButton.Init(
-            "Menu", "epok button", "GodotSpriteToTestTheButton", "left", new Vector2(0, 0)
-        );
         Ball balls = new Ball("news");
         balls.Position = new Vector2(1000, 420);
         AddChild(balls);
-        
-        AddChild(epokButton);
     }
 
     public override void _Process(float delta) {
