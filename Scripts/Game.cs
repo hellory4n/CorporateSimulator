@@ -8,6 +8,10 @@ public class Game : Node2D {
         epokButton.Init(
             "Menu", "epok button", "GodotSpriteToTestTheButton", "left", new Vector2(0, 0)
         );
+        Ball balls = new Ball("news");
+        balls.Position = new Vector2(1000, 420);
+        AddChild(balls);
+        
         AddChild(epokButton);
     }
 
