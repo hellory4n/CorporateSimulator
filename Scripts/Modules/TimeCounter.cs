@@ -8,7 +8,7 @@ public class TimeCounter : Node2D {
     public override void _Ready() {
         font.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
         font.Size = 24;
-        textPosition = new Vector2(20, 32.5f);
+        textPosition = new Vector2(60, 32.5f);
         base._Ready();
     }
 

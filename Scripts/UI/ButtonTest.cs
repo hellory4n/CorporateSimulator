@@ -4,7 +4,6 @@ using System;
 public class ButtonTest : TextureButton {
     public override void _Ready() {
         this.Connect("pressed", this, nameof(Click));
-        GD.Print("fucking, austria");
     }
 
     public void Click() {

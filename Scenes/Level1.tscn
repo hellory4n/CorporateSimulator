@@ -34,10 +34,10 @@ position = Vector2( 905, 85 )
 position = Vector2( 905, 145 )
 
 [node name="epok button" type="TextureButton" parent="."]
-margin_left = 98.0
-margin_top = 82.0
-margin_right = 498.0
-margin_bottom = 157.0
+margin_left = 230.0
+margin_top = 91.0
+margin_right = 630.0
+margin_bottom = 166.0
 texture_normal = ExtResource( 6 )
 script = ExtResource( 7 )
 __meta__ = {

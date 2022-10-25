@@ -4,8 +4,8 @@ using System;
 public class Game : Node2D {
     public override void _Ready() {
         GD.Print("hi mom");
-        Ball balls = new Ball("news");
-        balls.Position = new Vector2(1000, 420);
+        Ball balls = new Ball();
+        balls.Init("news", "GodotSpriteToTestTheButton");
         AddChild(balls);
     }
 
@@ -16,7 +16,7 @@ public class Game : Node2D {
         Global.WeekCounterThing += 1f * delta;
 
         // calculate time stuff
-        if (Global.WeekCounterThing > 0.0001) {
+        if (Global.WeekCounterThing > 10) {
             Global.Week++;
             Global.WeekCounterThing = 0;
         }
