@@ -8,8 +8,9 @@ public class ButtonTest : TextureButton {
 
     public void Click() {
         GD.Print("hi");
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/GodotSpriteToTestTheButton.tscn");
+        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/DialogTest.tscn");
         Node2D OK = (Node2D)yes.Instance();
+        OK.ZIndex = 100;
         GetTree().Root.AddChild(OK);
     }
 }

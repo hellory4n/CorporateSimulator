@@ -28,7 +28,7 @@ public class Ball : Node2D {
     }
 
     public override void _Process(float delta) {
-        if (Position.y > 640) {
+        if (Position.y > 640 && Position.x == 75) {
             // instantly opening the thing is kinda crinj y'know
             Timer timer = new Timer();
             timer.Connect("timeout", this, nameof(OpenThingy));
@@ -36,7 +36,9 @@ public class Ball : Node2D {
             timer.OneShot = true;
             AddChild(timer);
             timer.Start();
-        } else {
+            Position = new Vector2(76, Position.y); // don't make millions of timers
+        }
+        if (Position.y < 640) {
             Position = new Vector2(Position.x, Position.y + 500 * delta);
         }
         base._Process(delta);
@@ -46,6 +48,6 @@ public class Ball : Node2D {
         var yes = (PackedScene)ResourceLoader.Load(scene);
         Node2D OK = (Node2D)yes.Instance();
         GetTree().Root.AddChild(OK);
-        Position = new Vector2(5000, 5000);
+        QueueFree();
     }
 }
