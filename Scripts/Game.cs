@@ -14,8 +14,6 @@ public class Game : Node2D {
             OS.WindowFullscreen = !OS.WindowFullscreen;
 
         Global.WeekCounterThing += 1f * delta;
-        GD.Print("week: " + Global.Week);
-        GD.Print("week counter thing: ", Global.WeekCounterThing);
 
         // calculate time stuff
         if (Global.WeekCounterThing > 0.0001) {

@@ -1,10 +1,19 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
 [ext_resource path="res://Scenes/MoneyCounter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/TimeCounter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/ReputationCounter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/UI/ButtonTest.cs" type="Script" id=7]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = SubResource( 1 )
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -23,3 +32,24 @@ position = Vector2( 905, 85 )
 
 [node name="ReputationCounter" parent="." instance=ExtResource( 5 )]
 position = Vector2( 905, 145 )
+
+[node name="epok button" type="TextureButton" parent="."]
+margin_left = 98.0
+margin_top = 82.0
+margin_right = 498.0
+margin_bottom = 157.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="epok button"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 2 )
+text = "epok button"
+align = 1
+valign = 1

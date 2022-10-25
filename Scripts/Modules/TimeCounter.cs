@@ -19,7 +19,6 @@ public class TimeCounter : Node2D {
     }
 
     public override void _Draw() {
-        GD.Print("update");
         DrawString(font, textPosition, "Y"+Global.Year+" M"+Global.Month+" W"+Global.Week, new Color(0, 0, 0));
         base._Draw();
     }
