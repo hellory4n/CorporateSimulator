@@ -8,9 +8,10 @@ public class ButtonTest : TextureButton {
 
     public void Click() {
         GD.Print("hi");
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/DialogTest.tscn");
+        /*var yes = (PackedScene)ResourceLoader.Load("res://Scenes/DialogTest.tscn");
         Node2D OK = (Node2D)yes.Instance();
         OK.ZIndex = 100;
-        GetTree().Root.AddChild(OK);
+        GetTree().Root.AddChild(OK);*/
+        Global.PausedTime = !Global.PausedTime;
     }
 }

@@ -16,17 +16,19 @@ public class Game : Node2D {
         Global.WeekCounterThing += 1f * delta;
 
         // calculate time stuff
-        if (Global.WeekCounterThing > 10) {
-            Global.Week++;
-            Global.WeekCounterThing = 0;
-        }
-        if (Global.Week > 4) {
-            Global.Month++;
-            Global.Week = 1;
-        }
-        if (Global.Month > 12) {
-            Global.Year++;
-            Global.Month = 1;
+        if (!Global.PausedTime) {
+            if (Global.WeekCounterThing > 1) {
+                Global.Week++;
+                Global.WeekCounterThing = 0;
+            }
+            if (Global.Week > 4) {
+                Global.Month++;
+                Global.Week = 1;
+            }
+            if (Global.Month > 12) {
+                Global.Year++;
+                Global.Month = 1;
+            }
         }
 
         base._Process(delta);
