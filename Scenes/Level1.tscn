@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Scripts/UI/ButtonTest.cs" type="Script" id=7]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=8]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=9]
+[ext_resource path="res://Assets/MenuInactive.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/UI/Default/Pause.cs" type="Script" id=11]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -16,6 +18,13 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = SubResource( 3 )
+
+[sub_resource type="InputEventKey" id=5]
+pressed = true
+scancode = 16777217
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -57,3 +66,15 @@ custom_fonts/font = SubResource( 4 )
 text = "epok button"
 align = 1
 valign = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="Pause" type="TextureButton" parent="CanvasLayer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 125.0
+margin_bottom = 90.0
+shortcut = SubResource( 6 )
+texture_normal = ExtResource( 10 )
+script = ExtResource( 11 )

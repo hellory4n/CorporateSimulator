@@ -4,9 +4,9 @@ using System;
 public class Game : Node2D {
     public override void _Ready() {
         GD.Print("hi mom");
-        Ball balls = new Ball();
+        /*Ball balls = new Ball();
         balls.Init("news", "GodotSpriteToTestTheButton");
-        AddChild(balls);
+        AddChild(balls);*/
     }
 
     public override void _Process(float delta) {
