@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/UI/Pause/Continue.cs" type="Script" id=2]
 [ext_resource path="res://Scripts/UI/Pause/Exit.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/UI/Pause/Credits.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
@@ -131,11 +132,34 @@ custom_fonts/font = SubResource( 4 )
 text = "Settings"
 valign = 1
 
-[node name="Exit" type="TextureButton" parent="."]
+[node name="Credits" type="TextureButton" parent="."]
 margin_left = 150.0
 margin_top = 450.0
 margin_right = 550.0
 margin_bottom = 525.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Credits"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 15.0
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Credits"
+valign = 1
+
+[node name="Exit" type="TextureButton" parent="."]
+margin_left = 150.0
+margin_top = 535.0
+margin_right = 550.0
+margin_bottom = 610.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )

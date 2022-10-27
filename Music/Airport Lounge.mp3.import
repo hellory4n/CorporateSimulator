@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Airport Lounge.mp3-84b17ca9eaa988fa058b817ae166bb88.mp3str"
+
+[deps]
+
+source_file="res://Music/Airport Lounge.mp3"
+dest_files=[ "res://.import/Airport Lounge.mp3-84b17ca9eaa988fa058b817ae166bb88.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
