@@ -17,7 +17,11 @@ font_data = SubResource( 3 )
 
 [node name="PauseMenu" type="Node2D"]
 
-[node name="Background" type="Sprite" parent="."]
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 718.0
+
+[node name="Background" type="Sprite" parent="Control"]
 position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 
