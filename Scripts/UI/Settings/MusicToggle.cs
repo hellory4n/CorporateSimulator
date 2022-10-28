@@ -7,6 +7,9 @@ public class MusicToggle : TextureButton {
     public override void _Ready() {
         this.Connect("pressed", this, nameof(Click));
         text = GetNode<Label>("Label");
+        // if the game starts with musics disabled it's still gonna say "Music: ON"
+        if (!Global.Settings.Music)
+            text.Text = "Music: OFF";
     }
 
     public void Click() {
@@ -19,5 +22,8 @@ public class MusicToggle : TextureButton {
             GetNode("/root/MusicManager").QueueFree();
             text.Text = "Music: OFF";
         }
+
+        Global.Settings.Music = !Global.Settings.Music;
+        Savior.SaveSettings(Global.Settings);
     }
 }
