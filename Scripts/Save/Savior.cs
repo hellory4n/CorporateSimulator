@@ -38,6 +38,7 @@ class Savior {
     public static void SaveGame(string saveFile) {
         File file = new File(); // is this a file?
         GameSave save = new GameSave();
+        // TODO: save more things
         save.Money = Global.Money;
         save.Year = Global.Year;
         save.Month = Global.Month;
@@ -49,5 +50,16 @@ class Savior {
         );
         file.Close();
         GD.Print("game successfully saved");
+    }
+
+    public static GameSave LoadGame(string saveFile) {
+        File file = new File(); // directory
+        // TODO: make it open the new game dialog when the save doesn't exist
+        file.Open(saveFile, File.ModeFlags.Read);
+        GameSave obama = JsonConvert.DeserializeObject<GameSave>(
+            file.GetAsText()
+        );
+        file.Close();
+        return obama;
     }
 }

@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class Game : Node2D {
     // we need to know where to save
@@ -22,6 +23,23 @@ public class Game : Node2D {
             Node2D OK = (Node2D)yes.Instance();
             // if i do it immediately godot will complain that it's busy setting up stuff
             GetTree().Root.CallDeferred("add_child", OK);
+        }
+
+        // load things
+        // TODO: load more things
+        File file = new File(); // dictionary
+        GameSave save = new GameSave();
+        if (file.FileExists(Global.SaveFile)) {
+            file.Open(Global.SaveFile, File.ModeFlags.Read);
+            save = JsonConvert.DeserializeObject<GameSave>(
+                file.GetAsText()
+            );
+            Global.Money = save.Money;
+            Global.Year = save.Year;
+            Global.Month = save.Month;
+            Global.Week = save.Week;
+            Global.Reputation = save.Reputation;
+            file.Close();
         }
     }
 
