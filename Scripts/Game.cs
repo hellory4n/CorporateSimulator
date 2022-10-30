@@ -16,7 +16,8 @@ public class Game : Node2D {
 
         // settings
         Global.Settings = Savior.CreateFileStuff();
-        if (Global.Settings.Music) {
+        // we don't want multiple music managers, that's a bit crinj
+        if (Global.Settings.Music && GetNodeOrNull("/root/MusicManager") == null) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/MusicManager.tscn");
             Node2D OK = (Node2D)yes.Instance();
             // if i do it immediately godot will complain that it's busy setting up stuff

@@ -140,9 +140,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game2.json"
 
 [node name="Label" type="Label" parent="Control3/LoadGame"]
 anchor_right = 0.002
@@ -167,9 +169,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game3.json"
 
 [node name="Label" type="Label" parent="Control4/LoadGame"]
 anchor_right = 0.002
@@ -194,9 +198,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game4.json"
 
 [node name="Label" type="Label" parent="Control5/LoadGame"]
 anchor_right = 0.002
@@ -221,9 +227,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game5.json"
 
 [node name="Label" type="Label" parent="Control6/LoadGame"]
 anchor_right = 0.002
@@ -248,9 +256,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game6.json"
 
 [node name="Label" type="Label" parent="Control7/LoadGame"]
 anchor_right = 0.002
@@ -275,9 +285,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game7.json"
 
 [node name="Label" type="Label" parent="Control8/LoadGame"]
 anchor_right = 0.002
@@ -302,9 +314,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
 expand = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game8.json"
 
 [node name="Label" type="Label" parent="Control9/LoadGame"]
 anchor_right = 0.002

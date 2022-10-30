@@ -10,6 +10,12 @@ public class LoadGame : TextureButton {
     }
 
     public void Click() {
+        if (GetNodeOrNull("/root/Game") != null) {
+            Node ben = GetNode("/root/Game");
+            ben.QueueFree();
+            ben.Name = "jkolskjhgjlkrjjhekol";
+        }
+
         PackedScene game = (PackedScene)ResourceLoader.Load("res://Scenes/Level1.tscn");
         Game game_ = (Game)game.Instance();
         game_.Name = "Game";
