@@ -2,6 +2,11 @@ using Godot;
 using System;
 
 public class Game : Node2D {
+    // we need to know where to save
+    public void Init(string saveFile) {
+        Global.SaveFile = saveFile;
+    }
+
     public override void _Ready() {
         GD.Print("hi mom");
 

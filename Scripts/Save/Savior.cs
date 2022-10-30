@@ -8,7 +8,6 @@ class Savior {
         File settingsFile = new File();
         SettingsSave settings = new SettingsSave();
 
-        #region settings.json
         if (!settingsFile.FileExists("user://settings.json")) {
             settingsFile.Open("user://settings.json", File.ModeFlags.Write);
             settingsFile.StoreString(
@@ -22,7 +21,6 @@ class Savior {
             );
             settingsFile.Close();
         }
-        #endregion
 
         return settings;
     }
@@ -35,5 +33,21 @@ class Savior {
         file.StoreString(
             JsonConvert.SerializeObject(settings)
         );
+    }
+
+    public static void SaveGame(string saveFile) {
+        File file = new File(); // is this a file?
+        GameSave save = new GameSave();
+        save.Money = Global.Money;
+        save.Year = Global.Year;
+        save.Month = Global.Month;
+        save.Week = Global.Week;
+        save.Reputation = Global.Reputation;
+        file.Open(saveFile, File.ModeFlags.Write);
+        file.StoreString(
+            JsonConvert.SerializeObject(save)
+        );
+        file.Close();
+        GD.Print("game successfully saved");
     }
 }

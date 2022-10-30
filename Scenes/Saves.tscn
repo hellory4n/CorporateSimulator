@@ -115,6 +115,7 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+gameFile = "user://game1.json"
 
 [node name="Label" type="Label" parent="Control2/LoadGame"]
 anchor_right = 0.002
