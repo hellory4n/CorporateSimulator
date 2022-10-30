@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="CorporateSimulator"
-run/main_scene="res://Scenes/Level1.tscn"
+run/main_scene="res://Scenes/Saves.tscn"
 config/icon="res://icon.png"
 
 [autoload]

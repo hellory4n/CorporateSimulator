@@ -1,3 +1,3 @@
-public class SettingsJson {
+public class SettingsSave {
     public bool Music = true;
 }

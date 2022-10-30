@@ -3,29 +3,33 @@ using System;
 using Newtonsoft.Json;
 
 class Savior {
-    public static SettingsJson CreateFileStuff() {
+    public static SettingsSave CreateFileStuff() {
         // ben
-        File settingsJson = new File();
-        SettingsJson settings = new SettingsJson();
+        File settingsFile = new File();
+        SettingsSave settings = new SettingsSave();
 
-        if (!settingsJson.FileExists("user://settings.json")) {
-            settingsJson.Open("user://settings.json", File.ModeFlags.Write);
-            settingsJson.StoreString(
+        #region settings.json
+        if (!settingsFile.FileExists("user://settings.json")) {
+            settingsFile.Open("user://settings.json", File.ModeFlags.Write);
+            settingsFile.StoreString(
                 JsonConvert.SerializeObject(settings)
             );
+            settingsFile.Close();
         } else {
-            settingsJson.Open("user://settings.json", File.ModeFlags.Read);
-            settings = JsonConvert.DeserializeObject<SettingsJson>(
-                settingsJson.GetAsText()
+            settingsFile.Open("user://settings.json", File.ModeFlags.Read);
+            settings = JsonConvert.DeserializeObject<SettingsSave>(
+                settingsFile.GetAsText()
             );
+            settingsFile.Close();
         }
+        #endregion
 
         return settings;
     }
 
 
 
-    public static void SaveSettings(SettingsJson settings) {
+    public static void SaveSettings(SettingsSave settings) {
         File file = new File();
         file.Open("user://settings.json", File.ModeFlags.Write);
         file.StoreString(

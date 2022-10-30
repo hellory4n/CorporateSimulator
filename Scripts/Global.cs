@@ -9,5 +9,5 @@ public class Global : Node2D {
     public static bool PausedTime = false;
     public static float WeekCounterThing = 0;
     public static int Reputation = 100;
-    public static SettingsJson Settings = new SettingsJson();
+    public static SettingsSave Settings = new SettingsSave();
 }
