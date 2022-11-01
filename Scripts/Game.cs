@@ -14,6 +14,15 @@ public class Game : Node2D {
         /*Ball balls = new Ball();
         balls.Init("news", "GodotSpriteToTestTheButton");
         AddChild(balls);*/
+        // settings
+        Global.Settings = Savior.CreateFileStuff();
+        // we don't want multiple music managers, that's a bit crinj
+        if (Global.Settings.Music && GetNodeOrNull("/root/MusicManager") == null) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/MusicManager.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            // if i do it immediately godot will complain that it's busy setting up stuff
+            GetTree().Root.CallDeferred("add_child", OK);
+        }
 
         // load things
         // TODO: load more things

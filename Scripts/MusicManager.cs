@@ -11,16 +11,8 @@ public class MusicManager : AudioStreamPlayer2D {
     };
 
     public override void _Ready() {
-        // should we play music?
-        if (Global.Settings == null)
-            Global.Settings = Savior.CreateFileStuff();
-
-        if (!Global.Settings.Music) {
-            QueueFree();
-        } else {
-            Connect("finished", this, nameof(PlayMoosic));
-            PlayMoosic();
-        }
+        Connect("finished", this, nameof(PlayMoosic));
+        PlayMoosic();
     }
 
     public override void _Process(float delta) {

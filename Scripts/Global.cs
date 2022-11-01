@@ -9,7 +9,7 @@ public class Global : Node2D {
     public static bool PausedTime = false;
     public static float WeekCounterThing = 0;
     public static int Reputation = 100;
-    public static SettingsSave Settings;
+    public static SettingsSave Settings = new SettingsSave();
     public static string SaveFile;
     // signals decided to not work
     public static int NewCompanyDialogIndustryIndex;
