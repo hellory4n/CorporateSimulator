@@ -34,6 +34,7 @@ public class MakeNewCompany : TextureButton {
 
         // we need to save this somewhere
         Global.NewGameSave = newGame;
+        Global.SavesMenuFromNewGame = true;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Saves.tscn");
         Node2D OK = (Node2D)yes.Instance();
         OK.ZIndex = 100;
