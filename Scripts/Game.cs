@@ -14,7 +14,6 @@ public class Game : Node2D {
         /*Ball balls = new Ball();
         balls.Init("news", "GodotSpriteToTestTheButton");
         AddChild(balls);*/
-
         // settings
         Global.Settings = Savior.CreateFileStuff();
         // we don't want multiple music managers, that's a bit crinj
