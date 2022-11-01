@@ -52,6 +52,15 @@ class Savior {
         GD.Print("game successfully saved");
     }
 
+    public static void NewGame(string saveFile, GameSave save) {
+        File file = new File();
+        file.Open(saveFile, File.ModeFlags.Write);
+        file.StoreString(
+            JsonConvert.SerializeObject(save)
+        );
+        file.Close();
+    }
+
     public static GameSave LoadGame(string saveFile) {
         File file = new File(); // directory
         // TODO: make it open the new game dialog when the save doesn't exist

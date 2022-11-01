@@ -16,6 +16,10 @@ public class LoadGame : TextureButton {
             ben.Name = "jkolskjhgjlkrjjhekol";
         }
 
+        // was this save menu created by the new game dialog?
+        if (Global.NewGameSave != null)
+            Savior.NewGame(gameFile, Global.NewGameSave);
+
         PackedScene game = (PackedScene)ResourceLoader.Load("res://Scenes/Level1.tscn");
         Game game_ = (Game)game.Instance();
         game_.Name = "Game";

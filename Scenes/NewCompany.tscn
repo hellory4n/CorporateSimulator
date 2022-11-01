@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
 [ext_resource path="res://Assets/LineEdit.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/UI/Save/SavesExit.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/UI/Save/MakeNewCompany.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
@@ -166,7 +166,7 @@ custom_fonts/font = SubResource( 12 )
 custom_styles/focus = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 align = 1
-placeholder_text = "Company Name"
+placeholder_text = "write the company name here"
 caret_blink = true
 
 [node name="CeoName" type="LineEdit" parent="."]
@@ -180,5 +180,5 @@ custom_fonts/font = SubResource( 12 )
 custom_styles/focus = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 align = 1
-placeholder_text = "CEO name"
+placeholder_text = "write your name here"
 caret_blink = true

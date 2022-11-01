@@ -38,6 +38,9 @@ public class Game : Node2D {
             Global.Month = save.Month;
             Global.Week = save.Week;
             Global.Reputation = save.Reputation;
+            Global.CompanyName = save.Name;
+            Global.CeoName = save.Ceo;
+            Global.Industries = save.Industries;
             file.Close();
         }
     }

@@ -13,4 +13,8 @@ public class Global : Node2D {
     public static string SaveFile;
     // signals decided to not work
     public static int NewCompanyDialogIndustryIndex;
+    public static GameSave NewGameSave;
+    public static string CompanyName;
+    public static string CeoName;
+    public static string[] Industries;
 }
