@@ -11,4 +11,6 @@ public class Global : Node2D {
     public static int Reputation = 100;
     public static SettingsSave Settings = new SettingsSave();
     public static string SaveFile;
+    // signals decided to not work
+    public static int NewCompanyDialogIndustryIndex;
 }

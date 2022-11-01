@@ -123,7 +123,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -152,7 +152,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -181,7 +181,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -210,7 +210,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -239,7 +239,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -268,7 +268,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -297,7 +297,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
 
@@ -326,6 +326,6 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "ABCDEFGHIJKLMNOPQRS"
+text = "[empty]"
 align = 1
 valign = 1
