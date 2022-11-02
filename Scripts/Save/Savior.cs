@@ -50,9 +50,9 @@ class Savior {
         save.Industries = Global.Industries;
         save.ResearchPoints = Global.ResearchPoints;
         save.Investors = Global.Investors;
-        save.InvestorsWant = Global.InvestorsWant;
         save.WeeksWithoutPayingInvestors = Global.WeeksWithoutPayingInvestors;
         save.InvestorFrequency = Global.InvestorFrequency;
+        save.InvestorSusometer = Global.InvestorSusometer;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

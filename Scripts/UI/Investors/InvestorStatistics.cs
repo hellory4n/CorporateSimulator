@@ -6,7 +6,8 @@ public class InvestorStatistics : Label {
         Text = "Investors: "+String.Format("{0:n0}", Global.Investors)+"\nReputation: "+Global.Reputation+"%"
         +"\nNew investors every "+Global.InvestorFrequency+" weeks\nYou have to pay investors $"
         +String.Format("{0:n0}", Global.InvestorsWant)+"\nYou didn't pay investors for "+
-        Global.WeeksWithoutPayingInvestors+" weeks";
+        Global.WeeksWithoutPayingInvestors+" weeks\nEvery 2 months, if you don't pay investors, there'll"
+        +" be less investors, and less money!";
         base._Process(delta);
     }
 }

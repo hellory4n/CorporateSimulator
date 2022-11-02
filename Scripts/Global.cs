@@ -23,4 +23,8 @@ public class Global : Node2D {
     public static int WeeksWithoutPayingInvestors;
     public static int InvestorsWant;
     public static int InvestorFrequency;
+    public static float InvestorTimeCounterThing;
+    public static int InvestorPayment;
+    public static int InvestorSusometer;
+    public static float InvestorSusometerCounterThingyUhh;
 }

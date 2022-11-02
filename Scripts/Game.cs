@@ -44,9 +44,9 @@ public class Game : Node2D {
             Global.Industries = save.Industries;
             Global.ResearchPoints = save.ResearchPoints;
             Global.Investors = save.Investors;
-            Global.InvestorsWant = save.InvestorsWant;
             Global.WeeksWithoutPayingInvestors = save.WeeksWithoutPayingInvestors;
             Global.InvestorFrequency = save.InvestorFrequency;
+            Global.InvestorSusometer = save.InvestorSusometer;
             #endregion
             file.Close();
         }
@@ -62,6 +62,7 @@ public class Game : Node2D {
         if (!Global.PausedTime) {
             if (Global.WeekCounterThing > 7.5) {
                 Global.Week++;
+                Global.WeeksWithoutPayingInvestors++;
                 Global.WeekCounterThing = 0;
             }
             if (Global.Week > 4) {
@@ -73,6 +74,32 @@ public class Game : Node2D {
                 Global.Month = 1;
             }
         }
+
+        // calculate investor stuff
+        Global.InvestorTimeCounterThing += 1f * delta;
+        Global.InvestorSusometerCounterThingyUhh += 1f * delta;
+        // new investors
+        if (!Global.PausedTime) {
+            if (Global.InvestorTimeCounterThing > Global.InvestorFrequency*7.5) {
+                Global.Investors++;
+                Global.InvestorTimeCounterThing = 0;
+            }
+            if (Global.InvestorSusometerCounterThingyUhh > 60) { // 2 months
+                Global.InvestorSusometer++;
+                Global.Investors -= Global.InvestorSusometer;
+                Global.Reputation -= 1;
+                Global.InvestorSusometerCounterThingyUhh = 0;
+            }
+        }
+        // calculate boring investor variables
+        Global.InvestorPayment = Global.Investors*Global.Reputation/2;
+        Global.InvestorsWant = (int)Math.Round(Global.InvestorPayment*1.25);
+
+        // avoid interesting occasions
+        if (Global.Reputation > 100)
+            Global.Reputation = 100;
+        // TODO: show a game over screen when the reputation is 0
+
 
         base._Process(delta);
     }
