@@ -39,6 +39,7 @@ class Savior {
         File file = new File(); // is this a file?
         GameSave save = new GameSave();
         // TODO: save more things
+        #region uhh
         save.Money = Global.Money;
         save.Year = Global.Year;
         save.Month = Global.Month;
@@ -48,6 +49,11 @@ class Savior {
         save.Ceo = Global.CeoName;
         save.Industries = Global.Industries;
         save.ResearchPoints = Global.ResearchPoints;
+        save.Investors = Global.Investors;
+        save.InvestorsWant = Global.InvestorsWant;
+        save.WeeksWithoutPayingInvestors = Global.WeeksWithoutPayingInvestors;
+        save.InvestorFrequency = Global.InvestorFrequency;
+        #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
             JsonConvert.SerializeObject(save)
@@ -67,7 +73,6 @@ class Savior {
 
     public static GameSave LoadGame(string saveFile) {
         File file = new File(); // directory
-        // TODO: make it open the new game dialog when the save doesn't exist
         file.Open(saveFile, File.ModeFlags.Read);
         GameSave obama = JsonConvert.DeserializeObject<GameSave>(
             file.GetAsText()

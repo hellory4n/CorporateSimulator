@@ -33,6 +33,7 @@ public class Game : Node2D {
             save = JsonConvert.DeserializeObject<GameSave>(
                 file.GetAsText()
             );
+            #region uhh
             Global.Money = save.Money;
             Global.Year = save.Year;
             Global.Month = save.Month;
@@ -42,6 +43,11 @@ public class Game : Node2D {
             Global.CeoName = save.Ceo;
             Global.Industries = save.Industries;
             Global.ResearchPoints = save.ResearchPoints;
+            Global.Investors = save.Investors;
+            Global.InvestorsWant = save.InvestorsWant;
+            Global.WeeksWithoutPayingInvestors = save.WeeksWithoutPayingInvestors;
+            Global.InvestorFrequency = save.InvestorFrequency;
+            #endregion
             file.Close();
         }
     }

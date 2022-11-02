@@ -19,4 +19,8 @@ public class Global : Node2D {
     public static string[] Industries;
     public static bool SavesMenuFromNewGame;
     public static int ResearchPoints;
+    public static int Investors;
+    public static int WeeksWithoutPayingInvestors;
+    public static int InvestorsWant;
+    public static int InvestorFrequency;
 }
