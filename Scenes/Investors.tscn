@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Investors/PayInvestors.cs" type="Script" id=8]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -19,7 +20,7 @@ font_data = SubResource( 1 )
 font_path = "res://Uhh/Ubuntu-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=6]
-size = 36
+size = 30
 font_data = SubResource( 5 )
 
 [sub_resource type="DynamicFontData" id=3]
@@ -107,7 +108,7 @@ margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
-script = ExtResource( 4 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }

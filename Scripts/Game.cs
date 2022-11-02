@@ -67,6 +67,7 @@ public class Game : Node2D {
             }
             if (Global.Week > 4) {
                 Global.Month++;
+                Global.Money += Global.InvestorPayment;
                 Global.Week = 1;
             }
             if (Global.Month > 12) {
@@ -92,14 +93,15 @@ public class Game : Node2D {
             }
         }
         // calculate boring investor variables
-        Global.InvestorPayment = Global.Investors*Global.Reputation/2;
-        Global.InvestorsWant = (int)Math.Round(Global.InvestorPayment*1.25);
+        Global.InvestorPayment = Global.Investors*Global.Reputation*2;
+        Global.InvestorsWant = (int)Math.Round((double)Global.InvestorPayment/4);
 
         // avoid interesting occasions
         if (Global.Reputation > 100)
             Global.Reputation = 100;
         // TODO: show a game over screen when the reputation is 0
-
+        if (Global.Investors < 0)
+            Global.Investors = 0;
 
         base._Process(delta);
     }
