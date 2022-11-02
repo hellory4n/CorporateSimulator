@@ -54,7 +54,7 @@ public class Game : Node2D {
 
         // calculate time stuff
         if (!Global.PausedTime) {
-            if (Global.WeekCounterThing > 1) {
+            if (Global.WeekCounterThing > 7.5) {
                 Global.Week++;
                 Global.WeekCounterThing = 0;
             }
