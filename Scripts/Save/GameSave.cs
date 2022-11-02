@@ -7,4 +7,5 @@ public class GameSave {
     public int Month = 1;
     public int Week = 1;
     public int Reputation = 75;
+    public int ResearchPoints = 0;
 }

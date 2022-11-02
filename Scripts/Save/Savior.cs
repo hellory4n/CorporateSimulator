@@ -44,6 +44,10 @@ class Savior {
         save.Month = Global.Month;
         save.Week = Global.Week;
         save.Reputation = Global.Reputation;
+        save.Name = Global.CompanyName;
+        save.Ceo = Global.CeoName;
+        save.Industries = Global.Industries;
+        save.ResearchPoints = Global.ResearchPoints;
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
             JsonConvert.SerializeObject(save)

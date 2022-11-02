@@ -18,4 +18,5 @@ public class Global : Node2D {
     public static string CeoName;
     public static string[] Industries;
     public static bool SavesMenuFromNewGame;
+    public static int ResearchPoints;
 }

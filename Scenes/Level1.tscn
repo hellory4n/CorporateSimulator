@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=9]
 [ext_resource path="res://Assets/MenuInactive.png" type="Texture" id=10]
 [ext_resource path="res://Scripts/UI/Default/Pause.cs" type="Script" id=11]
+[ext_resource path="res://Scenes/ResearchCounter.tscn" type="PackedScene" id=12]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -43,6 +44,9 @@ position = Vector2( 905, 85 )
 
 [node name="ReputationCounter" parent="." instance=ExtResource( 5 )]
 position = Vector2( 905, 145 )
+
+[node name="ResearchCounter" parent="." instance=ExtResource( 12 )]
+position = Vector2( 905, 205 )
 
 [node name="epok button" type="TextureButton" parent="."]
 margin_left = 230.0

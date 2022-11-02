@@ -41,6 +41,7 @@ public class Game : Node2D {
             Global.CompanyName = save.Name;
             Global.CeoName = save.Ceo;
             Global.Industries = save.Industries;
+            Global.ResearchPoints = save.ResearchPoints;
             file.Close();
         }
     }
