@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
@@ -12,6 +12,10 @@
 [ext_resource path="res://Assets/MenuInactive.png" type="Texture" id=10]
 [ext_resource path="res://Scripts/UI/Default/Pause.cs" type="Script" id=11]
 [ext_resource path="res://Scenes/ResearchCounter.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/ActionCenterPressed.png" type="Texture" id=13]
+[ext_resource path="res://Assets/ActionCenterHover.png" type="Texture" id=14]
+[ext_resource path="res://Assets/ActionCenter.png" type="Texture" id=15]
+[ext_resource path="res://Scripts/Modules/ActionCenter.cs" type="Script" id=16]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -82,3 +86,13 @@ margin_bottom = 90.0
 shortcut = SubResource( 6 )
 texture_normal = ExtResource( 10 )
 script = ExtResource( 11 )
+
+[node name="ActionCenter" type="TextureButton" parent="."]
+margin_left = 265.0
+margin_top = 645.0
+margin_right = 1015.0
+margin_bottom = 720.0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 13 )
+texture_hover = ExtResource( 14 )
+script = ExtResource( 16 )
