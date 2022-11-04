@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
-[ext_resource path="res://Assets/business.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/business.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/MoneyCounter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/TimeCounter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/ReputationCounter.tscn" type="PackedScene" id=5]
@@ -36,8 +36,7 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
-scale = Vector2( 0.8, 0.887793 )
-z_index = -100
+z_index = -4096
 texture = ExtResource( 2 )
 
 [node name="MoneyCounter" parent="." instance=ExtResource( 3 )]
