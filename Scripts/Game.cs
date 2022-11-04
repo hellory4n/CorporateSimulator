@@ -47,6 +47,7 @@ public class Game : Node2D {
             Global.WeeksWithoutPayingInvestors = save.WeeksWithoutPayingInvestors;
             Global.InvestorFrequency = save.InvestorFrequency;
             Global.InvestorSusometer = save.InvestorSusometer;
+            Global.Employees = save.Employees;
             #endregion
             file.Close();
         }

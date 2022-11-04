@@ -12,4 +12,5 @@ public class GameSave {
     public int WeeksWithoutPayingInvestors = 0;
     public int InvestorFrequency = 100;
     public int InvestorSusometer = 0;
+    public EmployeeSave[] Employees;
 }
