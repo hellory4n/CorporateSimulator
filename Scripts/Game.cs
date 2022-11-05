@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using Newtonsoft.Json;
+using System.Linq;
 
 public class Game : Node2D {
     // we need to know where to save
@@ -47,7 +48,7 @@ public class Game : Node2D {
             Global.WeeksWithoutPayingInvestors = save.WeeksWithoutPayingInvestors;
             Global.InvestorFrequency = save.InvestorFrequency;
             Global.InvestorSusometer = save.InvestorSusometer;
-            Global.Employees = save.Employees;
+            Global.Employees = save.Employees.ToList();
             #endregion
             file.Close();
         }

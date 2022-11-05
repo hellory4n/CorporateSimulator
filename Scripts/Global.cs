@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public class Global : Node2D {
     public static int Money = 694201337;
@@ -27,5 +28,7 @@ public class Global : Node2D {
     public static int InvestorPayment;
     public static int InvestorSusometer;
     public static float InvestorSusometerCounterThingyUhh;
-    public static EmployeeSave[] Employees;
+    public static List<EmployeeSave> Employees;
+    public static int Garbage1;
+    public static int Garbage2;
 }
