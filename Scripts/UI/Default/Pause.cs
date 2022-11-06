@@ -10,7 +10,7 @@ public class Pause : TextureButton {
         if (GetNodeOrNull("/root/PauseMenu") == null) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/PauseMenu.tscn");
             Node2D OK = (Node2D)yes.Instance();
-            OK.ZIndex = 100;
+            OK.ZIndex = 128;
             GetTree().Root.AddChild(OK);
             this.TextureNormal = ResourceLoader.Load<Texture>("res://Assets/MenuActive.png");
             Global.PausedTime = true;
