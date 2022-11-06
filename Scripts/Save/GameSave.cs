@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public class GameSave {
     public string Name = "Company Inc";
     public string Ceo = "Gill Bates";
@@ -12,5 +14,5 @@ public class GameSave {
     public int WeeksWithoutPayingInvestors = 0;
     public int InvestorFrequency = 100;
     public int InvestorSusometer = 0;
-    public EmployeeSave[] Employees;
+    public List<EmployeeSave> Employees = new List<EmployeeSave>();
 }

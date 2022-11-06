@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scripts/UI/Employees/EmployeeName.cs" type="Script" id=11]
 [ext_resource path="res://Scripts/UI/Employees/EmployeeInfo.cs" type="Script" id=12]
 [ext_resource path="res://Scripts/UI/Employees/EmployeeHire.cs" type="Script" id=13]
+[ext_resource path="res://Scripts/UI/Employees/DontHire.cs" type="Script" id=14]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -71,9 +72,9 @@ text = "Hire people"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 680.0
+margin_left = 644.0
 margin_top = 575.0
-margin_right = 1080.0
+margin_right = 1044.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -84,6 +85,29 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
+
+[node name="DontHire" type="TextureButton" parent="."]
+margin_left = 234.0
+margin_top = 575.0
+margin_right = 634.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DontHire"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
