@@ -49,6 +49,7 @@ public class Game : Node2D {
             Global.InvestorFrequency = save.InvestorFrequency;
             Global.InvestorSusometer = save.InvestorSusometer;
             Global.Employees = save.Employees.ToList();
+            Global.Taxes = save.Taxes;
             #endregion
             file.Close();
         }
@@ -70,7 +71,20 @@ public class Game : Node2D {
             if (Global.Week > 4) {
                 Global.Month++;
                 Global.Money += Global.InvestorPayment;
+                Global.Money -= Global.Taxes; // taxes :(
                 Global.Week = 1;
+
+                // calculate the salaries
+                foreach (var employee in Global.Employees) {
+                    Global.Salaries += employee.Salary;
+                }
+                Global.Money -= Global.Salaries;
+
+                // do the monthly money thing
+                Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
+                monthlyMoneyThing.Text = $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
+                    $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
+                    $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors";
             }
             if (Global.Month > 12) {
                 Global.Year++;

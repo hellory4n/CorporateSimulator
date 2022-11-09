@@ -95,3 +95,17 @@ texture_normal = ExtResource( 15 )
 texture_pressed = ExtResource( 13 )
 texture_hover = ExtResource( 14 )
 script = ExtResource( 16 )
+
+[node name="MonthlyMoneyStuff" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 711.0
+margin_top = 317.0
+margin_right = 1256.0
+margin_bottom = 635.0
+custom_colors/font_color = Color( 0.670588, 1, 0.411765, 0.501961 )
+custom_fonts/font = SubResource( 4 )
+text = "Nothing is happening"
+align = 2
+valign = 2
+autowrap = true

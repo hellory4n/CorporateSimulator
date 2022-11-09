@@ -15,4 +15,5 @@ public class GameSave {
     public int InvestorFrequency = 100;
     public int InvestorSusometer = 0;
     public List<EmployeeSave> Employees = new List<EmployeeSave>();
+    public int Taxes = 1000;
 }

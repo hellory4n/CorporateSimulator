@@ -31,4 +31,6 @@ public class Global : Node2D {
     public static List<EmployeeSave> Employees;
     public static int Garbage1;
     public static int Garbage2;
+    public static int Taxes;
+    public static int Salaries;
 }
