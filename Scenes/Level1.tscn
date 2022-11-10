@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Assets/ActionCenterHover.png" type="Texture" id=14]
 [ext_resource path="res://Assets/ActionCenter.png" type="Texture" id=15]
 [ext_resource path="res://Scripts/Modules/ActionCenter.cs" type="Script" id=16]
+[ext_resource path="res://Scripts/Save/Autosave.cs" type="Script" id=17]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -99,7 +100,7 @@ script = ExtResource( 16 )
 [node name="MonthlyMoneyStuff" type="Label" parent="."]
 anchor_right = 0.002
 anchor_bottom = 0.011
-margin_left = 711.0
+margin_left = 18.0
 margin_top = 317.0
 margin_right = 1256.0
 margin_bottom = 635.0
@@ -109,3 +110,8 @@ text = "Nothing is happening"
 align = 2
 valign = 2
 autowrap = true
+
+[node name="Autosave" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+script = ExtResource( 17 )

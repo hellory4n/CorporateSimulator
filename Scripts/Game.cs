@@ -85,6 +85,8 @@ public class Game : Node2D {
                 monthlyMoneyThing.Text = $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
                     $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
                     $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors";
+                
+                Global.Salaries = 0;
             }
             if (Global.Month > 12) {
                 Global.Year++;
