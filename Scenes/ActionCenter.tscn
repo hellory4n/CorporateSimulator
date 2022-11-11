@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/DialogBackgroundUhh.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/UI/Investors/InvestorsOpen.cs" type="Script" id=2]
 [ext_resource path="res://Scripts/UI/Employees/EmployeesOpen.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/UI/Research/ResearchOpen.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
@@ -16,7 +17,11 @@ font_data = SubResource( 3 )
 
 [node name="ActionCenter" type="Node2D"]
 
-[node name="Background" type="Sprite" parent="."]
+[node name="Control" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 645.0
+
+[node name="Background" type="Sprite" parent="Control"]
 position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 
@@ -118,6 +123,7 @@ margin_bottom = 280.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
