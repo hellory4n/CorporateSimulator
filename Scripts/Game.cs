@@ -50,6 +50,8 @@ public class Game : Node2D {
             Global.InvestorSusometer = save.InvestorSusometer;
             Global.Employees = save.Employees.ToList();
             Global.Taxes = save.Taxes;
+            Global.UnlockedResearch = save.UnlockedResearch;
+            Global.Researched = save.Researched;
             #endregion
             file.Close();
         }

@@ -55,6 +55,8 @@ class Savior {
         save.InvestorSusometer = Global.InvestorSusometer;
         save.Employees = Global.Employees;
         save.Taxes = Global.Taxes;
+        save.UnlockedResearch = Global.UnlockedResearch;
+        save.Researched = Global.Researched;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

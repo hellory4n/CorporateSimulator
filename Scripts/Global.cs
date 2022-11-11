@@ -33,4 +33,6 @@ public class Global : Node2D {
     public static int Garbage2;
     public static int Taxes;
     public static int Salaries;
+    public static List<ResearchSave> UnlockedResearch;
+    public static List<ResearchSave> Researched;
 }

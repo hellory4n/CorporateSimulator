@@ -16,4 +16,6 @@ public class GameSave {
     public int InvestorSusometer = 0;
     public List<EmployeeSave> Employees = new List<EmployeeSave>();
     public int Taxes = 1000;
+    public List<ResearchSave> UnlockedResearch = new List<ResearchSave>();
+    public List<ResearchSave> Researched = new List<ResearchSave>();
 }
