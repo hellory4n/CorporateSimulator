@@ -35,4 +35,5 @@ public class Global : Node2D {
     public static int Salaries;
     public static List<ResearchSave> UnlockedResearch;
     public static List<ResearchSave> Researched;
+    public static SpaceProduct SpaceNewProduct = new SpaceProduct();
 }
