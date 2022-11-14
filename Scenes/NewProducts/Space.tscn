@@ -1,16 +1,14 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
-[ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
-[ext_resource path="res://Assets/LineEdit.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/UI/Save/MakeNewCompany.cs" type="Script" id=4]
-[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
-[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
-[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
-[ext_resource path="res://Assets/LineEditFocus.png" type="Texture" id=8]
-[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=9]
-[ext_resource path="res://Scripts/UI/Save/SelectIndustry.cs" type="Script" id=10]
-[ext_resource path="res://Assets/business.png" type="Texture" id=11]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=3]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=5]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=6]
+[ext_resource path="res://Assets/LineEdit.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Save/MakeNewCompany.cs" type="Script" id=8]
+[ext_resource path="res://Assets/LineEditFocus.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -41,12 +39,19 @@ size = 32
 font_data = SubResource( 11 )
 
 [sub_resource type="StyleBoxTexture" id=9]
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 region_rect = Rect2( 0, 0, 700, 75 )
 
 [sub_resource type="StyleBoxTexture" id=10]
-texture = ExtResource( 3 )
+texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 700, 75 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 28
+font_data = SubResource( 13 )
 
 [node name="NewCompany" type="Node2D"]
 
@@ -54,13 +59,9 @@ region_rect = Rect2( 0, 0, 700, 75 )
 margin_right = 1279.0
 margin_bottom = 719.0
 
-[node name="Business" type="Sprite" parent="Control"]
-position = Vector2( 640, 360 )
-texture = ExtResource( 11 )
-
 [node name="Background" type="Sprite" parent="Control"]
 position = Vector2( 640, 360 )
-texture = ExtResource( 2 )
+texture = ExtResource( 6 )
 
 [node name="Dialog" type="Sprite" parent="."]
 position = Vector2( 640, 372 )
@@ -76,7 +77,7 @@ margin_right = 604.2
 margin_bottom = 126.0
 rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
-text = "Make a new company"
+text = "New space thing"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -96,10 +97,10 @@ margin_left = 644.0
 margin_top = 575.0
 margin_right = 1044.0
 margin_bottom = 650.0
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 7 )
-script = ExtResource( 4 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -119,10 +120,10 @@ margin_left = 234.0
 margin_top = 575.0
 margin_right = 634.0
 margin_bottom = 650.0
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 7 )
-script = ExtResource( 9 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -137,53 +138,39 @@ text = "Cancel"
 align = 1
 valign = 1
 
-[node name="SelectIndustry" type="TextureButton" parent="."]
+[node name="ProductName" type="LineEdit" parent="."]
+margin_left = 290.0
+margin_top = 265.0
+margin_right = 990.0
+margin_bottom = 340.0
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+align = 1
+placeholder_text = "write the product name here"
+caret_blink = true
+
+[node name="SelectWhatToCarry" type="TextureButton" parent="."]
 margin_left = 440.0
-margin_top = 415.0
+margin_top = 365.0
 margin_right = 840.0
-margin_bottom = 490.0
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 7 )
-script = ExtResource( 10 )
+margin_bottom = 440.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="SelectIndustry"]
+[node name="Label" type="Label" parent="SelectWhatToCarry"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
-custom_fonts/font = SubResource( 8 )
-text = "Select industry"
+custom_fonts/font = SubResource( 14 )
+text = "Select what the rocket will carry"
 align = 1
 valign = 1
-
-[node name="CompanyName" type="LineEdit" parent="."]
-margin_left = 290.0
-margin_top = 215.0
-margin_right = 990.0
-margin_bottom = 290.0
-custom_colors/cursor_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 12 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
-align = 1
-placeholder_text = "write the company name here"
-caret_blink = true
-
-[node name="CeoName" type="LineEdit" parent="."]
-margin_left = 290.0
-margin_top = 315.0
-margin_right = 990.0
-margin_bottom = 390.0
-custom_colors/cursor_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 12 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
-align = 1
-placeholder_text = "write your name here"
-caret_blink = true
+autowrap = true
