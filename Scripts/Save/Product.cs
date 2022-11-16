@@ -12,4 +12,7 @@ public class SpaceProduct : Product {
     public string Carrying;
     public int? People;
     public string Destination;
+    public int Speed;
+    public int Fuel;
+    public int Safety;
 }
