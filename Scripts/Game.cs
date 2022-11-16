@@ -122,6 +122,13 @@ public class Game : Node2D {
         // TODO: show a game over screen when the reputation is 0
         if (Global.Investors < 0)
             Global.Investors = 0;
+        
+        // pause time?
+        if (GetNodeOrNull<Node2D>("/root/PauseMenu") != null || GetNodeOrNull<Node2D>("/root/ActionCenter")
+        != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null)
+            Global.PausedTime = true;
+        else
+            Global.PausedTime = false;
 
         base._Process(delta);
     }

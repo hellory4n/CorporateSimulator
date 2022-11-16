@@ -12,10 +12,7 @@ public class ActionCenter : TextureButton {
             Node2D OK = (Node2D)yes.Instance();
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
-            Global.PausedTime = true;
-        } else {
+        } else
             GetNode("/root/ActionCenter").QueueFree();
-            Global.PausedTime = false;
-        }
     }
 }

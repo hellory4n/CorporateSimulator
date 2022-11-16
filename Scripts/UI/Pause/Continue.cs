@@ -10,6 +10,5 @@ public class Continue : TextureButton {
         GetNode("/root/PauseMenu").QueueFree();
         GetNode<TextureButton>("/root/Game/CanvasLayer/Pause").TextureNormal =
             ResourceLoader.Load<Texture>("res://Assets/MenuInactive.png");
-        Global.PausedTime = false;
     }
 }

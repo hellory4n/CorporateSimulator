@@ -13,11 +13,9 @@ public class Pause : TextureButton {
             OK.ZIndex = 128;
             GetTree().Root.AddChild(OK);
             this.TextureNormal = ResourceLoader.Load<Texture>("res://Assets/MenuActive.png");
-            Global.PausedTime = true;
         } else {
             GetNode("/root/PauseMenu").QueueFree();
             this.TextureNormal = ResourceLoader.Load<Texture>("res://Assets/MenuInactive.png");
-            Global.PausedTime = false;
         }
     }
 }
