@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/UI/NewProduct/Developing/DevelopingSpace.cs" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = SubResource( 1 )
+
+[node name="Developing" type="Label"]
+margin_right = 1280.0
+margin_bottom = 58.0
+grow_horizontal = 0
+custom_colors/font_color = Color( 1, 1, 1, 0.501961 )
+custom_fonts/font = SubResource( 2 )
+text = "Developing [product]: 69420%"
+align = 2
+script = ExtResource( 1 )

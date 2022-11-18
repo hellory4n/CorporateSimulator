@@ -7,11 +7,16 @@ public class EmployeeFire : TextureButton {
     }
 
     public void Click() {
+        GD.Print("I'M DOING SOMETHIGN!!!!!!!!!!!!!111");
         string employeeName = GetNode<Label>("../EmployeeName").Text;
-        foreach (var onoPerson in Global.Employees) {
-            if (onoPerson.Name == employeeName)
-                Global.Employees.Remove(onoPerson);
+
+        for (int i = 0; i < Global.Employees.Count; i++) {
+            EmployeeSave onoPerson = Global.Employees[i];
+            if (onoPerson.Name == employeeName) {
+                Global.Employees.RemoveAt(i);
+                GetParent().QueueFree();
                 break;
+            }
         }
     }
 }

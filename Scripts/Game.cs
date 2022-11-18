@@ -52,6 +52,9 @@ public class Game : Node2D {
             Global.Taxes = save.Taxes;
             Global.UnlockedResearch = save.UnlockedResearch;
             Global.Researched = save.Researched;
+            Global.Products = save.Products;
+            Global.Developing = save.Developing;
+            Global.DevelopingProgress = save.DevelopingProgress;
             #endregion
             file.Close();
         }

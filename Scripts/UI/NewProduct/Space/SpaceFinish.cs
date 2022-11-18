@@ -7,9 +7,12 @@ public class SpaceFinish : TextureButton {
     }
 
     public void Click() {
-        Global.SpaceNewProduct.Speed = (int)GetNode<HSlider>("../Slider1").Value;
-        Global.SpaceNewProduct.Fuel = (int)GetNode<HSlider>("../Slider2").Value;
-        Global.SpaceNewProduct.Safety = (int)GetNode<HSlider>("../Slider3").Value;
+        Global.SpaceNewProduct.Type = "rocket";
+        Global.Money -= Global.SpaceNewProduct.MoneySpent;
+        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Developing/DevelopingSpace.tscn");
+        Label OK = (Label)yes.Instance();
+        OK.RectPosition = new Vector2(-25, 286);
+        GetTree().Root.AddChild(OK);
         GetParent().QueueFree();
     }
 }

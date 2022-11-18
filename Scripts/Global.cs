@@ -36,4 +36,7 @@ public class Global : Node2D {
     public static List<ResearchSave> UnlockedResearch;
     public static List<ResearchSave> Researched;
     public static SpaceProduct SpaceNewProduct = new SpaceProduct();
+    public static List<object> Products = new List<object>();
+    public static object Developing;
+    public static int DevelopingProgress;
 }

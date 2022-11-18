@@ -13,7 +13,7 @@
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=4]
-size = 40
+size = 32
 font_data = SubResource( 3 )
 
 [node name="ActionCenter" type="Node2D"]
@@ -183,3 +183,4 @@ custom_fonts/font = SubResource( 4 )
 text = "New Product"
 align = 1
 valign = 1
+autowrap = true

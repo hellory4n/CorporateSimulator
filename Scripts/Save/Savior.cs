@@ -57,6 +57,9 @@ class Savior {
         save.Taxes = Global.Taxes;
         save.UnlockedResearch = Global.UnlockedResearch;
         save.Researched = Global.Researched;
+        save.Products = Global.Products;
+        save.Developing = Global.Developing;
+        save.DevelopingProgress = Global.DevelopingProgress;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

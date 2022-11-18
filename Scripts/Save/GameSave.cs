@@ -18,4 +18,7 @@ public class GameSave {
     public int Taxes = 1000;
     public List<ResearchSave> UnlockedResearch = new List<ResearchSave>();
     public List<ResearchSave> Researched = new List<ResearchSave>();
+    public List<object> Products = new List<object>();
+    public object Developing = new object();
+    public int DevelopingProgress = 0;
 }
