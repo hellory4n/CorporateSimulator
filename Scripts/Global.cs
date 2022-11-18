@@ -39,4 +39,5 @@ public class Global : Node2D {
     public static List<object> Products = new List<object>();
     public static object Developing;
     public static int DevelopingProgress;
+    public static string DevelopingName;
 }

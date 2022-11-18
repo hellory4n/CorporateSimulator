@@ -9,9 +9,11 @@ public class SpaceFinish : TextureButton {
     public void Click() {
         Global.SpaceNewProduct.Type = "rocket";
         Global.Money -= Global.SpaceNewProduct.MoneySpent;
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Developing/DevelopingSpace.tscn");
+        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();
         OK.RectPosition = new Vector2(-25, 286);
+        Global.Developing = Global.SpaceNewProduct;
+        Global.DevelopingName = Global.SpaceNewProduct.Name;
         GetTree().Root.AddChild(OK);
         GetParent().QueueFree();
     }

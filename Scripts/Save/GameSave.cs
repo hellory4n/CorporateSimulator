@@ -19,6 +19,7 @@ public class GameSave {
     public List<ResearchSave> UnlockedResearch = new List<ResearchSave>();
     public List<ResearchSave> Researched = new List<ResearchSave>();
     public List<object> Products = new List<object>();
-    public object Developing = new object();
+    public object Developing;
     public int DevelopingProgress = 0;
+    public string DevelopingName = "PAIN XD";
 }

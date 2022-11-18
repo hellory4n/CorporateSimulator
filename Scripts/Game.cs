@@ -55,8 +55,17 @@ public class Game : Node2D {
             Global.Products = save.Products;
             Global.Developing = save.Developing;
             Global.DevelopingProgress = save.DevelopingProgress;
+            Global.DevelopingName = save.DevelopingName;
             #endregion
             file.Close();
+            // developing thing
+            if (Global.Developing != null) {
+                var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
+                Label OK = (Label)yes.Instance();
+                OK.RectPosition = new Vector2(-25, 286);
+                GetTree().Root.AddChild(OK);
+                
+            }
         }
     }
 

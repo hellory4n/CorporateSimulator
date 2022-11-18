@@ -60,6 +60,7 @@ class Savior {
         save.Products = Global.Products;
         save.Developing = Global.Developing;
         save.DevelopingProgress = Global.DevelopingProgress;
+        save.DevelopingName = Global.DevelopingName;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
