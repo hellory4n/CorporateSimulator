@@ -12,7 +12,7 @@ public class CreditsScroll : Label {
         GD.Print(RectPosition.y);
 
         if (RectPosition.y < -2800)
-            GetNode("/root/CreditsThing").QueueFree();
+            GetParent().QueueFree();
 
         base._Process(delta);
     }

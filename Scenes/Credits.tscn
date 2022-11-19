@@ -20,6 +20,10 @@ margin_bottom = 720.0
 position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 
+[node name="Background2" type="Sprite" parent="Control"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 1 )
+
 [node name="CreditsScroll" type="Label" parent="."]
 margin_top = 720.0
 margin_right = 1280.0
