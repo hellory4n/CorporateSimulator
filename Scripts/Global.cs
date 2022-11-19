@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 
 public class Global : Node2D {
-    public static int Money = 694201337;
+    public static long Money = 694201337;
     public static int Year = 1;
     public static int Month = 1;
     public static int Week = 1;
