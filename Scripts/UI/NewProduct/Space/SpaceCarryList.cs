@@ -13,28 +13,30 @@ public class SpaceCarryList : VBoxContainer {
         OK.Init("Animals");
         AddChild(OK);
 
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Satellites", 50))) {
-            OK = (SpaceCarryButton)yes.Instance();
-            OK.Init("Satellites");
-            AddChild(OK);
-        }
-
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("People", 100))) {
-            OK = (SpaceCarryButton)yes.Instance();
-            OK.Init("People");
-            AddChild(OK);
-        }
-
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Space station", 250))) {
-            OK = (SpaceCarryButton)yes.Instance();
-            OK.Init("Space station");
-            AddChild(OK);
-        }
-
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Terraforming", 5000))) {
-            OK = (SpaceCarryButton)yes.Instance();
-            OK.Init("Terraforming stuff");
-            AddChild(OK);
+        // Contains() decided to workn't
+        foreach (var research in Global.Researched) {
+            switch (research.Name) {
+                case "Satellites":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Satellites");
+                    AddChild(OK);
+                    break;
+                case "People":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("People");
+                    AddChild(OK);
+                    break;
+                case "Space station":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Space station");
+                    AddChild(OK);
+                    break;
+                case "Terraforming":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Terraforming stuff");
+                    AddChild(OK);
+                    break;
+            }
         }
 
         base._Ready();

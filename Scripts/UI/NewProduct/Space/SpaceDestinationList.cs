@@ -13,34 +13,37 @@ public class SpaceDestinationList : VBoxContainer {
         OK.Init("Moon");
         AddChild(OK);
 
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Go to other planets", 1000))) {
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Mars");
-            AddChild(OK);
+        // Contains() decided to workn't
+        foreach (var jsjsjjjs in Global.Researched) {
+            if (jsjsjjjs.Name == "Go to other planets") {
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Mars");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Venus");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Venus");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Mercury");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Mercury");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Jupiter");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Jupiter");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Saturn");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Saturn");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Uranus");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Uranus");
+                AddChild(OK);
 
-            OK = (SpaceDestinationButton)yes.Instance();
-            OK.Init("Neptune");
-            AddChild(OK);
+                OK = (SpaceDestinationButton)yes.Instance();
+                OK.Init("Neptune");
+                AddChild(OK);
+            }
         }
 
         base._Ready();
