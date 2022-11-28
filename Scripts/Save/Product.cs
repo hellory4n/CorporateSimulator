@@ -16,3 +16,12 @@ public class SpaceProduct : Product {
     public int Fuel = 0;
     public int Safety = 0;
 }
+
+public class BookProduct : Product {
+    public string Theme = "Cookbook";
+    public string Genre = "War";
+    public decimal ThemeGenreCombination = 0;
+    public int Lore = 69;
+    public int Storytelling = 69;
+    public int Characters = 69;
+}
