@@ -48,10 +48,9 @@ public class MakeNewCompany : TextureButton {
                 });
                 break;
             case "books":
-                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Graphics", 50),
-                    new ResearchSave("Comics", 100)
-                });
+                newGame.UnlockedResearch.Add(
+                    new ResearchSave("Giant books", 50)
+                );
                 break;
             case "clothes":
                 newGame.UnlockedResearch.Add(

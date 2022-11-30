@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class Developing : Label {
-    int waitTime = 60;
+    int waitTime = 30;
 
     public override void _Ready() {
         Text = "Developing " + Global.DevelopingName + ": 0%";
@@ -22,7 +22,12 @@ public class Developing : Label {
         }
 
         if (Global.DevelopingProgress == 100) {
-            Global.Products.Add(Global.SpaceNewProduct);
+            if (Global.Developing is SpaceProduct)
+                Global.Products.Add(Global.SpaceNewProduct);
+                GD.Print("this is rocket");
+            if (Global.Developing is BookProduct)
+                Global.Products.Add(Global.BookNewProduct);
+
             Global.ResearchPoints += 10;
             Global.Developing = null;
             QueueFree();

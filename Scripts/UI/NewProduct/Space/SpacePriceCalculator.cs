@@ -3,12 +3,20 @@ using System;
 
 public class SpacePriceCalculator : Label {
     public override void _Process(float delta) {
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Rocket boost V1", 500)))
-            Global.SpaceNewProduct.RocketBoost = 1;
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Rocket boost V2", 1000)))
-            Global.SpaceNewProduct.RocketBoost = 2;
-        if (!Global.UnlockedResearch.Contains(new ResearchSave("Rocket boost V3", 2000)))
-            Global.SpaceNewProduct.RocketBoost = 3;
+        // Contains() decided to workn't
+        foreach (var research in Global.Researched) {
+            switch (research.Name) {
+                case "Rocket booster V1":
+                    Global.SpaceNewProduct.RocketBoost = 1;
+                    break;
+                case "Rocket booster V2":
+                    Global.SpaceNewProduct.RocketBoost = 2;
+                    break;
+                case "Rocket booster V3":
+                    Global.SpaceNewProduct.RocketBoost = 3;
+                    break;
+            }
+        }
 
         if (Global.SpaceNewProduct.RocketBoost > 0)
             Global.SpaceNewProduct.Speed = (int)GetNode<HSlider>("../Slider1").Value *
