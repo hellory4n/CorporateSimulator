@@ -64,9 +64,9 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "music":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("No privacy V1", 50),
-                    new ResearchSave("No privacy V2", 100),
-                    new ResearchSave("No privacy V3", 200)
+                    new ResearchSave("Less piracy V1", 50),
+                    new ResearchSave("Less piracy V2", 100),
+                    new ResearchSave("Less piracy V3", 200)
                 });
                 break;
             case "animation":
@@ -114,13 +114,13 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "medical":
                 newGame.UnlockedResearch.Add(
-                    new ResearchSave("Placebo effect")
+                    new ResearchSave("Magic", 100)
                 );
                 break;
             case "computers":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
                     new ResearchSave("RGB lights", 10),
-                    new ResearchSave("Custom OS")
+                    new ResearchSave("Custom OS", 100)
                 });
                 break;
             case "restaurants":
