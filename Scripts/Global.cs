@@ -41,4 +41,5 @@ public class Global : Node2D {
     public static int DevelopingProgress;
     public static string DevelopingName;
     public static BookProduct BookNewProduct = new BookProduct();
+    public static MedicalProduct MedicalNewProduct = new MedicalProduct();
 }

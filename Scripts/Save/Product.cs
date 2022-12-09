@@ -25,3 +25,8 @@ public class BookProduct : Product {
     public int Storytelling = 69;
     public int Characters = 69;
 }
+
+public class MedicalProduct : Product {
+    public int Accuracy = 69;
+    public int Marketing = 69;
+}

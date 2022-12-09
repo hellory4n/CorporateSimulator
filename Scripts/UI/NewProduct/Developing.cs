@@ -24,9 +24,10 @@ public class Developing : Label {
         if (Global.DevelopingProgress == 100) {
             if (Global.Developing is SpaceProduct)
                 Global.Products.Add(Global.SpaceNewProduct);
-                GD.Print("this is rocket");
             if (Global.Developing is BookProduct)
                 Global.Products.Add(Global.BookNewProduct);
+            if (Global.Developing is MedicalProduct)
+                Global.Products.Add(Global.MedicalNewProduct);
 
             Global.ResearchPoints += 10;
             Global.Developing = null;
