@@ -30,3 +30,11 @@ public class MedicalProduct : Product {
     public int Accuracy = 69;
     public int Marketing = 69;
 }
+
+public class ComputerProduct : Product {
+    public string Cpu;
+    public string Gpu;
+    public string Ram;
+    public string Storage;
+    public string Os;
+}

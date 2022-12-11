@@ -27,6 +27,12 @@ public class NewProductOpen : TextureButton {
                     OKmedical.ZIndex = 100;
                     GetTree().Root.AddChild(OKmedical);
                     break;
+                case "computers":
+                    var yespc = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Computer.tscn");
+                    Node2D OKpc = (Node2D)yespc.Instance();
+                    OKpc.ZIndex = 100;
+                    GetTree().Root.AddChild(OKpc);
+                    break;
             }
         } else {
             GetNode<Label>("Label").Text = "You have no employees!";
