@@ -37,4 +37,5 @@ public class ComputerProduct : Product {
     public string Ram;
     public string Storage;
     public string Os;
+    public int Price;
 }
