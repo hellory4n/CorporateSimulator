@@ -28,6 +28,13 @@ public class Developing : Label {
                 Global.Products.Add(Global.BookNewProduct);
             if (Global.Developing is MedicalProduct)
                 Global.Products.Add(Global.MedicalNewProduct);
+            if (Global.Developing is ComputerProduct)
+                Global.Products.Add(Global.ComputerNewProduct);
+            
+            Global.SpaceNewProduct = new SpaceProduct();
+            Global.BookNewProduct = new BookProduct();
+            Global.MedicalNewProduct = new MedicalProduct();
+            Global.ComputerNewProduct = new ComputerProduct();
 
             Global.ResearchPoints += 10;
             Global.Developing = null;

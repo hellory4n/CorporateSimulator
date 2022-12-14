@@ -32,10 +32,10 @@ public class MedicalProduct : Product {
 }
 
 public class ComputerProduct : Product {
-    public string Cpu;
-    public string Gpu;
-    public string Ram;
-    public string Storage;
-    public string Os;
-    public int Price;
+    public string Cpu = "None,None,0,0";
+    public string Gpu = "None,None,0,0";
+    public string Ram = "0,0,0";
+    public string Storage = "None,0,0,0";
+    public string Os = "None,None,0,0";
+    public int Price = 0;
 }
