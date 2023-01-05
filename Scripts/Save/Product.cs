@@ -39,3 +39,9 @@ public class ComputerProduct : Product {
     public string Os = "None,None,0,0";
     public int Price = 0;
 }
+
+public class MusicProduct: Product {
+    public int Speed = 50;
+    public int Melody = 0;
+    public int Instruments = 69;
+}

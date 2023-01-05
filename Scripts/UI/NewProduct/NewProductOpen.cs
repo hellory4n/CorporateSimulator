@@ -33,6 +33,12 @@ public class NewProductOpen : TextureButton {
                     OKpc.ZIndex = 100;
                     GetTree().Root.AddChild(OKpc);
                     break;
+                case "music":
+                    var yesmoosic = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Music.tscn");
+                    Node2D OKmoosic = (Node2D)yesmoosic.Instance();
+                    OKmoosic.ZIndex = 100;
+                    GetTree().Root.AddChild(OKmoosic);
+                    break;
             }
         } else {
             GetNode<Label>("Label").Text = "You have no employees!";

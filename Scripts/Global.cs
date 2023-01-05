@@ -43,4 +43,5 @@ public class Global : Node2D {
     public static BookProduct BookNewProduct = new BookProduct();
     public static MedicalProduct MedicalNewProduct = new MedicalProduct();
     public static ComputerProduct ComputerNewProduct = new ComputerProduct();
+    public static MusicProduct MusicNewProduct = new MusicProduct();
 }
