@@ -30,11 +30,14 @@ public class Developing : Label {
                 Global.Products.Add(Global.MedicalNewProduct);
             if (Global.Developing is ComputerProduct)
                 Global.Products.Add(Global.ComputerNewProduct);
-            
+            if (Global.Developing is MusicProduct)
+                Global.Products.Add(Global.MusicNewProduct);
+
             Global.SpaceNewProduct = new SpaceProduct();
             Global.BookNewProduct = new BookProduct();
             Global.MedicalNewProduct = new MedicalProduct();
             Global.ComputerNewProduct = new ComputerProduct();
+            Global.MusicNewProduct = new MusicProduct();
 
             Global.ResearchPoints += 10;
             Global.Developing = null;
