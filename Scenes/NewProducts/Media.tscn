@@ -9,8 +9,8 @@
 [ext_resource path="res://Assets/LineEdit.png" type="Texture" id=7]
 [ext_resource path="res://Scripts/UI/NewProduct/Book/BookNext.cs" type="Script" id=8]
 [ext_resource path="res://Assets/LineEditFocus.png" type="Texture" id=9]
-[ext_resource path="res://Scripts/UI/NewProduct/Book/BookTheme.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/UI/NewProduct/Book/BookGenre.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/UI/NewProduct/Media/MediaGenreOpen.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/UI/NewProduct/Media/MediaThemeOpen.cs" type="Script" id=11]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -169,7 +169,7 @@ margin_bottom = 390.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -193,7 +193,7 @@ margin_bottom = 490.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
-script = ExtResource( 11 )
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_group_": true
 }
