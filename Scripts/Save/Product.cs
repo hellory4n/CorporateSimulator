@@ -45,3 +45,12 @@ public class MusicProduct: Product {
     public int Melody = 0;
     public int Instruments = 69;
 }
+
+public class MediaProduct : Product {
+    public string Theme = "Intense Farding";
+    public string Genre = "True Crime";
+    public decimal ThemeGenreCombination = 0;
+    public int Lore = 69;
+    public int Storytelling = 69;
+    public int Characters = 69;
+}
