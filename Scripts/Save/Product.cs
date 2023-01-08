@@ -54,3 +54,8 @@ public class MediaProduct : Product {
     public int Storytelling = 69;
     public int Characters = 69;
 }
+
+public class FoodProduct : Product {
+    public int NutritionalValue = 0;
+    public int Taste = 100;
+}
