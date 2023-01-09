@@ -16,10 +16,10 @@ public class MediaPriceCalculator : Label {
     public override void _Process(float delta) {
         if (ben) {
             this.Text = "This product will cost $20,000 to develop";
-            Global.BookNewProduct.MoneySpent = 20000;
+            Global.MediaNewProduct.MoneySpent = 20000;
         } else {
             this.Text = "This product will cost $1,000 to develop";
-            Global.BookNewProduct.MoneySpent = 1000;
+            Global.MediaNewProduct.MoneySpent = 1000;
         }
         base._Process(delta);
     }
