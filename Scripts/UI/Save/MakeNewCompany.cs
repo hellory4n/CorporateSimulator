@@ -82,7 +82,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "tv":
                 newGame.UnlockedResearch.Add(
-                    new ResearchSave("Movies", 50)
+                    new ResearchSave("More ads", 50)
                 );
                 break;
             case "electronics":
