@@ -51,6 +51,12 @@ public class NewProductOpen : TextureButton {
                     OKfood.ZIndex = 100;
                     GetTree().Root.AddChild(OKfood);
                     break;
+                case "tv":
+                    var yestv = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Tv.tscn");
+                    Node2D OKtv = (Node2D)yestv.Instance();
+                    OKtv.ZIndex = 100;
+                    GetTree().Root.AddChild(OKtv);
+                    break;
             }
         } else {
             GetNode<Label>("Label").Text = "You have no employees!";

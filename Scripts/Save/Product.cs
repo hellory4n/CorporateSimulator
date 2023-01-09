@@ -59,3 +59,10 @@ public class FoodProduct : Product {
     public int NutritionalValue = 0;
     public int Taste = 100;
 }
+
+public class TvProduct: Product {
+    public string TvType = "fake news";
+    public int ProductionTime = 69;
+    public int Script = 69;
+    public int Ads = 100;
+}
