@@ -87,7 +87,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "electronics":
                 newGame.UnlockedResearch.Add(
-                    new ResearchSave("Internet of Things (IoT)", 100)
+                    new ResearchSave("IoT V2", 100)
                 );
                 break;
             case "weapons":

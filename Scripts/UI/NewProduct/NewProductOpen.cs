@@ -57,6 +57,12 @@ public class NewProductOpen : TextureButton {
                     OKtv.ZIndex = 100;
                     GetTree().Root.AddChild(OKtv);
                     break;
+                case "electronics":
+                    var yesfridge = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Electronics.tscn");
+                    Node2D OKfridge = (Node2D)yesfridge.Instance();
+                    OKfridge.ZIndex = 100;
+                    GetTree().Root.AddChild(OKfridge);
+                    break;
             }
         } else {
             GetNode<Label>("Label").Text = "You have no employees!";

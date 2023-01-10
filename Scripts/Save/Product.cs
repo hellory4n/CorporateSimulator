@@ -66,3 +66,9 @@ public class TvProduct: Product {
     public int Script = 69;
     public int Ads = 100;
 }
+
+public class ElectronicsProduct : Product {
+    public int Features = 69;
+    public int Security = 69;
+    public int IoTNess = 69;
+}
