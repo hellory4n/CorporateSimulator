@@ -67,6 +67,7 @@ Kevin MacLeod
 Bricked
 Tha Muffin
 TheNewM99999
+Shiveryweb
 Who invented coffee
 
 
@@ -74,7 +75,7 @@ Who invented coffee
 
 
 Corporate Simulator
-Copyright (C) 2022 hellory4n
+Copyright (C) 2023 hellory4n
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -89,7 +90,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-No, by \"free software\" I don't mean you was scammed, but rather that
-you can help fix my code, or make your own Corporate Simulator!"
+Free software as in freedom"
 align = 1
 script = ExtResource( 2 )
