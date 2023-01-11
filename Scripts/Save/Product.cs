@@ -72,3 +72,10 @@ public class ElectronicsProduct : Product {
     public int Security = 69;
     public int IoTNess = 69;
 }
+
+public class AppProduct : Product {
+    public string AppType = "chinese tracking software";
+    public int Algorithm = 100;
+    public int Features = 50;
+    public int Innovation = 0;
+}
