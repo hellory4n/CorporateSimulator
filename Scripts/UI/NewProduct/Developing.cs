@@ -40,6 +40,8 @@ public class Developing : Label {
                 Global.Products.Add(Global.TvNewProduct);
             if (Global.Developing is ElectronicsProduct)
                 Global.Products.Add(Global.ElectronicsNewProduct);
+            if (Global.Developing is AppProduct)
+                Global.Products.Add(Global.AppNewProduct);
 
             Global.SpaceNewProduct = new SpaceProduct();
             Global.BookNewProduct = new BookProduct();
@@ -50,6 +52,7 @@ public class Developing : Label {
             Global.FoodNewProduct = new FoodProduct();
             Global.TvNewProduct = new TvProduct();
             Global.ElectronicsNewProduct = new ElectronicsProduct();
+            Global.AppNewProduct = new AppProduct();
 
             Global.ResearchPoints += 10;
             Global.Developing = null;

@@ -54,9 +54,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "apps":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Servers", 50),
-                    new ResearchSave("Games", 10),
-                    new ResearchSave("Algorithms", 50),
+                    new ResearchSave("Algorithms V2", 50),
                     new ResearchSave("Tracking V1", 50),
                     new ResearchSave("Tracking V2", 100),
                     new ResearchSave("Tracking V3", 200)
