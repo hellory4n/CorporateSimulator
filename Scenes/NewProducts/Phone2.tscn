@@ -7,14 +7,14 @@
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=5]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneSocOpen.cs" type="Script" id=7]
-[ext_resource path="res://Scripts/UI/NewProduct/Book/BookFinish.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneFinish.cs" type="Script" id=8]
 [ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneSizeOpen.cs" type="Script" id=9]
 [ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneRamOpen.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/UI/NewProduct/Computers/ComputerStorageOpen.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneStorageOpen.cs" type="Script" id=11]
 [ext_resource path="res://Assets/Slider1.png" type="Texture" id=12]
 [ext_resource path="res://Assets/SliderGrab.png" type="Texture" id=13]
-[ext_resource path="res://Scripts/UI/NewProduct/Computers/ComputerOSOpen.cs" type="Script" id=14]
-[ext_resource path="res://Scripts/UI/NewProduct/Computers/ComputerPriceSlider.cs" type="Script" id=15]
+[ext_resource path="res://Scripts/UI/NewProduct/Phones/PhoneBatteryOpen.cs" type="Script" id=14]
+[ext_resource path="res://Scripts/UI/NewProduct/Phones/PhonePrice.cs" type="Script" id=15]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
