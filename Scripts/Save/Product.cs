@@ -79,3 +79,12 @@ public class AppProduct : Product {
     public int Features = 50;
     public int Innovation = 0;
 }
+
+public class PhoneProduct : Product {
+    public string Soc = "None,None,0,0";
+    public string Size = "0,0,0";
+    public string Ram = "0,0,0";
+    public string Storage = "0,0,0";
+    public string Battery = "0,0,0,0";
+    public int Price = 0;
+}

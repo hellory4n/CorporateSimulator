@@ -49,4 +49,5 @@ public class Global : Node2D {
     public static TvProduct TvNewProduct = new TvProduct();
     public static ElectronicsProduct ElectronicsNewProduct = new ElectronicsProduct();
     public static AppProduct AppNewProduct = new AppProduct();
+    public static PhoneProduct PhoneNewProduct = new PhoneProduct();
 }
