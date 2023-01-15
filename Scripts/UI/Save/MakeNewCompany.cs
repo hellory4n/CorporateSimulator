@@ -102,7 +102,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "yourarse":
                 newGame.UnlockedResearch.Add(
-                    new ResearchSave("Sponsorships", 50)
+                    new ResearchSave("4K", 50)
                 );
                 break;
             case "food":
