@@ -88,3 +88,10 @@ public class PhoneProduct : Product {
     public string Battery = "0,0,0,0";
     public int Price = 0;
 }
+
+public class YourArseProduct : Product {
+    public string VideoType = "calling amogus at 3 am gone wrong";
+    public int ProductionTime = 69;
+    public int Script = 69;
+    public int Ads = 100;
+}
