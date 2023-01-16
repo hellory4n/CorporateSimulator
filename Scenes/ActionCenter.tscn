@@ -7,13 +7,13 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
-[ext_resource path="res://Scripts/UI/NewProduct/NewProductOpen.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/UI/Product/ProductOpen.cs" type="Script" id=8]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=4]
-size = 32
+size = 40
 font_data = SubResource( 3 )
 
 [node name="ActionCenter" type="Node2D"]
@@ -161,7 +161,7 @@ text = "Marketing"
 align = 1
 valign = 1
 
-[node name="NewProductOpen" type="TextureButton" parent="."]
+[node name="ProductsOpen" type="TextureButton" parent="."]
 margin_left = 440.0
 margin_top = 35.0
 margin_right = 840.0
@@ -174,13 +174,13 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="NewProductOpen"]
+[node name="Label" type="Label" parent="ProductsOpen"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "New Product"
+text = "Products"
 align = 1
 valign = 1
 autowrap = true
