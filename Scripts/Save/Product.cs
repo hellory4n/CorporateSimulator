@@ -5,6 +5,7 @@ public class Product {
     public int MoneySpent = 0;
     public int MoneyGot = 0;
     public string Type = "product";
+    public string ReleaseDate = "Y69 M12 W4";
 }
 
 public class SpaceProduct : Product {

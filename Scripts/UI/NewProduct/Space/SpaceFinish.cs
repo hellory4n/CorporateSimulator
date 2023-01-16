@@ -8,6 +8,7 @@ public class SpaceFinish : TextureButton {
 
     public void Click() {
         Global.SpaceNewProduct.Type = "rocket";
+        Global.SpaceNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.SpaceNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

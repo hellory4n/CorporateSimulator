@@ -8,6 +8,7 @@ public class MedicalFinish : TextureButton {
 
     public void Click() {
         Global.MedicalNewProduct.Type = "medical";
+        Global.MedicalNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.MedicalNewProduct.MoneySpent;
         Global.Investors += Global.MedicalNewProduct.Marketing;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");

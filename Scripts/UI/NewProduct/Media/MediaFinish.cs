@@ -88,6 +88,7 @@ public class MediaFinish : TextureButton {
         Global.MediaNewProduct.ThemeGenreCombination = thisThemeGenreCombination;
 
         Global.MediaNewProduct.Type = "media";
+        Global.MediaNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.MediaNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

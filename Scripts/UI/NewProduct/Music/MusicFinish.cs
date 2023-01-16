@@ -27,6 +27,7 @@ public class MusicFinish : TextureButton {
             (int)Math.Round((decimal)Global.MusicNewProduct.Instruments/40);
 
         Global.MusicNewProduct.Type = "music";
+        Global.MusicNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.MusicNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

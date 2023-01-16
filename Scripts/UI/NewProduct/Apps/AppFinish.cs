@@ -8,6 +8,7 @@ public class AppFinish : TextureButton {
 
     public void Click() {
         Global.AppNewProduct.Type = "apps";
+        Global.AppNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.AppNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

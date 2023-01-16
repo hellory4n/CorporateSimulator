@@ -88,6 +88,7 @@ public class BookFinish : TextureButton {
         Global.BookNewProduct.ThemeGenreCombination = thisThemeGenreCombination;
 
         Global.BookNewProduct.Type = "book";
+        Global.BookNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.BookNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

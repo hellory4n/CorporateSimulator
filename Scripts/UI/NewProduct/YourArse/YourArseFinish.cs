@@ -8,6 +8,7 @@ public class YourArseFinish : TextureButton {
 
     public void Click() {
         Global.YourArseNewProduct.Type = "yourarse";
+        Global.YourArseNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.YourArseNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

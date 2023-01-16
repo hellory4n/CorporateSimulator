@@ -8,6 +8,7 @@ public class ComputerFinish : TextureButton {
 
     public void Click() {
         Global.ComputerNewProduct.Type = "computer";
+        Global.ComputerNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.ComputerNewProduct.MoneySpent = Global.ComputerNewProduct.Price * 5;
         Global.Money -= Global.ComputerNewProduct.MoneySpent;
 

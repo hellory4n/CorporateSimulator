@@ -8,6 +8,7 @@ public class ElectronicsFinish : TextureButton {
 
     public void Click() {
         Global.ElectronicsNewProduct.Type = "electronics";
+        Global.ElectronicsNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.ElectronicsNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

@@ -8,6 +8,7 @@ public class FoodFinish : TextureButton {
 
     public void Click() {
         Global.FoodNewProduct.Type = "food";
+        Global.FoodNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.FoodNewProduct.MoneySpent;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();
