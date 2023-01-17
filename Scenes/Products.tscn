@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
 [ext_resource path="res://Scripts/UI/Product/ProductList.cs" type="Script" id=8]
-[ext_resource path="res://Assets/NewProduct.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -25,7 +24,7 @@ size = 40
 font_data = SubResource( 3 )
 
 [sub_resource type="DynamicFontData" id=5]
-font_path = "res://Uhh/Ubuntu-Regular.ttf"
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
@@ -60,9 +59,9 @@ text = "Products"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 440.0
+margin_left = 645.0
 margin_top = 575.0
-margin_right = 840.0
+margin_right = 1045.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -82,6 +81,29 @@ text = "OK"
 align = 1
 valign = 1
 
+[node name="NewProduct" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 575.0
+margin_right = 635.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="NewProduct"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 6 )
+text = "New Product"
+align = 1
+valign = 1
+
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_left = 195.0
 margin_top = 149.0
@@ -91,23 +113,7 @@ scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
 margin_right = 880.0
-margin_bottom = 405.0
+margin_bottom = 394.0
 rect_min_size = Vector2( 880, 394 )
 custom_constants/separation = 310
 script = ExtResource( 8 )
-
-[node name="NewProduct" type="TextureButton" parent="ScrollContainer/HBoxContainer"]
-margin_right = 300.0
-margin_bottom = 405.0
-texture_normal = ExtResource( 9 )
-script = ExtResource( 3 )
-
-[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/NewProduct"]
-margin_top = 303.0
-margin_right = 300.0
-margin_bottom = 340.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 6 )
-text = "New Product"
-align = 1
-autowrap = true
