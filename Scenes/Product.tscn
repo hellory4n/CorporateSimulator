@@ -7,14 +7,14 @@
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
-size = 30
+size = 28
 font_data = SubResource( 5 )
 
 [sub_resource type="DynamicFontData" id=7]
 font_path = "res://Uhh/Ubuntu-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=8]
-size = 24
+size = 20
 font_data = SubResource( 7 )
 
 [node name="Control" type="Control"]
@@ -29,22 +29,23 @@ centered = false
 [node name="ProductName" type="Label" parent="."]
 anchor_right = 0.002
 anchor_bottom = 0.011
-margin_top = 138.0
-margin_right = 299.0
-margin_bottom = 172.0
+margin_top = 25.0
+margin_right = 297.44
+margin_bottom = 59.08
 rect_rotation = -0.204876
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "mmmmmmmmmm"
 align = 1
 valign = 1
+clip_text = true
 
 [node name="ProductInfo" type="Label" parent="."]
 anchor_right = 0.002
 anchor_bottom = 0.011
-margin_top = 177.0
-margin_right = 299.0
-margin_bottom = 228.08
+margin_top = 64.0
+margin_right = 297.44
+margin_bottom = 115.08
 rect_rotation = -0.204876
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
@@ -52,3 +53,4 @@ text = "mmmmmmmmmmmmm
 mmmmmmmmmmmmm"
 align = 1
 valign = 1
+autowrap = true

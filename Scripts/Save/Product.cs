@@ -1,6 +1,6 @@
 public class Product {
     public string Name = "ben";
-    public int Rating = 0;
+    public int Rating = 10;
     public int Sales = 0;
     public int MoneySpent = 0;
     public int MoneyGot = 0;

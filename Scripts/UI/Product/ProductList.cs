@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class ProductList : HBoxContainer {
     public override void _Ready() {
@@ -7,14 +8,16 @@ public class ProductList : HBoxContainer {
 
         foreach (var product in Global.Products) {
             ProductItem OK = (ProductItem)yes.Instance();
-            OK.Init(product as Product);
+            // cast doesn't work haha yes
+            OK.Init(JsonConvert.DeserializeObject<Product>(product.ToString()), product);
             AddChild(OK);
         }
         // there's a bug in godot where the last item is out of reach, this hack fixes it
         if (Global.Products.Count > 3) {
             object pain = Global.Products[Global.Products.Count-1];
             ProductItem OK = (ProductItem)yes.Instance();
-            OK.Init((Product)pain);
+            // uhhhhhhhhhhh
+            OK.Init(JsonConvert.DeserializeObject<Product>(pain.ToString()), pain);
             AddChild(OK);
         }
         base._Ready();
