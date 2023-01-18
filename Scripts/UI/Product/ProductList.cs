@@ -13,7 +13,7 @@ public class ProductList : HBoxContainer {
             ProductItem OK = (ProductItem)yes.Instance();
             GD.Print(product.ToString());
             // cast doesn't work haha yes
-            OK.Init(JsonConvert.DeserializeObject<Product>(product.ToString()), product);
+            OK.Init(JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(product)), product);
             AddChild(OK);
         }
         // there's a bug in godot where the last item is out of reach, this hack fixes it
@@ -21,7 +21,7 @@ public class ProductList : HBoxContainer {
             object pain = Global.Products[Global.Products.Count-1];
             ProductItem OK = (ProductItem)yes.Instance();
             // uhhhhhhhhhhh
-            OK.Init(JsonConvert.DeserializeObject<Product>(pain.ToString()), pain);
+            OK.Init(JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(pain)), pain);
             AddChild(OK);
         }
         base._Ready();

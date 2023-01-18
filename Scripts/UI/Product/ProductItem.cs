@@ -14,7 +14,8 @@ public class ProductItem : Control {
     public override void _Ready() {
         if (productProduct.Type == "rocket") {
             // sorry
-            SpaceProduct spaceProduct = JsonConvert.DeserializeObject<SpaceProduct>(objectProduct.ToString());
+            SpaceProduct spaceProduct = JsonConvert.DeserializeObject<SpaceProduct>(
+                JsonConvert.SerializeObject(objectProduct));
             GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
@@ -35,7 +36,9 @@ public class ProductItem : Control {
         }
         if (productProduct.Type == "book") {
             // sorry
-            BookProduct bookProduct = JsonConvert.DeserializeObject<BookProduct>(objectProduct.ToString());
+            GD.Print(objectProduct.ToString());
+            BookProduct bookProduct = JsonConvert.DeserializeObject<BookProduct>(
+                JsonConvert.SerializeObject(objectProduct));
             GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
@@ -51,9 +54,9 @@ public class ProductItem : Control {
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just book stuff
                 "\nTheme: " + bookProduct.Theme + "\nGenre: " + bookProduct.Genre +
-                "Theme/Genre combination: " + bookProduct.ThemeGenreCombination + "/10\nLore: " +
-                bookProduct.Lore + "%\nStorytelling: " + bookProduct.Storytelling + "%\nCharacters: " +
-                bookProduct.Characters + "%";
+                "\nTheme/Genre combination: " + (int)bookProduct.ThemeGenreCombination + "/10\nLore: " +
+                bookProduct.Lore*10 + "%\nStorytelling: " + bookProduct.Storytelling*10 + "%\nCharacters: " +
+                bookProduct.Characters*10 + "%";
         }
     }
 }
