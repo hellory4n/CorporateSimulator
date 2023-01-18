@@ -86,7 +86,7 @@ public class PhoneProduct : Product {
     public string Size = "0,0,0";
     public string Ram = "0,0,0";
     public string Storage = "0,0,0";
-    public string Battery = "0,0,0,0";
+    public string Battery = "0,0,0";
     public int Price = 0;
 }
 
