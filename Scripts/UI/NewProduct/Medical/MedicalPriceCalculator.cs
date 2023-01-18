@@ -23,10 +23,11 @@ public class MedicalPriceCalculator : Label {
         Global.MedicalNewProduct.MoneySpent = Global.MedicalNewProduct.Marketing*2 +
             Global.MedicalNewProduct.Accuracy*200;
 
-        if (hasMagic)
+        if (hasMagic) {
             Global.MedicalNewProduct.MoneySpent += 20000;
             Global.MedicalNewProduct.Accuracy += 50;
             Global.MedicalNewProduct.Rating += 2;
+        }
         if (Global.MedicalNewProduct.Accuracy > 100)
             Global.MedicalNewProduct.Accuracy = 100;
         if (Global.MedicalNewProduct.Rating > 10)

@@ -23,8 +23,10 @@ public class MusicFinish : TextureButton {
         }
 
         // the final rating
-        Global.MusicNewProduct.Rating += (int)Math.Round((decimal)Global.MusicNewProduct.Melody/40) +
-            (int)Math.Round((decimal)Global.MusicNewProduct.Instruments/40);
+        Global.MusicNewProduct.Rating += (int)Math.Round(Math.Round((decimal)Global.MusicNewProduct.Melody/40) +
+            Math.Round((decimal)Global.MusicNewProduct.Instruments/40))+1;
+        
+        Global.MusicNewProduct.Rating /= 2;
 
         Global.MusicNewProduct.Type = "music";
         Global.MusicNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;

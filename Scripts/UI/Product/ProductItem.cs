@@ -58,5 +58,76 @@ public class ProductItem : Control {
                 bookProduct.Lore*10 + "%\nStorytelling: " + bookProduct.Storytelling*10 + "%\nCharacters: " +
                 bookProduct.Characters*10 + "%";
         }
+        if (productProduct.Type == "medical") {
+            // sorry
+            GD.Print(objectProduct.ToString());
+            MedicalProduct medicalProduct = JsonConvert.DeserializeObject<MedicalProduct>(
+                JsonConvert.SerializeObject(objectProduct));
+            GetNode<Label>("ProductName").Text = productProduct.Name;
+            if (productProduct.MoneySpent > productProduct.MoneyGot)
+                GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
+                    productProduct.MoneySpent-productProduct.MoneyGot);
+                else {
+                    GetNode<Label>("ProductInfo").Text = "Profit: $"+String.Format("{0:n0}",
+                        productProduct.MoneyGot-productProduct.MoneySpent);
+                }
+            
+            GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
+                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
+                productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
+                // just medical stuff
+                "\nAccuracy: " + medicalProduct.Accuracy + "%\nMarketing: " + medicalProduct.Marketing +
+                "%";
+        }
+        if (productProduct.Type == "computer") {
+            // sorry
+            GD.Print(objectProduct.ToString());
+            ComputerProduct computerProduct = JsonConvert.DeserializeObject<ComputerProduct>(
+                JsonConvert.SerializeObject(objectProduct));
+            GetNode<Label>("ProductName").Text = productProduct.Name;
+            if (productProduct.MoneySpent > productProduct.MoneyGot)
+                GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
+                    productProduct.MoneySpent-productProduct.MoneyGot);
+                else {
+                    GetNode<Label>("ProductInfo").Text = "Profit: $"+String.Format("{0:n0}",
+                        productProduct.MoneyGot-productProduct.MoneySpent);
+                }
+            
+            GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
+                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
+                productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
+                // just computer stuff
+                "\nPrice: $" + String.Format("{0:n0}", computerProduct.Price) + "\nCPU: " +
+                computerProduct.Cpu.Split(",")[0] + " " + computerProduct.Cpu.Split(",")[1] +
+                "\nGPU: " + computerProduct.Gpu.Split(",")[0] + " " + computerProduct.Gpu
+                .Split(",")[1] + "\nRAM: " + computerProduct.Ram.Split(",")[0] + " GB\nStorage: " +
+                computerProduct.Storage.Split(",")[1] + " GB " + computerProduct.Storage
+                .Split(",")[0] + "\nOS: " + computerProduct.Os.Split(",")[0] + " " + computerProduct
+                .Os.Split(",")[1];
+        }
+        if (productProduct.Type == "music") {
+            // sorry
+            GD.Print(objectProduct.ToString());
+            MusicProduct musicProduct = JsonConvert.DeserializeObject<MusicProduct>(
+                JsonConvert.SerializeObject(objectProduct));
+            GetNode<Label>("ProductName").Text = productProduct.Name;
+            if (productProduct.MoneySpent > productProduct.MoneyGot)
+                GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
+                    productProduct.MoneySpent-productProduct.MoneyGot);
+                else {
+                    GetNode<Label>("ProductInfo").Text = "Profit: $"+String.Format("{0:n0}",
+                        productProduct.MoneyGot-productProduct.MoneySpent);
+                }
+            
+            GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
+                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
+                productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
+                // just music stuff
+                "\nSpeed: " + musicProduct.Speed + "%\nMelody: " + musicProduct.Melody +
+                "%\nInstruments: " + musicProduct.Instruments + "%";
+        }
     }
 }
