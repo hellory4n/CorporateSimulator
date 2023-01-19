@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/Reviews.cs" type="Script" id=3]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
@@ -15,11 +16,32 @@ size = 24
 font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFontData" id=5]
-font_path = "res://Uhh/Ubuntu-Regular.ttf"
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
 size = 24
 font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+font_data = SubResource( 7 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 80
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 24
+font_data = SubResource( 11 )
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -29,6 +51,7 @@ size = 40
 font_data = SubResource( 3 )
 
 [node name="Dialog" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
@@ -57,6 +80,7 @@ text = "review"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
+visible = false
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_left = 205.0
@@ -66,6 +90,158 @@ margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "yeah"
+
+[node name="Review" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 196.0
+margin_top = 149.0
+margin_right = 1085.0
+margin_bottom = 195.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "review reviews"
+align = 1
+
+[node name="Rating1" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 215.0
+margin_top = 218.0
+margin_right = 305.0
+margin_bottom = 309.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "10"
+align = 1
+
+[node name="Reviewer1" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 315.0
+margin_top = 218.0
+margin_right = 775.0
+margin_bottom = 264.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "reviewer"
+
+[node name="Review1" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 315.0
+margin_top = 264.0
+margin_right = 650.0
+margin_bottom = 323.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Never seen something of such quality since Doors Vision"
+autowrap = true
+
+[node name="Rating2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 617.0
+margin_top = 279.0
+margin_right = 707.0
+margin_bottom = 370.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "10"
+align = 1
+
+[node name="Reviewer2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 717.0
+margin_top = 279.0
+margin_right = 1177.0
+margin_bottom = 325.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "reviewer"
+
+[node name="Review2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 717.0
+margin_top = 325.0
+margin_right = 1052.0
+margin_bottom = 384.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Never seen something of such quality since Doors Vision"
+autowrap = true
+
+[node name="Rating3" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 214.0
+margin_top = 365.0
+margin_right = 304.0
+margin_bottom = 456.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "10"
+align = 1
+
+[node name="Reviewer3" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 314.0
+margin_top = 365.0
+margin_right = 774.0
+margin_bottom = 411.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "reviewer"
+
+[node name="Review3" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 314.0
+margin_top = 411.0
+margin_right = 649.0
+margin_bottom = 470.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Never seen something of such quality since Doors Vision"
+autowrap = true
+
+[node name="Rating4" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 604.0
+margin_top = 434.0
+margin_right = 694.0
+margin_bottom = 525.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "10"
+align = 1
+
+[node name="Reviewer4" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 704.0
+margin_top = 434.0
+margin_right = 1164.0
+margin_bottom = 480.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "reviewer"
+
+[node name="Review4" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 704.0
+margin_top = 480.0
+margin_right = 1039.0
+margin_bottom = 539.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Never seen something of such quality since Doors Vision"
+autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
 margin_left = 680.0
