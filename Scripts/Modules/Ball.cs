@@ -11,6 +11,9 @@ public class Ball : Node2D {
             case "news":
                 texturePath = "res://Assets/NewsBall.png";
                 break;
+            case "review":
+                texturePath = "res://Assets/ReviewsBall.png";
+                break;
             // TODO: add other ball types
         }
         // What scene the balls should open

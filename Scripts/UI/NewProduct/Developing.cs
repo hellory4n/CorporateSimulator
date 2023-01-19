@@ -60,6 +60,12 @@ public class Developing : Label {
             Global.PhoneNewProduct = new PhoneProduct();
             Global.YourArseNewProduct = new YourArseProduct();
 
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("review", "Reviews");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+
             Global.ResearchPoints += 10;
             Global.Developing = null;
             QueueFree();
