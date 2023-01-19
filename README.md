@@ -2,7 +2,7 @@
 
 It's like Game Dev Tycoon, but instead of making games and getting money to make better games, you do greedy evil company things until you take over the world
 
-planned release date: sometime in early 2023
+planned release date: march 2023, hopefully
 
 ## How to run this crap
 
