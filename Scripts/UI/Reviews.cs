@@ -1,11 +1,14 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class Reviews : Node2D {
     public override void _Ready() {
         // so the game doesn't explode
         if (Global.Products.Count > 0) {
-            Product garbage = (Product)Global.Products[Global.Products.Count-1];
+            // sorry
+            Product garbage = JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(
+                Global.Products[Global.Products.Count-1]));
             GetNode<Label>("Title").Text = garbage.Name + " reviews";
             GetNode<Label>("Review").Text = garbage.Name + " reviews";
             string[] reviews = {"m", "p", "r", "h"};

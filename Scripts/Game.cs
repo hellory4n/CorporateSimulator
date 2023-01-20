@@ -25,6 +25,13 @@ public class Game : Node2D {
             GetTree().Root.CallDeferred("add_child", OK);
         }
 
+        if (GetNodeOrNull("/root/Events") == null) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Events.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            // if i do it immediately godot will complain that it's busy setting up stuff
+            GetTree().Root.CallDeferred("add_child", OK);
+        }
+
         // load things
         // TODO: load more things
         File file = new File(); // dictionary

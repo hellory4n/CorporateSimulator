@@ -22,30 +22,7 @@ public class Developing : Label {
         }
 
         if (Global.DevelopingProgress == 100) {
-            if (Global.Developing is SpaceProduct)
-                Global.Products.Add(Global.SpaceNewProduct);
-            if (Global.Developing is BookProduct)
-                Global.Products.Add(Global.BookNewProduct);
-            if (Global.Developing is MedicalProduct)
-                Global.Products.Add(Global.MedicalNewProduct);
-            if (Global.Developing is ComputerProduct)
-                Global.Products.Add(Global.ComputerNewProduct);
-            if (Global.Developing is MusicProduct)
-                Global.Products.Add(Global.MusicNewProduct);
-            if (Global.Developing is MediaProduct)
-                Global.Products.Add(Global.MediaNewProduct);
-            if (Global.Developing is FoodProduct)
-                Global.Products.Add(Global.FoodNewProduct);
-            if (Global.Developing is TvProduct)
-                Global.Products.Add(Global.TvNewProduct);
-            if (Global.Developing is ElectronicsProduct)
-                Global.Products.Add(Global.ElectronicsNewProduct);
-            if (Global.Developing is AppProduct)
-                Global.Products.Add(Global.AppNewProduct);
-            if (Global.Developing is PhoneProduct)
-                Global.Products.Add(Global.PhoneNewProduct);
-            if (Global.Developing is YourArseProduct)
-                Global.Products.Add(Global.YourArseNewProduct);
+            Global.Products.Add(Global.Developing);
 
             Global.SpaceNewProduct = new SpaceProduct();
             Global.BookNewProduct = new BookProduct();

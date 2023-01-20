@@ -26,7 +26,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just space stuff
@@ -49,7 +49,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just book stuff
@@ -73,7 +73,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just medical stuff
@@ -95,7 +95,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just computer stuff
@@ -122,7 +122,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just music stuff
@@ -144,7 +144,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just media stuff
@@ -168,7 +168,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just food stuff
@@ -190,7 +190,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just tv stuff
@@ -212,7 +212,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just toaster stuff
@@ -234,7 +234,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just app stuff
@@ -256,7 +256,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just computer stuff
@@ -281,7 +281,7 @@ public class ProductItem : Control {
                 }
             
             GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
-                productProduct.MoneyGot) + "\nSales: $" + String.Format("{0:n0}", productProduct.Sales) +
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just yourarse stuff
