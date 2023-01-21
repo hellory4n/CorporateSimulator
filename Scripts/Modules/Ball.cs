@@ -51,6 +51,10 @@ public class Ball : Node2D {
         var yes = (PackedScene)ResourceLoader.Load(scene);
         Node2D OK = (Node2D)yes.Instance();
         GetTree().Root.AddChild(OK);
+
+        yes = (PackedScene)ResourceLoader.Load("res://Scenes/PauseThingy.tscn");
+        OK = (Node2D)yes.Instance();
+        GetTree().Root.AddChild(OK);
         QueueFree();
     }
 }
