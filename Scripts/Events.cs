@@ -29,7 +29,7 @@ public class Events : Node2D {
             } else if (garbage is SpaceProduct) {
                 price = 0; // space companies rely on investors
             } else {
-                price = garbage.Rating*10;
+                price = garbage.Rating*5;
             }
 
             saleRate -= Global.Reputation/100;
@@ -42,7 +42,7 @@ public class Events : Node2D {
             if (Engine.GetIdleFrames() % (ulong)saleRate*60 == 0 && Global.PausedTime == false) {
                 garbage.Sales += 100;
                 garbage.MoneyGot += price*100;
-                Global.Money += (int)garbage.MoneyGot;
+                Global.Money += price*100;
                 Global.Products[Global.Products.Count-1] = (object)garbage;
             }
         }
