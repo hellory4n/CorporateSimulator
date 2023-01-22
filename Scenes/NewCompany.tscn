@@ -185,5 +185,5 @@ custom_fonts/font = SubResource( 12 )
 custom_styles/focus = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 align = 1
-placeholder_text = "write your name here"
+placeholder_text = "write the ceo name here"
 caret_blink = true

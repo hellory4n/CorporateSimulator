@@ -26,6 +26,14 @@ public class AppTypeList : VBoxContainer {
         AddChild(OK);
 
         OK = (AppTypeButton)yes.Instance();
+        OK.Init("Art");
+        AddChild(OK);
+
+        OK = (AppTypeButton)yes.Instance();
+        OK.Init("Finance");
+        AddChild(OK);
+
+        OK = (AppTypeButton)yes.Instance();
         OK.Init("Dating");
         AddChild(OK);
 
