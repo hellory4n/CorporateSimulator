@@ -92,12 +92,6 @@ public class Game : Node2D {
                 Global.Investors += Global.MarketingBudget/1000;
             }
             if (Global.Week > 4) {
-                Global.Month++;
-                Global.Money += Global.InvestorPayment;
-                Global.Money -= Global.Taxes; // taxes :(
-                Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
-                Global.Week = 1;
-
                 // calculate the salaries
                 foreach (var employee in Global.Employees) {
                     Global.Salaries += employee.Salary;
@@ -110,9 +104,17 @@ public class Game : Node2D {
                     $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
                     $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
                     $"-${String.Format("{0:n0}", Global.MarketingBudget)} marketing\n" +
-                    $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors";
+                    $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors\n" +
+                    $"+${String.Format("{0:n0}", Global.MonthlySales)} product sales";
                 
                 Global.Salaries = 0;
+                Global.MonthlySales = 0;
+                
+                Global.Month++;
+                Global.Money += Global.InvestorPayment;
+                Global.Money -= Global.Taxes; // taxes :(
+                Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
+                Global.Week = 1;
             }
             if (Global.Month > 12) {
                 Global.Year++;
