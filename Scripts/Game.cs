@@ -63,6 +63,7 @@ public class Game : Node2D {
             Global.Developing = save.Developing;
             Global.DevelopingProgress = save.DevelopingProgress;
             Global.DevelopingName = save.DevelopingName;
+            Global.MarketingBudget = save.MarketingBudget;
             #endregion
             file.Close();
             // developing thing
@@ -88,11 +89,13 @@ public class Game : Node2D {
                 Global.Week++;
                 Global.WeeksWithoutPayingInvestors++;
                 Global.WeekCounterThing = 0;
+                Global.Investors += Global.MarketingBudget/1000;
             }
             if (Global.Week > 4) {
                 Global.Month++;
                 Global.Money += Global.InvestorPayment;
                 Global.Money -= Global.Taxes; // taxes :(
+                Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
                 Global.Week = 1;
 
                 // calculate the salaries
@@ -103,8 +106,10 @@ public class Game : Node2D {
 
                 // do the monthly money thing
                 Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
-                monthlyMoneyThing.Text = $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
+                monthlyMoneyThing.Text = $"Y{Global.Year} M{Global.Month}:\n" +
+                    $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
                     $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
+                    $"-${String.Format("{0:n0}", Global.MarketingBudget)} marketing\n" +
                     $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors";
                 
                 Global.Salaries = 0;

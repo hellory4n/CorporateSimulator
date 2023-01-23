@@ -51,4 +51,5 @@ public class Global : Node2D {
     public static AppProduct AppNewProduct = new AppProduct();
     public static PhoneProduct PhoneNewProduct = new PhoneProduct();
     public static YourArseProduct YourArseNewProduct = new YourArseProduct();
+    public static int MarketingBudget = 0;
 }

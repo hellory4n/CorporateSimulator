@@ -8,7 +8,7 @@ public class MarketingSlider : HSlider {
         else
             GetNode<Label>("Label").Text = "Budget: $" + Value;
         
-        
+        Global.MarketingBudget = (int)Value*1000;
         base._Process(delta);
     }
 }

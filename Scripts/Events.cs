@@ -34,7 +34,7 @@ public class Events : Node2D {
 
             saleRate -= Global.Reputation/100;
             saleRate -= Global.Investors/100000;
-            // TODO: add marketing budget
+            saleRate -= Global.MarketingBudget/10000;
 
             if (saleRate < 0)
                 saleRate = 0.1;
