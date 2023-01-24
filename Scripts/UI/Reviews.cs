@@ -68,6 +68,11 @@ public class Reviews : Node2D {
                 GetNode<Label>("Reviewer"+i).Text = reviewers[i-1];
                 GetNode<Label>("Review"+i).Text = reviews[i-1];
             }
+
+            if (garbage.Rating > 5)
+                Global.Reputation += garbage.Rating-5;
+            else
+                Global.Reputation -= 6-garbage.Rating;
         } else {
             QueueFree();
         }
