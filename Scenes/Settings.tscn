@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Settings/AutosaveToggle.cs" type="Script" id=8]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -111,5 +112,28 @@ margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
 text = "Music: ON"
+align = 1
+valign = 1
+
+[node name="AutosaveToggle" type="TextureButton" parent="."]
+margin_left = 645.0
+margin_top = 164.0
+margin_right = 1045.0
+margin_bottom = 239.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="AutosaveToggle"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Autosave: ON"
 align = 1
 valign = 1

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Save/Autosave.cs" type="Script" id=1]
+
+[node name="Autosave" type="Timer"]
+wait_time = 10.0
+autostart = true
+script = ExtResource( 1 )
