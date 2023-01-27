@@ -68,6 +68,13 @@ public class Events : Node2D {
             GetTree().Root.AddChild(OK);
         }
         #endregion
+        #region No reputation
+        if (Global.Reputation < 1 && GetNodeOrNull<Node2D>("/root/NoReputation") == null && Global.DebtOno < 3) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NoReputation.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            GetTree().Root.AddChild(OK);
+        }
+        #endregion
         base._Process(delta);
     }
 }
