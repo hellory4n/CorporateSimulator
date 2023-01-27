@@ -48,6 +48,26 @@ public class Events : Node2D {
             }
         }
         #endregion
+        #region Debt
+        if (Global.Money < 0 && Global.DebtOno == 0)
+            Global.DebtOno = 1;
+
+        if (Global.DebtOno == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("debt", "Debt");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.DebtOno = 2;
+        }
+        #endregion
+        #region Bankrupt
+        if (Global.Money < 50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Bankrupt.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            GetTree().Root.AddChild(OK);
+        }
+        #endregion
         base._Process(delta);
     }
 }

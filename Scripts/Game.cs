@@ -80,8 +80,11 @@ public class Game : Node2D {
                 Label OK = (Label)yes.Instance();
                 OK.RectPosition = new Vector2(-25, 286);
                 GetTree().Root.AddChild(OK);
-                
             }
+
+            // so we only get the debt dialog once
+            if (Global.Money < 0)
+                Global.DebtOno = 2;
         }
     }
 

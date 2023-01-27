@@ -53,4 +53,8 @@ public class Global : Node2D {
     public static YourArseProduct YourArseNewProduct = new YourArseProduct();
     public static int MarketingBudget = 0;
     public static int MonthlySales = 0;
+    /*0 = fine
+    1 = ono dialog
+    2 = ono dialog already appeared*/
+    public static int DebtOno = 0;
 }

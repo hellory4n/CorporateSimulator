@@ -1,0 +1,113 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/UI/Bankrupt/BankruptNew.cs" type="Script" id=1]
+[ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/Bankrupt/BankruptText.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/UI/Bankrupt/BankruptLoad.cs" type="Script" id=4]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[node name="Bankrupt" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 2 )
+offset = Vector2( 909, 252 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 70.0
+margin_right = 1280.0
+margin_bottom = 143.0
+rect_rotation = -0.204876
+custom_colors/font_color = Color( 1, 0.282353, 0.396078, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Breaking News"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 140.0
+margin_right = 1140.0
+margin_bottom = 720.0
+custom_fonts/font = SubResource( 6 )
+text = "It has been confirmed that {company name}, who was experiencing financial issues lately, has gone bankrupt. Dosney Co has purchased the remains of the company."
+align = 1
+valign = 1
+autowrap = true
+script = ExtResource( 3 )
+
+[node name="Load" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 575.0
+margin_right = 635.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Load"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Load Company"
+align = 1
+valign = 1
+
+[node name="New" type="TextureButton" parent="."]
+margin_left = 645.0
+margin_top = 575.0
+margin_right = 1045.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="New"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "New Company"
+align = 1
+valign = 1

@@ -141,6 +141,7 @@ public class MakeNewCompany : TextureButton {
         Node2D OK = (Node2D)yes.Instance();
         OK.ZIndex = 100;
         GetTree().Root.AddChild(OK);
+        Global.DebtOno = 0;
 
         GetParent().QueueFree();
     }
