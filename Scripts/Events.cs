@@ -62,7 +62,7 @@ public class Events : Node2D {
         }
         #endregion
         #region Bankrupt
-        if (Global.Money < 50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
+        if (Global.Money < -50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Bankrupt.tscn");
             Node2D OK = (Node2D)yes.Instance();
             GetTree().Root.AddChild(OK);
@@ -73,6 +73,16 @@ public class Events : Node2D {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NoReputation.tscn");
             Node2D OK = (Node2D)yes.Instance();
             GetTree().Root.AddChild(OK);
+        }
+        #endregion
+        #region Politics lol
+        if (Global.Year % 4 == 0 && Global.Month == 1 && Global.Week == 1 && !Global.PoliticsAlreadyAppeared) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "PoliticsLol");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.PoliticsAlreadyAppeared = true;
         }
         #endregion
         base._Process(delta);

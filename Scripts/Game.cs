@@ -101,6 +101,8 @@ public class Game : Node2D {
                 Global.WeeksWithoutPayingInvestors++;
                 Global.WeekCounterThing = 0;
                 Global.Investors += Global.MarketingBudget/1000;
+                // yes
+                Global.PoliticsAlreadyAppeared = false;
             }
             if (Global.Week > 4) {
                 // calculate the salaries
