@@ -16,20 +16,18 @@ public class Events : Node2D {
                 price = shjksj.Price;
             } else if (garbage is TvProduct) {
                 TvProduct hjskosp = (TvProduct)garbage;
-                price = hjskosp.Ads;
+                price = hjskosp.Ads*2;
             } else if (garbage is AppProduct) {
                 AppProduct jskiops = (AppProduct)garbage;
-                price = jskiops.Algorithm;
+                price = jskiops.Algorithm*2;
             } else if (garbage is PhoneProduct) {
                 PhoneProduct hjsksjk = (PhoneProduct)garbage;
                 price = hjsksjk.Price;
             } else if (garbage is YourArseProduct) {
                 YourArseProduct sjksmg = (YourArseProduct)garbage;
-                price = sjksmg.Ads;
-            } else if (garbage is SpaceProduct) {
-                price = 0; // space companies rely on investors
+                price = sjksmg.Ads*2;
             } else {
-                price = garbage.Rating*10;
+                price = garbage.Rating*20;
             }
 
             saleRate -= Global.Reputation/100;
