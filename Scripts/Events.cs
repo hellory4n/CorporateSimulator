@@ -18,18 +18,18 @@ public class Events : Node2D {
                 price = shjksj.Price;
             } else if (garbage is TvProduct) {
                 TvProduct hjskosp = (TvProduct)garbage;
-                price = hjskosp.Ads*2;
+                price = hjskosp.Ads*5;
             } else if (garbage is AppProduct) {
                 AppProduct jskiops = (AppProduct)garbage;
-                price = jskiops.Algorithm*2;
+                price = jskiops.Algorithm*5;
             } else if (garbage is PhoneProduct) {
                 PhoneProduct hjsksjk = (PhoneProduct)garbage;
                 price = hjsksjk.Price;
             } else if (garbage is YourArseProduct) {
                 YourArseProduct sjksmg = (YourArseProduct)garbage;
-                price = sjksmg.Ads*2;
+                price = sjksmg.Ads*5;
             } else {
-                price = garbage.Rating*20;
+                price = garbage.Rating*50;
             }
 
             saleRate -= Global.Reputation/100;
@@ -96,7 +96,7 @@ public class Events : Node2D {
         }
         #endregion
         #region A/C
-        if (Global.Year == 1 && random.Next(0,10000) == 69 && !Global.Ac && !Global.PausedTime) {
+        if (Global.Year == 1 && random.Next(0,50000) == 69 && !Global.Ac && !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("email", "AirConditioner");
