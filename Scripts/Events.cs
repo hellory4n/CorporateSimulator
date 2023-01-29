@@ -2,6 +2,8 @@ using Godot;
 using System;
 
 public class Events : Node2D {
+    Random random = new Random();
+
     public override void _Process(float delta) {
         #region Sales
         // we can't sell void
@@ -91,6 +93,16 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.ClimateChange = true;
+        }
+        #endregion
+        #region A/C
+        if (Global.Year == 1 && random.Next(0,10000) == 69 && !Global.Ac && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "AirConditioner");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Ac = true;
         }
         #endregion
         base._Process(delta);

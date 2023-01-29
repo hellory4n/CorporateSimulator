@@ -59,4 +59,5 @@ public class Global : Node2D {
     public static int DebtOno = 0;
     public static bool PoliticsAlreadyAppeared = false;
     public static bool ClimateChange = false;
+    public static bool Ac = false;
 }
