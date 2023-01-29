@@ -158,7 +158,7 @@ public class Game : Node2D {
         // avoid interesting occasions
         if (Global.Reputation > 100)
             Global.Reputation = 100;
-        // TODO: show a game over screen when the reputation is 0
+        
         if (Global.Investors < 0)
             Global.Investors = 0;
         

@@ -58,4 +58,5 @@ public class Global : Node2D {
     2 = ono dialog already appeared*/
     public static int DebtOno = 0;
     public static bool PoliticsAlreadyAppeared = false;
+    public static bool ClimateChange = false;
 }

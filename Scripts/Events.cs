@@ -85,6 +85,16 @@ public class Events : Node2D {
             Global.PoliticsAlreadyAppeared = true;
         }
         #endregion
+        #region Climate change
+        if (Global.Year == 3 && Global.Month == 3 && Global.Week == 3 && !Global.ClimateChange) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "ClimateChange");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.ClimateChange = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

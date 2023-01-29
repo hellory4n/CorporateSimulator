@@ -88,9 +88,9 @@ custom_fonts/font = SubResource( 6 )
 text = "cfgyuiojhdfxriolkjhftyuiopöliufrytguiloluytfretyjukilopoiuyyui"
 
 [node name="SavesExit" type="TextureButton" parent="."]
-margin_left = 680.0
+margin_left = 440.0
 margin_top = 575.0
-margin_right = 1080.0
+margin_right = 840.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
