@@ -85,6 +85,9 @@ public class Game : Node2D {
             // so we only get the debt dialog once
             if (Global.Money < 0)
                 Global.DebtOno = 2;
+            // yeah
+            if (Global.Money > 10000000)
+                Global.UnlockMarketing1 = true;
         }
     }
 

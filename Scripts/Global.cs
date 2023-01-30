@@ -61,4 +61,5 @@ public class Global : Node2D {
     public static bool ClimateChange = false;
     public static bool Ac = false;
     public static bool LowReputationScam = false;
+    public static bool UnlockMarketing1 = false;
 }

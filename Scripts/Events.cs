@@ -18,26 +18,26 @@ public class Events : Node2D {
                 price = shjksj.Price;
             } else if (garbage is TvProduct) {
                 TvProduct hjskosp = (TvProduct)garbage;
-                price = hjskosp.Ads*5;
+                price = hjskosp.Ads*10;
             } else if (garbage is AppProduct) {
                 AppProduct jskiops = (AppProduct)garbage;
-                price = jskiops.Algorithm*5;
+                price = jskiops.Algorithm*10;
             } else if (garbage is PhoneProduct) {
                 PhoneProduct hjsksjk = (PhoneProduct)garbage;
                 price = hjsksjk.Price;
             } else if (garbage is YourArseProduct) {
                 YourArseProduct sjksmg = (YourArseProduct)garbage;
-                price = sjksmg.Ads*5;
+                price = sjksmg.Ads*10;
             } else {
-                price = garbage.Rating*50;
+                price = garbage.Rating*100;
             }
 
             saleRate -= Global.Reputation/100;
             saleRate -= Global.Investors/100000;
-            saleRate -= Global.MarketingBudget/10000;
+            saleRate -= Global.MarketingBudget/50000;
 
             if (saleRate < 0)
-                saleRate = 0.1;
+                saleRate = 1;
 
             if (Engine.GetIdleFrames() % (ulong)saleRate*60 == 0 && Global.PausedTime == false) {
                 garbage.Sales += 100;
@@ -113,6 +113,16 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.LowReputationScam = true;
+        }
+        #endregion
+        #region $1M marketing unlock
+        if (Global.Money > 10000000 && !Global.UnlockMarketing1 && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Marketing1");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockMarketing1 = true;
         }
         #endregion
         base._Process(delta);
