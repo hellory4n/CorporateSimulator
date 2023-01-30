@@ -3,6 +3,8 @@ using System;
 using Newtonsoft.Json;
 
 public class Reviews : Node2D {
+    Random soRandom = new Random();
+
     public override void _Ready() {
         // so the game doesn't explode
         if (Global.Products.Count > 0) {
@@ -76,8 +78,14 @@ public class Reviews : Node2D {
             
             // release dates
             dynamic uh = Global.Products[Global.Products.Count-1];
-            uh.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
+            uh.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;            
+
+            // money money money
+            if (soRandom.Next(0,4) == 0)
+                uh.Viral = true;
+            
             Global.Products[Global.Products.Count-1] = (object)uh;
+            Global.ViralThingy = false;
         } else {
             QueueFree();
         }

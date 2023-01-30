@@ -32,6 +32,9 @@ public class Events : Node2D {
                 price = garbage.Rating*100;
             }
 
+            if ((bool)garbage.Viral)
+                price *= 10;
+
             saleRate -= Global.Reputation/100;
             saleRate -= Global.Investors/100000;
             saleRate -= Global.MarketingBudget/50000;
@@ -123,6 +126,19 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.UnlockMarketing1 = true;
+        }
+        #endregion
+        #region Viral
+        if (Global.Products.Count > 0) {
+            dynamic u = Global.Products[Global.Products.Count-1];
+            if ((bool)u.Viral && !Global.ViralThingy && !Global.PausedTime) {
+                var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+                Ball OK = (Ball)yes.Instance();
+                OK.Init("news", "Viral");
+                OK.ZIndex = 100;
+                GetTree().Root.AddChild(OK);
+                Global.ViralThingy = true;
+            }
         }
         #endregion
         base._Process(delta);
