@@ -73,6 +73,11 @@ public class Reviews : Node2D {
                 Global.Reputation += garbage.Rating-5;
             else
                 Global.Reputation -= 6-garbage.Rating;
+            
+            // release dates
+            dynamic uh = Global.Products[Global.Products.Count-1];
+            uh.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
+            Global.Products[Global.Products.Count-1] = (object)uh;
         } else {
             QueueFree();
         }
