@@ -105,6 +105,16 @@ public class Events : Node2D {
             Global.Ac = true;
         }
         #endregion
+        #region Low reputation scam
+        if (Global.Reputation < 25 && !Global.LowReputationScam && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "LowReputation");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.LowReputationScam = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
