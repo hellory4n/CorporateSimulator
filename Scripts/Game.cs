@@ -88,6 +88,8 @@ public class Game : Node2D {
             // yeah
             if (Global.Money > 10000000)
                 Global.UnlockMarketing1 = true;
+            if (Global.Money > 50000000)
+                Global.UnlockMarketing2 = true;
         }
     }
 

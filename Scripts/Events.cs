@@ -39,10 +39,16 @@ public class Events : Node2D {
             saleRate -= Global.Investors/100000;
             saleRate -= Global.MarketingBudget/50000;
 
-            if (saleRate < 0)
+            if (saleRate < 1)
                 saleRate = 1;
 
             if (Engine.GetIdleFrames() % (ulong)saleRate*60 == 0 && Global.PausedTime == false) {
+                // more stuff to break the game
+                foreach (var item in Global.Researched) {
+                    if (item.Name == "Overpriced products")
+                        price *= 5;
+                }
+
                 garbage.Sales += 100;
                 garbage.MoneyGot += price*100;
                 Global.Money += price*100;
@@ -149,6 +155,17 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.NoEntiendoScam = true;
+        }
+        #endregion
+        #region $10M marketing unlock
+        if (Global.Money > 50000000 && !Global.UnlockMarketing2 && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Marketing2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Overpriced products", 75));
+            Global.UnlockMarketing2 = true;
         }
         #endregion
         base._Process(delta);

@@ -6,6 +6,8 @@ public class MarketingSlider : HSlider {
         Value = Global.MarketingBudget;
         if (Global.Money > 10000000)
             MaxValue = 1000;
+        if (Global.Money > 50000000)
+            MaxValue = 2500;
         base._Ready();
     }
 
