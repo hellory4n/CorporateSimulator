@@ -141,6 +141,16 @@ public class Events : Node2D {
             }
         }
         #endregion
+        #region No entiendo scam
+        if (Global.Year==1 && Global.Month==6 && Global.Week==2 && !Global.NoEntiendoScam && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "NoEntiendo");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NoEntiendoScam = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
