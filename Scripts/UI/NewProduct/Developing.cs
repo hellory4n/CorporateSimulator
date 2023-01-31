@@ -43,7 +43,7 @@ public class Developing : Label {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
 
-            Global.ResearchPoints += 10;
+            Global.ResearchPoints += 10 * Global.Year;
             Global.Developing = null;
             QueueFree();
             Global.DevelopingProgress = 0;
