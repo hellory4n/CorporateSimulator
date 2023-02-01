@@ -180,6 +180,17 @@ public class Events : Node2D {
         if (Global.Month==7)
             Global.Lottery = false;
         #endregion
+        #region SpaceZ launches 1 billion satellites
+        if (Global.Year==1 && Global.Month==12 && Global.Week==1 && !Global.SpacezSatellites &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/SpacezSatellites");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpacezSatellites = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
