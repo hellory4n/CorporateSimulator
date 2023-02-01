@@ -168,6 +168,18 @@ public class Events : Node2D {
             Global.UnlockMarketing2 = true;
         }
         #endregion
+        #region Lottery
+        if (Global.Month==6 && Global.Week==2 && !Global.Lottery && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "Lottery");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Lottery = true;
+        }
+        if (Global.Month==7)
+            Global.Lottery = false;
+        #endregion
         base._Process(delta);
     }
 }

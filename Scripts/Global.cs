@@ -65,4 +65,5 @@ public class Global : Node2D {
     public static bool ViralThingy = false;
     public static bool NoEntiendoScam = false;
     public static bool UnlockMarketing2 = false;
+    public static bool Lottery = false;
 }
