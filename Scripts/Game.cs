@@ -97,6 +97,10 @@ public class Game : Node2D {
         if (Input.IsPhysicalKeyPressed((int)Godot.KeyList.F11))
             OS.WindowFullscreen = !OS.WindowFullscreen;
 
+        if (Input.IsPhysicalKeyPressed((int)Godot.KeyList.Control) &&
+        Input.IsPhysicalKeyPressed((int)Godot.KeyList.S))
+            Savior.SaveGame(Global.SaveFile);
+
         Global.WeekCounterThing += 1f * delta;
 
         // calculate time stuff
