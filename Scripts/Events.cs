@@ -213,6 +213,17 @@ public class Events : Node2D {
             Global.NoseLunarPissProject1 = true;
         }
         #endregion
+        #region NOSE piss rocket explodes
+        if (Global.Year==2 && Global.Month==8 && Global.Week==1 && !Global.NoseLunarPissProject2 &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/NoseLunarPissProject2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NoseLunarPissProject2 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
