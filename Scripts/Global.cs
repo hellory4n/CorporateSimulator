@@ -67,4 +67,5 @@ public class Global : Node2D {
     public static bool UnlockMarketing2 = false;
     public static bool Lottery = false;
     public static bool SpacezSatellites = false;
+    public static bool SpaceZLunarPissProject1 =false;
 }
