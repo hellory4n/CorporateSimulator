@@ -70,4 +70,6 @@ public class Global : Node2D {
     public static bool SpaceZLunarPissProject1 = false;
     public static bool NoseLunarPissProject1 = false;
     public static bool NoseLunarPissProject2 = false;
+    public static bool SpacezPissOnTheMoon = false;
+    public static bool NosePissOnTheMoon = false;
 }

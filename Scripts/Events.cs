@@ -224,6 +224,28 @@ public class Events : Node2D {
             Global.NoseLunarPissProject2 = true;
         }
         #endregion
+        #region SpaceZ launches piss rocket
+        if (Global.Year==3 && Global.Month==1 && Global.Week==1 && !Global.SpacezPissOnTheMoon &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/SpacezLunarPissLaunch");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpacezPissOnTheMoon = true;
+        }
+        #endregion
+        #region NOSE launches piss rocket
+        if (Global.Year==3 && Global.Month==2 && Global.Week==4 && !Global.NosePissOnTheMoon &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/NoseLunarPissLaunch");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NosePissOnTheMoon = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
