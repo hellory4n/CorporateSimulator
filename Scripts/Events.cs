@@ -246,6 +246,28 @@ public class Events : Node2D {
             Global.NosePissOnTheMoon = true;
         }
         #endregion
+        #region Epic Galaxies hotel
+        if (Global.Year==3 && Global.Month==11 && Global.Week==1 && !Global.EpicGalaxiesHotel &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/EpicGalaxiesHotel");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.EpicGalaxiesHotel = true;
+        }
+        #endregion
+        #region Epic Galaxies hotel
+        if (Global.Year==4 && Global.Month==1 && Global.Week==1 && !Global.SpacezMarsLanding &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/SpacezMarsLanding");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpacezMarsLanding = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
