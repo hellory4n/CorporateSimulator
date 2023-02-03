@@ -75,4 +75,5 @@ public class Global : Node2D {
     public static bool EpicGalaxiesHotel = false;
     public static bool SpacezMarsLanding = false;
     public static bool NoseMarsLanding = false;
+    public static bool EarthOrbitTrash = false;
 }

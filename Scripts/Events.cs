@@ -279,6 +279,17 @@ public class Events : Node2D {
             Global.NoseMarsLanding = true;
         }
         #endregion
+        #region earth orbit trash
+        if (Global.Year==4 && Global.Month==12 && Global.Week==1 && !Global.EarthOrbitTrash &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/EarthOrbitTrash");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.EarthOrbitTrash = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
