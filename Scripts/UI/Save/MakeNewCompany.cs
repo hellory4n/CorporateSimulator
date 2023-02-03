@@ -35,11 +35,8 @@ public class MakeNewCompany : TextureButton {
                     new ResearchSave("Satellites", 50),
                     new ResearchSave("People in space", 100),
                     new ResearchSave("Space station", 250),
-                    new ResearchSave("Go to other planets", 1000),
-                    new ResearchSave("Terraforming", 5000),
-                    new ResearchSave("Rocket booster V1", 500),
-                    new ResearchSave("Rocket booster V2", 1000),
-                    new ResearchSave("Rocket booster V3", 2000)
+                    new ResearchSave("Go to other planets", 500),
+                    new ResearchSave("Terraforming", 1000),
                 });
                 break;
             case "books":

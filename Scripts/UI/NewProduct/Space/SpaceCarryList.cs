@@ -21,7 +21,7 @@ public class SpaceCarryList : VBoxContainer {
                     OK.Init("Satellites");
                     AddChild(OK);
                     break;
-                case "People":
+                case "People in space":
                     OK = (SpaceCarryButton)yes.Instance();
                     OK.Init("People");
                     AddChild(OK);
@@ -34,6 +34,11 @@ public class SpaceCarryList : VBoxContainer {
                 case "Terraforming":
                     OK = (SpaceCarryButton)yes.Instance();
                     OK.Init("Terraforming stuff");
+                    AddChild(OK);
+                    break;
+                case "Colonization":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Colonizer 5000");
                     AddChild(OK);
                     break;
             }

@@ -301,6 +301,18 @@ public class Events : Node2D {
             Global.EarthOrbitTrash2 = true;
         }
         #endregion
+        #region unlock space colonization
+        if (Global.Year==3 && Global.Month==5 && Global.Week==1 && !Global.UnlockSpaceColonization &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/SpaceColonization");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Colonization", 550));
+            Global.UnlockSpaceColonization = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
