@@ -257,7 +257,7 @@ public class Events : Node2D {
             Global.EpicGalaxiesHotel = true;
         }
         #endregion
-        #region Epic Galaxies hotel
+        #region SpaceZ mars landing
         if (Global.Year==4 && Global.Month==1 && Global.Week==1 && !Global.SpacezMarsLanding &&
         !Global.PausedTime && Global.Industries[0]=="space") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
@@ -266,6 +266,17 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.SpacezMarsLanding = true;
+        }
+        #endregion
+        #region NOSE mars landing
+        if (Global.Year==4 && Global.Month==7 && Global.Week==1 && !Global.NoseMarsLanding &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/NoseMarsLanding");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NoseMarsLanding = true;
         }
         #endregion
         base._Process(delta);

@@ -61,9 +61,11 @@ public class Ball : Node2D {
         Node2D OK = (Node2D)yes.Instance();
         GetTree().Root.AddChild(OK);
 
-        yes = (PackedScene)ResourceLoader.Load("res://Scenes/PauseThingy.tscn");
-        OK = (Node2D)yes.Instance();
-        GetTree().Root.AddChild(OK);
+        if (GetNodeOrNull("/root/PauseThingy") == null) {
+            yes = (PackedScene)ResourceLoader.Load("res://Scenes/PauseThingy.tscn");
+            OK = (Node2D)yes.Instance();
+            GetTree().Root.AddChild(OK);
+        }
         QueueFree();
     }
 }
