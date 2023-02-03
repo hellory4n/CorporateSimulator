@@ -65,13 +65,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Epic Galaxies has released a space hotel! There, you can experience many fun feelings, such as:
-- jumping when there's no gravity
-- pissing in space
-- very cold
-- sadness
-- regret
-- going bankrupt as you need to pay $9,999 per day to be there"
+text = "A company got 1 billion dollars from donations and used that money to clean earth's orbit, which is great, as there is now way more space for trash!"
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]

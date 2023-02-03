@@ -290,6 +290,17 @@ public class Events : Node2D {
             Global.EarthOrbitTrash = true;
         }
         #endregion
+        #region earth orbit trash 2: 2 earth 2 trash
+        if (Global.Year==5 && Global.Month==1 && Global.Week==2 && !Global.EarthOrbitTrash2 &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/EarthOrbitTrash2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.EarthOrbitTrash2 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
