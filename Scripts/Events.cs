@@ -313,6 +313,28 @@ public class Events : Node2D {
             Global.UnlockSpaceColonization = true;
         }
         #endregion
+        #region spacez colonizes mars
+        if (Global.Year==5 && Global.Month==7 && Global.Week==1 && !Global.SpacezColonization &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "News/Space/SpacezMelonland");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpacezColonization = true;
+        }
+        #endregion
+        #region nose colonizes mars
+        if (Global.Year==6 && Global.Month==1 && Global.Week==1 && !Global.NoseColonization &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "News/Space/NoseNewOhio");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NoseColonization = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

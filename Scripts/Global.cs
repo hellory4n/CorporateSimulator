@@ -78,4 +78,6 @@ public class Global : Node2D {
     public static bool EarthOrbitTrash = false;
     public static bool EarthOrbitTrash2 = false;
     public static bool UnlockSpaceColonization = false;
+    public static bool SpacezColonization = false;
+    public static bool NoseColonization = false;
 }
