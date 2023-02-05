@@ -400,6 +400,17 @@ public class Events : Node2D {
             Global.YourMom5 = true;
         }
         #endregion
+        #region your mom book 6
+        if (Global.Year==7 && Global.Month==5 && Global.Week==1 && !Global.YourMom6 &&
+        !Global.PausedTime && Global.Industries[0]=="books") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Books/YourMom6");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.YourMom6 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

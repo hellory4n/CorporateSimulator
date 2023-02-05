@@ -28,7 +28,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 40
 font_data = SubResource( 3 )
 
-[node name="YourMom5" type="Node2D"]
+[node name="YourMom6" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
@@ -65,7 +65,8 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Funni Industries has released your mom 5: the cheeseverse and it is so good it's impossible to describe. The company spent 69 billion dollars making sure your mom 5 is the best book you will ever see, period. One fan said \"buy your mom 5 69 times now\". James James II, president of the United States, said: \"i spent half of my hard earned capital buying your mom 5 copies\". We can't wait for your mom 6."
+text = "Funni Industries has released your mom 6: the end????????. I ran out of ways of describing these absolutely majestic books. The entire world population bought 1 million copies of it, and since each copy costs $69.42, Funni Industries has made 454,745,214,596,730,000,000,000,000,000 dollars with this book alone. However this trigged a bug in the bank software, making Funni Industries have practically infinite amounts of debt. This might be the end of the your mom franchise.
+"
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
