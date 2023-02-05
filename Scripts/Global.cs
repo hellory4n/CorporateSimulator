@@ -82,4 +82,6 @@ public class Global : Node2D {
     public static bool NoseColonization = false;
     public static bool YourMom1 = false;
     public static bool BookMovie = true;
+    public static bool YourMom2 = false;
+    public static bool YourMom3 = false;
 }

@@ -356,6 +356,28 @@ public class Events : Node2D {
             Global.BookMovie = true;
         }
         #endregion
+        #region your mom book 2
+        if (Global.Year==3 && Global.Month==1 && Global.Week==1 && !Global.YourMom2 &&
+        !Global.PausedTime && Global.Industries[0]=="books") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Books/YourMom2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.YourMom2 = true;
+        }
+        #endregion
+        #region your mom book 3
+        if (Global.Year==4 && Global.Month==2 && Global.Week==1 && !Global.YourMom3 &&
+        !Global.PausedTime && Global.Industries[0]=="books") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Books/YourMom3");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.YourMom3 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
