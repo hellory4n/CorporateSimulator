@@ -346,6 +346,16 @@ public class Events : Node2D {
             Global.YourMom1 = true;
         }
         #endregion
+        #region dosney book movie
+        if (!Global.BookMovie && !Global.PausedTime && Global.Industries[0]=="books") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "News/Books/Dosney");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.BookMovie = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

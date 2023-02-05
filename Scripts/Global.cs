@@ -81,4 +81,5 @@ public class Global : Node2D {
     public static bool SpacezColonization = false;
     public static bool NoseColonization = false;
     public static bool YourMom1 = false;
+    public static bool BookMovie = true;
 }

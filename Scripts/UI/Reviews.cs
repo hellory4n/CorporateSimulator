@@ -86,6 +86,9 @@ public class Reviews : Node2D {
             
             Global.Products[Global.Products.Count-1] = (object)uh;
             Global.ViralThingy = false;
+
+            if (garbage.Type == "book" && garbage.Rating == 10)
+                Global.BookMovie = false;
         } else {
             QueueFree();
         }
