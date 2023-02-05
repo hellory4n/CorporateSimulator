@@ -85,4 +85,5 @@ public class Global : Node2D {
     public static bool YourMom2 = false;
     public static bool YourMom3 = false;
     public static bool YourMom4 = false;
+    public static bool YourMom5 = false;
 }
