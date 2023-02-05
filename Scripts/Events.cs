@@ -318,7 +318,7 @@ public class Events : Node2D {
         !Global.PausedTime && Global.Industries[0]=="space") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
-            OK.Init("unlock", "News/Space/SpacezMelonland");
+            OK.Init("news", "News/Space/SpacezMelonland");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.SpacezColonization = true;
@@ -329,10 +329,21 @@ public class Events : Node2D {
         !Global.PausedTime && Global.Industries[0]=="space") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
-            OK.Init("unlock", "News/Space/NoseNewOhio");
+            OK.Init("news", "News/Space/NoseNewOhio");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.NoseColonization = true;
+        }
+        #endregion
+        #region your mom book
+        if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
+        !Global.PausedTime && Global.Industries[0]=="books") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Books/YourMom1");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.YourMom1 = true;
         }
         #endregion
         base._Process(delta);
