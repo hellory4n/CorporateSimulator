@@ -88,4 +88,6 @@ public class Global : Node2D {
     public static bool YourMom5 = false;
     public static bool YourMom6 = false;
     public static bool BadMedicalThing = true;
+    public static bool TheCureForCancer = false;
+    public static bool ReverseDisease = false;
 }

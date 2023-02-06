@@ -421,6 +421,28 @@ public class Events : Node2D {
             Global.BadMedicalThing = true;
         }
         #endregion
+        #region THE CURE FOR CANCER
+        if (Global.Year==5 && Global.Month==4 && Global.Week==3 && !Global.TheCureForCancer &&
+        !Global.PausedTime && Global.Industries[0]=="medical") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Medical/TheCureForCancer");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.TheCureForCancer = true;
+        }
+        #endregion
+        #region reverse disease
+        if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.ReverseDisease &&
+        !Global.PausedTime && Global.Industries[0]=="medical") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Medical/ReverseDisease");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.ReverseDisease = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
