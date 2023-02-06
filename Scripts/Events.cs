@@ -411,6 +411,16 @@ public class Events : Node2D {
             Global.YourMom6 = true;
         }
         #endregion
+        #region bad medical thing
+        if (!Global.BadMedicalThing && !Global.PausedTime && Global.Industries[0]=="medical") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "News/Medical/BadMedicalThing");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.BadMedicalThing = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

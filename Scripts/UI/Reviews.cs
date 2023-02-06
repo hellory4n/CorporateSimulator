@@ -89,6 +89,9 @@ public class Reviews : Node2D {
 
             if (garbage.Type == "book" && garbage.Rating == 10)
                 Global.BookMovie = false;
+            
+            if (garbage.Type == "medical" && garbage.Rating < 5 && Global.Money > 4)
+                Global.BadMedicalThing = false;
         } else {
             QueueFree();
         }
