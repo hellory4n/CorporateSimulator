@@ -131,6 +131,7 @@ public class Events : Node2D {
             OK.Init("unlock", "Unlock/Marketing1");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
+            Global.Taxes = 100000;
             Global.UnlockMarketing1 = true;
         }
         #endregion
@@ -157,7 +158,7 @@ public class Events : Node2D {
             Global.NoEntiendoScam = true;
         }
         #endregion
-        #region $10M marketing unlock
+        #region $2.5M marketing unlock
         if (Global.Money > 50000000 && !Global.UnlockMarketing2 && !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
@@ -441,6 +442,39 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.ReverseDisease = true;
+        }
+        #endregion
+        #region $10k taxes
+        if (Global.Money > 1000000 && !Global.Taxes1 && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Taxes1");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Taxes = 10000;
+            Global.Taxes1 = true;
+        }
+        #endregion
+        #region $1m taxes
+        if (Global.Money > 100000000 && !Global.Taxes2 && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Taxes2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Taxes = 1000000;
+            Global.Taxes2 = true;
+        }
+        #endregion
+        #region more taxes and a lab that doesn't exist yet omg omg omg omg
+        if (Global.Money > 1000000000 && !Global.Lab && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Lab");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Taxes = 10000000;
+            Global.Lab = true;
         }
         #endregion
         base._Process(delta);

@@ -28,7 +28,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 40
 font_data = SubResource( 3 )
 
-[node name="UnlockMarketing1" type="Node2D"]
+[node name="Lab" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
@@ -65,8 +65,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Now you can make $1M marketing campaigns.
-Taxes increased to $100,000"
+text = "Congratulations! You now have 1 billion dollars! That's beyond pretty cool. Taxes increased to $10M. You was also supposed to get a lab but the developer didn't add that yet."
 autowrap = true
 
 [node name="NoScam" type="TextureButton" parent="."]

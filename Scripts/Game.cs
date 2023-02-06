@@ -90,6 +90,12 @@ public class Game : Node2D {
                 Global.UnlockMarketing1 = true;
             if (Global.Money > 50000000)
                 Global.UnlockMarketing2 = true;
+            if (Global.Money > 1000000)
+                Global.Taxes1 = true;
+            if (Global.Money > 100000000)
+                Global.Taxes2 = true;
+            if (Global.Money > 1000000000)
+                Global.Lab = true;
         }
     }
 
