@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
 [ext_resource path="res://Scripts/UI/Ecs/InTells1.cs" type="Script" id=8]
 [ext_resource path="res://Scripts/UI/Ecs/And1.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/UI/Ecs/Novideo1.cs" type="Script" id=10]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -135,7 +136,7 @@ margin_bottom = 339.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
-script = ExtResource( 4 )
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_group_": true
 }
