@@ -7,8 +7,10 @@ public class DialogOk : TextureButton {
     }
 
     public void Click() {
-        if (GetNodeOrNull("/root/PauseThingy") != null)
-            GetNode("/root/PauseThingy").QueueFree();
+        if (Name != "DialogOkNot") {
+            if (GetNodeOrNull("/root/PauseThingy") != null)
+                GetNode("/root/PauseThingy").QueueFree();
+        }
         GetParent().QueueFree();
     }
 }

@@ -1,12 +1,13 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Ecs/Core14.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Ecs/Rise8.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Ecs/And8000.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -29,7 +30,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 40
 font_data = SubResource( 3 )
 
-[node name="EcsInTells1" type="Node2D"]
+[node name="EcsAnd1" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
@@ -66,11 +67,16 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Hi, we’re In Tells, and today we’re gonna reveal a breakthrough in chip design. Introducing the In Tells Core 14th gen. Thanks to revolutionary magic nobody cares about, the new chips can achieve clock speeds of up to 6.9 GHz without catching on fire. The new 14th generation is more delicious than ever."
+text = "Introducing the Rise 8000 series. We want blazingly fast computers, and that is why even the low end Rise 8000 CPUs have bajilions of cores. You may be wondering how strong each core is, and the answer is \"enough questions already\". Also our new 8000 GPUs allow epic hair physics"
 autowrap = true
 
-[node name="Core14" type="Sprite" parent="."]
-position = Vector2( 515, 288 )
+[node name="And8000" type="Sprite" parent="."]
+position = Vector2( 577, 313 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Rise8" type="Sprite" parent="."]
+position = Vector2( 302, 288 )
 texture = ExtResource( 3 )
 centered = false
 

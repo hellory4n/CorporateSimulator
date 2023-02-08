@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Ecs/Core14.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Ecs/Rtx5090.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
@@ -29,7 +29,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 40
 font_data = SubResource( 3 )
 
-[node name="EcsInTells1" type="Node2D"]
+[node name="EcsAnd1" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
@@ -66,11 +66,11 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Hi, we’re In Tells, and today we’re gonna reveal a breakthrough in chip design. Introducing the In Tells Core 14th gen. Thanks to revolutionary magic nobody cares about, the new chips can achieve clock speeds of up to 6.9 GHz without catching on fire. The new 14th generation is more delicious than ever."
+text = "The Novideo RTX 5000 series is massive, but powerful, with 48 8595 95945289 8598295289 58299582952 these numbers i made up show this GPU is very powerful. Don't believe me? Just look at the RGB! That means it's powerful! Also the R in RGB is the fire the 5090 makes"
 autowrap = true
 
-[node name="Core14" type="Sprite" parent="."]
-position = Vector2( 515, 288 )
+[node name="Rtx5090" type="Sprite" parent="."]
+position = Vector2( 390, 313 )
 texture = ExtResource( 3 )
 centered = false
 
