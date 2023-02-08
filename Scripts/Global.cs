@@ -93,4 +93,5 @@ public class Global : Node2D {
     public static bool Taxes1 = false;
     public static bool Taxes2 = false;
     public static bool Lab = false;
+    public static bool Ecs1 = false;
 }
