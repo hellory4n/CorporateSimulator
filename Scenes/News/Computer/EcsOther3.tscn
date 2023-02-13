@@ -75,7 +75,7 @@ Introducing ChatTGP: The best artificial intelligence in the world. It can do al
 - bake the perfect cake
 - bring back your father
 - and more
-ONLY $999 per week"
+ONLY $999 per week (great price!)"
 autowrap = true
 
 [node name="DialogOkNot" type="TextureButton" parent="."]
