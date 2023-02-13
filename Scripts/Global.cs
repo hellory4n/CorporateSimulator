@@ -96,4 +96,5 @@ public class Global : Node2D {
     public static bool Ecs1 = false;
     public static bool Ecs2 = false;
     public static bool Ecs3 = false;
+    public static bool Ecs4 = false;
 }
