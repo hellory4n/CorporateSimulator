@@ -13,7 +13,7 @@
 [ext_resource path="res://Scripts/UI/Ecs/Pineapple5.cs" type="Script" id=11]
 [ext_resource path="res://Scripts/UI/Ecs/Sillyco5.cs" type="Script" id=12]
 [ext_resource path="res://Scripts/UI/Ecs/YourCompany.cs" type="Script" id=13]
-[ext_resource path="res://Scripts/UI/Ecs/Other4.cs" type="Script" id=14]
+[ext_resource path="res://Scripts/UI/Ecs/Other5.cs" type="Script" id=14]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
