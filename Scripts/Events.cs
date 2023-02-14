@@ -543,6 +543,17 @@ public class Events : Node2D {
             Global.Ecs6 = true;
         }
         #endregion
+        #region ecs year 7
+        if (Global.Year==7 && Global.Month==12 && Global.Week==4 && !Global.Ecs7 &&
+        !Global.PausedTime && Global.Industries[0]=="computers") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("ecs", "News/Computer/Ecs7");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Ecs7 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
