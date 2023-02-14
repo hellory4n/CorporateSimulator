@@ -1,0 +1,98 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Ecs/Onion4.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[node name="EcsInTells1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 2 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+rotation = 0.000989279
+texture = ExtResource( 1 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+rect_rotation = -0.204876
+custom_fonts/font = SubResource( 2 )
+text = "In Tells"
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 149.0
+margin_right = 1085.0
+margin_bottom = 223.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Introducing the In Tells Onion 4th gen. Now with round corners, epic effects stealed from PenguinOS XD and 0.69 nanometer transistors through the power of magic, these delicious onion-flavored chips are blazingly fast! We have no idea what to do next, so we will now use ChatTGP for upcoming generations :)"
+autowrap = true
+
+[node name="Onion1" type="Sprite" parent="."]
+position = Vector2( 515, 288 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="DialogOkNot" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 575.0
+margin_right = 840.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOkNot"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
