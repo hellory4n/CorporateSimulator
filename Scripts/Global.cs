@@ -100,4 +100,5 @@ public class Global : Node2D {
     public static bool Ecs5 = false;
     public static bool Ecs6 = false;
     public static bool Ecs7 = false;
+    public static bool Ecs8 = false;
 }
