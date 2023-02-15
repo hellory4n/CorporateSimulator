@@ -7,7 +7,7 @@ public class Sillyco7 : TextureButton {
     }
 
     public void Click() {
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/News/Computer/EcsInTells7.tscn");
+        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/News/Computer/EcsSillyco7.tscn");
         Node2D OK = (Node2D)yes.Instance();
         OK.ZIndex = 100;
         GetTree().Root.AddChild(OK);
