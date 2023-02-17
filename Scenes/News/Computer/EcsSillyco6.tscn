@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing webtoasts 4: Now with PenguinOS XD, as Doors Infinity Twice exploded things. Also it now has an In Tells Onion u9 3rd gen, a RTX 10K90 GPU, 8 TB of RAM, 100 TB of blazingly fast SSD storage, and a year-long battery! ONLY 69 BAJILLION DOLLARS LOL"
+text = "Introducing webtoasts 4: Now with PenguinOS XD, as Doors Infinity Twice exploded things. Also it now has an In Tells Onion u9 3rd gen, a RTX 10K90 GPU, 8 TB of RAM, 512 TB of blazingly fast SSD 2 storage, and a year-long battery! ONLY 69 BAJILLION DOLLARS LOL"
 autowrap = true
 
 [node name="DialogOkNot" type="TextureButton" parent="."]
