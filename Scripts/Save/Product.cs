@@ -3,7 +3,7 @@ public class Product {
     public int Rating = 10;
     public int Sales = 0;
     public int MoneySpent = 0;
-    public int MoneyGot = 0;
+    public long MoneyGot = 0;
     public string Type = "product";
     public string ReleaseDate = "Y69 M12 W4";
     public bool Viral = false;
