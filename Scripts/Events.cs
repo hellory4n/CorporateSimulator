@@ -149,7 +149,7 @@ public class Events : Node2D {
         }
         #endregion
         #region No entiendo scam
-        if (Global.Year==1 && Global.Month==6 && Global.Week==2 && !Global.NoEntiendoScam && !Global.PausedTime) {
+        if (Global.Year==1 && Global.Month==6 && Global.Week==1 && !Global.NoEntiendoScam && !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("email", "NoEntiendo");
@@ -585,6 +585,17 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.Ecs10 = true;
+        }
+        #endregion
+        #region prince in england
+        if (Global.Year==4 && Global.Month==1 && Global.Week==4 && !Global.PrinceInEngland &&
+        !Global.PausedTime && random.Next(0,2) == 0) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "PrinceInEngland");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.PrinceInEngland = true;
         }
         #endregion
         base._Process(delta);

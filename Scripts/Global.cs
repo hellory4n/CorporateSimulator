@@ -103,4 +103,5 @@ public class Global : Node2D {
     public static bool Ecs8 = false;
     public static bool Ecs9 = false;
     public static bool Ecs10 = false;
+    public static bool PrinceInEngland = false;
 }
