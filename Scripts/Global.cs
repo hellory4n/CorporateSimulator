@@ -110,4 +110,5 @@ public class Global : Node2D {
     public static bool WhiteRoom = false;
     public static bool FloatingOffice = false;
     public static bool FartSmells = false;
+    public static bool OfficeInsideOffice = false;
 }

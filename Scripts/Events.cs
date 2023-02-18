@@ -664,6 +664,17 @@ public class Events : Node2D {
             Global.FartSmells = true;
         }
         #endregion
+        #region office inside office
+        if (Global.Year==8 && Global.Month==8 && Global.Week==1 && !Global.OfficeInsideOffice &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "OfficeInsideOffice");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.OfficeInsideOffice = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
