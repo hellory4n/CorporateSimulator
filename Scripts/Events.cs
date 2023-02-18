@@ -631,6 +631,17 @@ public class Events : Node2D {
             Global.JamesPhotos = true;
         }
         #endregion
+        #region white room
+        if (Global.Year==5 && Global.Month==3 && Global.Week==1 && !Global.WhiteRoom &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "WhiteRoom");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.WhiteRoom = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
