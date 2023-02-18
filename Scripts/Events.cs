@@ -653,6 +653,17 @@ public class Events : Node2D {
             Global.FloatingOffice = true;
         }
         #endregion
+        #region fart smells
+        if (Global.Year==7 && Global.Month==11 && Global.Week==1 && !Global.FartSmells &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "FartSmells");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.FartSmells = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
