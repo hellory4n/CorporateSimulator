@@ -675,6 +675,17 @@ public class Events : Node2D {
             Global.OfficeInsideOffice = true;
         }
         #endregion
+        #region money printer
+        if (Global.Year==9 && Global.Month==2 && Global.Week==1 && !Global.MoneyPrinter &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "MoneyPrinter");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.MoneyPrinter = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
