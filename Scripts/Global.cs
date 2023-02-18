@@ -106,4 +106,5 @@ public class Global : Node2D {
     public static bool PrinceInEngland = false;
     public static bool InfiniteCoffeeMachine = false;
     public static bool InfiniteTeaMachine = false;
+    public static bool JamesPhotos = false;
 }

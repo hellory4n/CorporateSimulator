@@ -620,6 +620,17 @@ public class Events : Node2D {
             Global.InfiniteTeaMachine = true;
         }
         #endregion
+        #region james james II photos
+        if (Global.Year==4 && Global.Month==11 && Global.Week==1 && !Global.JamesPhotos &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "JamesJames2Photos");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.JamesPhotos = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
