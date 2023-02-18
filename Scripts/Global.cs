@@ -113,4 +113,5 @@ public class Global : Node2D {
     public static bool OfficeInsideOffice = false;
     public static bool MoneyPrinter = false;
     public static bool MoveToPaintopia = false;
+    public static bool Interview = false;
 }

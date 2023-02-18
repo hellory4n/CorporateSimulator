@@ -697,6 +697,17 @@ public class Events : Node2D {
             Global.MoveToPaintopia = true;
         }
         #endregion
+        #region interview
+        if (Global.Year==5 && Global.Month==7 && Global.Week==2 && !Global.Interview &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "Interview0");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Interview = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
