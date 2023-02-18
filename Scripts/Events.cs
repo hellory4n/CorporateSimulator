@@ -609,6 +609,17 @@ public class Events : Node2D {
             Global.InfiniteCoffeeMachine = true;
         }
         #endregion
+        #region infinite tea machine
+        if (Global.Year==3 && Global.Month==4 && Global.Week==1 && !Global.InfiniteTeaMachine &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "InfiniteTeaMachine");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.InfiniteTeaMachine = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
