@@ -598,6 +598,17 @@ public class Events : Node2D {
             Global.PrinceInEngland = true;
         }
         #endregion
+        #region infinite coffee machine
+        if (Global.Year==2 && Global.Month==8 && Global.Week==1 && !Global.InfiniteCoffeeMachine &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "InfiniteCoffeeMachine");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.InfiniteCoffeeMachine = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
