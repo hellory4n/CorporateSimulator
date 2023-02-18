@@ -642,6 +642,17 @@ public class Events : Node2D {
             Global.WhiteRoom = true;
         }
         #endregion
+        #region floating office
+        if (Global.Year==6 && Global.Month==9 && Global.Week==1 && !Global.FloatingOffice &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "FloatingOffice");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.FloatingOffice = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
