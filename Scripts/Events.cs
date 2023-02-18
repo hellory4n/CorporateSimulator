@@ -686,6 +686,17 @@ public class Events : Node2D {
             Global.MoneyPrinter = true;
         }
         #endregion
+        #region move to paintopia
+        if (Global.Year==10 && Global.Month==10 && Global.Week==1 && !Global.MoveToPaintopia &&
+        !Global.PausedTime && random.Next(2) == 1) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "MoveToPaintopia");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.MoveToPaintopia = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
