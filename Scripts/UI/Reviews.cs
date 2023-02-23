@@ -43,10 +43,10 @@ public class Reviews : Node2D {
                     reviewers = new string[]{"Steve (doctor)", "John (doctor)", "Hjkgnsj (doctor)", "USA government"};
                     break;
                 case "music":
-                    reviewers = new string[]{"MusicToMyEars", "Slappin' tunes", "No music", "Moosic.com"};
+                    reviewers = new string[]{"MusicToMyEars", "Everything Hz", "No music", "Moosic.com"};
                     break;
                 case "phone":
-                    reviewers = new string[]{"Mrwhosetheemployee", "Mark Tanlee", "Explosive Phones", "phone.net"};
+                    reviewers = new string[]{"Mrwhosetheemployee", "Mark Yellowlee", "Explosive Phones", "phone.net"};
                     break;
                 case "yourarse":
                     reviewers = new string[]{"BadReviews.com", "BadReviewsSucks.com", "EpicReviews.net", "LegitReviews.org"};

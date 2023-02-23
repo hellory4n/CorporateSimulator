@@ -46,6 +46,7 @@ public class MusicProduct: Product {
     public int Speed = 50;
     public int Melody = 0;
     public int Instruments = 69;
+    public string Genre = "pain";
 }
 
 public class MediaProduct : Product {
