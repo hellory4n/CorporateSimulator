@@ -73,6 +73,7 @@ public class ElectronicsProduct : Product {
     public int Features = 69;
     public int Security = 69;
     public int IoTNess = 69;
+    public string ApplianceType = "awesome toaster with wifi";
 }
 
 public class AppProduct : Product {
