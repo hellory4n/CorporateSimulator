@@ -126,8 +126,8 @@ public class ProductItem : Control {
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just music stuff
-                "\nSpeed: " + musicProduct.Speed + "%\nMelody: " + musicProduct.Melody +
-                "%\nInstruments: " + musicProduct.Instruments + "%";
+                "\nGenre: " + musicProduct.Genre + "\nSpeed: " + musicProduct.Speed + "%\nMelody: "
+                + musicProduct.Melody + "%\nInstruments: " + musicProduct.Instruments + "%";
         }
         if (productProduct.Type == "media") {
             // sorry
@@ -172,8 +172,8 @@ public class ProductItem : Control {
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just food stuff
-                "\nNutritional value: " + foodProduct.NutritionalValue + "%\nTaste: " + foodProduct.Taste +
-                "%";
+                "\nType: " + foodProduct.FoodType + "\nNutritional value: " + foodProduct.NutritionalValue
+                + "%\nTaste: " + foodProduct.Taste + "%";
         }
         if (productProduct.Type == "tv") {
             // sorry
@@ -215,9 +215,10 @@ public class ProductItem : Control {
                 productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
-                // just toaster stuff
-                "\nFeatures: " + electronicsProduct.Features + "%\nSecurity: " + electronicsProduct.
-                Security + "%\nIoT-ness: " + electronicsProduct.IoTNess + "%";
+                // just appliance stuff
+                "\nType: " + electronicsProduct.ApplianceType + "\nFeatures: " + electronicsProduct.Features
+                + "%\nSecurity: " + electronicsProduct.Security + "%\nIoT-ness: " +
+                electronicsProduct.IoTNess + "%";
         }
         if (productProduct.Type == "apps") {
             // sorry
