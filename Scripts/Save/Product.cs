@@ -61,6 +61,7 @@ public class MediaProduct : Product {
 public class FoodProduct : Product {
     public int NutritionalValue = 0;
     public int Taste = 100;
+    public string FoodType = "m";
 }
 
 public class TvProduct: Product {

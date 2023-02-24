@@ -40,7 +40,7 @@ public class Reviews : Node2D {
                     reviewers = new string[]{"Fine Tomatoes", "ABCd", "Infracritic", "BadReviews.com"};
                     break;
                 case "medical":
-                    reviewers = new string[]{"Steve (doctor)", "John (doctor)", "Hjkgnsj (doctor)", "USA government"};
+                    reviewers = new string[]{"Steve (doctor)", "John (doctor)", "Hjkgnsj (doctor)", "Government"};
                     break;
                 case "music":
                     reviewers = new string[]{"MusicToMyEars", "Everything Hz", "No music", "Moosic.com"};
