@@ -708,6 +708,16 @@ public class Events : Node2D {
             Global.Interview = true;
         }
         #endregion
+        #region offended
+        if (!Global.Offended && !Global.PausedTime && Global.Products.Count > 0) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "Offended");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Offended = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
