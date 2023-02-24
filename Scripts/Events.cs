@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class Events : Node2D {
     Random random = new Random();
@@ -8,31 +9,40 @@ public class Events : Node2D {
         #region Sales
         // we can't sell void
         if (Global.Products.Count > 0) {
-            dynamic garbage = Global.Products[Global.Products.Count-1]; // hope this doesn't explode
+            // sorry
+            Product garbageProduct = JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(
+                Global.Products[Global.Products.Count-1]));
+            object garbage = Global.Products[Global.Products.Count-1];
+            dynamic garbageDynamic = Global.Products[Global.Products.Count-1];
             int price = 69420;
             double saleRate = 80;
 
             // garbage price
-            if (garbage is ComputerProduct) {
-                ComputerProduct shjksj = (ComputerProduct)garbage;
+            if (garbageProduct.Type == "computer") {
+                ComputerProduct shjksj = JsonConvert.DeserializeObject<ComputerProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = shjksj.Price;
-            } else if (garbage is TvProduct) {
-                TvProduct hjskosp = (TvProduct)garbage;
+            } else if (garbageProduct.Type == "tv") {
+                TvProduct hjskosp = JsonConvert.DeserializeObject<TvProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = hjskosp.Ads*10;
-            } else if (garbage is AppProduct) {
-                AppProduct jskiops = (AppProduct)garbage;
+            } else if (garbageProduct.Type == "app") {
+                AppProduct jskiops = JsonConvert.DeserializeObject<AppProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = jskiops.Algorithm*10;
-            } else if (garbage is PhoneProduct) {
-                PhoneProduct hjsksjk = (PhoneProduct)garbage;
+            } else if (garbageProduct.Type == "phone") {
+                PhoneProduct hjsksjk = JsonConvert.DeserializeObject<PhoneProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = hjsksjk.Price;
             } else if (garbage is YourArseProduct) {
-                YourArseProduct sjksmg = (YourArseProduct)garbage;
+                YourArseProduct sjksmg = JsonConvert.DeserializeObject<YourArseProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = sjksmg.Ads*10;
             } else {
-                price = garbage.Rating*100;
+                price = garbageProduct.Rating*100;
             }
 
-            if ((bool)garbage.Viral)
+            if ((bool)garbageProduct.Viral)
                 price *= 10;
 
             saleRate -= Global.Reputation/100;
@@ -49,11 +59,11 @@ public class Events : Node2D {
                         price *= 5;
                 }
 
-                garbage.Sales += 100;
-                garbage.MoneyGot += price*100;
+                garbageDynamic.Sales += 100;
+                garbageDynamic.MoneyGot += price*100;
                 Global.Money += price*100;
                 Global.MonthlySales += price*100;
-                Global.Products[Global.Products.Count-1] = (object)garbage;
+                Global.Products[Global.Products.Count-1] = (object)garbageDynamic;
             }
         }
         #endregion
