@@ -23,10 +23,11 @@ public class FoodPriceCalculator : Label {
         Global.FoodNewProduct.MoneySpent = Global.FoodNewProduct.NutritionalValue*200 +
             Global.FoodNewProduct.Taste*100;
 
-        if (hasMagic)
+        if (hasMagic) {
             Global.FoodNewProduct.MoneySpent += 20000;
             Global.FoodNewProduct.Taste += 50;
             Global.FoodNewProduct.Rating += 2;
+        }
         if (Global.FoodNewProduct.Taste > 100)
             Global.FoodNewProduct.Taste = 100;
         if (Global.FoodNewProduct.Rating > 10)
