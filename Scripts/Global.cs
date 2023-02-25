@@ -120,4 +120,5 @@ public class Global : Node2D {
     public static bool UniverseBreakingMusic = false;
     public static bool MusicThatMakesNewMultiverses = false;
     public static bool NoisesII = false;
+    public static bool MessagingAppDisease = true;
 }

@@ -95,6 +95,9 @@ public class Reviews : Node2D {
             
             if (soRandom.Next(0,4) == 0)
                 Global.Offended = false;
+            
+            if (soRandom.Next(0,4) == 0 && garbage.Type == "food")
+                Global.MessagingAppDisease = false;
         } else {
             QueueFree();
         }

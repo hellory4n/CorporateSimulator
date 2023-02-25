@@ -788,6 +788,16 @@ public class Events : Node2D {
             Global.NoisesII = true;
         }
         #endregion
+        #region food gives messaging app disease
+        if (!Global.MessagingAppDisease && !Global.PausedTime && Global.Industries[0]=="food") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "News/Food/MessagingAppDisease");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.MessagingAppDisease = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
