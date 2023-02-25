@@ -798,6 +798,16 @@ public class Events : Node2D {
             Global.MessagingAppDisease = true;
         }
         #endregion
+        #region appliance security breach
+        if (!Global.ApplianceSecurityBreach && !Global.PausedTime && Global.Industries[0]=="electronics") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "News/Appliances/SecurityBreach");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.ApplianceSecurityBreach = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

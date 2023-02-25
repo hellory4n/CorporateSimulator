@@ -98,6 +98,14 @@ public class Reviews : Node2D {
             
             if (soRandom.Next(0,4) == 0 && garbage.Type == "food")
                 Global.MessagingAppDisease = false;
+            
+            if (garbage.Type == "electronics") {
+                // uhh
+                ElectronicsProduct trash = JsonConvert.DeserializeObject<ElectronicsProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
+                if (trash.Security < 6)
+                    Global.ApplianceSecurityBreach = false;
+            }
         } else {
             QueueFree();
         }
