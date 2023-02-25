@@ -764,6 +764,18 @@ public class Events : Node2D {
             Global.UniverseBreakingMusic = true;
         }
         #endregion
+        #region music that makes new multiverses
+        if (Global.Year==8 && Global.Month==1 && Global.Week==1 && !Global.MusicThatMakesNewMultiverses &&
+        !Global.PausedTime && Global.Industries[0]=="music") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Music/MusicThatMakesNewMultiverses");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Music that makes new multiverses", 200));
+            Global.MusicThatMakesNewMultiverses = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
