@@ -728,6 +728,18 @@ public class Events : Node2D {
             Global.Offended = true;
         }
         #endregion
+        #region 4d music
+        if (Global.Year==2 && Global.Month==1 && Global.Week==1 && !Global._4DMusic &&
+        !Global.PausedTime && Global.Industries[0]=="music") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Music/4DMusic");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("4D Music", 100));
+            Global._4DMusic = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
