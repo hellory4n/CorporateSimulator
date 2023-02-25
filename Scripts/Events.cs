@@ -740,6 +740,18 @@ public class Events : Node2D {
             Global._4DMusic = true;
         }
         #endregion
+        #region interdimensional music
+        if (Global.Year==4 && Global.Month==1 && Global.Week==1 && !Global.InterdimensionalMusic &&
+        !Global.PausedTime && Global.Industries[0]=="music") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Music/InterdimensionalMusic");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Interdimensional Music", 150));
+            Global.InterdimensionalMusic = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
