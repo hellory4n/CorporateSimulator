@@ -1,10 +1,14 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/MoneyCounter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/TimeCounter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/ReputationCounter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/FeedbackPressed.png" type="Texture" id=6]
+[ext_resource path="res://Assets/FeedbackHover.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Feedback.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/UI/Feedback.cs" type="Script" id=9]
 [ext_resource path="res://Assets/MenuInactive.png" type="Texture" id=10]
 [ext_resource path="res://Scripts/UI/Default/Pause.cs" type="Script" id=11]
 [ext_resource path="res://Scenes/ResearchCounter.tscn" type="PackedScene" id=12]
@@ -76,6 +80,15 @@ texture_normal = ExtResource( 15 )
 texture_pressed = ExtResource( 13 )
 texture_hover = ExtResource( 14 )
 script = ExtResource( 16 )
+
+[node name="Feedback" type="TextureButton" parent="."]
+margin_left = 390.0
+margin_right = 890.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 9 )
 
 [node name="MonthlyMoneyStuff" type="Label" parent="."]
 anchor_right = 0.002
