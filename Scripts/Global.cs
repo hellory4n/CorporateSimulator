@@ -117,4 +117,5 @@ public class Global : Node2D {
     public static bool Offended = true;
     public static bool _4DMusic = false;
     public static bool InterdimensionalMusic = false;
+    public static bool UniverseBreakingMusic = false;
 }

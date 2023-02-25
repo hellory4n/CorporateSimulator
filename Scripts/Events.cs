@@ -752,6 +752,18 @@ public class Events : Node2D {
             Global.InterdimensionalMusic = true;
         }
         #endregion
+        #region universe-breaking music
+        if (Global.Year==6 && Global.Month==1 && Global.Week==1 && !Global.UniverseBreakingMusic &&
+        !Global.PausedTime && Global.Industries[0]=="music") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Music/UniverseBreakingMusic");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Universe-breaking Music", 200));
+            Global.UniverseBreakingMusic = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
