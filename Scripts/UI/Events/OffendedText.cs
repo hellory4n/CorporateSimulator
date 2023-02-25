@@ -60,7 +60,7 @@ public class OffendedText : Label {
         // sorry
         Product garbage = JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(
             Global.Products[Global.Products.Count-1]));
-        Text = $"Hi. I'm {name} {name} from Silly Industries LLC. Your latest product, {garbage.Name}, is deeply offending to me. Pay ${String.Format("{0:n0}", (int)Global.Money/10)} now.\n\nCheers,\n{name} {name}";
+        Text = $"Hi. I'm {name} {name} from Silly Industries LLC. Your latest product, {garbage.Name}, is deeply offending to me. Pay ${String.Format("{0:n0}", (long)Global.Money/10)} now.\n\nCheers,\n{name} {name}";
         base._Ready();
     }
 }

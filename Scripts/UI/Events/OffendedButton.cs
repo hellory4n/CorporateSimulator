@@ -7,7 +7,7 @@ public class OffendedButton : TextureButton {
     }
 
     public void Click() {
-        Global.Money -= (int)Global.Money/10;
+        Global.Money -= (long)Global.Money/10;
         Global.Reputation -= 10;
         if (GetNodeOrNull("/root/PauseThingy") != null)
             GetNode("/root/PauseThingy").QueueFree();

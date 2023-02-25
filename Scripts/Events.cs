@@ -802,10 +802,21 @@ public class Events : Node2D {
         if (!Global.ApplianceSecurityBreach && !Global.PausedTime && Global.Industries[0]=="electronics") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
-            OK.Init("email", "News/Appliances/SecurityBreach");
+            OK.Init("news", "News/Appliances/SecurityBreach");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.ApplianceSecurityBreach = true;
+        }
+        #endregion
+        #region boom
+        if (!Global.Boom && !Global.PausedTime &&
+            (Global.Industries[0]=="computers" || Global.Industries[0]=="phones")) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "News/Computer/Boom");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Boom = true;
         }
         #endregion
         base._Process(delta);

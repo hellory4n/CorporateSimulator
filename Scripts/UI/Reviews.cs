@@ -106,6 +106,9 @@ public class Reviews : Node2D {
                 if (trash.Security < 6)
                     Global.ApplianceSecurityBreach = false;
             }
+
+            if (soRandom.Next(0,4) == 0 && (garbage.Type == "computer" || garbage.Type == "phone"))
+                Global.Boom = false;
         } else {
             QueueFree();
         }
