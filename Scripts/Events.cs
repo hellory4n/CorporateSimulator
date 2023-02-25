@@ -776,6 +776,18 @@ public class Events : Node2D {
             Global.MusicThatMakesNewMultiverses = true;
         }
         #endregion
+        #region NOISES II
+        if (Global.Year==10 && Global.Month==1 && Global.Week==1 && !Global.NoisesII &&
+        !Global.PausedTime && Global.Industries[0]=="music") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Music/NoisesII");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("NOISES II", 250));
+            Global.NoisesII = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
