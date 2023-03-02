@@ -10,7 +10,7 @@
 [ext_resource path="res://Scripts/UI/Ecs/Phone/Napdragon1.cs" type="Script" id=8]
 [ext_resource path="res://Scripts/UI/Ecs/Phone/MovieTek1.cs" type="Script" id=9]
 [ext_resource path="res://Scripts/UI/Ecs/Phone/Goggles1.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/UI/Ecs/Pineapple1.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/UI/Ecs/Phone/Hiphone1.cs" type="Script" id=11]
 [ext_resource path="res://Scripts/UI/Ecs/Sillyco1.cs" type="Script" id=12]
 [ext_resource path="res://Scripts/UI/Ecs/YourCompany.cs" type="Script" id=13]
 [ext_resource path="res://Scripts/UI/Ecs/Other1.cs" type="Script" id=14]
@@ -155,10 +155,10 @@ text = "Goggles"
 align = 1
 valign = 1
 
-[node name="Pineapple" type="TextureButton" parent="."]
-margin_left = 653.0
+[node name="Hiphone" type="TextureButton" parent="."]
+margin_left = 652.0
 margin_top = 264.0
-margin_right = 1053.0
+margin_right = 1052.0
 margin_bottom = 339.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -168,7 +168,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="Pineapple"]
+[node name="Label" type="Label" parent="Hiphone"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
