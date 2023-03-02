@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=4]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Ecs/Hiphone15.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Ecs/Galactic24.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=7]
 
 [sub_resource type="DynamicFontData" id=1]
@@ -54,7 +54,7 @@ margin_right = 604.2
 margin_bottom = 126.0
 rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
-text = "Pineapple"
+text = "Sam's Song"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the new hiPhone 15: The biggest thing to happen to hiPhone since hiPhone. Now with BSU-C charging instead of our proprietary Thunder charging, thanks to regulations in europe. However you can only use our BSU-C cables. You're welcome. Yes, that's the only new thing."
+text = "Introducing the very original Sam's Song Galactic 24 smartphone. Featuring a very original design, and a lot of cameras, to provide photos with a quality higher than even the human eye. With the new Galactic 24 cameras, you can capture moments like your eye does, but you can post it on Delaygram."
 autowrap = true
 
 [node name="Core14" type="Sprite" parent="."]
