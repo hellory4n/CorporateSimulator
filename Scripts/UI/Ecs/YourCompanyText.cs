@@ -8,9 +8,17 @@ public class YourCompanyText : Label {
             // sorry
             Product garbage = JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(
                 Global.Products[Global.Products.Count-1]));
-            Text = $"Here at {Global.CompanyName} we love mone- I mean customers. We love customers. That is why we built the {garbage.Name}, a really good computer that you should buy immediately. The {garbage.Name} is the start of a new era in computing.";
+            if (Global.Industries[0] == "computers") {
+                Text = $"Here at {Global.CompanyName} we love mone- I mean customers. We love customers. That is why we built the {garbage.Name}, a really good computer that you should buy immediately. The {garbage.Name} is the start of a new era in computing.";
+            } else {
+                Text = $"Here at {Global.CompanyName} we love mone- I mean customers. We love customers. That is why we built the {garbage.Name}, a really good smartphone that you should buy immediately. The {garbage.Name} is the start of a new era in computing.";
+            }
         } else {
-            Text = $"Here at {Global.CompanyName} we didn't make any products but we will soon release the best computer since the [insert best computer ever here].";
+            if (Global.Industries[0]=="computers") {
+                Text = $"Here at {Global.CompanyName} we didn't make any products but we will soon release the best computer since the [insert best computer ever here].";
+            } else {
+                Text = $"Here at {Global.CompanyName} we didn't make any products but we will soon release the best phone since the [insert best phone ever here].";
+            }
         }
         base._Ready();
     }
