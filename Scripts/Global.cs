@@ -124,4 +124,5 @@ public class Global : Node2D {
     public static bool ApplianceSecurityBreach = true;
     public static bool Boom = true;
     public static bool EcsPhone1 = false;
+    public static bool EcsPhone2 = false;
 }

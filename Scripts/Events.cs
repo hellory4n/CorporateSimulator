@@ -830,6 +830,17 @@ public class Events : Node2D {
             Global.EcsPhone1 = true;
         }
         #endregion
+        #region ecs phone year 2
+        if (Global.Year==2 && Global.Month==12 && Global.Week==4 && !Global.EcsPhone2 &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("ecs", "News/Phone/Ecs2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.EcsPhone2 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
