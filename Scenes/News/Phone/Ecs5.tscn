@@ -11,9 +11,9 @@
 [ext_resource path="res://Scripts/UI/Ecs/Phone/MovieTek5.cs" type="Script" id=9]
 [ext_resource path="res://Scripts/UI/Ecs/Phone/Goggles5.cs" type="Script" id=10]
 [ext_resource path="res://Scripts/UI/Ecs/Phone/Hiphone5.cs" type="Script" id=11]
-[ext_resource path="res://Scripts/UI/Ecs/Sillyco4.cs" type="Script" id=12]
+[ext_resource path="res://Scripts/UI/Ecs/Phone/SamsSong5.cs" type="Script" id=12]
 [ext_resource path="res://Scripts/UI/Ecs/YourCompany.cs" type="Script" id=13]
-[ext_resource path="res://Scripts/UI/Ecs/Phone/SamsSong4.cs" type="Script" id=14]
+[ext_resource path="res://Scripts/UI/Ecs/Sillyco5.cs" type="Script" id=14]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -186,7 +186,7 @@ margin_bottom = 439.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
-script = ExtResource( 12 )
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -233,7 +233,7 @@ margin_bottom = 540.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
-script = ExtResource( 14 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
