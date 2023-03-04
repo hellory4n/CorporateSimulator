@@ -127,4 +127,5 @@ public class Global : Node2D {
     public static bool EcsPhone2 = false;
     public static bool EcsPhone3 = false;
     public static bool EcsPhone4 = false;
+    public static bool EcsPhone5 = false;
 }
