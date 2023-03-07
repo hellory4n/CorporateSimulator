@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "After 7 years of work, we have created a product that will change the world in a way not seen since the moon landing in Y-54. Introducing webpaper, the world's first functional printer. It works 100% of the time, and if it doesn't we'll give you a refund. For only $99,999 you will be able to print unlimited dollar bills!"
+text = "After 7 years of work, we have created a product that will change the world in a way not seen since the moon landing in Y-54. Introducing webpaper, the world's first functional printer. It works 100% of the time, and if it doesn't we'll give you a refund. You will now be able to print unlimited dollar bills!"
 autowrap = true
 
 [node name="DialogOkNot" type="TextureButton" parent="."]

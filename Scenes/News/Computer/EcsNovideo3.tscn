@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the RTX 7090! Starting at $9,999, it is 1% faster than the RTX 6090 and 69% hotter! Upgrading is definitely worth the cost. Also if you buy 1 million RTX 7090s you will get one more for free!!!!!!!! UPGRADE NOW OR OUR SLAPPING AGENCY WILL SLAP YOU"
+text = "Introducing the RTX 7090! It is 1% faster than the RTX 6090 and 69% hotter! Upgrading is definitely worth the cost. Also if you buy 1 million RTX 7090s you will get one more for free!!!!!!!! UPGRADE NOW OR OUR SLAPPING AGENCY WILL SLAP YOU"
 autowrap = true
 
 [node name="Rtx5090" type="Sprite" parent="."]

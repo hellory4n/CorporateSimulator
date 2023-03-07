@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing webtoasts³. Now with quantum computing, no graphics cards as they would explode your toast, and now running Doors Infinity, which means websites will now run at 1 FPS (lower is better), and your toast will be a 500 °C or 932 °F (higher is better)! ONLY 1 BILLION DOLLARS LOL"
+text = "Introducing webtoasts³. Now with quantum computing, no graphics cards as they would explode your toast, and now running Doors Infinity, which means websites will now run at 1 FPS (lower is better), and your toast will be a 500 °C or 932 °F (higher is better)! Only thousands of dollars (great price!)"
 autowrap = true
 
 [node name="DialogOkNot" type="TextureButton" parent="."]

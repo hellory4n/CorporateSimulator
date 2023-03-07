@@ -67,7 +67,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Our existing architecture for CPUs and GPUs is on the absolute limit of what's possible, which is why we're introducing the Cheese CPUs and Deliciousness GPUs! Through the power of quantum computing, they are 69% faster than previous generations and 1% cheaper! Upgrade today!"
+text = "Our existing architecture for CPUs and GPUs is on the absolute limit of what's possible, which is why we're introducing the Cheese CPUs and Deliciousness GPUs! Through the power of quantum computing, they are 69% faster than previous generations and 200% hotter! Upgrade today!"
 autowrap = true
 
 [node name="And8000" type="Sprite" parent="."]

@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the Novideo RTX 6090 graphics card, the best GPU since the invention of whatever the Irata 2600 used. It is very hot, with temperatures of up to 420 °C. Starting at $4,999, the RTX 6090 is the absolute peak of what is possible, and we'll have to use magic to create something better."
+text = "Introducing the Novideo RTX 6090 graphics card, the best GPU since the invention of whatever the Irata 2600 used. It is very hot, with temperatures of up to 420 °C. The RTX 6090 is the absolute peak of what is possible, and we'll have to use magic to create something better."
 autowrap = true
 
 [node name="Rtx5090" type="Sprite" parent="."]

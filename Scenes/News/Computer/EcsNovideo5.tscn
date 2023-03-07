@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the RTX 9090 GPU. Now, quantum computing is the future, but it's not a 10090 yet so we just overclocked this GPU to the point of catastrophic overheating and explosion. Totally worth it, specially since this GPU only costs 100 THOUSAND DOLLARS (great price!)"
+text = "Introducing the RTX 9090 GPU. Now, quantum computing is the future, but it's not a 10090 yet so we just overclocked this GPU to the point of catastrophic overheating and explosion. Totally worth it, specially since this GPU only costs thousands of dollars (great price!)"
 autowrap = true
 
 [node name="Rtx5090" type="Sprite" parent="."]

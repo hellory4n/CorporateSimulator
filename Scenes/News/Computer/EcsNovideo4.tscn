@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the RTX 8090 GPU. It costs the small amount of $80,000, and is ridiculous big! Also it's very hot and very likely to explode, which is why the US military is now using RTX 8090 GPUs! Buy a RTX 8090 GṔPU immediately! Do it! Now! Or we will explode your house using a RTX 8090 GPU!"
+text = "Introducing the RTX 8090 GPU. It costs a very small amount of money, and is ridiculous big! Also it's very hot and very likely to explode, which is why the US military is now using RTX 8090 GPUs! Buy a RTX 8090 GṔPU immediately! Do it! Now! Or we will explode your house using a RTX 8090 GPU!"
 autowrap = true
 
 [node name="Rtx5090" type="Sprite" parent="."]

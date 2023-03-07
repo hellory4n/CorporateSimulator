@@ -67,7 +67,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing Cheese 2: It's like Cheese 1 but better! Also introducing the Deliciousness 2900 XTX GPU, able to render realistic hair physics with ray tracing at 69K resolution and 420 Hz refresh rate, 50 times at the same time, while cooking an egg! Buy now for only $20K (less than $100K!)"
+text = "Introducing Cheese 2: It's like Cheese 1 but better! Also introducing the Deliciousness 2900 XTX GPU, able to render realistic hair physics with ray tracing at 69K resolution and 420 Hz refresh rate, 50 times at the same time, while cooking an egg! Buy now!"
 autowrap = true
 
 [node name="And8000" type="Sprite" parent="."]

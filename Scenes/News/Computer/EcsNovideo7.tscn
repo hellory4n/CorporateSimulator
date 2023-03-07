@@ -66,7 +66,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Introducing the RTX 11K90 GPU. Now with a brand new nonexistent cooling system, leading to the GPU's temperature getting so high an integer overflow will happen and the temperature will become -2,147,483,648 °C. Even though we only removed fans, the price went from $200K to $300K!"
+text = "Introducing the RTX 11K90 GPU. Now with a brand new nonexistent cooling system, leading to the GPU's temperature getting so high an integer overflow will happen and the temperature will become -2,147,483,648 °C. Even though we only removed fans, the price increased!"
 autowrap = true
 
 [node name="Rtx5090" type="Sprite" parent="."]
