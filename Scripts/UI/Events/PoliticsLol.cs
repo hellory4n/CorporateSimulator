@@ -9,7 +9,7 @@ public class PoliticsLol : Label {
             "MURICA FORK YEAH",
             "freedom is the only way",
             "i'm gonna nuke the terrorists",
-            "Donald (fast-food)",
+            "Donald Burgers",
             "i love printing money",
             "we need to build the wall",
             "there are at least 3 genders",
