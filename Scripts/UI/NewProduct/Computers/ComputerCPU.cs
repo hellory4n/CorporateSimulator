@@ -207,7 +207,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"In Tells", "Onion u3 2nd gen", "7", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u9 1st gen", "9", "1200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 1st gen", "8", "1000"});
-            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "7", "8000"});
+            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "7", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u3 1st gen", "6", "600"});
             cpus.Add(new List<object>{"In Tells", "Core u9 17th gen", "8", "1000"});
             cpus.Add(new List<object>{"In Tells", "Core u7 17th gen", "7", "800"});
@@ -269,7 +269,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"In Tells", "Onion u3 2nd gen", "6", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u9 1st gen", "8", "1200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 1st gen", "7", "1000"});
-            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "6", "8000"});
+            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "6", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u3 1st gen", "5", "600"});
             cpus.Add(new List<object>{"In Tells", "Core u9 17th gen", "7", "1000"});
             cpus.Add(new List<object>{"In Tells", "Core u7 17th gen", "6", "800"});
@@ -330,7 +330,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"In Tells", "Onion u3 2nd gen", "5", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u9 1st gen", "7", "1200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 1st gen", "6", "1000"});
-            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "5", "8000"});
+            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "5", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u3 1st gen", "4", "600"});
             cpus.Add(new List<object>{"In Tells", "Core u9 17th gen", "6", "1000"});
             cpus.Add(new List<object>{"In Tells", "Core u7 17th gen", "5", "800"});
@@ -394,7 +394,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"In Tells", "Onion u3 2nd gen", "4", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u9 1st gen", "6", "1200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 1st gen", "5", "1000"});
-            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "4", "8000"});
+            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "4", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u3 1st gen", "3", "600"});
             cpus.Add(new List<object>{"In Tells", "Core u9 17th gen", "5", "1000"});
             cpus.Add(new List<object>{"In Tells", "Core u7 17th gen", "4", "800"});
@@ -461,7 +461,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"In Tells", "Onion u3 2nd gen", "3", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u9 1st gen", "5", "1200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 1st gen", "4", "1000"});
-            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "3", "8000"});
+            cpus.Add(new List<object>{"In Tells", "Onion u5 1st gen", "3", "800"});
             cpus.Add(new List<object>{"In Tells", "Onion u3 1st gen", "2", "600"});
             cpus.Add(new List<object>{"In Tells", "Core u9 17th gen", "4", "1000"});
             cpus.Add(new List<object>{"In Tells", "Core u7 17th gen", "3", "800"});
@@ -498,9 +498,9 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"AND", "Rise 9 8000", "2", "600"});
             cpus.Add(new List<object>{"AND", "Rise 7 8000", "1", "400"});
             cpus.Add(new List<object>{"AND", "Rise 5 8000", "0", "300"});
-            cpus.Add(new List<object>{"Pineapple", "Mark 10 Furiously Fast", "10", "10000"});
-            cpus.Add(new List<object>{"Pineapple", "Mark 10 Furious", "9", "20000"});
-            cpus.Add(new List<object>{"Pineapple", "Mark 10 Fast", "8", "40000"});
+            cpus.Add(new List<object>{"Pineapple", "Mark 10 Furiously Fast", "10", "1000"});
+            cpus.Add(new List<object>{"Pineapple", "Mark 10 Furious", "9", "2000"});
+            cpus.Add(new List<object>{"Pineapple", "Mark 10 Fast", "8", "4000"});
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Furiously Fast", "9", "2000"});
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Furious", "8", "2200"});
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Fast", "7", "2400"});
