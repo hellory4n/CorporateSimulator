@@ -5,14 +5,14 @@ public class PoliticsLol : Label {
     public override void _Ready() {
         string[] majesticQuotes = {
             "i'm gonna make america great again",
-            "wow we have some awesome nukes",
+            "i like nuking stuff",
             "MURICA FORK YEAH",
             "freedom is the only way",
             "i'm gonna nuke the terrorists",
             "Donald Burgers",
             "i love printing money",
             "we need to build the wall",
-            "there are at least 3 genders",
+            "there are at least 3 genders (male, female and businessman)",
             "I will be phenomenal to the women. I mean, I want to help women.",
             "as a wise mexican once said, \"eu quero um taco store\"",
             "The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.",
