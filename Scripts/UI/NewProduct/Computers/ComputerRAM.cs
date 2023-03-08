@@ -17,7 +17,7 @@ public class ComputerRAM : VBoxContainer {
             cpus.Add(new List<object>{"2", "20", "2"});
             cpus.Add(new List<object>{"1", "10", "1"});
         } else if (Global.Year == 2) {
-            cpus.Add(new List<object>{"256", "400", "10"});
+            cpus.Add(new List<object>{"256", "300", "10"});
             cpus.Add(new List<object>{"128", "200", "9"});
             cpus.Add(new List<object>{"64", "100", "8"});
             cpus.Add(new List<object>{"32", "70", "7"});
@@ -27,8 +27,8 @@ public class ComputerRAM : VBoxContainer {
             cpus.Add(new List<object>{"2", "20", "1"});
             cpus.Add(new List<object>{"1", "10", "0"});
         } else if (Global.Year == 3) {
-            cpus.Add(new List<object>{"512", "800", "10"});
-            cpus.Add(new List<object>{"256", "400", "9"});
+            cpus.Add(new List<object>{"512", "400", "10"});
+            cpus.Add(new List<object>{"256", "300", "9"});
             cpus.Add(new List<object>{"128", "200", "8"});
             cpus.Add(new List<object>{"64", "100", "7"});
             cpus.Add(new List<object>{"32", "70", "6"});
@@ -37,9 +37,9 @@ public class ComputerRAM : VBoxContainer {
             cpus.Add(new List<object>{"4", "30", "1"});
             cpus.Add(new List<object>{"2", "20", "0"});
         } else if (Global.Year == 4) {
-            cpus.Add(new List<object>{"1024", "1600", "10"});
-            cpus.Add(new List<object>{"512", "800", "9"});
-            cpus.Add(new List<object>{"256", "400", "8"});
+            cpus.Add(new List<object>{"1024", "500", "10"});
+            cpus.Add(new List<object>{"512", "400", "9"});
+            cpus.Add(new List<object>{"256", "300", "8"});
             cpus.Add(new List<object>{"128", "200", "7"});
             cpus.Add(new List<object>{"64", "100", "6"});
             cpus.Add(new List<object>{"32", "70", "5"});
@@ -47,71 +47,71 @@ public class ComputerRAM : VBoxContainer {
             cpus.Add(new List<object>{"8", "40", "2"});
             cpus.Add(new List<object>{"4", "30", "0"});
         } else if (Global.Year == 5) {
-            cpus.Add(new List<object>{"2048", "3200", "10"});
-            cpus.Add(new List<object>{"1024", "1600", "9"});
-            cpus.Add(new List<object>{"512", "800", "8"});
-            cpus.Add(new List<object>{"256", "400", "7"});
+            cpus.Add(new List<object>{"2048", "600", "10"});
+            cpus.Add(new List<object>{"1024", "500", "9"});
+            cpus.Add(new List<object>{"512", "400", "8"});
+            cpus.Add(new List<object>{"256", "300", "7"});
             cpus.Add(new List<object>{"128", "200", "6"});
             cpus.Add(new List<object>{"64", "100", "5"});
             cpus.Add(new List<object>{"32", "70", "4"});
             cpus.Add(new List<object>{"16", "50", "3"});
             cpus.Add(new List<object>{"8", "40", "1"});
         } else if (Global.Year == 6) {
-            cpus.Add(new List<object>{"4096", "6400", "10"});
-            cpus.Add(new List<object>{"2048", "3200", "9"});
-            cpus.Add(new List<object>{"1024", "1600", "8"});
-            cpus.Add(new List<object>{"512", "800", "7"});
-            cpus.Add(new List<object>{"256", "400", "6"});
+            cpus.Add(new List<object>{"4096", "700", "10"});
+            cpus.Add(new List<object>{"2048", "600", "9"});
+            cpus.Add(new List<object>{"1024", "500", "8"});
+            cpus.Add(new List<object>{"512", "400", "7"});
+            cpus.Add(new List<object>{"256", "300", "6"});
             cpus.Add(new List<object>{"128", "200", "5"});
             cpus.Add(new List<object>{"64", "100", "4"});
             cpus.Add(new List<object>{"32", "70", "3"});
             cpus.Add(new List<object>{"16", "50", "2"});
             cpus.Add(new List<object>{"8", "40", "0"});
         } else if (Global.Year == 7) {
-            cpus.Add(new List<object>{"8192", "12800", "10"});
-            cpus.Add(new List<object>{"4096", "6400", "9"});
-            cpus.Add(new List<object>{"2048", "3200", "8"});
-            cpus.Add(new List<object>{"1024", "1600", "7"});
-            cpus.Add(new List<object>{"512", "800", "6"});
-            cpus.Add(new List<object>{"256", "400", "5"});
+            cpus.Add(new List<object>{"8192", "800", "10"});
+            cpus.Add(new List<object>{"4096", "700", "9"});
+            cpus.Add(new List<object>{"2048", "600", "8"});
+            cpus.Add(new List<object>{"1024", "500", "7"});
+            cpus.Add(new List<object>{"512", "400", "6"});
+            cpus.Add(new List<object>{"256", "300", "5"});
             cpus.Add(new List<object>{"128", "200", "4"});
             cpus.Add(new List<object>{"64", "100", "3"});
             cpus.Add(new List<object>{"32", "70", "2"});
             cpus.Add(new List<object>{"16", "50", "1"});
         } else if (Global.Year == 8) {
-            cpus.Add(new List<object>{"16384", "25600", "10"});
-            cpus.Add(new List<object>{"8192", "12800", "9"});
-            cpus.Add(new List<object>{"4096", "6400", "8"});
-            cpus.Add(new List<object>{"2048", "3200", "7"});
-            cpus.Add(new List<object>{"1024", "1600", "6"});
-            cpus.Add(new List<object>{"512", "800", "5"});
-            cpus.Add(new List<object>{"256", "400", "4"});
+            cpus.Add(new List<object>{"16384", "900", "10"});
+            cpus.Add(new List<object>{"8192", "800", "9"});
+            cpus.Add(new List<object>{"4096", "700", "8"});
+            cpus.Add(new List<object>{"2048", "600", "7"});
+            cpus.Add(new List<object>{"1024", "500", "6"});
+            cpus.Add(new List<object>{"512", "400", "5"});
+            cpus.Add(new List<object>{"256", "300", "4"});
             cpus.Add(new List<object>{"128", "200", "3"});
             cpus.Add(new List<object>{"64", "100", "2"});
             cpus.Add(new List<object>{"32", "70", "1"});
             cpus.Add(new List<object>{"16", "50", "0"});
         } else if (Global.Year == 9) {
-            cpus.Add(new List<object>{"32768", "51200", "10"});
-            cpus.Add(new List<object>{"16384", "25600", "9"});
-            cpus.Add(new List<object>{"8192", "12800", "8"});
-            cpus.Add(new List<object>{"4096", "6400", "7"});
-            cpus.Add(new List<object>{"2048", "3200", "6"});
-            cpus.Add(new List<object>{"1024", "1600", "5"});
-            cpus.Add(new List<object>{"512", "800", "4"});
-            cpus.Add(new List<object>{"256", "400", "3"});
+            cpus.Add(new List<object>{"32768", "1000", "10"});
+            cpus.Add(new List<object>{"16384", "900", "9"});
+            cpus.Add(new List<object>{"8192", "800", "8"});
+            cpus.Add(new List<object>{"4096", "700", "7"});
+            cpus.Add(new List<object>{"2048", "600", "6"});
+            cpus.Add(new List<object>{"1024", "500", "5"});
+            cpus.Add(new List<object>{"512", "400", "4"});
+            cpus.Add(new List<object>{"256", "300", "3"});
             cpus.Add(new List<object>{"128", "200", "2"});
             cpus.Add(new List<object>{"64", "100", "1"});
             cpus.Add(new List<object>{"32", "70", "0"});
         } else if (Global.Year == 10) {
-            cpus.Add(new List<object>{"65536", "102400", "10"});
-            cpus.Add(new List<object>{"32768", "51200", "9"});
-            cpus.Add(new List<object>{"16384", "25600", "8"});
-            cpus.Add(new List<object>{"8192", "12800", "7"});
-            cpus.Add(new List<object>{"4096", "6400", "6"});
-            cpus.Add(new List<object>{"2048", "3200", "5"});
-            cpus.Add(new List<object>{"1024", "1600", "4"});
-            cpus.Add(new List<object>{"512", "800", "3"});
-            cpus.Add(new List<object>{"256", "400", "2"});
+            cpus.Add(new List<object>{"65536", "1100", "10"});
+            cpus.Add(new List<object>{"32768", "1000", "9"});
+            cpus.Add(new List<object>{"16384", "900", "8"});
+            cpus.Add(new List<object>{"8192", "800", "7"});
+            cpus.Add(new List<object>{"4096", "700", "6"});
+            cpus.Add(new List<object>{"2048", "600", "5"});
+            cpus.Add(new List<object>{"1024", "500", "4"});
+            cpus.Add(new List<object>{"512", "400", "3"});
+            cpus.Add(new List<object>{"256", "300", "2"});
             cpus.Add(new List<object>{"128", "200", "1"});
             cpus.Add(new List<object>{"64", "100", "0"});
         }
