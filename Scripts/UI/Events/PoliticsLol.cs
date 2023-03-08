@@ -17,7 +17,7 @@ public class PoliticsLol : Label {
             "as a wise mexican once said, \"eu quero um taco bell\"",
             "The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.",
             "If you look at Saddam Hussein, he killed terrorists. I'm not saying he was an angel, but this guy killed terrorists.",
-            "If Hillary Clinton can't satisfy her husband what makes her think she can satisfy America?"
+            "If Justin Case can't satisfy his wife what makes he think he can satisfy America?"
         };
         Random random = new Random();
         Text = "President James James II was elected for the "+(Global.Year/4+1)+"th time with 69% of the votes.\n\""+
