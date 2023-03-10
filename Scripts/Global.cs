@@ -134,4 +134,5 @@ public class Global : Node2D {
     public static bool EcsPhone9 = false;
     public static bool EcsPhone10 = false;
     public static bool NPTimesY1M6 = false;
+    public static bool NPTimesY1M8 = false;
 }
