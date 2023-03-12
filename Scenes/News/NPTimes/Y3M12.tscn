@@ -64,15 +64,14 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Welcome to The New Pork Times, the best news outlet in America. It is Y2 M12
+text = "Welcome to The New Pork Times, the best news outlet in America. It is Y3 M12
 
-- Doors 12 is leaked
-- Hundreds of pizzas sent to Goggles's headquarters
-- Saudi Arabia launches a big counter-offensive in the war
-- Economy recovered from the stock market crash
-- NOSE piss rocket explodes
-- Justin Case says that if he wins president in the Y4 election, he will put Donald Burgers on every single street in America
-- This year's Epic Computer Stuff (ECS) had epic new products such as the AND 9000 processor with cube computing, the revolutionary RTX 6090 graphics card, the game-changing Macrohard Doors 12 operating system, WebToasts, the first toaster that can be used to browse the web, the hiPhone 16 with 2 notches, and more!"
+- ClosedIA makes ChatTGP, a new revolutionary artificial intelligence that can rob a bank, develop nuclear bombs, create epic art, become the president (untested), bake the perfect cake, bring back your father, and much more!
+- PenguinOS now controls 15% of the desktop operating system market
+- Leaked Sam's Song Galactic 26 is very thick due to a cube processor
+- Melon Musk, CEO of SpaceZ, will make flying cars
+- Epic Galaxies launches a hotel in space, so you can finally piss in space
+- James James II announces he will put 2 Donald Burgers on every street in America if he gets reelected"
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
