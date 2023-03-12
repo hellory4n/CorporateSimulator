@@ -64,15 +64,14 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Welcome to The New Pork times, the best news outlet in America. It is Y2 M6
+text = "Welcome to The New Pork Times, the best news outlet in America. It is Y2 M12
 
-- 4D music is now a thing
-- Reverse disease discovered in the middle of nowhere, it makes you do things backwards
-- The book called \"Your mom and 69 other funny jokes\" by Funni Industries was released and will be known as a classic in literature. Dosney is making a movie version
-- James James II announces he will give money to people that went bankrupt due to the stock market crash
-- China helps Saudi Arabia in the war by sending weapons
-- Both SpaceZ and NOSE are making projects to piss on the moon
-- France sends weapons to Germany"
+- Doors 12 is leaked
+- Hundreds of pizzas sent to Goggles's headquarters
+- Saudi Arabia launches a big counter-offensive in the war
+- Economy recovered from the stock market crash
+- NOSE piss rocket explodes
+- Justin Case says that if he wins president in the Y4 election, he will put Donald Burgers on every single street in America"
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
