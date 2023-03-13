@@ -156,4 +156,5 @@ public class Global : Node2D {
     public static bool NPTimesY9M8 = false;
     public static bool NPTimesY9M9 = false;
     public static bool NPTimesY9M12 = false;
+    public static bool NPTimesY10M1 = false;
 }
