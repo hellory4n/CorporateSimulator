@@ -1083,6 +1083,28 @@ public class Events : Node2D {
             Global.NPTimesY7M6 = true;
         }
         #endregion
+        #region breaking news y7 m7
+        if (Global.Year==7 && Global.Month==7 && Global.Week==3 && !Global.NPTimesY7M7 &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/NPTimes/BreakingNewsY7M7");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NPTimesY7M7 = true;
+        }
+        #endregion
+        #region breaking news y7 m12
+        if (Global.Year==7 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY7M7 &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/NPTimes/BreakingNewsY7M7");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NPTimesY7M7 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
