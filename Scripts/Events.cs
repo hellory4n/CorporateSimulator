@@ -1028,6 +1028,17 @@ public class Events : Node2D {
             Global.NPTimesY4M12 = true;
         }
         #endregion
+        #region breaking news y5 m6
+        if (Global.Year==5 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY5M6 &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/NPTimes/Y5M6");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.NPTimesY5M6 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
