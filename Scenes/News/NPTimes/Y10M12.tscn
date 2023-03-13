@@ -64,13 +64,14 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Welcome to The New Pork Times, the best news outlet in America. It is Y10 M6
+text = "Welcome to The New Pork Times, the best news outlet in America. It is Y10 M12
 
-- USA successfully takes over Germany
-- New USA state in Uranus: Njksbjehuitojbhjikle
-- Sam's Song R&D department explodes
-- Goggles R&D department explodes
-- Leaked hiPhone 24 explodes"
+- SpaceZ finishes giving Earth a ring made of piss
+- No's Ten releases universe-breaking chocolate
+- James James II will explode AI in the war
+- Novideo R&D department explodes again
+- This year's ECS had stuff such as the jkJerknjgokn3hrjio-pthkntoprl,m nhkgpŕ, hm
+- This news report is sponsored by Readable: the world's first thing that allows you read books. Revolutionary."
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
