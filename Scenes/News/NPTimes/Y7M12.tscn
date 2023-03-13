@@ -72,7 +72,7 @@ text = "Welcome to The New Pork Times, the best news outlet in America. It is Y7
 - Justin Case says that plan will ruin America
 - USA joins the war in Saudi Arabia on the side of Saudi Arabia
 - This year's ECS had majestic products like the Novideo RTX 11K90 graphics card with a brand-new cooling system, which works by making the graphics card so hot an integer overflow happens and the temperature becomes -2,147,483,648 °C, and webpaper by Silly Co, the world's first functional printer!
-- This news report is sponsored by Circlespace. Design a website  that suits your needs."
+- This news report is sponsored by Eggspace. Design a website  that suits your needs."
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]

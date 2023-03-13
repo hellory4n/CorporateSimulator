@@ -1095,14 +1095,14 @@ public class Events : Node2D {
         }
         #endregion
         #region breaking news y7 m12
-        if (Global.Year==7 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY7M7 &&
+        if (Global.Year==7 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY7M12 &&
         !Global.PausedTime && Global.Industries[0]=="phones") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
-            OK.Init("news", "News/NPTimes/BreakingNewsY7M7");
+            OK.Init("news", "News/NPTimes/Y7M12");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
-            Global.NPTimesY7M7 = true;
+            Global.NPTimesY7M12 = true;
         }
         #endregion
         base._Process(delta);
