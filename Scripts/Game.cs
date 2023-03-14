@@ -42,7 +42,7 @@ public class Game : Node2D {
 
         // load things
         // TODO: load more things
-        File file = new File(); // dictionary
+        File file = new File(); // if you haven't noticed this is a file
         GameSave save = new GameSave();
         if (file.FileExists(Global.SaveFile)) {
             file.Open(Global.SaveFile, File.ModeFlags.Read);
@@ -96,6 +96,15 @@ public class Game : Node2D {
                 Global.Taxes2 = true;
             if (Global.Money > 1000000000)
                 Global.Lab = true;
+            
+            // do we show the tutorial
+            File aFile = new File(); // this is a string i think
+            if (!aFile.FileExists("user://first_time")) {
+                var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Tutorial.tscn");
+                Node2D OK = (Node2D)yes.Instance();
+                GetTree().Root.AddChild(OK);
+                Global.PausedTime = true;
+            }
         }
     }
 
