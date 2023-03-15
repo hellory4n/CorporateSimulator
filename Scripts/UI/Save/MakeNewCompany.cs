@@ -89,9 +89,15 @@ public class MakeNewCompany : TextureButton {
                 });
                 break;
             case "electronics":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("IoT V2", 100)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("IoT Pro", 50),
+                    new ResearchSave("IoT Pro Max", 100),
+                    new ResearchSave("IoT Pro Max Ultra", 250),
+                    new ResearchSave("IoT 2", 500),
+                    new ResearchSave("IoT 2 Pro", 1000),
+                    new ResearchSave("IoT 2 Pro Max", 2500),
+                    new ResearchSave("IoT 2 Pro Max Ultra", 5000),
+                });
                 break;
             case "weapons":
                 newGame.UnlockedResearch.Add(
