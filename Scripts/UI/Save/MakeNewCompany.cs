@@ -51,17 +51,18 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "apps":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Algorithms V2", 50),
-                    new ResearchSave("Tracking V1", 50),
-                    new ResearchSave("Tracking V2", 100),
-                    new ResearchSave("Tracking V3", 200)
+                    new ResearchSave("Algorithms Pro", 50),
+                    new ResearchSave("Algorithms Pro Max", 100),
+                    new ResearchSave("Algorithms Pro Max Ultra", 250),
+                    new ResearchSave("Algorithms 2", 500),
+                    new ResearchSave("Algorithms 2 Pro", 1000),
+                    new ResearchSave("Algorithms 2 Pro Max", 2500),
+                    new ResearchSave("Algorithms 2 Pro Max Ultra", 5000),
                 });
                 break;
             case "music":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Less piracy V1", 50),
-                    new ResearchSave("Less piracy V2", 100),
-                    new ResearchSave("Less piracy V3", 200)
+                    new ResearchSave("Cooler Music", 50),
                 });
                 break;
             case "animation":
@@ -115,7 +116,6 @@ public class MakeNewCompany : TextureButton {
             case "computers":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
                     new ResearchSave("RGB lights", 10),
-                    new ResearchSave("Custom OS", 100)
                 });
                 break;
             case "restaurants":
