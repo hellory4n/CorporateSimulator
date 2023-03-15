@@ -14,7 +14,6 @@ public class Back : TextureButton {
                 fart.Open("user://first_time", File.ModeFlags.Write);
                 fart.StoreString("aeiou");
                 fart.Close();
-                Global.PausedTime = false;
                 GetParent().GetParent().QueueFree();
                 break;
             default:
