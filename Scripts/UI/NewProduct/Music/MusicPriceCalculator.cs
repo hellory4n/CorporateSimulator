@@ -27,6 +27,10 @@ public class MusicPriceCalculator : Label {
         Global.MusicNewProduct.Instruments = (int)GetNode<HSlider>("../Slider3").Value;
         Global.MusicNewProduct.MoneySpent = (1000 + (Global.MusicNewProduct.Instruments * 10)) * 10;
         Text = "This product will cost $" + String.Format("{0:n0}", Global.MusicNewProduct.MoneySpent);
+
+        if (Global.MusicNewProduct.Rating > 10)
+            Global.MusicNewProduct.Rating = 10;
+
         base._Process(delta);
     }
 }
