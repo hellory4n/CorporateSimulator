@@ -448,6 +448,17 @@ public class Events : Node2D {
             Global.UranusLanding = true;
         }
         #endregion
+        #region njksbjehuitojbhjikle
+        if (Global.Year==10 && Global.Month==3 && Global.Week==1 && !Global.UranusState &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/UranusState");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UranusState = true;
+        }
+        #endregion
         #region your mom book
         if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
         !Global.PausedTime && Global.Industries[0]=="books") {

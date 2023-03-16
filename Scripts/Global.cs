@@ -173,4 +173,5 @@ public class Global : Node2D {
     public static bool MarsStockMarketCrashAgain = false;
     public static bool SpaceZInvasion = false;
     public static bool UranusLanding = false;
+    public static bool UranusState = false;
 }
