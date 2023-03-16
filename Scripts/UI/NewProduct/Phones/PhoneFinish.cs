@@ -29,7 +29,7 @@ public class PhoneFinish : TextureButton {
         Global.PhoneNewProduct.Rating = (int)Math.Round(notIntRating);
 
         if (gimmicks)
-            Global.PhoneNewProduct.Rating += 2;
+            Global.PhoneNewProduct.Rating += 1;
 
         if (Global.PhoneNewProduct.Rating > 10)
             Global.PhoneNewProduct.Rating = 10;

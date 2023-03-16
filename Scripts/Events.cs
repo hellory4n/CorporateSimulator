@@ -1229,6 +1229,18 @@ public class Events : Node2D {
             Global.NPTimesY10M12 = true;
         }
         #endregion
+        #region cookiedisc
+        if (Global.Year == 5 && Global.Month == 1 && Global.Week == 1 && !Global.CookieDisc &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/CookieDisc");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("CookieDisc", 100));
+            Global.CookieDisc = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
