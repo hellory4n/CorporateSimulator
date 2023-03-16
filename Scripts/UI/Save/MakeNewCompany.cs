@@ -142,9 +142,10 @@ public class MakeNewCompany : TextureButton {
                 );
                 break;
             case "media":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("Famous actors", 50)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("Famous Actors", 100),
+                    new ResearchSave("Product Placement", 100)
+                });
                 break;
         }
         #endregion

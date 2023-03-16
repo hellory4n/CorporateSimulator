@@ -2,7 +2,17 @@ using Godot;
 using System;
 
 public class MediaFinish : TextureButton {
+    bool ben = false;
+    bool fart = false;
+
     public override void _Ready() {
+        // if we add this on the process function the game would run at 0 fps
+        foreach (var item in Global.Researched) {
+            if (item.Name == "Famous Actors")
+                ben = true;
+            if (item.Name == "Product Placement")
+                fart = true;
+        }
         this.Connect("pressed", this, nameof(Click));
     }
 
@@ -86,6 +96,15 @@ public class MediaFinish : TextureButton {
             (int)Math.Round((decimal)sliderThingy/6);
         
         Global.MediaNewProduct.ThemeGenreCombination = thisThemeGenreCombination;
+
+        if (fart)
+            Global.MediaNewProduct.Rating += 1;
+        
+        if (ben)
+            Global.MediaNewProduct.Rating += 1;
+        
+        if (Global.MediaNewProduct.Rating > 10)
+            Global.MediaNewProduct.Rating = 10;
 
         Global.MediaNewProduct.Type = "media";
         Global.MediaNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;

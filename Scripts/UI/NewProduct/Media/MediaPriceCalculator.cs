@@ -7,7 +7,7 @@ public class MediaPriceCalculator : Label {
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
-            if (item.Name == "Famous actors")
+            if (item.Name == "Famous Actors")
                 ben = true;
         }
         base._Ready();
