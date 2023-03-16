@@ -2,7 +2,14 @@ using Godot;
 using System;
 
 public class ComputerFinish : TextureButton {
+    bool rgb = false;
+
     public override void _Ready() {
+        // if we add this on the process function the game would run at 0 fps
+        foreach (var item in Global.Researched) {
+            if (item.Name == "RGB lights")
+                rgb = true;
+        }
         this.Connect("pressed", this, nameof(Click));
     }
 
@@ -20,6 +27,12 @@ public class ComputerFinish : TextureButton {
         notIntRating += int.Parse(Global.ComputerNewProduct.Storage.Split(",")[2])/5;
         notIntRating += int.Parse(Global.ComputerNewProduct.Os.Split(",")[2])/5;
         Global.ComputerNewProduct.Rating = (int)Math.Round(notIntRating);
+
+        if (rgb)
+            Global.ComputerNewProduct.Rating += 1;
+        
+        if (Global.ComputerNewProduct.Rating > 10)
+            Global.ComputerNewProduct.Rating = 10;
 
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();

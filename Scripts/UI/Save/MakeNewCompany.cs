@@ -133,7 +133,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "computers":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("RGB lights", 10),
+                    new ResearchSave("RGB lights", 50),
                 });
                 break;
             case "restaurants":
