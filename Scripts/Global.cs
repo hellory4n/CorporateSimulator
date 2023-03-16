@@ -170,4 +170,5 @@ public class Global : Node2D {
     public static bool NoseUranus = false;
     public static bool NoseUranusTerraforming = false;
     public static bool SpaceZPissRing = false;
+    public static bool MarsStockMarketCrashAgain = false;
 }
