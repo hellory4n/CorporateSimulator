@@ -459,6 +459,17 @@ public class Events : Node2D {
             Global.UranusState = true;
         }
         #endregion
+        #region piss ring is done
+        if (Global.Year==10 && Global.Month==7 && Global.Week==1 && !Global.SpaceZPissRingFinish &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/SpaceZPissRingFinish");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpaceZPissRingFinish = true;
+        }
+        #endregion
         #region your mom book
         if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
         !Global.PausedTime && Global.Industries[0]=="books") {
