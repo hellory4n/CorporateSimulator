@@ -164,4 +164,5 @@ public class Global : Node2D {
     public static bool CookieDisc = false;
     public static bool Smartphone2 = false;
     public static bool RocketBoom = true;
+    public static bool Melonet = false;
 }

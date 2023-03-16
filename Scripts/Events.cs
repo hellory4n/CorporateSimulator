@@ -349,6 +349,17 @@ public class Events : Node2D {
             Global.NoseColonization = true;
         }
         #endregion
+        #region melonet
+        if (Global.Year==6 && Global.Month==5 && Global.Week==1 && !Global.Melonet &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/Melonet");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Melonet = true;
+        }
+        #endregion
         #region your mom book
         if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
         !Global.PausedTime && Global.Industries[0]=="books") {
