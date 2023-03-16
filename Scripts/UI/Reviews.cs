@@ -107,6 +107,14 @@ public class Reviews : Node2D {
                     Global.ApplianceSecurityBreach = false;
             }
 
+            if (garbage.Type == "rocket") {
+                // uhh
+                SpaceProduct trash = JsonConvert.DeserializeObject<SpaceProduct>(
+                    JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
+                if (trash.Safety < 51 || trash.Fuel < trash.Speed)
+                    Global.RocketBoom = false;
+            }
+
             if (soRandom.Next(0,4) == 0 && (garbage.Type == "computer" || garbage.Type == "phone"))
                 Global.Boom = false;
         } else {

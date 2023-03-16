@@ -1253,6 +1253,16 @@ public class Events : Node2D {
             Global.Smartphone2 = true;
         }
         #endregion
+        #region rocket explodes
+        if (!Global.RocketBoom && !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/RocketBoom");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.RocketBoom = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
