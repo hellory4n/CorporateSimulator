@@ -30,9 +30,9 @@ public class ProductItem : Control {
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just space stuff
-                "\nCarrying: " + spaceProduct.Carrying + "\nPeople: " + spaceProduct.People +
-                "\nDestination: " + spaceProduct.Destination + "\nSpeed: " + spaceProduct.Speed +
-                "%\nFuel: " + spaceProduct.Fuel + "\nSafety: " + spaceProduct.Safety + "%";
+                "\nCarrying: " + spaceProduct.Carrying + "\nDestination: " + spaceProduct.Destination
+                + "\nSpeed: " + spaceProduct.Speed + "%\nFuel: " + spaceProduct.Fuel + "%\nSafety: "
+                + spaceProduct.Safety + "%";
         }
         if (productProduct.Type == "book") {
             // sorry

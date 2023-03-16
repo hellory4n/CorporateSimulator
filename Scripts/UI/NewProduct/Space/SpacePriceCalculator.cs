@@ -35,6 +35,9 @@ public class SpacePriceCalculator : Label {
             case "Space station": Global.SpaceNewProduct.MoneySpent += 20000; break;
             case "Terraforming stuff": Global.SpaceNewProduct.MoneySpent += 1000000; break;
             case "Colonizer 5000": Global.SpaceNewProduct.MoneySpent += 500000; break;
+            case "SpaceFarmer 10K": Global.SpaceNewProduct.MoneySpent += 5000000; break;
+            case "Ultra Planet Exploiter & Mining 69,000": Global.SpaceNewProduct.MoneySpent += 10000000; break;
+            case "Environmental Issues Inc. Space Edition": Global.SpaceNewProduct.MoneySpent += 50000000; break;
         }
         switch (Global.SpaceNewProduct.Destination) {
             case "Earth's orbit": Global.SpaceNewProduct.MoneySpent += 5000; break;
