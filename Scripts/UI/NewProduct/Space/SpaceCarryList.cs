@@ -41,6 +41,21 @@ public class SpaceCarryList : VBoxContainer {
                     OK.Init("Colonizer 5000");
                     AddChild(OK);
                     break;
+                case "Space Agriculture":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("SpaceFarmer 10K");
+                    AddChild(OK);
+                    break;
+                case "Space Mining":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Ultra Planet Exploiter & Mining 69,000");
+                    AddChild(OK);
+                    break;
+                case "Space Industrialism":
+                    OK = (SpaceCarryButton)yes.Instance();
+                    OK.Init("Environmental Issues Inc. Space Edition");
+                    AddChild(OK);
+                    break;
             }
         }
 

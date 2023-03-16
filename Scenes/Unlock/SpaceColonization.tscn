@@ -65,7 +65,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "You can now research colonization."
+text = "You can now research colonization, space agriculture, mining and industrialism."
 autowrap = true
 
 [node name="NoScam" type="TextureButton" parent="."]

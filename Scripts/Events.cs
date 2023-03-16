@@ -321,6 +321,9 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.UnlockedResearch.Add(new ResearchSave("Colonization", 550));
+            Global.UnlockedResearch.Add(new ResearchSave("Space Agriculture", 1000));
+            Global.UnlockedResearch.Add(new ResearchSave("Space Mining", 2000));
+            Global.UnlockedResearch.Add(new ResearchSave("Space Industrialism", 5000));
             Global.UnlockSpaceColonization = true;
         }
         #endregion
