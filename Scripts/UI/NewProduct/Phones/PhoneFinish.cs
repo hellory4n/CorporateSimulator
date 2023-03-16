@@ -3,12 +3,15 @@ using System;
 
 public class PhoneFinish : TextureButton {
     bool gimmicks = false;
+    bool smartphone2 = false;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
             if (item.Name == "Gimmicks")
                 gimmicks = true;
+            if (item.Name == "Smartphone 2")
+                smartphone2 = true;
         }
         this.Connect("pressed", this, nameof(Click));
     }
@@ -29,6 +32,9 @@ public class PhoneFinish : TextureButton {
         Global.PhoneNewProduct.Rating = (int)Math.Round(notIntRating);
 
         if (gimmicks)
+            Global.PhoneNewProduct.Rating += 1;
+        
+        if (smartphone2)
             Global.PhoneNewProduct.Rating += 1;
 
         if (Global.PhoneNewProduct.Rating > 10)

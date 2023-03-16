@@ -4,6 +4,7 @@ using System;
 public class PhonePrice : HSlider {
     bool gimmicks = false;
     bool cookieDisc = false;
+    bool smartphone2 = false;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
@@ -12,6 +13,8 @@ public class PhonePrice : HSlider {
                 gimmicks = true;
             if (item.Name == "CookieDisc")
                 cookieDisc = true;
+            if (item.Name == "Smartphone 2")
+                smartphone2 = true;
         }
     }
 
@@ -31,6 +34,9 @@ public class PhonePrice : HSlider {
         
         if (cookieDisc)
             Global.PhoneNewProduct.Price += 100;
+        
+        if (smartphone2)
+            Global.PhoneNewProduct.Price += 200;
 
         GetNode<Label>("Label").Text = "Price - $" + String.Format("{0:n0}", Global.PhoneNewProduct.Price);;
 

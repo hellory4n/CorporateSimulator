@@ -162,4 +162,5 @@ public class Global : Node2D {
     public static bool NPTimesY10M12 = false;
     public static int TutorialImage = 0;
     public static bool CookieDisc = false;
+    public static bool Smartphone2 = false;
 }

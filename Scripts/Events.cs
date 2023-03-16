@@ -1241,6 +1241,18 @@ public class Events : Node2D {
             Global.CookieDisc = true;
         }
         #endregion
+        #region smartphone 2
+        if (Global.Year == 7 && Global.Month == 1 && Global.Week == 1 && !Global.Smartphone2 &&
+        !Global.PausedTime && Global.Industries[0]=="phones") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("unlock", "Unlock/Smartphone2");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.UnlockedResearch.Add(new ResearchSave("Smartphone 2", 250));
+            Global.Smartphone2 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
