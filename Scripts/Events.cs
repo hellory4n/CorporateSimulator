@@ -404,6 +404,17 @@ public class Events : Node2D {
             Global.NoseUranusTerraforming = true;
         }
         #endregion
+        #region spacez piss ring
+        if (Global.Year==8 && Global.Month==12 && Global.Week==1 && !Global.SpaceZPissRing &&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/SpaceZPissRing");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.SpaceZPissRing = true;
+        }
+        #endregion
         #region your mom book
         if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
         !Global.PausedTime && Global.Industries[0]=="books") {
