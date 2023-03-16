@@ -166,4 +166,5 @@ public class Global : Node2D {
     public static bool RocketBoom = true;
     public static bool Melonet = false;
     public static bool MarsStockMarketCrash = false;
+    public static bool Meloncash = false;
 }
