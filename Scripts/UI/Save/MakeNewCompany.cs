@@ -106,15 +106,20 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "phones":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("More screen V1", 50),
                     new ResearchSave("Gimmicks", 50),
-                    new ResearchSave("Custom OS", 100)
                 });
                 break;
             case "yourarse":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("4K", 50)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("4K", 50),
+                    new ResearchSave("Ads Pro", 50),
+                    new ResearchSave("Ads Pro Max", 100),
+                    new ResearchSave("Ads Pro Max Ultra", 250),
+                    new ResearchSave("Ads 2", 500),
+                    new ResearchSave("Ads 2 Pro", 1000),
+                    new ResearchSave("Ads 2 Pro Max", 2500),
+                    new ResearchSave("Ads 2 Pro Max Ultra", 5000),
+                });
                 break;
             case "food":
                 newGame.UnlockedResearch.Add(

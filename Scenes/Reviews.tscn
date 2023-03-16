@@ -244,9 +244,9 @@ text = "Never seen something of such quality since Doors Vision"
 autowrap = true
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 680.0
+margin_left = 440.0
 margin_top = 575.0
-margin_right = 1080.0
+margin_right = 840.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
