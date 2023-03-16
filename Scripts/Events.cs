@@ -437,6 +437,18 @@ public class Events : Node2D {
             Global.SpaceZInvasion = true;
         }
         #endregion
+        #region uranus landing
+        if (Global.Year==9 && Global.Month==7 && Global.Week==1 && !Global.UranusLanding&&
+        !Global.PausedTime && Global.Industries[0]=="space") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Space/Melonet");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Melonet = true;
+        }
+        #endregion
+        
         #region your mom book
         if (Global.Year==2 && Global.Month==4 && Global.Week==1 && !Global.YourMom1 &&
         !Global.PausedTime && Global.Industries[0]=="books") {
