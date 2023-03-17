@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -16,6 +16,9 @@
 [ext_resource path="res://Assets/ActionCenterHover.png" type="Texture" id=14]
 [ext_resource path="res://Assets/ActionCenter.png" type="Texture" id=15]
 [ext_resource path="res://Scripts/Modules/ActionCenter.cs" type="Script" id=16]
+[ext_resource path="res://Assets/TimeSpeed.png" type="Texture" id=17]
+[ext_resource path="res://Assets/TimeSpeedHover.png" type="Texture" id=18]
+[ext_resource path="res://Assets/TimeSpeedPressed.png" type="Texture" id=19]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -104,3 +107,12 @@ text = "Nothing is happening"
 align = 2
 valign = 2
 autowrap = true
+
+[node name="TimeSpeed" type="TextureButton" parent="."]
+margin_left = 1205.0
+margin_top = 85.0
+margin_right = 1255.0
+margin_bottom = 135.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_hover = ExtResource( 18 )
