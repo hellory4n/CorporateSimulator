@@ -48,6 +48,7 @@ public class LoadGame : TextureButton {
                 PackedScene game = (PackedScene)ResourceLoader.Load("res://Scenes/Level1.tscn");
 
                 #region reset a bunch of variables
+                Global.WeekCounterThing = 0;
                 Global.MonthlySales = 0;
                 Global.DebtOno = 0;
                 Global.PoliticsAlreadyAppeared = false;

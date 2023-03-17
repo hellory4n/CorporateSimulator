@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class Developing : Label {
-    int waitTime = 30;
+    int waitTime = 60;
 
     public override void _Ready() {
         Text = "Developing " + Global.DevelopingName + ": 0%";

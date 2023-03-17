@@ -120,7 +120,7 @@ public class Game : Node2D {
 
         // calculate time stuff
         if (!Global.PausedTime) {
-            if (Global.WeekCounterThing > 7.5) {
+            if (Global.WeekCounterThing > 15) {
                 Global.Week++;
                 Global.WeeksWithoutPayingInvestors++;
                 Global.WeekCounterThing = 0;
@@ -164,7 +164,7 @@ public class Game : Node2D {
         Global.InvestorSusometerCounterThingyUhh += 1f * delta;
         // new investors
         if (!Global.PausedTime) {
-            if (Global.InvestorTimeCounterThing > Global.InvestorFrequency*7.5) {
+            if (Global.InvestorTimeCounterThing > Global.InvestorFrequency*15) {
                 Global.Investors++;
                 Global.InvestorTimeCounterThing = 0;
             }
