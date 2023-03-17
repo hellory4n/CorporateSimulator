@@ -82,6 +82,7 @@ texture_hover = ExtResource( 14 )
 script = ExtResource( 16 )
 
 [node name="Feedback" type="TextureButton" parent="."]
+visible = false
 margin_left = 390.0
 margin_right = 890.0
 margin_bottom = 75.0
