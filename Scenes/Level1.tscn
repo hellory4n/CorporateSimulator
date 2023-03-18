@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -19,6 +19,9 @@
 [ext_resource path="res://Assets/TimeSpeed.png" type="Texture" id=17]
 [ext_resource path="res://Assets/TimeSpeedHover.png" type="Texture" id=18]
 [ext_resource path="res://Assets/TimeSpeedPressed.png" type="Texture" id=19]
+[ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedOpen.cs" type="Script" id=20]
+[ext_resource path="res://Assets/TimeDialog.png" type="Texture" id=21]
+[ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedMenu.cs" type="Script" id=22]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -116,3 +119,12 @@ margin_bottom = 135.0
 texture_normal = ExtResource( 17 )
 texture_pressed = ExtResource( 19 )
 texture_hover = ExtResource( 18 )
+script = ExtResource( 20 )
+
+[node name="TimeSpeedMenu" type="Node2D" parent="."]
+position = Vector2( 970, 145 )
+script = ExtResource( 22 )
+
+[node name="Sprite" type="Sprite" parent="TimeSpeedMenu"]
+texture = ExtResource( 21 )
+centered = false
