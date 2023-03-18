@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class YourArsePriceCalculator : Label {
-    int youTubeOmeter = 0;
+    int youTubeOmeter = 1;
     bool ben = false;
 
     public override void _Ready() {

@@ -15,7 +15,7 @@ public class Events : Node2D {
             object garbage = Global.Products[Global.Products.Count-1];
             dynamic garbageDynamic = Global.Products[Global.Products.Count-1];
             int price = 69420;
-            double saleRate = 80;
+            double saleRate = 160/Global.TimeSpeed;
 
             // garbage price
             if (garbageProduct.Type == "computer") {
@@ -45,9 +45,9 @@ public class Events : Node2D {
             if ((bool)garbageProduct.Viral)
                 price *= 10;
 
-            saleRate -= Global.Reputation/100;
-            saleRate -= Global.Investors/100000;
-            saleRate -= Global.MarketingBudget/50000;
+            saleRate -= Global.Reputation/(200/Global.TimeSpeed);
+            saleRate -= Global.Investors/(200000/Global.TimeSpeed);
+            saleRate -= Global.MarketingBudget/(50000/Global.TimeSpeed);
 
             if (saleRate < 1)
                 saleRate = 1;
@@ -71,7 +71,7 @@ public class Events : Node2D {
         if (Global.Money < 0 && Global.DebtOno == 0)
             Global.DebtOno = 1;
 
-        if (Global.DebtOno == 1) {
+        if (Global.DebtOno == 1 && !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("debt", "Debt");
@@ -84,6 +84,7 @@ public class Events : Node2D {
         if (Global.Money < -50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Bankrupt.tscn");
             Node2D OK = (Node2D)yes.Instance();
+            Global.PausedTime = true;
             GetTree().Root.AddChild(OK);
         }
         #endregion
@@ -91,11 +92,13 @@ public class Events : Node2D {
         if (Global.Reputation < 1 && GetNodeOrNull<Node2D>("/root/NoReputation") == null && Global.DebtOno < 3) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NoReputation.tscn");
             Node2D OK = (Node2D)yes.Instance();
+            Global.PausedTime = true;
             GetTree().Root.AddChild(OK);
         }
         #endregion
         #region Politics lol
-        if (Global.Year % 4 == 0 && Global.Month == 1 && Global.Week == 1 && !Global.PoliticsAlreadyAppeared) {
+        if (Global.Year % 4 == 0 && Global.Month == 1 && Global.Week == 1 && !Global.PoliticsAlreadyAppeared &&
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "PoliticsLol");
@@ -105,7 +108,7 @@ public class Events : Node2D {
         }
         #endregion
         #region Climate change
-        if (Global.Year == 3 && Global.Month == 3 && Global.Week == 3 && !Global.ClimateChange) {
+        if (Global.Year == 3 && Global.Month == 3 && Global.Week == 3 && !Global.ClimateChange &&!Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("email", "ClimateChange");

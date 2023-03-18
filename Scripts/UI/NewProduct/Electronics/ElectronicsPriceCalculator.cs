@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class ElectronicsPriceCalculator : Label {
-    int sillyOmeter = 0;
+    int sillyOmeter = 1;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps

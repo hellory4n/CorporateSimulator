@@ -3,7 +3,7 @@ using System;
 
 public class TvPriceCalculator : Label {
     bool ben = false;
-    int youTubeOmeter = 0;
+    int youTubeOmeter = 1;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps

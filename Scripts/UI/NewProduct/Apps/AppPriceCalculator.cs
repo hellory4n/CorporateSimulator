@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class AppPriceCalculator : Label {
-    int facebookOmeter = 0;
+    int facebookOmeter = 1;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps

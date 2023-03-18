@@ -16,6 +16,7 @@ public class Developing : Label {
     }
 
     public override void _Process(float delta) {
+        waitTime = 60/Global.TimeSpeed;
         if (Engine.GetIdleFrames() % (ulong)waitTime == 0 && Global.PausedTime == false) {
             Global.DevelopingProgress++;
             Text = "Developing " + Global.DevelopingName + ": " + Global.DevelopingProgress + "%";
