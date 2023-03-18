@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -22,6 +22,12 @@
 [ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedOpen.cs" type="Script" id=20]
 [ext_resource path="res://Assets/TimeDialog.png" type="Texture" id=21]
 [ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedMenu.cs" type="Script" id=22]
+[ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedNormal.cs" type="Script" id=23]
+[ext_resource path="res://Assets/Speed1Off.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Speed3Off.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Speed2Off.png" type="Texture" id=26]
+[ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedFaster.cs" type="Script" id=27]
+[ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedFast.cs" type="Script" id=28]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -128,3 +134,27 @@ script = ExtResource( 22 )
 [node name="Sprite" type="Sprite" parent="TimeSpeedMenu"]
 texture = ExtResource( 21 )
 centered = false
+
+[node name="Normal" type="TextureButton" parent="TimeSpeedMenu"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 95.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 24 )
+script = ExtResource( 23 )
+
+[node name="Fast" type="TextureButton" parent="TimeSpeedMenu"]
+margin_left = 105.0
+margin_top = 20.0
+margin_right = 180.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 26 )
+script = ExtResource( 28 )
+
+[node name="Faster" type="TextureButton" parent="TimeSpeedMenu"]
+margin_left = 190.0
+margin_top = 20.0
+margin_right = 265.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 25 )
+script = ExtResource( 27 )

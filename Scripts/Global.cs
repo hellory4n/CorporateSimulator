@@ -176,4 +176,5 @@ public class Global : Node2D {
     public static bool UranusState = false;
     public static bool SpaceZPissRingFinish = false;
     public static bool TimeSpeedMenu = false;
+    public static int TimeSpeed = 1;
 }
