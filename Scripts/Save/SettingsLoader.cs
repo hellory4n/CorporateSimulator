@@ -17,4 +17,9 @@ public class SettingsLoader : Node2D {
         Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
         base._Ready();
     }
+
+    public override void _Process(float delta) {
+        Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
+        base._Process(delta);
+    }
 }

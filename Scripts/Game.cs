@@ -182,7 +182,8 @@ public class Game : Node2D {
         // pause time?
         if (GetNodeOrNull<Node2D>("/root/PauseMenu") != null || GetNodeOrNull<Node2D>("/root/ActionCenter")
         != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null ||
-        GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null)
+        GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null ||
+        GetNodeOrNull<Node2D>("/root/Settings") != null)
             Global.PausedTime = true;
         else
             Global.PausedTime = false;
