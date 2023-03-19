@@ -177,4 +177,5 @@ public class Global : Node2D {
     public static bool SpaceZPissRingFinish = false;
     public static bool TimeSpeedMenu = false;
     public static int TimeSpeed = 1;
+    public static bool RipAllGameData = false;
 }

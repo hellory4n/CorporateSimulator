@@ -7,6 +7,7 @@ public class Autosave : Timer {
     }
 
     public void Timeout() {
-        Savior.SaveGame(Global.SaveFile);
+        if (!Global.RipAllGameData)
+            Savior.SaveGame(Global.SaveFile);
     }
 }
