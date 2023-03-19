@@ -1080,7 +1080,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y1 m12
         if (Global.Year==1 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY1M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y1M12");
@@ -1091,7 +1091,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y2 m6
         if (Global.Year==2 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY2M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y2M6");
@@ -1102,7 +1102,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y2 m12
         if (Global.Year==2 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY2M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y2M12");
@@ -1113,7 +1113,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y3 m6
         if (Global.Year==3 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY3M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y3M6");
@@ -1124,7 +1124,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y3 m12
         if (Global.Year==3 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY3M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y3M12");
@@ -1135,7 +1135,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y4 m6
         if (Global.Year==4 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY4M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y4M6");
@@ -1146,7 +1146,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y4 m12
         if (Global.Year==4 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY4M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y4M12");
@@ -1157,7 +1157,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y5 m6
         if (Global.Year==5 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY5M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y5M6");
@@ -1168,7 +1168,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y5 m12
         if (Global.Year==5 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY5M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y5M12");
@@ -1179,7 +1179,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y6 m6
         if (Global.Year==6 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY6M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y6M6");
@@ -1190,7 +1190,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y6 m12
         if (Global.Year==6 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY6M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y6M12");
@@ -1201,7 +1201,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y7 m6
         if (Global.Year==7 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY7M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y7M6");
@@ -1212,7 +1212,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y7 m7
         if (Global.Year==7 && Global.Month==7 && Global.Week==3 && !Global.NPTimesY7M7 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY7M7");
@@ -1223,7 +1223,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y7 m12
         if (Global.Year==7 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY7M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y7M12");
@@ -1234,7 +1234,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y8 m6
         if (Global.Year==8 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY8M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y8M6");
@@ -1245,7 +1245,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y8 m12
         if (Global.Year==8 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY8M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y8M12");
@@ -1256,7 +1256,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y9 m4
         if (Global.Year==9 && Global.Month==4 & Global.Week==3 && !Global.NPTimesY9M4 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY9M4");
@@ -1267,7 +1267,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y9 m6
         if (Global.Year==9 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY9M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y9M6");
@@ -1278,7 +1278,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y9 m8
         if (Global.Year==9 && Global.Month==8 && Global.Week==3 && !Global.NPTimesY9M8 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY9M8");
@@ -1289,7 +1289,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y9 m9
         if (Global.Year==9 && Global.Month==9 && Global.Week==3 && !Global.NPTimesY9M9 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY9M9");
@@ -1300,7 +1300,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y9 m12
         if (Global.Year==9 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY9M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y9M12");
@@ -1311,7 +1311,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y10 m1
         if (Global.Year==10 && Global.Month==1 && Global.Week==3 && !Global.NPTimesY10M1 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY10M1");
@@ -1322,7 +1322,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y10 m6
         if (Global.Year==10 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY10M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y10M6");
@@ -1333,7 +1333,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y10 m8
         if (Global.Year==10 && Global.Month==8 && Global.Week==3 && !Global.NPTimesY10M8 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY10M8");
@@ -1344,7 +1344,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y10 m12
         if (Global.Year==10 && Global.Month==12 && Global.Week==3 && !Global.NPTimesY10M12 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y10M12");
@@ -1385,6 +1385,20 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.RocketBoom = true;
+        }
+        #endregion
+        #region Rooster
+        if (Global.Month==12 && Global.Week==4 && !Global.Rooster && !Global.PausedTime &&
+        Global.Industries[0]=="media") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Media/Rooster");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Rooster = true;
+        }
+        if (Global.Week == 1) {
+            Global.Rooster = false;
         }
         #endregion
         base._Process(delta);
