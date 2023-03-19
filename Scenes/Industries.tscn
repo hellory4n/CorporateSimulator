@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Industries/Games.png" type="Texture" id=8]
 [ext_resource path="res://Scripts/UI/Save/IndustryList.cs" type="Script" id=9]
 [ext_resource path="res://Assets/Industries/MoviesAndShows.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Industries/TV.png" type="Texture" id=11]
@@ -91,9 +92,9 @@ custom_fonts/font = SubResource( 6 )
 text = "cfgyuiojhdfxriolkjhftyuiopöliufrytguiloluytfretyjukilopoiuyyui"
 
 [node name="ChooseIndustry" type="TextureButton" parent="."]
-margin_left = 679.0
+margin_left = 440.0
 margin_top = 575.0
-margin_right = 1079.0
+margin_right = 840.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -114,19 +115,22 @@ align = 1
 valign = 1
 
 [node name="IndustryList" type="ItemList" parent="."]
-margin_left = 205.0
-margin_top = 149.0
-margin_right = 1079.0
-margin_bottom = 595.0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 276.0
+margin_top = 145.0
+margin_right = 1004.0
+margin_bottom = 559.0
 custom_colors/guide_color = Color( 0, 0, 0, 0 )
 custom_colors/font_color_selected = Color( 0.25098, 0.25098, 0.25098, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 10 )
 custom_styles/bg = SubResource( 11 )
-items = [ "Space", ExtResource( 15 ), false, "Food", ExtResource( 16 ), false, "Books", ExtResource( 3 ), false, "TV", ExtResource( 11 ), false, "Medical", ExtResource( 24 ), false, "Appliances", ExtResource( 12 ), false, "Computers", ExtResource( 18 ), false, "Apps", ExtResource( 13 ), false, "Music", ExtResource( 21 ), false, "Phones", ExtResource( 22 ), false, "Media", ExtResource( 10 ), false, "YourArse", ExtResource( 14 ), false ]
+items = [ "Space", ExtResource( 15 ), false, "Food", ExtResource( 16 ), false, "Books", ExtResource( 3 ), false, "TV", ExtResource( 11 ), false, "Medical", ExtResource( 24 ), false, "Appliances", ExtResource( 12 ), false, "Computers", ExtResource( 18 ), false, "Apps", ExtResource( 13 ), false, "Music", ExtResource( 21 ), false, "Phones", ExtResource( 22 ), false, "Media", ExtResource( 10 ), false, "YourArse", ExtResource( 14 ), false, "Games", ExtResource( 8 ), false ]
 allow_reselect = true
 auto_height = true
-max_columns = 3
+max_columns = 6
 same_column_width = true
-fixed_column_width = 300
+fixed_column_width = 175
+icon_mode = 0
 script = ExtResource( 9 )

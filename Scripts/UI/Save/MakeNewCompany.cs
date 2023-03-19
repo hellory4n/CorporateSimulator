@@ -24,6 +24,7 @@ public class MakeNewCompany : TextureButton {
             case 9: newGame.Industries = new string[]{"phones"}; break;
             case 10: newGame.Industries = new string[]{"media"}; break;
             case 11: newGame.Industries = new string[]{"yourarse"}; break;
+            case 12: newGame.Industries = new string[]{"games"}; break;
         }
         newGame.Name = GetNode<LineEdit>("../CompanyName").Text;
         newGame.Ceo = GetNode<LineEdit>("../CeoName").Text;
@@ -145,6 +146,12 @@ public class MakeNewCompany : TextureButton {
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
                     new ResearchSave("Famous Actors", 100),
                     new ResearchSave("Product Placement", 100)
+                });
+                break;
+            case "games":
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("Fart", 100),
+                    new ResearchSave("Pwteyrtytrertrytu", 100)
                 });
                 break;
         }
