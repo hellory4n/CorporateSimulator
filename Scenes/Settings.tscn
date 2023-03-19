@@ -70,9 +70,9 @@ custom_fonts/font = SubResource( 6 )
 text = "cfgyuiojhdfxriolkjhftyuiopöliufrytguiloluytfretyjukilopoiuyyui"
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 680.0
+margin_left = 440.0
 margin_top = 575.0
-margin_right = 1080.0
+margin_right = 840.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -135,5 +135,28 @@ margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
 text = "Autosave: ON"
+align = 1
+valign = 1
+
+[node name="FullscreenToggle" type="TextureButton" parent="."]
+margin_left = 220.0
+margin_top = 264.0
+margin_right = 620.0
+margin_bottom = 339.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="FullscreenToggle"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Fullscreen: OFF"
 align = 1
 valign = 1
