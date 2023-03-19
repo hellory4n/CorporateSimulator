@@ -116,10 +116,10 @@ align = 1
 valign = 1
 
 [node name="MusicToggle" type="TextureButton" parent="."]
-margin_left = 220.0
-margin_top = 164.0
-margin_right = 620.0
-margin_bottom = 239.0
+margin_left = 228.0
+margin_top = 214.0
+margin_right = 628.0
+margin_bottom = 289.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
@@ -139,10 +139,10 @@ align = 1
 valign = 1
 
 [node name="AutosaveToggle" type="TextureButton" parent="."]
-margin_left = 645.0
-margin_top = 164.0
-margin_right = 1045.0
-margin_bottom = 239.0
+margin_left = 651.0
+margin_top = 214.0
+margin_right = 1051.0
+margin_bottom = 289.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
@@ -162,10 +162,10 @@ align = 1
 valign = 1
 
 [node name="FullscreenToggle" type="TextureButton" parent="."]
-margin_left = 220.0
-margin_top = 264.0
-margin_right = 620.0
-margin_bottom = 339.0
+margin_left = 228.0
+margin_top = 315.0
+margin_right = 628.0
+margin_bottom = 390.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
@@ -185,10 +185,10 @@ align = 1
 valign = 1
 
 [node name="DeleteEverything" type="TextureButton" parent="."]
-margin_left = 645.0
-margin_top = 264.0
-margin_right = 1045.0
-margin_bottom = 339.0
+margin_left = 440.0
+margin_top = 415.0
+margin_right = 840.0
+margin_bottom = 490.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 11 )
 texture_hover = ExtResource( 12 )
@@ -208,33 +208,11 @@ align = 1
 valign = 1
 autowrap = true
 
-[node name="FullscreenToggle2" type="TextureButton" parent="DeleteEverything"]
-margin_left = -425.0
-margin_right = -25.0
-margin_bottom = 75.0
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 7 )
-script = ExtResource( 9 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Label" type="Label" parent="DeleteEverything/FullscreenToggle2"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_right = 399.2
-margin_bottom = 74.175
-custom_fonts/font = SubResource( 4 )
-text = "Fullscreen: OFF"
-align = 1
-valign = 1
-
 [node name="Tutorial" type="TextureButton" parent="."]
-margin_left = 440.0
-margin_top = 364.0
-margin_right = 840.0
-margin_bottom = 439.0
+margin_left = 651.0
+margin_top = 315.0
+margin_right = 1051.0
+margin_bottom = 390.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
