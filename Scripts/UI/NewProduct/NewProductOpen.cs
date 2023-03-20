@@ -82,6 +82,12 @@ public class NewProductOpen : TextureButton {
                         OKat3am.ZIndex = 100;
                         GetTree().Root.AddChild(OKat3am);
                         break;
+                    case "games":
+                        var yesGAMING = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Games.tscn");
+                        Node2D OKGAMING = (Node2D)yesGAMING.Instance();
+                        OKGAMING.ZIndex = 100;
+                        GetTree().Root.AddChild(OKGAMING);
+                        break;
                 }
             } else {
                 GetNode<Label>("Label").Text = "You have no employees!";

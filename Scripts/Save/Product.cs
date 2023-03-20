@@ -100,3 +100,12 @@ public class YourArseProduct : Product {
     public int Script = 69;
     public int Ads = 100;
 }
+
+public class GameProduct : Product {
+    public string Theme = "Cookbook";
+    public string Genre = "War";
+    public decimal ThemeGenreCombination = 0;
+    public int Gameplay = 69;
+    public int Lore = 69;
+    public int Graphics = 69;
+}
