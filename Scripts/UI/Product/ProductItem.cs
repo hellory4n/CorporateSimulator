@@ -290,5 +290,29 @@ public class ProductItem : Control {
                 ProductionTime + "%\nScript: " + yourArseProduct.Script + "%\nAds: " +
                 yourArseProduct.Ads + "%";
         }
+        if (productProduct.Type == "game") {
+            // sorry
+            GD.Print(objectProduct.ToString());
+            GameProduct gameProduct = JsonConvert.DeserializeObject<GameProduct>(
+                JsonConvert.SerializeObject(objectProduct));
+            GetNode<Label>("ProductName").Text = productProduct.Name;
+            if (productProduct.MoneySpent > productProduct.MoneyGot)
+                GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
+                    productProduct.MoneySpent-productProduct.MoneyGot);
+                else {
+                    GetNode<Label>("ProductInfo").Text = "Profit: $"+String.Format("{0:n0}",
+                        productProduct.MoneyGot-productProduct.MoneySpent);
+                }
+            
+            GetNode<Label>("ProductInfo").Text += "\nRevenue: $" + String.Format("{0:n0}",
+                productProduct.MoneyGot) + "\nSales: " + String.Format("{0:n0}", productProduct.Sales) +
+                "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
+                productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
+                // just gaming stuff
+                "\nTheme: " + gameProduct.Theme + "\nGenre: " + gameProduct.Genre +
+                "\nTheme/Genre combination: " + (int)gameProduct.ThemeGenreCombination + "/10\nGameplay: " +
+                gameProduct.Gameplay*10 + "%\nLore: " + gameProduct.Lore*10 + "%\nGraphics: " +
+                gameProduct.Graphics*10 + "%";
+        }
     }
 }

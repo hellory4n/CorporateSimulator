@@ -46,6 +46,7 @@ public class Developing : Label {
             Global.AppNewProduct = new AppProduct();
             Global.PhoneNewProduct = new PhoneProduct();
             Global.YourArseNewProduct = new YourArseProduct();
+            Global.GameNewProduct = new GameProduct();
 
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
