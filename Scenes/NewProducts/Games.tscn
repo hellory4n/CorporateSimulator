@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=5]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=6]
 [ext_resource path="res://Assets/LineEdit.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/NewProduct/Games/GameTheme.cs" type="Script" id=8]
 [ext_resource path="res://Assets/LineEditFocus.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/UI/NewProduct/Book/BookGenre.cs" type="Script" id=11]
 
@@ -84,7 +85,7 @@ margin_right = 604.2
 margin_bottom = 126.0
 rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
-text = "New games"
+text = "New awesome videogame"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -166,6 +167,7 @@ margin_bottom = 390.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
