@@ -180,4 +180,5 @@ public class Global : Node2D {
     public static int TimeSpeed = 1;
     public static bool RipAllGameData = false;
     public static bool Rooster = false;
+    public static bool Hola = false;
 }

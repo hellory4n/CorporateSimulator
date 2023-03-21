@@ -1387,7 +1387,7 @@ public class Events : Node2D {
             Global.RocketBoom = true;
         }
         #endregion
-        #region Rooster
+        #region rooster
         if (Global.Month==12 && Global.Week==4 && !Global.Rooster && !Global.PausedTime &&
         Global.Industries[0]=="media") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
@@ -1399,6 +1399,17 @@ public class Events : Node2D {
         }
         if (Global.Week == 1) {
             Global.Rooster = false;
+        }
+        #endregion
+        #region hola by trickstarter
+        if (Global.Year==2 && Global.Month==10 && Global.Week==1 && !Global.Hola && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/TrickStarterHola");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Hola = true;
         }
         #endregion
         base._Process(delta);
