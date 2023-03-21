@@ -13,7 +13,7 @@ public class Reviews : Node2D {
                 Global.Products[Global.Products.Count-1]));
             GetNode<Label>("Title").Text = garbage.Name + " reviews";
             GetNode<Label>("Review").Text = garbage.Name + " reviews";
-            string[] reviews = {"m", "p", "r", "h"};
+            string[] reviews = {"not loaded", "not loaded", "not loaded", "not loaded"};
 
             // reviewers
             string[] reviewers = {"someone 1", "someone 2", "someone 3", "someone 4"};
@@ -50,6 +50,9 @@ public class Reviews : Node2D {
                     break;
                 case "yourarse":
                     reviewers = new string[]{"BadReviews.com", "BadReviewsSucks.com", "EpicReviews.net", "LegitReviews.org"};
+                    break;
+                case "game":
+                    reviewers = new string[]{"ING", "Infracritic", "GameCenter", "BadReviews.com"};
                     break;
             }
             
