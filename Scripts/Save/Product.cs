@@ -102,8 +102,8 @@ public class YourArseProduct : Product {
 }
 
 public class GameProduct : Product {
-    public string Theme = "Cookbook";
-    public string Genre = "War";
+    public string Theme = "Dance";
+    public string Genre = "RPG";
     public decimal ThemeGenreCombination = 0;
     public int Gameplay = 69;
     public int Lore = 69;
