@@ -1412,6 +1412,17 @@ public class Events : Node2D {
             Global.Hola = true;
         }
         #endregion
+        #region hola by trickstarter
+        if (Global.Year==4 && Global.Month==5 && Global.Week==1 && !Global.GameStation5Pro && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/GameStation5Pro");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.GameStation5Pro = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
