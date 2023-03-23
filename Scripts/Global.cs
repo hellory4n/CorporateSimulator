@@ -182,4 +182,5 @@ public class Global : Node2D {
     public static bool Rooster = false;
     public static bool Hola = false;
     public static bool GameStation5Pro = false;
+    public static bool XcubeSeriesZ = false;
 }
