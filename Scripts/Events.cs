@@ -1456,6 +1456,17 @@ public class Events : Node2D {
             Global.XcubeWrong = true;
         }
         #endregion
+        #region gamestation 6
+        if (Global.Year==6 && Global.Month==5 && Global.Week==1 && !Global.GameStation6 && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/GameStation6");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.GameStation6 = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

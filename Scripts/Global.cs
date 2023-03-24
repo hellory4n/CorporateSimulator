@@ -185,4 +185,5 @@ public class Global : Node2D {
     public static bool XcubeSeriesZ = false;
     public static bool WeUs = false;
     public static bool XcubeWrong = false;
+    public static bool GameStation6 = false;
 }
