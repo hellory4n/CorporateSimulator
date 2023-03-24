@@ -1445,6 +1445,17 @@ public class Events : Node2D {
             Global.WeUs = true;
         }
         #endregion
+        #region xcube wrong
+        if (Global.Year==6 && Global.Month==4 && Global.Week==1 && !Global.XcubeWrong && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/XcubeWrong");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.XcubeWrong = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
