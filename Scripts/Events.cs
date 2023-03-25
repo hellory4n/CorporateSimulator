@@ -1478,6 +1478,17 @@ public class Events : Node2D {
             Global.Standing = true;
         }
         #endregion
+        #region rip goggles standing y8-y8
+        if (Global.Year==8 && Global.Month==8 && Global.Week==2 && !Global.StandingRip && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/StandingRip");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.StandingRip = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
