@@ -1489,6 +1489,17 @@ public class Events : Node2D {
             Global.StandingRip = true;
         }
         #endregion
+        #region we all
+        if (Global.Year==10 && Global.Month==1 && Global.Week==2 && !Global.WeAll && !Global.PausedTime
+        && Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/WeAll");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.WeAll = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }
