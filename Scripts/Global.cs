@@ -189,4 +189,5 @@ public class Global : Node2D {
     public static bool Standing = false;
     public static bool StandingRip = false;
     public static bool WeAll = false;
+    public static bool YearOfTheGame = false;
 }

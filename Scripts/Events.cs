@@ -1500,6 +1500,20 @@ public class Events : Node2D {
             Global.WeAll = true;
         }
         #endregion
+        #region year of the game
+        if (Global.Month==12 && Global.Week==4 && !Global.YearOfTheGame && !Global.PausedTime &&
+        Global.Industries[0]=="games") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("news", "News/Games/YearOfTheGame");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.YearOfTheGame = true;
+        }
+        if (Global.Week == 1) {
+            Global.YearOfTheGame = false;
+        }
+        #endregion
         base._Process(delta);
     }
 }
