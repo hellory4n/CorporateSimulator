@@ -53,7 +53,7 @@ public class Ball : Node2D {
             timer.Start();
             Position = new Vector2(76, Position.y); // don't make millions of timers
         }
-        if (Position.y < 640) {
+        if (Position.y < 640 && !Global.PausedTime) {
             Position = new Vector2(Position.x, Position.y + 500 * delta);
         }
         base._Process(delta);
