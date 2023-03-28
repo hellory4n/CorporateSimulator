@@ -38,7 +38,13 @@ public class PhonePrice : HSlider {
         if (smartphone2)
             Global.PhoneNewProduct.Price += 200;
 
-        GetNode<Label>("Label").Text = "Price - $" + String.Format("{0:n0}", Global.PhoneNewProduct.Price);;
+        Global.PhoneNewProduct.MoneySpent = Global.PhoneNewProduct.Price * 5;
+
+        if (Global.Investors/10 > 1)
+            Global.PhoneNewProduct.MoneySpent *= ((int)Global.Investors/10);
+
+        GetNode<Label>("Label").Text = $"Price: ${String.Format("{0:n0}", Global.PhoneNewProduct.Price)} - "
+        + $"Development: ${String.Format("{0:n0}", Global.PhoneNewProduct.MoneySpent)}";
 
         base._Process(delta);
     }

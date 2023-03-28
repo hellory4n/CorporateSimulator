@@ -15,12 +15,16 @@ public class BookPriceCalculator : Label {
 
     public override void _Process(float delta) {
         if (isGiant) {
-            this.Text = "This book will cost $5,000 to develop";
             Global.BookNewProduct.MoneySpent = 5000;
         } else {
-            this.Text = "This book will cost $1,000 to develop";
             Global.BookNewProduct.MoneySpent = 1000;
         }
+
+        if (Global.Investors/10 > 1)
+            Global.BookNewProduct.MoneySpent *= ((int)Global.Investors/10);
+
+        this.Text = $"This book will cost ${String.Format("{0:n0}", Global.BookNewProduct.MoneySpent)} to develop";
+
         base._Process(delta);
     }
 }

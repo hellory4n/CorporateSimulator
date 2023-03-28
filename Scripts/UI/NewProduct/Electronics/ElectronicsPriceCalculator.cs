@@ -34,6 +34,9 @@ public class ElectronicsPriceCalculator : Label {
         Global.ElectronicsNewProduct.MoneySpent = Global.ElectronicsNewProduct.Features*50 +
             Global.ElectronicsNewProduct.Security * 50 + Global.ElectronicsNewProduct.IoTNess*50;
 
+        if (Global.Investors/100 > 1)
+            Global.ElectronicsNewProduct.MoneySpent *= ((int)Global.Investors/100);
+
         Text = "This product will cost $" + String.Format("{0:n0}", Global.ElectronicsNewProduct.MoneySpent);
         
         if (Global.ElectronicsNewProduct.Rating > 10)

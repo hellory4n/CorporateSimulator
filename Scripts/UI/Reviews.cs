@@ -96,7 +96,7 @@ public class Reviews : Node2D {
             if (garbage.Type == "medical" && garbage.Rating < 5 && Global.Money > 4)
                 Global.BadMedicalThing = false;
             
-            if (soRandom.Next(0,10) == 0)
+            if (soRandom.Next(0,10) == 2)
                 Global.Offended = false;
             
             if (soRandom.Next(0,4) == 0 && garbage.Type == "food")
@@ -118,7 +118,7 @@ public class Reviews : Node2D {
                     Global.RocketBoom = false;
             }
 
-            if (soRandom.Next(0,4) == 0 && (garbage.Type == "computer" || garbage.Type == "phone"))
+            if (soRandom.Next(0,7) == 0 && (garbage.Type == "computer" || garbage.Type == "phone"))
                 Global.Boom = false;
         } else {
             QueueFree();

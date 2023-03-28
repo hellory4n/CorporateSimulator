@@ -25,9 +25,15 @@ public class ComputerPriceSlider : HSlider {
         Global.ComputerNewProduct.Price += (int)Value;
 
         if (rgb)
-            Global.ComputerNewProduct.Price += 100; 
+            Global.ComputerNewProduct.Price += 100;
+        
+        Global.ComputerNewProduct.MoneySpent = Global.ComputerNewProduct.Price * 5;
 
-        GetNode<Label>("Label").Text = "Price - $" + String.Format("{0:n0}", Global.ComputerNewProduct.Price);;
+        if (Global.Investors/10 > 1)
+            Global.ComputerNewProduct.MoneySpent *= ((int)Global.Investors/10);
+
+        GetNode<Label>("Label").Text = $"Price: ${String.Format("{0:n0}", Global.ComputerNewProduct.Price)} - "
+        + $"Development: ${String.Format("{0:n0}", Global.ComputerNewProduct.MoneySpent)}";
 
         base._Process(delta);
     }

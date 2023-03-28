@@ -34,7 +34,7 @@ public class Events : Node2D {
                 PhoneProduct hjsksjk = JsonConvert.DeserializeObject<PhoneProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = hjsksjk.Price;
-            } else if (garbage is YourArseProduct) {
+            } else if (garbageProduct.Type == "yourarse") {
                 YourArseProduct sjksmg = JsonConvert.DeserializeObject<YourArseProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = sjksmg.Ads*10;
@@ -45,18 +45,21 @@ public class Events : Node2D {
             if ((bool)garbageProduct.Viral)
                 price *= 10;
 
-            saleRate -= Global.Reputation/(200/Global.TimeSpeed);
-            saleRate -= Global.Investors/(200000/Global.TimeSpeed);
-            saleRate -= Global.MarketingBudget/(50000/Global.TimeSpeed);
+            saleRate -= Global.Reputation/100;
+            saleRate -= Global.Investors/100000;
+            saleRate -= Global.MarketingBudget/50000;
 
             if (saleRate < 1)
                 saleRate = 1;
 
-            if (Engine.GetIdleFrames() % (ulong)saleRate*60 == 0 && Global.PausedTime == false) {
+            ulong fart = (ulong)(saleRate*(60*Global.TimeSpeed));
+
+            if (Engine.GetIdleFrames() % fart == 0 && Global.PausedTime == false) {
                 // more stuff to break the game
                 foreach (var item in Global.Researched) {
-                    if (item.Name == "Overpriced products")
+                    if (item.Name == "Overpriced products") {
                         price *= 5;
+                    }
                 }
 
                 garbageDynamic.Sales += 100;
@@ -65,6 +68,7 @@ public class Events : Node2D {
                 Global.MonthlySales += price*100;
                 Global.Products[Global.Products.Count-1] = (object)garbageDynamic;
             }
+            GD.Print("sale rate: " + fart);
         }
         #endregion
         #region Debt
