@@ -15,7 +15,7 @@ public class Events : Node2D {
             object garbage = Global.Products[Global.Products.Count-1];
             dynamic garbageDynamic = Global.Products[Global.Products.Count-1];
             int price = 69420;
-            double saleRate = 160/Global.TimeSpeed;
+            double saleRate = 160;
 
             // garbage price
             if (garbageProduct.Type == "computer") {
@@ -51,8 +51,14 @@ public class Events : Node2D {
 
             if (saleRate < 1)
                 saleRate = 1;
-
-            ulong fart = (ulong)(saleRate*(60*Global.TimeSpeed));
+            
+            int veryRealSecond = 3;
+            if (Global.TimeSpeed == 2)
+                veryRealSecond = 5;
+            if (Global.TimeSpeed == 3)
+                veryRealSecond = 10;
+            
+            ulong fart = (ulong)(saleRate/veryRealSecond);
 
             if (Engine.GetIdleFrames() % fart == 0 && Global.PausedTime == false) {
                 // more stuff to break the game
