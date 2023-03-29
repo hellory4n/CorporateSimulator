@@ -32,8 +32,12 @@ public class FoodPriceCalculator : Label {
             Global.FoodNewProduct.Taste = 100;
         if (Global.FoodNewProduct.Rating > 10)
             Global.FoodNewProduct.Rating = 10;
+        
+        if (Global.Investors/10 > 1)
+            Global.FoodNewProduct.MoneySpent *= ((int)Global.Investors/10);
 
-        Text = "This product will cost $" + String.Format("{0:n0}", Global.FoodNewProduct.MoneySpent);
+        Text = "This product will cost $" + String.Format("{0:n0}", Global.FoodNewProduct.MoneySpent) +
+        " to develop";
         base._Process(delta);
     }
 }
