@@ -8,8 +8,12 @@ public class GamePrice : Label {
         Global.GameNewProduct.Graphics = (int)GetNode<HSlider>("../Slider3").Value;
         Global.GameNewProduct.MoneySpent = Global.GameNewProduct.Gameplay*100 +
             Global.GameNewProduct.Lore*100 + Global.GameNewProduct.Graphics*100;
+        
+        if (Global.Investors/10 > 1)
+            Global.GameNewProduct.MoneySpent *= ((int)Global.Investors/10);
 
-        Text = "This product will cost $" + String.Format("{0:n0}", Global.GameNewProduct.MoneySpent);
+        Text = "This product will cost $" + String.Format("{0:n0}", Global.GameNewProduct.MoneySpent) +
+        " to develop";
         
         base._Process(delta);
     }
