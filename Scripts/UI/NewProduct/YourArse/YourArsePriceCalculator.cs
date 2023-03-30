@@ -39,6 +39,9 @@ public class YourArsePriceCalculator : Label {
         
         if (ben)
             Global.YourArseNewProduct.MoneySpent += 10000;
+        
+        if (Global.Investors/75 > 1)
+            Global.YourArseNewProduct.MoneySpent *= ((int)Global.Investors/75);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.YourArseNewProduct.MoneySpent);
         

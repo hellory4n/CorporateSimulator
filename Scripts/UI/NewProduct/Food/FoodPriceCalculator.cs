@@ -33,8 +33,8 @@ public class FoodPriceCalculator : Label {
         if (Global.FoodNewProduct.Rating > 10)
             Global.FoodNewProduct.Rating = 10;
         
-        if (Global.Investors/10 > 1)
-            Global.FoodNewProduct.MoneySpent *= ((int)Global.Investors/10);
+        if (Global.Investors/50 > 1)
+            Global.FoodNewProduct.MoneySpent *= ((int)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.FoodNewProduct.MoneySpent) +
         " to develop";

@@ -20,8 +20,8 @@ public class MediaPriceCalculator : Label {
             Global.MediaNewProduct.MoneySpent = 1000;
         }
 
-        if (Global.Investors/10 > 1)
-            Global.MediaNewProduct.MoneySpent *= ((int)Global.Investors/10);
+        if (Global.Investors/50 > 1)
+            Global.MediaNewProduct.MoneySpent *= ((int)Global.Investors/50);
 
         this.Text = $"This product will cost ${String.Format("{0:n0}", Global.MediaNewProduct.MoneySpent)} to develop";
         base._Process(delta);
