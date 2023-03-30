@@ -83,6 +83,9 @@ public class Reviews : Node2D {
             dynamic uh = Global.Products[Global.Products.Count-1];
             uh.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;            
 
+            // mues
+            Global.DiscontinuedProduct = false;
+
             // money money money
             if (soRandom.Next(0,4) == 0)
                 uh.Viral = true;

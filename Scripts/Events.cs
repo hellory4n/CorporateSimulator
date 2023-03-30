@@ -60,19 +60,38 @@ public class Events : Node2D {
             
             ulong fart = (ulong)(saleRate/veryRealSecond);
 
+            
+
             if (Engine.GetIdleFrames() % fart == 0 && Global.PausedTime == false) {
-                // more stuff to break the game
-                foreach (var item in Global.Researched) {
-                    if (item.Name == "Overpriced products") {
-                        price *= 5;
+                // is the product 3 months old?
+                string[] yes = garbageProduct.ReleaseDate.Split(" ");
+                int garbageYear = int.Parse(yes[0].Substring(1));
+                int garbageMonth = int.Parse(yes[1].Substring(1));
+                int monthsOld = (Global.Year - garbageYear) * 12 + (Global.Month - garbageMonth);
+
+                if (monthsOld < 3) {
+                    // more stuff to break the game
+                    foreach (var item in Global.Researched) {
+                        if (item.Name == "Overpriced products") {
+                            price *= 5;
+                        }
+                    }
+
+                    garbageDynamic.Sales += 100;
+                    garbageDynamic.MoneyGot += price*100;
+                    Global.Money += price*100;
+                    Global.MonthlySales += price*100;
+                    Global.Products[Global.Products.Count-1] = (object)garbageDynamic;
+                } else {
+                    if (!Global.DiscontinuedProduct) {
+                        var ggdfh = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+                        Ball OK = (Ball)ggdfh.Instance();
+                        OK.Init("news", "DiscontinuedProduct");
+                        OK.ZIndex = 100;
+                        GetTree().Root.AddChild(OK);
+                        Global.DiscontinuedProduct = true;
                     }
                 }
-
-                garbageDynamic.Sales += 100;
-                garbageDynamic.MoneyGot += price*100;
-                Global.Money += price*100;
-                Global.MonthlySales += price*100;
-                Global.Products[Global.Products.Count-1] = (object)garbageDynamic;
             }
             GD.Print("sale rate: " + fart);
         }
