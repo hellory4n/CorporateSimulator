@@ -14,32 +14,60 @@ public class Events : Node2D {
                 Global.Products[Global.Products.Count-1]));
             object garbage = Global.Products[Global.Products.Count-1];
             dynamic garbageDynamic = Global.Products[Global.Products.Count-1];
-            int price = 69420;
+            int price = 0;
             double saleRate = 160;
+            int sales = 100;
 
             // garbage price
             if (garbageProduct.Type == "computer") {
                 ComputerProduct shjksj = JsonConvert.DeserializeObject<ComputerProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = shjksj.Price;
+                sales = 2*garbageProduct.Rating;
             } else if (garbageProduct.Type == "tv") {
                 TvProduct hjskosp = JsonConvert.DeserializeObject<TvProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
-                price = hjskosp.Ads*10;
+                price = hjskosp.Ads*5000;
+                sales = 2*garbageProduct.Rating;
             } else if (garbageProduct.Type == "apps") {
                 AppProduct jskiops = JsonConvert.DeserializeObject<AppProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
-                price = jskiops.Algorithm*10;
+                price = (int)jskiops.Algorithm/10;
+                sales = 1000*garbageProduct.Rating;
             } else if (garbageProduct.Type == "phone") {
                 PhoneProduct hjsksjk = JsonConvert.DeserializeObject<PhoneProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = hjsksjk.Price;
+                sales = 10*garbageProduct.Rating;
             } else if (garbageProduct.Type == "yourarse") {
                 YourArseProduct sjksmg = JsonConvert.DeserializeObject<YourArseProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
-                price = sjksmg.Ads*10;
-            } else {
-                price = garbageProduct.Rating*100;
+                price = (int)sjksmg.Ads/20;
+                sales = 2000*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "rocket") {
+                price = 100;
+                sales = 100*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "food") {
+                price = 5;
+                sales = 2000*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "book") {
+                price = 20;
+                sales = 50*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "medical") {
+                price = 50;
+                sales = 200*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "electronics") {
+                price = 400;
+                sales = 25*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "music") {
+                price = 5;
+                sales = 2000*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "media") {
+                price = 10;
+                sales = 1000*garbageProduct.Rating;
+            } else if (garbageProduct.Type == "game") {
+                price = 60;
+                sales = 167*garbageProduct.Rating;
             }
 
             if ((bool)garbageProduct.Viral)
@@ -60,8 +88,6 @@ public class Events : Node2D {
             
             ulong fart = (ulong)(saleRate/veryRealSecond);
 
-            
-
             if (Engine.GetIdleFrames() % fart == 0 && Global.PausedTime == false) {
                 // is the product 3 months old?
                 string[] yes = garbageProduct.ReleaseDate.Split(" ");
@@ -77,10 +103,10 @@ public class Events : Node2D {
                         }
                     }
 
-                    garbageDynamic.Sales += 100;
-                    garbageDynamic.MoneyGot += price*100;
-                    Global.Money += price*100;
-                    Global.MonthlySales += price*100;
+                    garbageDynamic.Sales += sales;
+                    garbageDynamic.MoneyGot += price*sales;
+                    Global.Money += price*sales;
+                    Global.MonthlySales += price*sales;
                     Global.Products[Global.Products.Count-1] = (object)garbageDynamic;
                 } else {
                     if (!Global.DiscontinuedProduct) {
@@ -93,7 +119,8 @@ public class Events : Node2D {
                     }
                 }
             }
-            GD.Print("sale rate: " + fart);
+            GD.Print("sales: " + sales);
+            GD.Print("price: " + price);
         }
         #endregion
         #region Debt
@@ -1087,7 +1114,7 @@ public class Events : Node2D {
         #endregion
         #region new pork times y1 m6
         if (Global.Year==1 && Global.Month==6 && Global.Week==3 && !Global.NPTimesY1M6 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/Y1M6");
@@ -1098,7 +1125,7 @@ public class Events : Node2D {
         #endregion
         #region breaking news y1 m8
         if (Global.Year==1 && Global.Month==8 && Global.Week==1 && !Global.NPTimesY1M8 &&
-        !Global.PausedTime && Global.Industries[0]=="phones") {
+        !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("news", "News/NPTimes/BreakingNewsY1M8");
