@@ -17,13 +17,17 @@ public class MedicalPriceCalculator : Label {
     }
 
     public override void _Process(float delta) {
-        Global.MedicalNewProduct.Accuracy = (int)GetNode<HSlider>("../Slider1").Value;
-        Global.MedicalNewProduct.Marketing = (int)GetNode<HSlider>("../Slider2").Value;
-        Global.MedicalNewProduct.Rating = (int)Global.MedicalNewProduct.Accuracy/10;
-        Global.MedicalNewProduct.MoneySpent = Global.MedicalNewProduct.Marketing*2 +
-            Global.MedicalNewProduct.Accuracy*200;
+        Global.MedicalNewProduct.Safety = (int)GetNode<HSlider>("../Slider1").Value;
+        Global.MedicalNewProduct.Efficacy = (int)GetNode<HSlider>("../Slider2").Value;
+        Global.MedicalNewProduct.Reliability = (int)GetNode<HSlider>("../Slider3").Value;
+        // jsnhrsnhmfkgyjhmgk
+        Global.MedicalNewProduct.Rating = (int)Global.MedicalNewProduct.Efficacy/20 + 
+            (int)Global.MedicalNewProduct.Safety/40 + (int)Global.MedicalNewProduct.Reliability/40;
+        Global.MedicalNewProduct.Rating++;
+        Global.MedicalNewProduct.MoneySpent = Global.MedicalNewProduct.Safety*200 +
+            Global.MedicalNewProduct.Efficacy*200 + Global.MedicalNewProduct.Reliability*200;
 
-        if (hasMagic) {
+        /*if (hasMagic) {
             Global.MedicalNewProduct.MoneySpent += 20000;
             Global.MedicalNewProduct.Accuracy += 50;
             Global.MedicalNewProduct.Rating += 2;
@@ -31,7 +35,7 @@ public class MedicalPriceCalculator : Label {
         if (Global.MedicalNewProduct.Accuracy > 100)
             Global.MedicalNewProduct.Accuracy = 100;
         if (Global.MedicalNewProduct.Rating > 10)
-            Global.MedicalNewProduct.Rating = 10;
+            Global.MedicalNewProduct.Rating = 10;*/
         
         if (Global.Investors/50 > 1)
             Global.MedicalNewProduct.MoneySpent *= ((int)Global.Investors/50);

@@ -10,7 +10,6 @@ public class MedicalFinish : TextureButton {
         Global.MedicalNewProduct.Type = "medical";
         Global.MedicalNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.MedicalNewProduct.MoneySpent;
-        Global.Investors += Global.MedicalNewProduct.Marketing;
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/Developing.tscn");
         Label OK = (Label)yes.Instance();
         OK.RectPosition = new Vector2(-25, 286);

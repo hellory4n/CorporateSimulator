@@ -29,8 +29,9 @@ public class BookProduct : Product {
 }
 
 public class MedicalProduct : Product {
-    public int Accuracy = 69;
-    public int Marketing = 69;
+    public int Safety = 69;
+    public int Efficacy = 69;
+    public int Reliability = 69;
 }
 
 public class ComputerProduct : Product {

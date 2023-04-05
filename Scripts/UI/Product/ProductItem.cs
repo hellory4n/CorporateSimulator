@@ -77,8 +77,8 @@ public class ProductItem : Control {
                 "\nCost: $" + String.Format("{0:n0}", productProduct.MoneySpent) + "\nRating: " +
                 productProduct.Rating + "/10\nRelease date: " + productProduct.ReleaseDate +
                 // just medical stuff
-                "\nAccuracy: " + medicalProduct.Accuracy + "%\nMarketing: " + medicalProduct.Marketing +
-                "%";
+                "\nSafety: " + medicalProduct.Safety + "%\nEfficacy: " + medicalProduct.Efficacy +
+                "%\nReliability: " + medicalProduct.Reliability + "%";
         }
         if (productProduct.Type == "computer") {
             // sorry
