@@ -41,9 +41,18 @@ public class MakeNewCompany : TextureButton {
                 });
                 break;
             case "books":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("Giant books", 50)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("Audiobooks", 50),
+                    new ResearchSave("Merchandise", 50),
+                    new ResearchSave("Localization", 50),
+                    new ResearchSave("E-books", 50),
+                    new ResearchSave("Images", 50),
+                    new ResearchSave("Bible-sized books", 50),
+                    new ResearchSave("Majestic lore", 50),
+                    new ResearchSave("A different font", 50),
+                    new ResearchSave("Awesome covers", 50),
+                    new ResearchSave("Book-themed reading glasses", 500),
+                });
                 break;
             case "clothes":
                 newGame.UnlockedResearch.Add(
@@ -52,18 +61,30 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "apps":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Algorithms Pro", 50),
-                    new ResearchSave("Algorithms Pro Max", 100),
-                    new ResearchSave("Algorithms Pro Max Ultra", 250),
-                    new ResearchSave("Algorithms 2", 500),
-                    new ResearchSave("Algorithms 2 Pro", 1000),
-                    new ResearchSave("Algorithms 2 Pro Max", 2500),
-                    new ResearchSave("Algorithms 2 Pro Max Ultra", 5000),
+                    new ResearchSave("Subscriptions", 50),
+                    new ResearchSave("Advertisements", 50),
+                    new ResearchSave("Endless notifications", 50),
+                    new ResearchSave("In-app purchases", 50),
+                    new ResearchSave("AI", 50),
+                    new ResearchSave("Accessibility", 50),
+                    new ResearchSave("Localization", 50),
+                    new ResearchSave("Cross-platform compatibility", 50),
+                    new ResearchSave("Better performance", 50),
+                    new ResearchSave("Ultimate tracking", 50),
                 });
                 break;
             case "music":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Cooler Music", 50),
+                    new ResearchSave("Better sound quality", 50),
+                    new ResearchSave("Music videos", 50),
+                    new ResearchSave("Cooler instruments", 50),
+                    new ResearchSave("Live performance", 50),
+                    new ResearchSave("Sampling", 50),
+                    new ResearchSave("Epic lyrics", 50),
+                    new ResearchSave("Physical copies", 50),
+                    new ResearchSave("Licensing", 50),
+                    new ResearchSave("Copyright troll", 50),
+                    new ResearchSave("Insanely long music", 50),
                 });
                 break;
             case "animation":
@@ -79,25 +100,30 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "tv":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("4K", 50),
-                    new ResearchSave("Ads Pro", 50),
-                    new ResearchSave("Ads Pro Max", 100),
-                    new ResearchSave("Ads Pro Max Ultra", 250),
-                    new ResearchSave("Ads 2", 500),
-                    new ResearchSave("Ads 2 Pro", 1000),
-                    new ResearchSave("Ads 2 Pro Max", 2500),
-                    new ResearchSave("Ads 2 Pro Max Ultra", 5000),
+                    new ResearchSave("Localization", 50),
+                    new ResearchSave("Subtitles", 50),
+                    new ResearchSave("Interactive shows", 50),
+                    new ResearchSave("Animation", 50),
+                    new ResearchSave("Epic sounds", 50),
+                    new ResearchSave("Mini-series", 50),
+                    new ResearchSave("Spin-offs", 50),
+                    new ResearchSave("Misinformation", 50),
+                    new ResearchSave("Negativity bias", 50),
+                    new ResearchSave("Live shows", 50),
                 });
                 break;
             case "electronics":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("IoT Pro", 50),
-                    new ResearchSave("IoT Pro Max", 100),
-                    new ResearchSave("IoT Pro Max Ultra", 250),
-                    new ResearchSave("IoT 2", 500),
-                    new ResearchSave("IoT 2 Pro", 1000),
-                    new ResearchSave("IoT 2 Pro Max", 2500),
-                    new ResearchSave("IoT 2 Pro Max Ultra", 5000),
+                    new ResearchSave("Energy effiency", 50),
+                    new ResearchSave("Smart home integration", 50),
+                    new ResearchSave("More environmental impact", 50),
+                    new ResearchSave("Voice control", 50),
+                    new ResearchSave("Remote monitoring", 50),
+                    new ResearchSave("Interdimensional encryption", 50),
+                    new ResearchSave("Espionage", 50),
+                    new ResearchSave("AI", 50),
+                    new ResearchSave("Random sensors", 50),
+                    new ResearchSave("Cloud connectivity", 50),
                 });
                 break;
             case "weapons":
@@ -107,34 +133,72 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "phones":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Gimmicks", 50),
+                    new ResearchSave("AI", 50),
+                    new ResearchSave("6.9G compatibility", 50),
+                    new ResearchSave("Better durability", 50),
+                    new ResearchSave("Accessibility", 50),
+                    new ResearchSave("Bloatware", 50),
+                    new ResearchSave("Wireless charging", 50),
+                    new ResearchSave("Water resistance", 50),
+                    new ResearchSave("Augmented reality", 50),
+                    new ResearchSave("Custom UI", 50),
+                    new ResearchSave("Next-level notch", 50),
                 });
                 break;
             case "yourarse":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("4K", 50),
-                    new ResearchSave("Ads Pro", 50),
-                    new ResearchSave("Ads Pro Max", 100),
-                    new ResearchSave("Ads Pro Max Ultra", 250),
-                    new ResearchSave("Ads 2", 500),
-                    new ResearchSave("Ads 2 Pro", 1000),
-                    new ResearchSave("Ads 2 Pro Max", 2500),
-                    new ResearchSave("Ads 2 Pro Max Ultra", 5000),
+                    new ResearchSave("Epic editing", 50),
+                    new ResearchSave("Majestic thumbnails", 50),
+                    new ResearchSave("Subtitles", 50),
+                    new ResearchSave("Obnoxiously long videos", 50),
+                    new ResearchSave("Clickbait", 50),
+                    new ResearchSave("Fantastic music", 50),
+                    new ResearchSave("Sponsorships", 50),
+                    new ResearchSave("YourArse Shorts", 50),
+                    new ResearchSave("SEO optimization", 50),
+                    new ResearchSave("Merchandise", 50),
                 });
                 break;
             case "food":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("Magic", 100)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("High quality ingredients", 50),
+                    new ResearchSave("Vegan food", 50),
+                    new ResearchSave("Microwave food", 50),
+                    new ResearchSave("Diet food", 50),
+                    new ResearchSave("Garbage food", 50),
+                    new ResearchSave("Food that lasts forever", 50),
+                    new ResearchSave("Seasonal menus", 50),
+                    new ResearchSave("Food delivery", 50),
+                    new ResearchSave("Foreign cuisine", 50),
+                    new ResearchSave("Peak food security", 50),
+                });
                 break;
             case "medical":
-                newGame.UnlockedResearch.Add(
-                    new ResearchSave("Magic", 100)
-                );
+                newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
+                    new ResearchSave("Clinical trials", 50),
+                    new ResearchSave("Telemedicine", 50),
+                    new ResearchSave("Medical software", 50),
+                    new ResearchSave("Hospitals", 50),
+                    new ResearchSave("Vaccines", 50),
+                    new ResearchSave("Nanotechnology", 50),
+                    new ResearchSave("Quality control", 50),
+                    new ResearchSave("Personalized medicine", 50),
+                    new ResearchSave("Alternative therapy", 50),
+                    new ResearchSave("Fake medicine", 50),
+                });
                 break;
             case "computers":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
                     new ResearchSave("RGB lights", 50),
+                    new ResearchSave("Energy effiency", 50),
+                    new ResearchSave("Better cooling", 50),
+                    new ResearchSave("Better durability", 50),
+                    new ResearchSave("Noise reduction", 50),
+                    new ResearchSave("Custom mouse and keyboard", 50),
+                    new ResearchSave("Custom monitors", 50),
+                    new ResearchSave("Upgradability", 50),
+                    new ResearchSave("Thinner laptops", 50),
+                    new ResearchSave("Bloatware", 50),
                 });
                 break;
             case "restaurants":
@@ -144,14 +208,30 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "media":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Famous Actors", 100),
-                    new ResearchSave("Product Placement", 100)
+                    new ResearchSave("Famous actors", 50),
+                    new ResearchSave("Epic visual effects", 50),
+                    new ResearchSave("Majestic lore", 50),
+                    new ResearchSave("Diversity and inclusion", 50),
+                    new ResearchSave("Fantastic soundtrack", 50),
+                    new ResearchSave("Awesome CGI", 50),
+                    new ResearchSave("Epic camera", 50),
+                    new ResearchSave("Epic sound effects", 50),
+                    new ResearchSave("Obnoxiously long movies", 50),
+                    new ResearchSave("3D technology", 50),
                 });
                 break;
             case "games":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Fart", 100),
-                    new ResearchSave("Pwteyrtytrertrytu", 100)
+                    new ResearchSave("Epic lore", 50),
+                    new ResearchSave("Mobile games", 50),
+                    new ResearchSave("Localization", 50),
+                    new ResearchSave("VR", 50),
+                    new ResearchSave("Multiplayer", 50),
+                    new ResearchSave("Majestic game engines", 50),
+                    new ResearchSave("User generated content", 50),
+                    new ResearchSave("Better user experience", 50),
+                    new ResearchSave("Epic sounds", 50),
+                    new ResearchSave("MMOs", 200),
                 });
                 break;
         }
