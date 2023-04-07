@@ -191,4 +191,6 @@ public class Global : Node2D {
     public static bool WeAll = false;
     public static bool YearOfTheGame = false;
     public static bool DiscontinuedProduct = false;
+    public static bool DarkStoneInvestment = false;
+    public static bool InvestorsInvested = false;
 }

@@ -23,4 +23,5 @@ public class GameSave {
     public int DevelopingProgress = 0;
     public string DevelopingName = "PAIN XD";
     public int MarketingBudget = 0;
+    public bool InvestorsInvested = false;
 }

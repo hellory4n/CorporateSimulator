@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/Events/InvestorInterview.cs" type="Script" id=3]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
@@ -51,7 +52,7 @@ margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "BREAKIGN NEWS"
+text = "Investors that would like to invest in your company"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -63,13 +64,13 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Hello! I recently did questionable, not family-friendly acts to the female paren-
-tal unit of yours."
+text = "Hello! We are DarkStone, a big investment firm. We are highly interested in this company and its great products. We want to invest $50M, however if you accept, you will have to pay $100M next year. But, to make sure this company is trustworthy and isn't owned by someone mentally insane, we would like to do an interview."
+autowrap = true
 
-[node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 440.0
+[node name="No" type="TextureButton" parent="."]
+margin_left = 234.0
 margin_top = 575.0
-margin_right = 840.0
+margin_right = 634.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -79,12 +80,35 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="DialogOK"]
+[node name="Label" type="Label" parent="No"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
-text = "OK"
+text = "No, thanks"
+align = 1
+valign = 1
+
+[node name="StartInterview" type="TextureButton" parent="."]
+margin_left = 644.0
+margin_top = 575.0
+margin_right = 1044.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="StartInterview"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Start interview"
 align = 1
 valign = 1
