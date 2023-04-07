@@ -1581,6 +1581,17 @@ public class Events : Node2D {
             Global.DarkStoneInvestment = true;
         }
         #endregion
+        #region pay darkstone
+        if (Global.Year==2 && Global.Month==2 && Global.Week==2 && !Global.DarkStonePay && !Global.PausedTime
+        && Global.InvestorsInvested) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "InvestmentPay");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.DarkStonePay = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

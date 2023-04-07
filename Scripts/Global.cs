@@ -193,4 +193,5 @@ public class Global : Node2D {
     public static bool DiscontinuedProduct = false;
     public static bool DarkStoneInvestment = false;
     public static bool InvestorsInvested = false;
+    public static bool DarkStonePay = false;
 }
