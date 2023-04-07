@@ -2,14 +2,14 @@ using Godot;
 using System;
 
 public class MedicalPriceCalculator : Label {
-    bool hasMagic = false;
+    bool qualityControl = false;
 
     public override void _Ready() {
         // Contains() decided to workn't
         foreach (var research in Global.Researched) {
             switch (research.Name) {
-                case "Magic":
-                    hasMagic = true;
+                case "Quality control":
+                    qualityControl = true;
                     break;
             }
         }
@@ -27,16 +27,11 @@ public class MedicalPriceCalculator : Label {
         Global.MedicalNewProduct.MoneySpent = Global.MedicalNewProduct.Safety*200 +
             Global.MedicalNewProduct.Efficacy*200 + Global.MedicalNewProduct.Reliability*200;
 
-        /*if (hasMagic) {
+        if (qualityControl) {
             Global.MedicalNewProduct.MoneySpent += 20000;
-            Global.MedicalNewProduct.Accuracy += 50;
-            Global.MedicalNewProduct.Rating += 2;
+            Global.MedicalNewProduct.Reliability += 50;
         }
-        if (Global.MedicalNewProduct.Accuracy > 100)
-            Global.MedicalNewProduct.Accuracy = 100;
-        if (Global.MedicalNewProduct.Rating > 10)
-            Global.MedicalNewProduct.Rating = 10;*/
-        
+
         if (Global.Investors/50 > 1)
             Global.MedicalNewProduct.MoneySpent *= ((int)Global.Investors/50);
 

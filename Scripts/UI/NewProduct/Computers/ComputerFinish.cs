@@ -3,12 +3,15 @@ using System;
 
 public class ComputerFinish : TextureButton {
     bool rgb = false;
+    bool upgradability = false;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
             if (item.Name == "RGB lights")
                 rgb = true;
+            if (item.Name == "Upgradability")
+                upgradability = true;
         }
         this.Connect("pressed", this, nameof(Click));
     }
@@ -31,6 +34,9 @@ public class ComputerFinish : TextureButton {
         if (rgb)
             Global.ComputerNewProduct.Rating += 1;
         
+        if (upgradability)
+            Global.ComputerNewProduct.Rating += 1;
+
         if (Global.ComputerNewProduct.Rating > 10)
             Global.ComputerNewProduct.Rating = 10;
 

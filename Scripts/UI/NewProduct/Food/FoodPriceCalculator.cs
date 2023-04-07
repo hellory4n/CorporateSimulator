@@ -2,14 +2,18 @@ using Godot;
 using System;
 
 public class FoodPriceCalculator : Label {
-    bool hasMagic = false;
+    bool highQualityIngredients = false;
+    bool peakFoodSafety = false;
 
     public override void _Ready() {
         // Contains() decided to workn't
         foreach (var research in Global.Researched) {
             switch (research.Name) {
-                case "Magic":
-                    hasMagic = true;
+                case "High quality ingredients":
+                    highQualityIngredients = true;
+                    break;
+                case "Peak food safety":
+                    peakFoodSafety = true;
                     break;
             }
         }
@@ -23,13 +27,14 @@ public class FoodPriceCalculator : Label {
         Global.FoodNewProduct.MoneySpent = Global.FoodNewProduct.NutritionalValue*200 +
             Global.FoodNewProduct.Taste*100;
 
-        if (hasMagic) {
+        if (highQualityIngredients) {
             Global.FoodNewProduct.MoneySpent += 20000;
-            Global.FoodNewProduct.Taste += 50;
-            Global.FoodNewProduct.Rating += 2;
+            Global.FoodNewProduct.Rating += 1;
         }
-        if (Global.FoodNewProduct.Taste > 100)
-            Global.FoodNewProduct.Taste = 100;
+        if (peakFoodSafety) {
+            Global.FoodNewProduct.MoneySpent += 10000;
+            Global.FoodNewProduct.Rating += 1;
+        }
         if (Global.FoodNewProduct.Rating > 10)
             Global.FoodNewProduct.Rating = 10;
         

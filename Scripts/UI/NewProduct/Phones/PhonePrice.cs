@@ -2,15 +2,15 @@ using Godot;
 using System;
 
 public class PhonePrice : HSlider {
-    bool gimmicks = false;
+    bool nextLevelNotch = false;
     bool cookieDisc = false;
     bool smartphone2 = false;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
-            if (item.Name == "Gimmicks")
-                gimmicks = true;
+            if (item.Name == "Next-level notch")
+                nextLevelNotch = true;
             if (item.Name == "CookieDisc")
                 cookieDisc = true;
             if (item.Name == "Smartphone 2")
@@ -29,9 +29,9 @@ public class PhonePrice : HSlider {
         Global.PhoneNewProduct.Price += int.Parse(Global.PhoneNewProduct.Battery.Split(",")[2]);
         Global.PhoneNewProduct.Price += (int)Value;
 
-        if (gimmicks)
-            Global.PhoneNewProduct.Price += 300;
-        
+        if (nextLevelNotch)
+            Global.PhoneNewProduct.Price += 10;
+
         if (cookieDisc)
             Global.PhoneNewProduct.Price += 100;
         

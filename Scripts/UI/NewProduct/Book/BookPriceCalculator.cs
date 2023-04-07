@@ -3,12 +3,15 @@ using System;
 
 public class BookPriceCalculator : Label {
     bool isGiant = false;
+    bool outstandingImprovement = false;
 
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
-            if (item.Name == "Giant books")
+            if (item.Name == "Bible-sized books")
                 isGiant = true;
+            if (item.Name == "A different font")
+                outstandingImprovement = true;
         }
         base._Ready();
     }
@@ -19,6 +22,9 @@ public class BookPriceCalculator : Label {
         } else {
             Global.BookNewProduct.MoneySpent = 1000;
         }
+
+        if (outstandingImprovement)
+            Global.BookNewProduct.MoneySpent += 10000;
 
         if (Global.Investors/20 > 1)
             Global.BookNewProduct.MoneySpent *= ((int)Global.Investors/20);

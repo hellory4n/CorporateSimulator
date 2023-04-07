@@ -27,8 +27,8 @@ public class Events : Node2D {
             } else if (garbageProduct.Type == "tv") {
                 TvProduct hjskosp = JsonConvert.DeserializeObject<TvProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
-                price = hjskosp.Ads*5000;
-                sales = 2*garbageProduct.Rating;
+                price = (int)hjskosp.Ads/10;
+                sales = 1000*garbageProduct.Rating;
             } else if (garbageProduct.Type == "apps") {
                 AppProduct jskiops = JsonConvert.DeserializeObject<AppProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));

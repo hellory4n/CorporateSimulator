@@ -114,7 +114,7 @@ public class MakeNewCompany : TextureButton {
                 break;
             case "electronics":
                 newGame.UnlockedResearch.AddRange(new List<ResearchSave>(){
-                    new ResearchSave("Energy effiency", 50),
+                    new ResearchSave("Energy efficiency", 50),
                     new ResearchSave("Smart home integration", 50),
                     new ResearchSave("More environmental impact", 50),
                     new ResearchSave("Voice control", 50),
@@ -170,7 +170,7 @@ public class MakeNewCompany : TextureButton {
                     new ResearchSave("Seasonal menus", 50),
                     new ResearchSave("Food delivery", 50),
                     new ResearchSave("Foreign cuisine", 50),
-                    new ResearchSave("Peak food security", 50),
+                    new ResearchSave("Peak food safety", 50),
                 });
                 break;
             case "medical":

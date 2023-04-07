@@ -28,6 +28,9 @@ public class MusicFinish : TextureButton {
         
         Global.MusicNewProduct.Rating /= 2;
 
+        if (Global.MusicNewProduct.Rating > 10)
+            Global.MusicNewProduct.Rating = 10;
+
         Global.MusicNewProduct.Type = "music";
         Global.MusicNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
         Global.Money -= Global.MusicNewProduct.MoneySpent;

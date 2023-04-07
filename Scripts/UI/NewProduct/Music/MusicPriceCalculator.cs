@@ -5,6 +5,8 @@ public class MusicPriceCalculator : Label {
     public override void _Ready() {
         // if we add this on the process function the game would run at 0 fps
         foreach (var item in Global.Researched) {
+            if (item.Name == "Better sound quality")
+                Global.MusicNewProduct.Rating += 1;
             if (item.Name == "Cooler Music")
                 Global.MusicNewProduct.Rating += 1;
             if (item.Name == "4D Music")
