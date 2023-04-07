@@ -39,6 +39,9 @@ public class Reviews : Node2D {
                 case "media":
                     reviewers = new string[]{"Fine Tomatoes", "ABCd", "Infracritic", "BadReviews.com"};
                     break;
+                case "tv":
+                    reviewers = new string[]{"Fine Tomatoes", "ABCd", "Infracritic", "BadReviews.com"};
+                    break;
                 case "medical":
                     reviewers = new string[]{"Steve (doctor)", "John (doctor)", "Hjkgnsj (doctor)", "Government"};
                     break;
@@ -49,7 +52,7 @@ public class Reviews : Node2D {
                     reviewers = new string[]{"Mrwhosetheemployee", "Mark Yellowlee", "Explosive Phones", "phone.net"};
                     break;
                 case "yourarse":
-                    reviewers = new string[]{"BadReviews.com", "BadReviewsSucks.com", "EpicReviews.net", "LegitReviews.org"};
+                    reviewers = new string[]{"BadReviews.com", "Terrible Reviews", "EpicReviews.net", "LegitReviews.org"};
                     break;
                 case "game":
                     reviewers = new string[]{"ING", "Infracritic", "GameCenter", "BadReviews.com"};
