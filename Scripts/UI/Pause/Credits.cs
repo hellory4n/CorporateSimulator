@@ -7,9 +7,11 @@ public class Credits : TextureButton {
     }
 
     public void Click() {
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Credits.tscn");
-        Node2D OK = (Node2D)yes.Instance();
-        OK.ZIndex = 101;
-        GetTree().Root.AddChild(OK);
+        if (GetNodeOrNull("/root/CreditsThing") == null) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Credits.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 101;
+            GetTree().Root.AddChild(OK);
+        }
     }
 }
