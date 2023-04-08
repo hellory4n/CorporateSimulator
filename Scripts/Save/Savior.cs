@@ -63,6 +63,8 @@ class Savior {
         save.DevelopingName = Global.DevelopingName;
         save.MarketingBudget = Global.MarketingBudget;
         save.InvestorsInvested = Global.InvestorsInvested;
+        save.Investments = Global.Investments;
+        save.AvailableInvestments = Global.AvailableInvestments;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

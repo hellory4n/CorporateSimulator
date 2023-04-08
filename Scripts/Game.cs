@@ -66,6 +66,8 @@ public class Game : Node2D {
             Global.DevelopingName = save.DevelopingName;
             Global.MarketingBudget = save.MarketingBudget;
             Global.InvestorsInvested = save.InvestorsInvested;
+            Global.Investments = save.Investments;
+            Global.AvailableInvestments = save.AvailableInvestments;
             #endregion
             file.Close();
             // developing thing

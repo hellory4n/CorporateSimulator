@@ -24,4 +24,6 @@ public class GameSave {
     public string DevelopingName = "PAIN XD";
     public int MarketingBudget = 0;
     public bool InvestorsInvested = false;
+    public List<Stock> Investments = new List<Stock>();
+    public List<Stock> AvailableInvestments = new List<Stock>();
 }
