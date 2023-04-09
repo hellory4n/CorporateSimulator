@@ -25,5 +25,19 @@ public class GameSave {
     public int MarketingBudget = 0;
     public bool InvestorsInvested = false;
     public List<Stock> Investments = new List<Stock>();
-    public List<Stock> AvailableInvestments = new List<Stock>();
+    public List<Stock> AvailableInvestments = new List<Stock>(){
+        new Stock("silly co", 0, 420),
+        new Stock("scamco", 0, 420),
+        new Stock("cool oil", 0, 420),
+        new Stock("bagged air", 0, 420),
+        new Stock("robert tech", 0, 420),
+        new Stock("deliciousness", 0, 420),
+        new Stock("goggles", 0, 420),
+        new Stock("macrohard", 0, 420),
+        new Stock("databook", 0, 420),
+        new Stock("pineapple", 0, 420),
+        new Stock("amazing", 0, 420),
+        new Stock("netfilms", 0, 420),
+        new Stock("meloncars", 0, 420)
+    };
 }

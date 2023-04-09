@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -21,6 +21,20 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 25
+font_data = SubResource( 7 )
 
 [node name="Dialog" type="Node2D"]
 
@@ -115,3 +129,27 @@ custom_fonts/font = SubResource( 4 )
 text = "My investments"
 align = 1
 valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 195.0
+margin_top = 149.0
+margin_right = 1085.0
+margin_bottom = 177.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Buy stocks when their price is low, and sell when it's high!"
+align = 1
+
+[node name="Label3" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 195.0
+margin_top = 177.0
+margin_right = 1085.0
+margin_bottom = 205.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "NOTE: all prices here are multiplied by how many millions you have"
+align = 1
