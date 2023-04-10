@@ -22,6 +22,13 @@ public class StockMarketBuy : TextureButton {
     }
 
     public void Click() {
-        
+        Slider uh = GetNode<Slider>("../EpicSlider");
+        int jsjskhsksk = (int)Math.Round(Global.AvailableInvestments[epicIndex].Price*uh.Value);
+        Global.Investments[epicIndex].Amount += (int)uh.Value;
+        // price = money invested
+        Global.Investments[epicIndex].Price += jsjskhsksk;
+        Global.Money -= jsjskhsksk;
+        // i have to do a mess to make the ui look right
+        GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
     }
 }

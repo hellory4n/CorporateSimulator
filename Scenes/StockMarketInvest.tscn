@@ -145,6 +145,7 @@ texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
 script = ExtResource( 19 )
+Company = "silly co"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D/Buy"]
 margin_right = 300.0
@@ -206,6 +207,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "scamco"
+epicIndex = 1
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/Buy"]
 margin_right = 300.0
@@ -226,7 +230,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -265,6 +271,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "cool oil"
+epicIndex = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/Buy"]
 margin_right = 300.0
@@ -285,7 +294,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -324,6 +335,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "bagged air"
+epicIndex = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/Buy"]
 margin_right = 300.0
@@ -344,7 +358,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -383,6 +399,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "robert tech"
+epicIndex = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/Buy"]
 margin_right = 300.0
@@ -403,7 +422,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -442,6 +463,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "deliciousness"
+epicIndex = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/Buy"]
 margin_right = 300.0
@@ -462,7 +486,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -501,6 +527,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "googles"
+epicIndex = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/Buy"]
 margin_right = 300.0
@@ -521,7 +550,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -560,6 +591,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "macrohard"
+epicIndex = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/Buy"]
 margin_right = 300.0
@@ -580,7 +614,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -619,6 +655,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "databook"
+epicIndex = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/Buy"]
 margin_right = 300.0
@@ -639,7 +678,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -678,6 +719,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "pineapple"
+epicIndex = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/Buy"]
 margin_right = 300.0
@@ -698,7 +742,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -737,6 +783,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "amazing"
+epicIndex = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/Buy"]
 margin_right = 300.0
@@ -757,7 +806,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -796,6 +847,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "netfilms"
+epicIndex = 11
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/Buy"]
 margin_right = 300.0
@@ -816,7 +870,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -855,6 +911,9 @@ margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "meloncars"
+epicIndex = 12
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/Buy"]
 margin_right = 300.0
@@ -875,7 +934,9 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-value = 50.0
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/EpicSlider"]
 margin_left = 25.0
