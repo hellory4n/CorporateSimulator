@@ -194,6 +194,6 @@ public class Global : Node2D {
     public static bool DarkStoneInvestment = false;
     public static bool InvestorsInvested = false;
     public static bool DarkStonePay = false;
-    public static List<Stock> Investments = new List<Stock>();
-    public static List<Stock> AvailableInvestments = new List<Stock>();
+    public static Stock[] Investments;
+    public static Stock[] AvailableInvestments;
 }

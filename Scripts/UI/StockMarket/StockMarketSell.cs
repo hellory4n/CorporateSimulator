@@ -24,6 +24,12 @@ public class StockMarketSell : TextureButton {
     }
 
     public void Click() {
+        // m
+        int bruh = (int)Global.Money/1000000+1;
+        Slider epicSlider = GetNode<Slider>("../EpicSlider");
+        int moneyMoneyMoney = (Global.AvailableInvestments[epicIndex].Price*bruh)*(int)epicSlider.Value;
+        Global.Investments[epicIndex].Amount -= (int)epicSlider.Value;
+        Global.Money += moneyMoneyMoney;
         // i have to do a mess to make the ui look right
         GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
     }
