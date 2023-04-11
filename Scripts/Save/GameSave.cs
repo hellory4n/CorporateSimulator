@@ -25,7 +25,7 @@ public class GameSave {
     public int MarketingBudget = 0;
     public bool InvestorsInvested = false;
     public Stock[] Investments = new Stock[]{
-        new Stock("silly co", 12345, 0),
+        new Stock("silly co", 0, 0),
         new Stock("scamco", 0, 0),
         new Stock("cool oil", 0, 0),
         new Stock("bagged air", 0, 0),

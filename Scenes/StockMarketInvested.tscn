@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -18,7 +18,6 @@
 [ext_resource path="res://Assets/Industries/Apps.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Industries/Computers.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Industries/MoviesAndShows.png" type="Texture" id=18]
-[ext_resource path="res://Scripts/UI/StockMarket/StockMarketBuy.cs" type="Script" id=19]
 [ext_resource path="res://Scripts/UI/StockMarket/StockMarketSell.cs" type="Script" id=20]
 
 [sub_resource type="DynamicFontData" id=1]
@@ -111,6 +110,7 @@ margin_left = 205.0
 margin_top = 139.0
 margin_right = 1085.0
 margin_bottom = 565.0
+rect_clip_content = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 870.0
@@ -198,22 +198,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Scamco Inc. Corp. Co. LLC"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "scamco"
-epicIndex = 1
+script = ExtResource( 20 )
+epicIndex = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -228,9 +227,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -262,22 +258,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Cool Oil Company Co."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "cool oil"
+script = ExtResource( 20 )
 epicIndex = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -292,9 +287,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -326,22 +318,20 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Bagged Air Inc."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "bagged air"
-epicIndex = 3
+script = ExtResource( 20 )
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -356,9 +346,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -390,22 +377,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Robert Tech Corporation"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "robert tech"
+script = ExtResource( 20 )
 epicIndex = 4
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -420,9 +406,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -454,22 +437,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Deliciousness LLC"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "deliciousness"
+script = ExtResource( 20 )
 epicIndex = 5
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -484,9 +466,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -518,22 +497,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Goggles LLC"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "googles"
+script = ExtResource( 20 )
 epicIndex = 6
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -548,9 +526,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -582,22 +557,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Macrohard Corporation"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "macrohard"
+script = ExtResource( 20 )
 epicIndex = 7
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -612,9 +586,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -646,22 +617,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Databook Awful Apps Inc."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "databook"
+script = ExtResource( 20 )
 epicIndex = 8
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -676,9 +646,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -710,22 +677,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Pineapple Phones Inc."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "pineapple"
+script = ExtResource( 20 )
 epicIndex = 9
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -740,9 +706,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -774,22 +737,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Amazing eCommerce Inc."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "amazing"
+script = ExtResource( 20 )
 epicIndex = 10
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -804,9 +766,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -838,22 +797,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Netfilms Inc. Corp."
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "netfilms"
+script = ExtResource( 20 )
 epicIndex = 11
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -868,9 +826,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/EpicSlider"]
 margin_left = 25.0
@@ -902,22 +857,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Meloncars Automobiles"
 
-[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
+[node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
 margin_left = 570.0
 margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
-script = ExtResource( 19 )
-Company = "meloncars"
+script = ExtResource( 20 )
 epicIndex = 12
 
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/Buy"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/Sell"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
-text = "Buy"
+text = "Sell"
 align = 1
 valign = 1
 
@@ -932,9 +886,6 @@ custom_icons/grabber = ExtResource( 12 )
 custom_styles/slider = SubResource( 18 )
 custom_styles/grabber_area_highlight = SubResource( 21 )
 custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-max_value = 1000.0
-value = 500.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/EpicSlider"]
 margin_left = 25.0
