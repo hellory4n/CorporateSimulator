@@ -68,7 +68,8 @@ public class Game : Node2D {
             Global.InvestorsInvested = save.InvestorsInvested;
             Global.Investments = save.Investments;
             Global.AvailableInvestments = save.AvailableInvestments;
-            GD.Print(Global.Investments[0].Amount);
+            Global.Version = save.Version;
+            Global.StockMonths = save.StockMonths;
             #endregion
             file.Close();
             // developing thing
@@ -124,7 +125,6 @@ public class Game : Node2D {
                 Global.Investors += Global.MarketingBudget/1000;
                 // yes
                 Global.PoliticsAlreadyAppeared = false;
-                GD.Print(Global.Investments[0].Amount);
             }
             if (Global.Week > 4) {
                 // calculate the salaries
