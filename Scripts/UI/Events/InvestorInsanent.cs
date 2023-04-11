@@ -9,6 +9,8 @@ public class InvestorInsanent : TextureButton {
     public void Click() {
         Global.Money += 50000000;
         Global.InvestorsInvested = true;
+        if (GetNodeOrNull("/root/PauseThingy") != null)
+            GetNode("/root/PauseThingy").QueueFree();
         GetParent().QueueFree();
     }
 }

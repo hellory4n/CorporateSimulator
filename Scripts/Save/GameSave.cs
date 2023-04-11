@@ -55,5 +55,4 @@ public class GameSave {
         new Stock("meloncars", 0, 420)
     };
     public string Version = "0.8";
-    public int StockMonths = 1;
 }

@@ -69,7 +69,6 @@ public class Game : Node2D {
             Global.Investments = save.Investments;
             Global.AvailableInvestments = save.AvailableInvestments;
             Global.Version = save.Version;
-            Global.StockMonths = save.StockMonths;
             #endregion
             file.Close();
             // developing thing
@@ -150,6 +149,18 @@ public class Game : Node2D {
                 Global.Money -= Global.Taxes; // taxes :(
                 Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
                 Global.Week = 1;
+
+                // stock market prices
+                for (int i = 0; i < Global.AvailableInvestments.Length; i++) {
+                    Random suffering = new Random();
+                    // are we in a recession?
+                    if ((Global.Year==1 && Global.Month==11) || (Global.Year==7 && Global.Month==3) ||
+                    (Global.Year==9 && Global.Month==3) || (Global.Year==10 && Global.Month==1)) {
+                        Global.AvailableInvestments[i].Price /= suffering.Next(2, 5);
+                    } else {
+                        Global.AvailableInvestments[i].Price += suffering.Next(-20, 50);
+                    }
+                }
             }
             if (Global.Month > 12) {
                 Global.Year++;

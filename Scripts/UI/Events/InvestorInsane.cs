@@ -8,6 +8,8 @@ public class InvestorInsane : TextureButton {
 
     public void Click() {
         Global.Reputation -= 5;
+        if (GetNodeOrNull("/root/PauseThingy") != null)
+            GetNode("/root/PauseThingy").QueueFree();
         GetParent().QueueFree();
     }
 }

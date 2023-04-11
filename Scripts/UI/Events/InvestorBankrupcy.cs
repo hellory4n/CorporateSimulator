@@ -8,6 +8,8 @@ public class InvestorBankrupcy : TextureButton {
 
     public void Click() {
         Global.Money -= 100000000;
+        if (GetNodeOrNull("/root/PauseThingy") != null)
+            GetNode("/root/PauseThingy").QueueFree();
         GetParent().QueueFree();
     }
 }
