@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/We Hate Customers.mp3-e1f767723b02f7aa9f3fd99bc4fde099.mp3str"
+
+[deps]
+
+source_file="res://Music/We Hate Customers.mp3"
+dest_files=[ "res://.import/We Hate Customers.mp3-e1f767723b02f7aa9f3fd99bc4fde099.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

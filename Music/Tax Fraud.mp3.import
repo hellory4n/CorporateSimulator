@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tax Fraud.mp3-5b25f7d6ab110c1097fcc60865d41d97.mp3str"
+
+[deps]
+
+source_file="res://Music/Tax Fraud.mp3"
+dest_files=[ "res://.import/Tax Fraud.mp3-5b25f7d6ab110c1097fcc60865d41d97.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

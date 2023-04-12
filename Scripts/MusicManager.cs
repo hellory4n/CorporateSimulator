@@ -1,13 +1,13 @@
 using Godot;
 using System;
 
-public class MusicManager : AudioStreamPlayer2D {
+public class MusicManager : AudioStreamPlayer {
     string[] moosics = {
-        "Local Forecast - Slower",
-        "Airport Lounge",
-        "Dispersion Relation",
-        "George Street Shuffle",
-        "Aces High"
+        "First Degree Murder Tutorial",
+        "Pain LLC",
+        "Tax Fraud",
+        "Very Chill Moosic for Taking Over the World",
+        "We Hate Customers"
     };
 
     public override void _Ready() {
@@ -33,9 +33,14 @@ public class MusicManager : AudioStreamPlayer2D {
         Random soRandom = new Random();
         AudioStream audio = ResourceLoader.Load<AudioStream>(
             "res://Music/" + moosics[soRandom.Next(5)] + ".mp3");
+        if (audio == Stream) {
+            GD.Print("bruh");
+            PlayMoosic();
+        } else {
+            GD.Print("now playing: " + audio.ResourcePath);
+        }
         Stream = audio;
         Play();
-        GD.Print(audio.ResourcePath);
         StreamPaused = false;
     }
 }

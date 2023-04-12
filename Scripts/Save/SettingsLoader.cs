@@ -8,7 +8,7 @@ public class SettingsLoader : Node2D {
         // music :)
         if (Global.Settings.Music) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/MusicManager.tscn");
-            Node2D OK = (Node2D)yes.Instance();
+            AudioStreamPlayer OK = (AudioStreamPlayer)yes.Instance();
             // if i do it immediately godot will complain that it's busy setting up stuff
             GetTree().Root.CallDeferred("add_child", OK);
         }

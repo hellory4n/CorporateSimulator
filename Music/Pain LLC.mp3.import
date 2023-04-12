@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pain LLC.mp3-85ddb1133a66ba45fd27020c4cb2d580.mp3str"
+
+[deps]
+
+source_file="res://Music/Pain LLC.mp3"
+dest_files=[ "res://.import/Pain LLC.mp3-85ddb1133a66ba45fd27020c4cb2d580.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

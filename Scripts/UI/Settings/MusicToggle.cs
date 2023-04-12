@@ -15,7 +15,7 @@ public class MusicToggle : TextureButton {
     public void Click() {
         if (GetNodeOrNull("/root/MusicManager") == null) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/MusicManager.tscn");
-            Node2D OK = (Node2D)yes.Instance();
+            AudioStreamPlayer OK = (AudioStreamPlayer)yes.Instance();
             GetTree().Root.AddChild(OK);
             text.Text = "Music: ON";
         } else {

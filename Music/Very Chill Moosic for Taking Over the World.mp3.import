@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Very Chill Moosic for Taking Over the World.mp3-d02b7dba95c9e304d2bd7629f9e45b1e.mp3str"
+
+[deps]
+
+source_file="res://Music/Very Chill Moosic for Taking Over the World.mp3"
+dest_files=[ "res://.import/Very Chill Moosic for Taking Over the World.mp3-d02b7dba95c9e304d2bd7629f9e45b1e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
