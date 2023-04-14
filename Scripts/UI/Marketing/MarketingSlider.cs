@@ -3,7 +3,7 @@ using System;
 
 public class MarketingSlider : HSlider {
     public override void _Ready() {
-        Value = Global.MarketingBudget;
+        Value = Global.MarketingBudget/1000;
         if (Global.Money > 10000000)
             MaxValue = 1000;
         if (Global.Money > 50000000)
