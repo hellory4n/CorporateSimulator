@@ -9,10 +9,11 @@ public class MusicManager : AudioStreamPlayer {
         "Very Chill Moosic for Taking Over the World",
         "We Hate Customers"
     };
+    string currentMoosic = "none";
 
     public override void _Ready() {
-        Connect("finished", this, nameof(PlayMoosic));
-        PlayMoosic();
+        Connect("finished", this, nameof(ChooseMoosic));
+        ChooseMoosic();
     }
 
     public override void _Process(float delta) {
@@ -23,24 +24,35 @@ public class MusicManager : AudioStreamPlayer {
             Input.IsPhysicalKeyPressed((int)Godot.KeyList.Alt) &&
             Input.IsPhysicalKeyPressed((int)Godot.KeyList.Space)
         )
-            PlayMoosic();
+            ChooseMoosic();
 
         base._Process(delta);
     }
 
-    public void PlayMoosic() {
-        StreamPaused = true;
-        Random soRandom = new Random();
-        AudioStream audio = ResourceLoader.Load<AudioStream>(
-            "res://Music/" + moosics[soRandom.Next(5)] + ".mp3");
-        if (audio == Stream) {
-            GD.Print("bruh");
-            PlayMoosic();
-        } else {
-            GD.Print("now playing: " + audio.ResourcePath);
-        }
-        Stream = audio;
+    public void PlayMoosic(AudioStream bruh) {
+        Stream = bruh;
         Play();
-        StreamPaused = false;
+    }
+
+    public void ChooseMoosic() {
+        Random random = new Random();
+        // shuffle the music array
+        for (int i = moosics.Length - 1; i > 0; i--) {
+            int j = random.Next(i + 1);
+            string temp = moosics[j];
+            moosics[j] = moosics[i];
+            moosics[i] = temp;
+        }
+        // GD.Print("current list: ", moosics[0], moosics[1], moosics[2], moosics[3], moosics[4]);
+        string epicMusicThatWillBePlayed = moosics[random.Next(moosics.Length)];
+        if (epicMusicThatWillBePlayed == currentMoosic)
+            ChooseMoosic();
+
+        AudioStream fantasticSounds = ResourceLoader.Load<AudioStream>("res://Music/" +
+            epicMusicThatWillBePlayed + ".mp3");
+        
+        PlayMoosic(fantasticSounds);
+        GD.Print("now playing: " + epicMusicThatWillBePlayed + " - previous music: " + currentMoosic);
+        currentMoosic = epicMusicThatWillBePlayed;
     }
 }
