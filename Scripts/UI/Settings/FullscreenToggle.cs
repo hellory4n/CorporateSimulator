@@ -10,6 +10,12 @@ public class FullscreenToggle : TextureButton {
         // i just stealed this whole script from the autosave toggle which is stolen from the music toggle
         if (!Global.Settings.Fullscreen)
             text.Text = "Fullscreen: OFF";
+        
+        // disable on android cuz it's always fullscreen on android
+        if (OS.GetName() == "Android") {
+            Disabled = true;
+            text.Text = "disabled";
+        }
     }
 
     public void Click() {
