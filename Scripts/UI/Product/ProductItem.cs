@@ -12,11 +12,24 @@ public class ProductItem : Control {
     }
 
     public override void _Ready() {
+        // make text smaller if the name is too big
+        Label bruh = GetNode<Label>("ProductName");
+        bruh.Text = productProduct.Name;
+        int maxLineCount = 14;
+        int maxFont = 24;
+        int minFont = 12;
+        int fontRangeDiff = maxFont-minFont;
+        int fontChangePerLine = fontRangeDiff/(maxLineCount-1);
+        int newFontSize = maxFont-(fontChangePerLine*bruh.GetLineCount());
+        DynamicFont epicFont = new DynamicFont();
+        epicFont.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
+        epicFont.Size = newFontSize;
+        bruh.AddFontOverride("bruhmoment", epicFont);
+
         if (productProduct.Type == "rocket") {
             // sorry
             SpaceProduct spaceProduct = JsonConvert.DeserializeObject<SpaceProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -39,7 +52,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             BookProduct bookProduct = JsonConvert.DeserializeObject<BookProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -63,7 +75,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             MedicalProduct medicalProduct = JsonConvert.DeserializeObject<MedicalProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -85,7 +96,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             ComputerProduct computerProduct = JsonConvert.DeserializeObject<ComputerProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -112,7 +122,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             MusicProduct musicProduct = JsonConvert.DeserializeObject<MusicProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -134,7 +143,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             MediaProduct mediaProduct = JsonConvert.DeserializeObject<MediaProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -158,7 +166,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             FoodProduct foodProduct = JsonConvert.DeserializeObject<FoodProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -180,7 +187,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             TvProduct tvProduct = JsonConvert.DeserializeObject<TvProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -202,7 +208,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             ElectronicsProduct electronicsProduct = JsonConvert.DeserializeObject<ElectronicsProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -225,7 +230,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             AppProduct appProduct = JsonConvert.DeserializeObject<AppProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -247,7 +251,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             PhoneProduct phoneProduct = JsonConvert.DeserializeObject<PhoneProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -272,7 +275,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             YourArseProduct yourArseProduct = JsonConvert.DeserializeObject<YourArseProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);
@@ -295,7 +297,6 @@ public class ProductItem : Control {
             GD.Print(objectProduct.ToString());
             GameProduct gameProduct = JsonConvert.DeserializeObject<GameProduct>(
                 JsonConvert.SerializeObject(objectProduct));
-            GetNode<Label>("ProductName").Text = productProduct.Name;
             if (productProduct.MoneySpent > productProduct.MoneyGot)
                 GetNode<Label>("ProductInfo").Text = "Loss: $"+String.Format("{0:n0}",
                     productProduct.MoneySpent-productProduct.MoneyGot);

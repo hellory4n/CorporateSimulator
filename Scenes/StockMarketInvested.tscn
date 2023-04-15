@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=2]
 
-[ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Dialog4.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Industries/Electronics.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
@@ -110,6 +110,7 @@ margin_left = 205.0
 margin_top = 139.0
 margin_right = 1085.0
 margin_bottom = 565.0
+rect_clip_content = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 870.0
@@ -135,11 +136,11 @@ margin_right = 552.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Silly Co Money Waste Co."
+text = "Silly Co Scams Co."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -156,9 +157,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -195,11 +196,11 @@ margin_right = 552.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Scamco Inc. Corp. Co. LLC"
+text = "Scamco Inc Co LLC"
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -216,9 +217,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -255,11 +256,11 @@ margin_right = 552.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Cool Oil Company Co."
+text = "Cool Oil Company"
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -276,9 +277,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -318,8 +319,8 @@ custom_fonts/font = SubResource( 6 )
 text = "Bagged Air Inc."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -336,9 +337,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -375,11 +376,11 @@ margin_right = 552.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Robert Tech Corporation"
+text = "Robert Tech Corp."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -396,9 +397,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -438,8 +439,8 @@ custom_fonts/font = SubResource( 6 )
 text = "Deliciousness LLC"
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -456,9 +457,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -498,8 +499,8 @@ custom_fonts/font = SubResource( 6 )
 text = "Goggles LLC"
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -516,9 +517,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -555,11 +556,11 @@ margin_right = 552.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Macrohard Corporation"
+text = "Macrohard Corp."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -576,9 +577,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -615,11 +616,11 @@ margin_right = 577.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Databook Awful Apps Inc."
+text = "Databook Inc."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -636,9 +637,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -675,11 +676,11 @@ margin_right = 577.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Pineapple Phones Inc."
+text = "Pineapple Inc."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -696,9 +697,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -735,11 +736,11 @@ margin_right = 577.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Amazing eCommerce Inc."
+text = "Amazing.com Inc."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -756,9 +757,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -798,8 +799,8 @@ custom_fonts/font = SubResource( 6 )
 text = "Netfilms Inc. Corp."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -816,9 +817,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
@@ -855,11 +856,11 @@ margin_right = 577.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Meloncars Automobiles"
+text = "Meloncars Cars Inc."
 
 [node name="Sell" type="TextureButton" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
+margin_left = 470.0
+margin_right = 770.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
@@ -876,9 +877,9 @@ align = 1
 valign = 1
 
 [node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
-margin_left = 85.0
+margin_left = 40.0
 margin_top = 90.0
-margin_right = 785.0
+margin_right = 740.0
 margin_bottom = 165.0
 custom_icons/tick = ExtResource( 12 )
 custom_icons/grabber_highlight = ExtResource( 12 )
