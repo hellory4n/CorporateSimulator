@@ -31,7 +31,6 @@ public class ProductItem : Control {
         } else if (productProduct.Name.ToCharArray().Length > 50) {
             newFontSize = 14;
         }
-        GD.Print(bruh.GetLineCount());
         DynamicFont epicFont = new DynamicFont();
         epicFont.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
         epicFont.Size = (int)newFontSize;

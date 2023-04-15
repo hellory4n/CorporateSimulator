@@ -11,8 +11,8 @@ public class Reviews : Node2D {
             // sorry
             Product garbage = JsonConvert.DeserializeObject<Product>(JsonConvert.SerializeObject(
                 Global.Products[Global.Products.Count-1]));
-            GetNode<Label>("Title").Text = garbage.Name + " reviews";
-            GetNode<Label>("Review").Text = garbage.Name + " reviews";
+            GetNode<Label>("Title").Text = "Reviews of " + Global.CompanyName+ "'s latest product";
+            GetNode<Label>("Review").Text = "Reviews of " + Global.CompanyName + "'s latest product";
             string[] reviews = {"not loaded", "not loaded", "not loaded", "not loaded"};
 
             // reviewers

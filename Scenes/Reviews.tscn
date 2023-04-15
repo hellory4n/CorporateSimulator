@@ -72,12 +72,13 @@ anchor_right = 0.002
 anchor_bottom = 0.011
 margin_left = 205.0
 margin_top = 98.0
-margin_right = 604.2
+margin_right = 1314.0
 margin_bottom = 126.0
 rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
 text = "review"
 valign = 1
+clip_text = true
 
 [node name="Label2" type="Label" parent="."]
 visible = false
@@ -102,6 +103,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "review reviews"
 align = 1
+autowrap = true
+clip_text = true
 
 [node name="Rating1" type="Label" parent="."]
 anchor_right = 0.002
