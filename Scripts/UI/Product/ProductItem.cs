@@ -15,16 +15,27 @@ public class ProductItem : Control {
         // make text smaller if the name is too big
         Label bruh = GetNode<Label>("ProductName");
         bruh.Text = productProduct.Name;
-        int maxLineCount = 14;
+        /*// int maxLineCount = 10;
         int maxFont = 24;
         int minFont = 12;
         int fontRangeDiff = maxFont-minFont;
-        int fontChangePerLine = fontRangeDiff/(maxLineCount-1);
-        int newFontSize = maxFont-(fontChangePerLine*bruh.GetLineCount());
+        double fontChangePerLine = 1.333333333; //fontRangeDiff/(maxLineCount-1)
+        double newFontSize = maxFont-(fontChangePerLine*bruh.GetLineCount());*/
+
+        // it doesn't work so i just hardcoded the values :)
+        int newFontSize = 69420;
+        if (productProduct.Name.ToCharArray().Length < 20) {
+            newFontSize = 24;
+        } else if (productProduct.Name.ToCharArray().Length < 50) {
+            newFontSize = 18;
+        } else if (productProduct.Name.ToCharArray().Length > 50) {
+            newFontSize = 14;
+        }
+        GD.Print(bruh.GetLineCount());
         DynamicFont epicFont = new DynamicFont();
         epicFont.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
-        epicFont.Size = newFontSize;
-        bruh.AddFontOverride("bruhmoment", epicFont);
+        epicFont.Size = (int)newFontSize;
+        bruh.AddFontOverride("font", epicFont);
 
         if (productProduct.Type == "rocket") {
             // sorry

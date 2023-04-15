@@ -1,7 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/UI/Product/ProductItem.cs" type="Script" id=1]
 [ext_resource path="res://Assets/EmployeeCardThingBackground.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 10
+font_data = SubResource( 9 )
 
 [sub_resource type="DynamicFontData" id=7]
 font_path = "res://Uhh/Ubuntu-Regular.ttf"
@@ -24,9 +31,10 @@ anchor_right = 0.002
 anchor_bottom = 0.011
 margin_top = 25.0
 margin_right = 297.44
-margin_bottom = 59.08
+margin_bottom = 67.08
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "AAAAAAAAAAAAAA"
+custom_fonts/font = SubResource( 10 )
+text = "bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh"
 align = 1
 valign = 1
 autowrap = true
@@ -35,7 +43,7 @@ clip_text = true
 [node name="ProductInfo" type="Label" parent="."]
 anchor_right = 0.002
 anchor_bottom = 0.011
-margin_top = 64.0
+margin_top = 72.0
 margin_right = 297.44
 margin_bottom = 397.08
 custom_colors/font_color = Color( 0, 0, 0, 1 )

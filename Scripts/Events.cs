@@ -119,8 +119,8 @@ public class Events : Node2D {
                     }
                 }
             }
-            GD.Print("sales: " + sales);
-            GD.Print("price: " + price);
+            /*GD.Print("sales: " + sales);
+            GD.Print("price: " + price);*/
         }
         #endregion
         #region Debt
