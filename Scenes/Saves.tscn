@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
 [ext_resource path="res://Assets/business.png" type="Texture" id=8]
+[ext_resource path="res://Assets/DangerHover.png" type="Texture" id=9]
+[ext_resource path="res://Assets/DangerPress.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Danger.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/UI/Save/DeleteCompanyOpen.cs" type="Script" id=12]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -88,9 +92,9 @@ custom_fonts/font = SubResource( 6 )
 text = "cfgyuiojhdfxriolkjhftyuiopöliufrytguiloluytfretyjukilopoiuyyui"
 
 [node name="SavesExit" type="TextureButton" parent="."]
-margin_left = 440.0
+margin_left = 644.0
 margin_top = 575.0
-margin_right = 840.0
+margin_right = 1044.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -107,6 +111,29 @@ margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 8 )
 text = "Exit"
+align = 1
+valign = 1
+
+[node name="RemoveSave" type="TextureButton" parent="."]
+margin_left = 234.0
+margin_top = 575.0
+margin_right = 634.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 9 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="RemoveSave"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 8 )
+text = "Delete company"
 align = 1
 valign = 1
 
