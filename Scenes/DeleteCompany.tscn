@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Assets/Dialog2.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -18,6 +18,8 @@
 [ext_resource path="res://Assets/DangerPress.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Danger.png" type="Texture" id=17]
 [ext_resource path="res://Scripts/UI/Save/CompanyBoom.cs" type="Script" id=18]
+[ext_resource path="res://Scripts/UI/Save/CancelCompanyBoom.cs" type="Script" id=19]
+[ext_resource path="res://Scripts/UI/Save/RealCompanyBoom.cs" type="Script" id=20]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -114,15 +116,14 @@ rect_min_size = Vector2( 505, 426 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 400.0
-margin_bottom = 426.0
+margin_bottom = 670.0
 rect_min_size = Vector2( 400, 426 )
 custom_constants/separation = 10
 alignment = 1
 
 [node name="Company1" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
-margin_top = 175.0
 margin_right = 400.0
-margin_bottom = 250.0
+margin_bottom = 75.0
 texture_normal = ExtResource( 17 )
 texture_pressed = ExtResource( 16 )
 texture_hover = ExtResource( 15 )
@@ -130,8 +131,156 @@ script = ExtResource( 18 )
 __meta__ = {
 "_edit_group_": true
 }
+CompanyNumber = 1
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company1"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company2" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 85.0
+margin_right = 400.0
+margin_bottom = 160.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company2"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company3" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 170.0
+margin_right = 400.0
+margin_bottom = 245.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company3"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company4" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 255.0
+margin_right = 400.0
+margin_bottom = 330.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company4"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company5" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 340.0
+margin_right = 400.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company5"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company6" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 425.0
+margin_right = 400.0
+margin_bottom = 500.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company6"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company7" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 510.0
+margin_right = 400.0
+margin_bottom = 585.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company7"]
+margin_right = 400.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 10 )
+text = "company 1 :)"
+align = 1
+valign = 1
+
+[node name="Company8" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+margin_top = 595.0
+margin_right = 400.0
+margin_bottom = 670.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+CompanyNumber = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Company8"]
 margin_right = 400.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 10 )
@@ -172,6 +321,7 @@ margin_bottom = 390.0
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 14 )
 texture_hover = ExtResource( 12 )
+script = ExtResource( 19 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -195,6 +345,7 @@ margin_bottom = 390.0
 texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 10 )
 texture_hover = ExtResource( 3 )
+script = ExtResource( 20 )
 __meta__ = {
 "_edit_group_": true
 }

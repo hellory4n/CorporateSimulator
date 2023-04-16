@@ -197,4 +197,5 @@ public class Global : Node2D {
     public static Stock[] Investments;
     public static Stock[] AvailableInvestments;
     public static string Version = "69.420 The Update Update";
+    public static string CompanyThatWillSoonExplode = "none :)";
 }
