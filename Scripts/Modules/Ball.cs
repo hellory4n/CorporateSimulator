@@ -4,6 +4,7 @@ using System;
 public class Ball : Node2D {
     string texturePath;
     string scene;
+    Timer timer = new Timer();
 
     public void Init(string type, string _scene) {
         // What kind of balls this is
@@ -45,7 +46,6 @@ public class Ball : Node2D {
     public override void _Process(float delta) {
         if (Position.y > 640 && Position.x == 75) {
             // instantly opening the thing is kinda crinj y'know
-            Timer timer = new Timer();
             timer.Connect("timeout", this, nameof(OpenThingy));
             timer.WaitTime = 1;
             timer.OneShot = true;
@@ -53,6 +53,9 @@ public class Ball : Node2D {
             timer.Start();
             Position = new Vector2(76, Position.y); // don't make millions of timers
         }
+
+        timer.Paused = Global.PausedTime;
+
         if (Position.y < 640 && !Global.PausedTime) {
             Position = new Vector2(Position.x, Position.y + 500 * delta);
         }
