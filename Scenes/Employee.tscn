@@ -11,14 +11,14 @@
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
-size = 30
+size = 28
 font_data = SubResource( 5 )
 
 [sub_resource type="DynamicFontData" id=7]
 font_path = "res://Uhh/Ubuntu-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=8]
-size = 24
+size = 20
 font_data = SubResource( 7 )
 
 [node name="Control" type="Control"]
