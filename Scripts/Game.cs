@@ -69,6 +69,7 @@ public class Game : Node2D {
             Global.Investments = save.Investments;
             Global.AvailableInvestments = save.AvailableInvestments;
             Global.Version = save.Version;
+            Global.Purchased = save.Purchased;
             #endregion
             file.Close();
             // developing thing
