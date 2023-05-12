@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -12,6 +12,54 @@
 [ext_resource path="res://Assets/SmallButton.png" type="Texture" id=10]
 [ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=11]
 [ext_resource path="res://Scripts/UI/Store/StoreBuy.cs" type="Script" id=12]
+[ext_resource path="res://Assets/Store/InnovativeTshirt.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Store/WashingMachine.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Ecs/Hitoothbrush.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Store/BaggedAirCheese.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Store/EletricGridKiller6900.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Ecs/Hiphone16.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Store/Squaritos.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Ecs/Hiphone15.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Store/AThing.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Store/RemoteControlledGrill.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Ecs/Hiphone17.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Store/BaggedAirBarbecue.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Store/Milk.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Store/FlyingHouse.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Store/Webdoor.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Ecs/WebToasts.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Ecs/Hiphone19.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Ecs/Hiphone18.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Store/BaggedAirFart.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Store/Rocks.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Store/HorseRemoteController.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Ecs/WebToasts2.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Store/BaggedAirAir.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Store/BaggedAirSpicy.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Store/OrangeJuice.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Store/Cheese.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Ecs/WebToasts4.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Store/SkepticismAntivirus.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Store/100Dollaridoos.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Ecs/WebToasts3.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Store/ChoccyMilk.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Store/Cookie.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Store/RandomNumberBook.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Ecs/Hiphone20.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Ecs/Hiphone21.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Store/ToiletPaper.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Store/TooManyDollaridoos.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Store/SmilingRock.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Ecs/Webpaper2.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Store/BaggedAirSurroundedByAirInsideABag.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Ecs/Webpaper1.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Store/WirelessCharger.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Ecs/Hiphone22.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Store/HolyCheese.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Ecs/Hiphone23.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Store/GoldenTophat.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Store/InfinitePotatos.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Store/BaggedAirOnion.png" type="Texture" id=60]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -47,6 +95,41 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=10]
 size = 30
 font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 22
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 28
+font_data = SubResource( 13 )
+
+[sub_resource type="DynamicFontData" id=15]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=16]
+size = 26
+font_data = SubResource( 15 )
+
+[sub_resource type="DynamicFontData" id=17]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=18]
+size = 15
+font_data = SubResource( 17 )
+
+[sub_resource type="DynamicFontData" id=19]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=20]
+size = 28
+font_data = SubResource( 19 )
 
 [node name="Dialog" type="Node2D"]
 
@@ -105,10 +188,10 @@ margin_bottom = 565.0
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
-margin_right = 880.0
+margin_right = 16500.0
 margin_bottom = 394.0
 rect_min_size = Vector2( 880, 394 )
-custom_constants/separation = 310
+custom_constants/separation = 330
 
 [node name="Item" type="Control" parent="ScrollContainer/HBoxContainer"]
 margin_bottom = 394.0
@@ -156,9 +239,3317 @@ texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
 script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
 Price = 25
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item2" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 330.0
+margin_right = 330.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item2"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item2"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item2"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Squaritos"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item2"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Your favorite tasty corn squares with no nutritional value."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item2"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 1
+Price = 25
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item2/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item3" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 660.0
+margin_right = 660.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item3"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item3"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item3"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Pro Washing Machine"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item3"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Washes your clothes like a professional. That's why it costs a cool $2,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item3"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 2
+Price = 2000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item3/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $2,000"
+align = 1
+valign = 1
+
+[node name="Item4" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 990.0
+margin_right = 990.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item4"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item4"]
+position = Vector2( 112, 10 )
+texture = ExtResource( 22 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item4"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Remote-controlled grill"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item4"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Are you too lazy to walk to the grill so you can do stuff with it? Then this product is for you! Definitely worth it."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item4"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 3
+Price = 2000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item4/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $2,000"
+align = 1
+valign = 1
+
+[node name="Item5" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1320.0
+margin_right = 1320.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item5"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item5"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 21 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item5"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "A Thing"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item5"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "It's definitely a thing."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item5"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 4
+Price = 10000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item5/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $10,000"
+align = 1
+valign = 1
+
+[node name="Item6" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1650.0
+margin_right = 1650.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item6"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item6"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 20 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item6"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "hiPhone 15"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item6"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Introducing the hiPhone 15 by Pineapple. Our latest and greatest smartphone. What's new in this version? Brilliant question!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item6"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 5
+Price = 999
+Year = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item6/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item7" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1980.0
+margin_right = 1980.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item7"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item7"]
+position = Vector2( 110, 15 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item7"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Innovative T-Shirt"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item7"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Finally, you can look like an idiot on public establishments."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item7"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 6
+Price = 169
+Year = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item7/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $169"
+align = 1
+valign = 1
+
+[node name="Item8" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2310.0
+margin_right = 2310.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item8"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item8"]
+position = Vector2( 110, 45 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item8"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "hiToothbrush"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item8"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Have you ever felt like your toothbrush should have WiFi? No? Introducing the hiToothbrush: The first toothbrush with WiFi for no reason."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item8"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 7
+Price = 999
+Year = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item8/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item9" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2640.0
+margin_right = 2640.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item9"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item9"]
+position = Vector2( 110, 20 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "ELECTRIC GRID KILLER 6900"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "The world's most powerful laptop. Will either explode or make fan noises so loud the entire neighborhood will hear it. Charging it may cause a blackout."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item9"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 8
+Price = 4999
+Year = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item9/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $4,999"
+align = 1
+valign = 1
+
+[node name="Item10" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2970.0
+margin_right = 2970.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item10"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item10"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 24 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Bagged Air Barbecue"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "The original Bagged Air was a massive success, and that's why we're making barbecue-flavored air. Truly the american dream."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item10"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 9
+Price = 25
+Year = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item11" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3300.0
+margin_right = 3300.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item11"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item11"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item11"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Bagged Air Cheese"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item11"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "We love money so we also made cheese-flavored air :)"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item11"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 10
+Price = 25
+Year = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item11/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item12" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3630.0
+margin_right = 3630.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item12"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item12"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item12"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "hiPhone 16"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item12"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "For the first time ever, a phone with 2 notches! (the thing on the top) Why did we add 2 notches? Because, uh, I don't know actually, I love my job"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item12"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 11
+Price = 999
+Year = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item12/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item13" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3960.0
+margin_right = 3960.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item13"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item13"]
+position = Vector2( 122, 10 )
+texture = ExtResource( 27 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item13"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "webdoor"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item13"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Introducing the webdoor by Silly Co: the world's first smart door! Finally, you can scroll on Twooter for hours, but in your door."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item13"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 12
+Price = 1999
+Year = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item13/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $1,999"
+align = 1
+valign = 1
+
+[node name="Item14" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4290.0
+margin_right = 4290.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item14"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item14"]
+position = Vector2( 117, 10 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item14"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Flying House"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item14"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Have you ever wanted to get out of your city because it sucks and stuff? With the Flying House, you can! Also the house itself only contains a single tiny room"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item14"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 13
+Price = 49999
+Year = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item14/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $49,999"
+align = 1
+valign = 1
+
+[node name="Item15" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4620.0
+margin_right = 4620.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item15"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item15"]
+position = Vector2( 110, 29 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item15"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "WebToasts"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item15"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Introducing WebToasts by Silly Co: Not only it is a toaster, it's also a high-end tablet PC thing that can browse the web, because no one has smartphones."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item15"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 14
+Price = 999
+Year = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item15/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item16" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4950.0
+margin_right = 4950.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item16"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item16"]
+position = Vector2( 125, 10 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item16"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Milk"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item16"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Milk does good things to your bones, and is very cool, so you should drink milk."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item16"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 15
+Price = 25
+Year = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item16/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item17" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5280.0
+margin_right = 5280.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item17"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item17"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 23 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item17"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "hiPhone 17"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item17"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Not only it has a brand-new epic UI, but now the entire back is a camera! That means you can't use cases anymore :))))) you're welcome"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item17"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 16
+Price = 999
+Year = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item17/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item18" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5610.0
+margin_right = 5610.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item18"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item18"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item18"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Bag of rocks"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item18"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Finally you can buy rocks, because you can't just pick them off the ground. As we all know, rocks are delicious. Wait it's just me?"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item18"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 17
+Price = 25
+Year = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item18/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item19" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5940.0
+margin_right = 5940.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item19"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item19"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 35 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item19"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Bagged Air Air"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item19"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This is just air-flavored air"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item19"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 18
+Price = 25
+Year = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item19/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item20" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6270.0
+margin_right = 6270.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item20"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item20"]
+position = Vector2( 110, 29 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 34 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item20"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "webtoasts²"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item20"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This is like the original webtoasts, but better. Exponentially better. That's why we used a small 2 in the name."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item20"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 19
+Price = 999
+Year = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item20/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item21" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6600.0
+margin_right = 6600.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item21"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item21"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 30 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item21"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "hiPhone 18"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item21"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "We added more cameras, and meteor detection, so you will be notified when a meteor is coming to earth to kill us all! Pineapple: think different or not at all"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item21"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 20
+Price = 999
+Year = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item21/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item22" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6930.0
+margin_right = 6930.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item22"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item22"]
+position = Vector2( 117, 10 )
+texture = ExtResource( 33 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item22"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Horse remote-controller"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item22"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "I have no idea anymore"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item22"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 21
+Price = 999
+Year = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item22/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item23" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 7260.0
+margin_right = 7260.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item23"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item23"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 38 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item23"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "American Cheese"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item23"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Cheese is very epic, and you can do several things with it, such as putting it on burgers, putting it on pizza, or putting it on another type of cheese!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item23"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 22
+Price = 25
+Year = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item23/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item24" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 7590.0
+margin_right = 7590.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item24"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item24"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item24"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Bagged Air Fart"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item24"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "That's right, fart-flavored bagged air! Our CEO was replaced by a monkey attempting to write Hamlet."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item24"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 23
+Price = 25
+Year = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item24/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item25" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 7920.0
+margin_right = 7920.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item25"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item25"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 36 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item25"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Bagged Air Spicy"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item25"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "uh"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item25"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 24
+Price = 25
+Year = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item25/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item26" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 8250.0
+margin_right = 8250.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item26"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item26"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 29 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item26"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "hiPhone 19"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item26"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Now it has oxygen crash detection, which plays very loud and annoying sounds when oxygen crashes into the phone. I promise our next phone will be better."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item26"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 25
+Price = 999
+Year = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item26/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item27" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 8580.0
+margin_right = 8580.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item27"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item27"]
+position = Vector2( 125, 10 )
+texture = ExtResource( 37 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item27"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Orange Juice"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item27"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "It's like water, but it tastes like orange, and looks orange. Revolutionary."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item27"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 26
+Price = 25
+Year = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item27/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item28" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 8910.0
+margin_right = 8910.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item28"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item28"]
+position = Vector2( 110, 29 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 42 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item28"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "webtoasts³"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item28"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Now with incredibly hot components! This heat will go to your toast, but it's so much heat your toast will be on fire."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item28"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 27
+Price = 999
+Year = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item28/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item29" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 9240.0
+margin_right = 9240.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item29"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item29"]
+position = Vector2( 121, 10 )
+texture = ExtResource( 45 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item29"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Random Number Book"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item29"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This book is fully composed by random numbers! Great story, you can never predict what's coming next!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item29"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 28
+Price = 42
+Year = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item29/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $42"
+align = 1
+valign = 1
+
+[node name="Item30" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 9570.0
+margin_right = 9570.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item30"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item30"]
+position = Vector2( 125, 10 )
+texture = ExtResource( 43 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item30"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Choccy Milk"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item30"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "It's like milk, but with chocolate. That means it's even more cool and epic!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item30"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 29
+Price = 25
+Year = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item30/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item31" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 9900.0
+margin_right = 9900.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item31"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item31"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 46 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item31"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "hiPhone 20"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item31"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "The greatest thing to happen to hiPhone since hiPhone. Now with an emoji bar, 2 joysticks, 18 buttons, and a second screen. We expect other companies to copy us tomorrow at 15:00 UTC."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item31"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 30
+Price = 999
+Year = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item31/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item32" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 10230.0
+margin_right = 10230.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item32"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item32"]
+position = Vector2( 110, 29 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 39 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item32"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "webtoasts⁴"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item32"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Now with PenguinOS XD so now it has bajillions of penguins. It's a small upgrade because we're busy on a brand-new revolutionary product."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item32"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 31
+Price = 999
+Year = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item32/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item33" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 10560.0
+margin_right = 10560.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item33"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item33"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 40 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item33"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Skepticism Antivirus"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item33"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Keep your business away from malware, spyware, adware, ransomware, software, hardware, firmware, and other dangerous threats!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item33"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 32
+Price = 199
+Year = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item33/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $199"
+align = 1
+valign = 1
+
+[node name="Item34" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 10890.0
+margin_right = 10890.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item34"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item34"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 44 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item34"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Cookie"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item34"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Notice how there's no S at the end, that's because it's actually a single big cookie."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item34"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 33
+Price = 25
+Year = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item34/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item35" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 11220.0
+margin_right = 11220.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item35"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item35"]
+position = Vector2( 110, 35 )
+texture = ExtResource( 41 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item35"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "$100 bill"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item35"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Finally you can buy money! DO NOT USE THIS TO BUY THINGS THIS IS FAKE MONEY HEY POLICE CAN YOU NOT ARREST ME"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item35"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 34
+Price = 100
+Year = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item35/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $100"
+align = 1
+valign = 1
+
+[node name="Item36" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 11550.0
+margin_right = 11550.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item36"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item36"]
+visible = false
+position = Vector2( 110, 35 )
+texture = ExtResource( 41 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item36"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Air without a bag"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item36"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "We're running out of ideas"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item36"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 35
+Price = 25
+Year = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item36/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item37" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 11880.0
+margin_right = 11880.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item37"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item37"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 47 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item37"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "hiPhone 21"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item37"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Now with a new Z button and other improvements to this very unique and new phone design"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item37"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 36
+Price = 999
+Year = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item37/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item38" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 12210.0
+margin_right = 12210.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item38"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item38"]
+position = Vector2( 110, 32 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 53 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item38"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "webpaper"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item38"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This is Silly Co's greatest product ever. For the first time in human history, a printer that works! If it doesn't work we will give you a refund!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item38"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 37
+Price = 999
+Year = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item38/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item39" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 12540.0
+margin_right = 12540.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item39"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item39"]
+position = Vector2( 125, 10 )
+texture = ExtResource( 54 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item39"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "Wireless Charger"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item39"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Charge your hiPhone without wires! Please ignore that wire."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item39"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 38
+Price = 54386
+Year = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item39/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $54,386"
+align = 1
+valign = 1
+
+[node name="Item40" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 12870.0
+margin_right = 12870.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item40"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item40"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 52 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item40"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 18 )
+text = "Bagged Air Surrounded by Air Inside a Bag"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item40"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "You didn't understand it? Perfect, that's the point!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item40"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 39
+Price = 25
+Year = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item40/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item41" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 13200.0
+margin_right = 13200.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item41"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item41"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 55 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item41"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "hiPhone 22"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item41"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Not only it has new emojis, but it also has support a new pro stand that holds your phone like a professional, for only $999!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item41"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 40
+Price = 999
+Year = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item41/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item42" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 13530.0
+margin_right = 13530.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item42"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item42"]
+position = Vector2( 110, 32 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 51 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item42"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "webpaper²"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item42"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "The original webpaper was a gigantic success, and that's why we made the webpaper²! It's like the original webpaper, but green. Now give us money"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item42"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 41
+Price = 999
+Year = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item42/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item43" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 13860.0
+margin_right = 13860.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item43"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item43"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 48 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item43"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Toilet Paper"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item43"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Have you ever had that moment where you finished pooping but there's no toilet paper? Then this product is for you! We can ship the toilet paper withing 1-3 business minutes!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item43"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 42
+Price = 999
+Year = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item43/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item44" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 14190.0
+margin_right = 14190.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item44"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item44"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 49 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item44"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "A lot of money"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item44"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "THIS IS FAKE DON'T USE IT TO BUY STUFF PLEASE "
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item44"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 43
+Price = 1000
+Year = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item44/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $1,000"
+align = 1
+valign = 1
+
+[node name="Item45" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 14520.0
+margin_right = 14520.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item45"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item45"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 56 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item45"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Holy Cheese"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item45"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This cheese was blessed by god and is very cool. Buy now."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item45"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 44
+Price = 6756285
+Year = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item45/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $6,756,285"
+align = 1
+valign = 1
+
+[node name="Item46" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 14850.0
+margin_right = 14850.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item46"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item46"]
+position = Vector2( 110, 10 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 57 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item46"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "hiPhone 23"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item46"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Now it has a Netfilms button so you can easily watch your favorite shows. Not only that, it can also fly! Why would you want a flying phone? Fantastic question!"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item46"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 45
+Price = 999
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item46/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item47" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 15180.0
+margin_right = 15180.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item47"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item47"]
+position = Vector2( 110, 32 )
+texture = ExtResource( 50 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item47"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Smiling Rock"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item47"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "abcdefghijklmnopqrstuvwxyz"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item47"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 46
+Price = 999
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item47/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $999"
+align = 1
+valign = 1
+
+[node name="Item48" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 15510.0
+margin_right = 15510.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item48"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item48"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 59 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item48"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Infinite Potatos"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item48"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This is the greatest breakthrough in the history of humanity since the discovery of fire! And that's impressive since fire was pretty sick"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item48"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 47
+Price = 99
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item48/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $99"
+align = 1
+valign = 1
+
+[node name="Item49" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 15840.0
+margin_right = 15840.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item49"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item49"]
+position = Vector2( 110, 10 )
+texture = ExtResource( 58 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item49"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Golden Tophat"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item49"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Automatically increases your coolness by 69420%"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item49"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 48
+Price = 99
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item49/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $99"
+align = 1
+valign = 1
+
+[node name="Item50" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 16170.0
+margin_right = 16170.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item50"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item50"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 60 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item50"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Bagged Air Onion"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item50"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Onion-flavored air! May make you cry."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item50"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 49
+Price = 25
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item50/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Buy - $25"
+align = 1
+valign = 1
+
+[node name="Item51" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 16500.0
+margin_right = 16500.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item51"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item51"]
+position = Vector2( 120, 10 )
+texture = ExtResource( 60 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item51"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 120.0
+margin_right = 320.0
+margin_bottom = 148.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Bagged Air Onion"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item51"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 153.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Onion-flavored air! May make you cry."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item51"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+ItemID = 49
+Price = 25
+Year = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item51/ItemBuy"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 299.4
