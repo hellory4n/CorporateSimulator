@@ -19,7 +19,7 @@ public class StoreBuy : TextureButton {
 
     public void Click() {
         Global.Purchased[ItemID].Amount += 1;
-        Global.Purchased[ItemID].Price += Price;
+        Global.Purchased[ItemID].Price = Price;
         Global.Money -= Price;
     }
 }
