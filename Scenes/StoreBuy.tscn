@@ -3493,68 +3493,7 @@ text = "Buy - $25"
 align = 1
 valign = 1
 
-[node name="Item51" type="Control" parent="ScrollContainer/HBoxContainer"]
+[node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
 margin_left = 16500.0
 margin_right = 16500.0
 margin_bottom = 394.0
-
-[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item51"]
-texture = ExtResource( 9 )
-centered = false
-
-[node name="Image" type="Sprite" parent="ScrollContainer/HBoxContainer/Item51"]
-position = Vector2( 120, 10 )
-texture = ExtResource( 60 )
-centered = false
-
-[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item51"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_top = 120.0
-margin_right = 320.0
-margin_bottom = 148.666
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 20 )
-text = "Bagged Air Onion"
-align = 1
-valign = 1
-clip_text = true
-
-[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item51"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_top = 153.0
-margin_right = 320.0
-margin_bottom = 306.666
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 8 )
-text = "Onion-flavored air! May make you cry."
-align = 1
-valign = 1
-autowrap = true
-
-[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item51"]
-margin_left = 10.0
-margin_top = 320.0
-margin_right = 290.0
-margin_bottom = 395.0
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_group_": true
-}
-ItemID = 49
-Price = 25
-Year = 10
-
-[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item51/ItemBuy"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_right = 299.4
-margin_bottom = 74.175
-custom_fonts/font = SubResource( 10 )
-text = "Buy - $25"
-align = 1
-valign = 1
