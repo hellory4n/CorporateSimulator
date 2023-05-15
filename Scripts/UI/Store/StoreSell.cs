@@ -20,6 +20,7 @@ public class StoreSell : TextureButton {
 
     public void Click() {
         Global.Purchased[ItemID].Amount -= 1;
+        Global.Money += Global.Purchased[ItemID].Price;
         if (Global.Purchased[ItemID].Amount == 0) {
             GetParent().QueueFree();
         } else {

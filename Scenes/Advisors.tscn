@@ -11,6 +11,7 @@
 [ext_resource path="res://Assets/Thing.png" type="Texture" id=9]
 [ext_resource path="res://Assets/SmallButton.png" type="Texture" id=10]
 [ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/UI/Store/StoreBuy.cs" type="Script" id=12]
 [ext_resource path="res://Assets/Store/InnovativeTshirt.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Store/WashingMachine.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Ecs/Hitoothbrush.png" type="Texture" id=15]
@@ -59,7 +60,6 @@
 [ext_resource path="res://Assets/Store/GoldenTophat.png" type="Texture" id=58]
 [ext_resource path="res://Assets/Store/InfinitePotatos.png" type="Texture" id=59]
 [ext_resource path="res://Assets/Store/BaggedAirOnion.png" type="Texture" id=60]
-[ext_resource path="res://Scripts/UI/Store/StoreSell.cs" type="Script" id=61]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -154,7 +154,7 @@ margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "Your items"
+text = "Store Store: Always having great prices or something."
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
@@ -238,10 +238,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
+Price = 25
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item/ItemBuy"]
 anchor_right = 0.002
@@ -300,11 +301,12 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 1
+Price = 25
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item2/ItemBuy"]
 anchor_right = 0.002
@@ -363,11 +365,12 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 2
+Price = 2000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item3/ItemBuy"]
 anchor_right = 0.002
@@ -426,11 +429,12 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 3
+Price = 2000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item4/ItemBuy"]
 anchor_right = 0.002
@@ -489,11 +493,12 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 4
+Price = 10000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item5/ItemBuy"]
 anchor_right = 0.002
@@ -553,11 +558,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 5
+Price = 999
+Year = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item6/ItemBuy"]
 anchor_right = 0.002
@@ -616,11 +623,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 6
+Price = 169
+Year = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item7/ItemBuy"]
 anchor_right = 0.002
@@ -680,11 +689,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 7
+Price = 999
+Year = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item8/ItemBuy"]
 anchor_right = 0.002
@@ -743,11 +754,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 8
+Price = 4999
+Year = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item9/ItemBuy"]
 anchor_right = 0.002
@@ -807,11 +820,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 9
+Price = 25
+Year = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
 anchor_right = 0.002
@@ -871,11 +886,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 10
+Price = 25
+Year = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item11/ItemBuy"]
 anchor_right = 0.002
@@ -936,11 +953,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 11
+Price = 999
+Year = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item12/ItemBuy"]
 anchor_right = 0.002
@@ -1000,11 +1019,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 12
+Price = 1999
+Year = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item13/ItemBuy"]
 anchor_right = 0.002
@@ -1064,11 +1085,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 13
+Price = 49999
+Year = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item14/ItemBuy"]
 anchor_right = 0.002
@@ -1129,11 +1152,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 14
+Price = 999
+Year = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item15/ItemBuy"]
 anchor_right = 0.002
@@ -1193,11 +1218,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 15
+Price = 25
+Year = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item16/ItemBuy"]
 anchor_right = 0.002
@@ -1258,11 +1285,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 16
+Price = 999
+Year = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item17/ItemBuy"]
 anchor_right = 0.002
@@ -1322,11 +1351,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 17
+Price = 25
+Year = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item18/ItemBuy"]
 anchor_right = 0.002
@@ -1386,11 +1417,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 18
+Price = 25
+Year = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item19/ItemBuy"]
 anchor_right = 0.002
@@ -1451,11 +1484,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 19
+Price = 999
+Year = 4
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item20/ItemBuy"]
 anchor_right = 0.002
@@ -1516,11 +1551,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 20
+Price = 999
+Year = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item21/ItemBuy"]
 anchor_right = 0.002
@@ -1580,11 +1617,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 21
+Price = 999
+Year = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item22/ItemBuy"]
 anchor_right = 0.002
@@ -1644,11 +1683,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 22
+Price = 25
+Year = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item23/ItemBuy"]
 anchor_right = 0.002
@@ -1708,11 +1749,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 23
+Price = 25
+Year = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item24/ItemBuy"]
 anchor_right = 0.002
@@ -1772,11 +1815,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 24
+Price = 25
+Year = 5
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item25/ItemBuy"]
 anchor_right = 0.002
@@ -1837,11 +1882,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 25
+Price = 999
+Year = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item26/ItemBuy"]
 anchor_right = 0.002
@@ -1901,11 +1948,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 26
+Price = 25
+Year = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item27/ItemBuy"]
 anchor_right = 0.002
@@ -1966,11 +2015,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 27
+Price = 999
+Year = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item28/ItemBuy"]
 anchor_right = 0.002
@@ -2030,11 +2081,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 28
+Price = 42
+Year = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item29/ItemBuy"]
 anchor_right = 0.002
@@ -2094,11 +2147,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 29
+Price = 25
+Year = 6
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item30/ItemBuy"]
 anchor_right = 0.002
@@ -2159,11 +2214,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 30
+Price = 999
+Year = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item31/ItemBuy"]
 anchor_right = 0.002
@@ -2224,11 +2281,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 31
+Price = 999
+Year = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item32/ItemBuy"]
 anchor_right = 0.002
@@ -2288,11 +2347,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 32
+Price = 199
+Year = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item33/ItemBuy"]
 anchor_right = 0.002
@@ -2352,11 +2413,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 33
+Price = 25
+Year = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item34/ItemBuy"]
 anchor_right = 0.002
@@ -2416,11 +2479,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 34
+Price = 100
+Year = 7
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item35/ItemBuy"]
 anchor_right = 0.002
@@ -2481,11 +2546,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 35
+Price = 25
+Year = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item36/ItemBuy"]
 anchor_right = 0.002
@@ -2546,11 +2613,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 36
+Price = 999
+Year = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item37/ItemBuy"]
 anchor_right = 0.002
@@ -2611,11 +2680,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 37
+Price = 999
+Year = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item38/ItemBuy"]
 anchor_right = 0.002
@@ -2675,11 +2746,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 38
+Price = 54386
+Year = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item39/ItemBuy"]
 anchor_right = 0.002
@@ -2739,11 +2812,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 39
+Price = 25
+Year = 8
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item40/ItemBuy"]
 anchor_right = 0.002
@@ -2804,11 +2879,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 40
+Price = 999
+Year = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item41/ItemBuy"]
 anchor_right = 0.002
@@ -2869,11 +2946,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 41
+Price = 999
+Year = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item42/ItemBuy"]
 anchor_right = 0.002
@@ -2933,11 +3012,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 42
+Price = 999
+Year = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item43/ItemBuy"]
 anchor_right = 0.002
@@ -2997,11 +3078,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 43
+Price = 1000
+Year = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item44/ItemBuy"]
 anchor_right = 0.002
@@ -3061,11 +3144,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 44
+Price = 6756285
+Year = 9
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item45/ItemBuy"]
 anchor_right = 0.002
@@ -3126,11 +3211,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 45
+Price = 999
+Year = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item46/ItemBuy"]
 anchor_right = 0.002
@@ -3190,11 +3277,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 46
+Price = 999
+Year = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item47/ItemBuy"]
 anchor_right = 0.002
@@ -3254,11 +3343,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 47
+Price = 99
+Year = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item48/ItemBuy"]
 anchor_right = 0.002
@@ -3318,11 +3409,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 48
+Price = 99
+Year = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item49/ItemBuy"]
 anchor_right = 0.002
@@ -3382,11 +3475,13 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 61 )
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
 }
 ItemID = 49
+Price = 25
+Year = 10
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item50/ItemBuy"]
 anchor_right = 0.002
