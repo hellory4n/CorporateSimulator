@@ -7,10 +7,10 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Advisors/AdvisorHire.cs" type="Script" id=8]
 [ext_resource path="res://Assets/Thing.png" type="Texture" id=9]
 [ext_resource path="res://Assets/SmallButton.png" type="Texture" id=10]
 [ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=11]
-[ext_resource path="res://Scripts/UI/Store/StoreBuy.cs" type="Script" id=12]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -101,11 +101,10 @@ margin_left = 195.0
 margin_top = 149.0
 margin_right = 1085.0
 margin_bottom = 565.0
-rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
-margin_right = 2640.0
+margin_right = 3300.0
 margin_bottom = 394.0
 rect_min_size = Vector2( 880, 394 )
 custom_constants/separation = 330
@@ -152,11 +151,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "george j. miller"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item/ItemBuy"]
 anchor_right = 0.002
@@ -212,11 +211,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "john tiffany james"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item2/ItemBuy"]
 anchor_right = 0.002
@@ -272,11 +271,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "benjamin dover"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item3/ItemBuy"]
 anchor_right = 0.002
@@ -332,11 +331,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "mark etin"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item4/ItemBuy"]
 anchor_right = 0.002
@@ -392,11 +391,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "amon lee hughman"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item5/ItemBuy"]
 anchor_right = 0.002
@@ -452,11 +451,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "linus droppinson"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item6/ItemBuy"]
 anchor_right = 0.002
@@ -512,11 +511,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "treeresa bush"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item7/ItemBuy"]
 anchor_right = 0.002
@@ -572,11 +571,11 @@ margin_bottom = 395.0
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Price = 25
+AdvisorName = "chris cool"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item8/ItemBuy"]
 anchor_right = 0.002
@@ -588,7 +587,127 @@ text = "Hire"
 align = 1
 valign = 1
 
-[node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
+[node name="Item9" type="Control" parent="ScrollContainer/HBoxContainer"]
 margin_left = 2640.0
 margin_right = 2640.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item9"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Robert Elstem"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Hello, I am Robert Elstem. I'm a genius! If you hire me you'll get a 15% discount on research stuff, truly a wowie moment!
+
+Salary: $5,000,000 per month"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item9"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+AdvisorName = "robert elstem"
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item9/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Hire"
+align = 1
+valign = 1
+
+[node name="Item10" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2970.0
+margin_right = 2970.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item10"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Michael Everything"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "I can do everything the other advisors can do, but that doesn't mean i'm gonna be good at it
+
+Salary: $5,000,000 per month"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item10"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+AdvisorName = "michael everything"
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Hire"
+align = 1
+valign = 1
+
+[node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3300.0
+margin_right = 3300.0
 margin_bottom = 394.0
