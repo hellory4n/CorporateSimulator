@@ -107,4 +107,5 @@ public class GameSave {
         new StoreItem("Golden tophat"),
         new StoreItem("Bagged Air Onion"),
     };
+    public string Advisor = "no one";
 }

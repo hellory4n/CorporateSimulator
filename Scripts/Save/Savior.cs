@@ -67,6 +67,7 @@ class Savior {
         save.AvailableInvestments = Global.AvailableInvestments;
         save.Version = Global.Version;
         save.Purchased = Global.Purchased;
+        save.Advisor = Global.Advisor;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
