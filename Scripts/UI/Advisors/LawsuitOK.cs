@@ -8,6 +8,8 @@ public class LawsuitOK : TextureButton {
 
     public void Click() {
         Global.Money += (int)Global.Money/20;
+        if (GetNodeOrNull("/root/PauseThingy") != null)
+            GetNode("/root/PauseThingy").QueueFree();
         GetParent().QueueFree();
     }
 }
