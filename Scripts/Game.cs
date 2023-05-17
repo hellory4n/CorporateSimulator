@@ -126,6 +126,14 @@ public class Game : Node2D {
                 Global.Investors += Global.MarketingBudget/1000;
                 // yes
                 Global.PoliticsAlreadyAppeared = false;
+
+                // george j. miller advisor
+                if (Global.Advisor == "george j. miller") {
+                    Global.Money -= 100000;
+                    Global.Reputation -= 1;
+                    Global.Investors -= 100;
+                    Global.Taxes += 100;
+                }
             }
             if (Global.Week > 4) {
                 // calculate the salaries
@@ -201,7 +209,7 @@ public class Game : Node2D {
         if (GetNodeOrNull<Node2D>("/root/PauseMenu") != null || GetNodeOrNull<Node2D>("/root/ActionCenter")
         != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null ||
         GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null ||
-        GetNodeOrNull<Node2D>("/root/Settings") != null)
+        GetNodeOrNull<Node2D>("/root/Settings") != null || GetNodeOrNull<Node2D>("/root/Bankrupt") != null)
             Global.PausedTime = true;
         else
             Global.PausedTime = false;

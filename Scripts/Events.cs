@@ -23,7 +23,7 @@ public class Events : Node2D {
                 ComputerProduct shjksj = JsonConvert.DeserializeObject<ComputerProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = shjksj.Price;
-                sales = 2*garbageProduct.Rating;
+                sales = 20*garbageProduct.Rating;
             } else if (garbageProduct.Type == "tv") {
                 TvProduct hjskosp = JsonConvert.DeserializeObject<TvProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));

@@ -14,6 +14,7 @@ config/name="CorporateSimulator"
 config/description="very cool game :))"
 run/main_scene="res://Scenes/Saves.tscn"
 boot_splash/image="res://Assets/splash.png"
+boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 
