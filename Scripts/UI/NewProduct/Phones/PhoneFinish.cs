@@ -19,7 +19,6 @@ public class PhoneFinish : TextureButton {
     public void Click() {
         Global.PhoneNewProduct.Type = "phone";
         Global.PhoneNewProduct.ReleaseDate = "Y" + Global.Year + " M" + Global.Month + " W" + Global.Week;
-        Global.PhoneNewProduct.MoneySpent = Global.PhoneNewProduct.Price * 5;
         Global.Money -= Global.PhoneNewProduct.MoneySpent;
 
         // calculate rating

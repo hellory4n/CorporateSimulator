@@ -88,6 +88,11 @@ public class Events : Node2D {
             
             ulong fart = (ulong)(saleRate/veryRealSecond);
 
+            // mark etin advisor:
+            if (Global.Advisor == "mark etin") {
+                sales *= 2;
+            }
+
             if (Engine.GetIdleFrames() % fart == 0 && Global.PausedTime == false) {
                 // is the product 3 months old?
                 string[] yes = garbageProduct.ReleaseDate.Split(" ");

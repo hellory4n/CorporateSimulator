@@ -40,8 +40,8 @@ public class PhonePrice : HSlider {
 
         Global.PhoneNewProduct.MoneySpent = Global.PhoneNewProduct.Price * 5;
 
-        if (Global.Investors/50 > 1)
-            Global.PhoneNewProduct.MoneySpent *= ((int)Global.Investors/50);
+        if (Global.Investors/100 > 1)
+            Global.PhoneNewProduct.MoneySpent *= ((int)Global.Investors/100);
 
         GetNode<Label>("Label").Text = $"Price: ${String.Format("{0:n0}", Global.PhoneNewProduct.Price)} - "
         + $"Development: ${String.Format("{0:n0}", Global.PhoneNewProduct.MoneySpent)}";
