@@ -135,7 +135,7 @@ public class Game : Node2D {
                     Global.Taxes += 100;
                 }
                 // john tiffany james advisor
-                if (Global.Advisor == "John Tiffany James") {
+                if (Global.Advisor == "john tiffany james") {
                     Global.Money += 250000;
                 }
             }

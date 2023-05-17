@@ -1592,6 +1592,19 @@ public class Events : Node2D {
             Global.DarkStonePay = true;
         }
         #endregion
+        #region benjamin dover advisor
+        if (Global.Week==1 && !Global.Lawsuits && !Global.PausedTime && Global.Advisor=="benjamin dover") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "Lawsuits");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.Lawsuits = true;
+        }
+        if (Global.Week == 2) {
+            Global.Lawsuits = false;
+        }
+        #endregion
         base._Process(delta);
     }
 }
