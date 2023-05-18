@@ -203,4 +203,5 @@ public class Global : Node2D {
     public static bool Lawsuits = false;
     public static bool HumanRelations = false;
     public static bool TechStuff = false;
+    public static bool ForestCreation = false;
 }

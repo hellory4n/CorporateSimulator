@@ -1636,6 +1636,19 @@ public class Events : Node2D {
             Global.TechStuff = false;
         }
         #endregion
+        #region treeresa bush advisor
+        if (Global.Week==1 && !Global.ForestCreation && !Global.PausedTime && Global.Advisor=="treeresa bush") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "ForestCreation");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.ForestCreation = true;
+        }
+        if (Global.Week == 2) {
+            Global.ForestCreation = false;
+        }
+        #endregion
         base._Process(delta);
     }
 }
