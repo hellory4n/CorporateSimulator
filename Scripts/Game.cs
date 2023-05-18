@@ -140,9 +140,24 @@ public class Game : Node2D {
                 }
             }
             if (Global.Week > 4) {
+                // chris cool advisor
+                if (Global.Advisor == "chris cool") {
+                    Global.Reputation += 5;
+                }
+
                 // calculate the salaries
                 foreach (var employee in Global.Employees) {
                     Global.Salaries += employee.Salary;
+                }
+                // epic advisor salaries
+                switch (Global.Advisor) {
+                    case "george j. miller": Global.Salaries += 100000; break;
+                    case "john tiffany james": Global.Salaries += 500000; break;
+                    case "mark etin": Global.Salaries += 1000000; break;
+                    case "linus droppinson": Global.Salaries += 1000000; break;
+                    case "treeresa bush": Global.Salaries += 1000000; break;
+                    case "chris cool": Global.Salaries += 5000000; break;
+                    case "robert elstem": Global.Salaries += 5000000; break;
                 }
                 Global.Money -= Global.Salaries;
 

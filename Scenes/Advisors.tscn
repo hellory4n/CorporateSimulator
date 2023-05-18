@@ -101,7 +101,6 @@ margin_left = 195.0
 margin_top = 149.0
 margin_right = 1085.0
 margin_bottom = 565.0
-rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
@@ -617,7 +616,7 @@ margin_right = 320.0
 margin_bottom = 306.666
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
-text = "Hello, I am Robert Elstem. I'm a genius! If you hire me you'll get a 15% discount on research stuff, truly a wowie moment!
+text = "Hello, I am Robert Elstem. I'm a genius! If you hire me you'll get a 10% discount on research stuff, truly a wowie moment!
 
 Salary: $5,000,000 per month"
 align = 1

@@ -10,14 +10,24 @@ public class ResearchButton : TextureButton {
 
     public override void _Ready() {
         this.Connect("pressed", this, nameof(Click));
-        GetNode<Label>("Label").Text = $"{ok.Name} - {ok.Price}";
+        // robert elstem advisor
+        if (Global.Advisor != "robert elstem") {
+            GetNode<Label>("Label").Text = $"{ok.Name} - {ok.Price}";
+        } else {
+            GetNode<Label>("Label").Text = $"{ok.Name} - {ok.Price-((int)ok.Price/10)}";
+        }
     }
 
     public void Click() {
         if (Global.ResearchPoints >= ok.Price) {
             Global.Researched.Add(ok);
             Global.UnlockedResearch.Remove(ok);
-            Global.ResearchPoints -= ok.Price;
+            // robert elstem advisor again
+            if (Global.Advisor != "robert elstem") {
+                Global.ResearchPoints -= ok.Price;
+            } else {
+                Global.ResearchPoints -= ok.Price-((int)ok.Price/10);
+            }
             // this button is inside a vboxcontainer inside a scrollcontainer inside a node2d
             GetParent().GetParent().GetParent().QueueFree();
         } else {
