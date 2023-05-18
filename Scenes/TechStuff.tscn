@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
-[ext_resource path="res://Scripts/UI/Advisors/BenjaminDoverText.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/UI/Advisors/LawsuitOK.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/UI/Advisors/TechStuff.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
@@ -52,7 +52,7 @@ margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "Lawsuits"
+text = "Definitely Not Financial Loss"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
@@ -64,7 +64,7 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "uh"
+text = "hyf"
 autowrap = true
 script = ExtResource( 3 )
 

@@ -105,7 +105,7 @@ rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
-margin_right = 3300.0
+margin_right = 2970.0
 margin_bottom = 394.0
 rect_min_size = Vector2( 880, 394 )
 custom_constants/separation = 330
@@ -245,7 +245,7 @@ margin_right = 320.0
 margin_bottom = 53.666
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Benjamin Dover"
+text = "Justin Case"
 align = 1
 valign = 1
 
@@ -257,7 +257,7 @@ margin_right = 320.0
 margin_bottom = 306.666
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
-text = "Did you know that according to the constitution, you have the right to jouble deopardy at 4 PM eastern time before the local news? Benjamin Dover is here to protect your intellectual property and stuff.
+text = "Did you know that according to the constitution, you have the right to jouble deopardy at 4 PM eastern time before the local news? Justin Case is here to protect your intellectual property and stuff.
 
 Salary: $500,000 per month"
 align = 1
@@ -276,7 +276,7 @@ script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-AdvisorName = "benjamin dover"
+AdvisorName = "justin case"
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item3/ItemBuy"]
 anchor_right = 0.002
@@ -648,67 +648,7 @@ text = "Hire"
 align = 1
 valign = 1
 
-[node name="Item10" type="Control" parent="ScrollContainer/HBoxContainer"]
+[node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
 margin_left = 2970.0
 margin_right = 2970.0
-margin_bottom = 394.0
-
-[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item10"]
-texture = ExtResource( 9 )
-centered = false
-
-[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_top = 25.0
-margin_right = 320.0
-margin_bottom = 53.666
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 6 )
-text = "Michael Everything"
-align = 1
-valign = 1
-
-[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_top = 68.0
-margin_right = 320.0
-margin_bottom = 306.666
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 8 )
-text = "I can do everything the other advisors can do, but that doesn't mean i'm gonna be good at it
-
-Salary: $5,000,000 per month"
-align = 1
-valign = 1
-autowrap = true
-
-[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item10"]
-margin_left = 10.0
-margin_top = 320.0
-margin_right = 290.0
-margin_bottom = 395.0
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 11 )
-script = ExtResource( 8 )
-__meta__ = {
-"_edit_group_": true
-}
-AdvisorName = "michael everything"
-
-[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_right = 299.4
-margin_bottom = 74.175
-custom_fonts/font = SubResource( 10 )
-text = "Hire"
-align = 1
-valign = 1
-
-[node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
-margin_left = 3300.0
-margin_right = 3300.0
 margin_bottom = 394.0

@@ -1597,8 +1597,8 @@ public class Events : Node2D {
             Global.DarkStonePay = true;
         }
         #endregion
-        #region benjamin dover advisor
-        if (Global.Week==1 && !Global.Lawsuits && !Global.PausedTime && Global.Advisor=="benjamin dover") {
+        #region justin case advisor
+        if (Global.Week==1 && !Global.Lawsuits && !Global.PausedTime && Global.Advisor=="justin case") {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
             OK.Init("email", "Lawsuits");
@@ -1621,6 +1621,19 @@ public class Events : Node2D {
         }
         if (Global.Week == 2) {
             Global.HumanRelations = false;
+        }
+        #endregion
+        #region linus droppinson advisor
+        if (Global.Week==1 && !Global.TechStuff && !Global.PausedTime && Global.Advisor=="linus droppinson") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "TechStuff");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.TechStuff = true;
+        }
+        if (Global.Week == 2) {
+            Global.TechStuff = false;
         }
         #endregion
         base._Process(delta);
