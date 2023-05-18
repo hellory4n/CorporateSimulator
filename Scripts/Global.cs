@@ -201,4 +201,5 @@ public class Global : Node2D {
     public static StoreItem[] Purchased;
     public static string Advisor = "no one lol haha YES!";
     public static bool Lawsuits = false;
+    public static bool HumanRelations = false;
 }

@@ -1610,6 +1610,19 @@ public class Events : Node2D {
             Global.Lawsuits = false;
         }
         #endregion
+        #region amon lee hughman advisor
+        if (Global.Week==1 && !Global.HumanRelations && !Global.PausedTime && Global.Advisor=="amon lee hughman") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "HumanRelations");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.HumanRelations = true;
+        }
+        if (Global.Week == 2) {
+            Global.HumanRelations = false;
+        }
+        #endregion
         base._Process(delta);
     }
 }
