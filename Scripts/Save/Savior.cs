@@ -68,6 +68,7 @@ class Savior {
         save.Version = Global.Version;
         save.Purchased = Global.Purchased;
         save.Advisor = Global.Advisor;
+        save.MoneyHistory = Global.MoneyHistory;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

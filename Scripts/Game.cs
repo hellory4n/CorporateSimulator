@@ -179,6 +179,9 @@ public class Game : Node2D {
                 Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
                 Global.Week = 1;
 
+                // statistics
+                Global.MoneyHistory.Add(Global.Money);
+
                 // stock market prices
                 for (int i = 0; i < Global.AvailableInvestments.Length; i++) {
                     Random suffering = new Random();

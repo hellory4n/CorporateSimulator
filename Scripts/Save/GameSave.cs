@@ -108,4 +108,5 @@ public class GameSave {
         new StoreItem("Bagged Air Onion"),
     };
     public string Advisor = "no one";
+    public List<long> MoneyHistory = new List<long>(new long[]{50000});
 }

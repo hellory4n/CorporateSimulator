@@ -28,12 +28,12 @@ public class Events : Node2D {
                 TvProduct hjskosp = JsonConvert.DeserializeObject<TvProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = (int)hjskosp.Ads/10;
-                sales = 1000*garbageProduct.Rating;
+                sales = 10000*garbageProduct.Rating;
             } else if (garbageProduct.Type == "apps") {
                 AppProduct jskiops = JsonConvert.DeserializeObject<AppProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = (int)jskiops.Algorithm/10;
-                sales = 1000*garbageProduct.Rating;
+                sales = 10000*garbageProduct.Rating;
             } else if (garbageProduct.Type == "phone") {
                 PhoneProduct hjsksjk = JsonConvert.DeserializeObject<PhoneProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
@@ -43,7 +43,7 @@ public class Events : Node2D {
                 YourArseProduct sjksmg = JsonConvert.DeserializeObject<YourArseProduct>(
                     JsonConvert.SerializeObject(Global.Products[Global.Products.Count-1]));
                 price = (int)sjksmg.Ads/20;
-                sales = 2000*garbageProduct.Rating;
+                sales = 5000*garbageProduct.Rating;
             } else if (garbageProduct.Type == "rocket") {
                 price = 100;
                 sales = 100*garbageProduct.Rating;

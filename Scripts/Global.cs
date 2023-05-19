@@ -204,4 +204,5 @@ public class Global : Node2D {
     public static bool HumanRelations = false;
     public static bool TechStuff = false;
     public static bool ForestCreation = false;
+    public static List<long> MoneyHistory = new List<long>(new long[]{50000});
 }
