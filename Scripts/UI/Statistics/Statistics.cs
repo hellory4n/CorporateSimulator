@@ -8,6 +8,7 @@ public class Statistics : Line2D {
 
     public override void _Ready() {
         if (Global.MoneyHistory.Count < 2) {
+            GetNode<Sprite>("../Sprite").QueueFree();
             Label bruh = GetNode<Label>("../Label2");
             bruh.RectSize = new Vector2(890,426);
             bruh.RectPosition = new Vector2(195,139);

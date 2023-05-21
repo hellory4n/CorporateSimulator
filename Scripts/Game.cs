@@ -38,10 +38,28 @@ public class Game : Node2D {
         File file = new File(); // if you haven't noticed this is a file
         GameSave save = new GameSave();
         if (file.FileExists(Global.SaveFile)) {
-            file.Open(Global.SaveFile, File.ModeFlags.Read);
+            file.Open(Global.SaveFile, File.ModeFlags.ReadWrite);
+            // is this an old save? if so, make it new!
+            VeryOldGameSave painsave = JsonConvert.DeserializeObject<VeryOldGameSave>(
+                file.GetAsText()
+            );
+            if (painsave.Version == "0.8") {
+                painsave.Version = "0.9";
+                // we don't want the game to keep converting the save
+                file.StoreString(JsonConvert.SerializeObject(painsave));
+                string oldSaveStuff = file.GetAsText();
+                oldSaveStuff = oldSaveStuff.Substring(0, oldSaveStuff.Length-1);
+                // i hope you have an ultraveryreallytotallywidescreen display
+                oldSaveStuff += ",\"Purchased\":[{\"Name\":\"Bagged Air\",\"Amount\":0,\"Price\":0},{\"Name\":\"Squaritos\",\"Amount\":0,\"Price\":0},{\"Name\":\"Washing Machine\",\"Amount\":0,\"Price\":0},{\"Name\":\"Remote-controlled Grill\",\"Amount\":0,\"Price\":0},{\"Name\":\"A Thing\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 15\",\"Amount\":0,\"Price\":0},{\"Name\":\"Innovative T-Shirt\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiToothbrush\",\"Amount\":0,\"Price\":0},{\"Name\":\"ELECTRIC GRID KILLER 6900\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Barbecue\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Cheese\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 16\",\"Amount\":0,\"Price\":0},{\"Name\":\"Webdoor\",\"Amount\":0,\"Price\":0},{\"Name\":\"Flying House\",\"Amount\":0,\"Price\":0},{\"Name\":\"WebToasts\",\"Amount\":0,\"Price\":0},{\"Name\":\"Milk\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 17\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bag with rocks\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Air\",\"Amount\":0,\"Price\":0},{\"Name\":\"webtoasts²\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 18\",\"Amount\":0,\"Price\":0},{\"Name\":\"Remote controller for a horse\",\"Amount\":0,\"Price\":0},{\"Name\":\"Cheese\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Fart\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Spicy\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 19\",\"Amount\":0,\"Price\":0},{\"Name\":\"Orange Juice\",\"Amount\":0,\"Price\":0},{\"Name\":\"webtoasts³\",\"Amount\":0,\"Price\":0},{\"Name\":\"Random number book\",\"Amount\":0,\"Price\":0},{\"Name\":\"Choccy milk\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 20\",\"Amount\":0,\"Price\":0},{\"Name\":\"webtoasts⁴\",\"Amount\":0,\"Price\":0},{\"Name\":\"Skepticism Antivirus\",\"Amount\":0,\"Price\":0},{\"Name\":\"Cookie\",\"Amount\":0,\"Price\":0},{\"Name\":\"Money\",\"Amount\":0,\"Price\":0},{\"Name\":\"Air without a bag\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 21\",\"Amount\":0,\"Price\":0},{\"Name\":\"webpaper\",\"Amount\":0,\"Price\":0},{\"Name\":\"Wireless Charger\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bag surrounded by air in a bag\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 22\",\"Amount\":0,\"Price\":0},{\"Name\":\"webpaper²\",\"Amount\":0,\"Price\":0},{\"Name\":\"Toilet Paper\",\"Amount\":0,\"Price\":0},{\"Name\":\"A lot of money\",\"Amount\":0,\"Price\":0},{\"Name\":\"Holy Cheese\",\"Amount\":0,\"Price\":0},{\"Name\":\"hiPhone 23\",\"Amount\":0,\"Price\":0},{\"Name\":\"Smiling rock\",\"Amount\":0,\"Price\":0},{\"Name\":\"Infinite potatos\",\"Amount\":0,\"Price\":0},{\"Name\":\"Golden tophat\",\"Amount\":0,\"Price\":0},{\"Name\":\"Bagged Air Onion\",\"Amount\":0,\"Price\":0}],\"Advisor\":\"no one\",\"MoneyHistory\":[]}";
+                file.Seek(0);
+                file.StoreString(oldSaveStuff);
+            }
+            
+            // now we load it again but as a new save
             save = JsonConvert.DeserializeObject<GameSave>(
                 file.GetAsText()
             );
+
             #region uhh
             Global.Money = save.Money;
             Global.Year = save.Year;
