@@ -9,7 +9,7 @@ public class Next : TextureButton {
     public void Click() {
         Global.TutorialImage += 1;
         switch (Global.TutorialImage) {
-            case 6:
+            case 16:
                 File fart = new File();
                 fart.Open("user://first_time", File.ModeFlags.Write);
                 fart.StoreString("aeiou");
@@ -17,7 +17,7 @@ public class Next : TextureButton {
                 GetParent().GetParent().QueueFree();
                 break;
             default:
-                if (Global.TutorialImage != 5) {
+                if (Global.TutorialImage != 15) {
                     GetNode<Label>("./Label").Text = "Next";
                     GetNode<Label>("../Back/Label").Text = "Back";
                     Sprite coolImage = GetNode<Sprite>("../../AwesomeImage");
