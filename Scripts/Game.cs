@@ -71,6 +71,7 @@ public class Game : Node2D {
             Global.Version = save.Version;
             Global.Purchased = save.Purchased;
             Global.Advisor = save.Advisor;
+            Global.MoneyHistory = save.MoneyHistory.ToList();
             #endregion
             file.Close();
             // developing thing
