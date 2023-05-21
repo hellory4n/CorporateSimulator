@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Statistics.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -90,6 +91,11 @@ custom_fonts/font = SubResource( 4 )
 text = "OK"
 align = 1
 valign = 1
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 205, 188 )
+texture = ExtResource( 8 )
+centered = false
 
 [node name="Line2D" type="Line2D" parent="."]
 position = Vector2( 205, 188 )

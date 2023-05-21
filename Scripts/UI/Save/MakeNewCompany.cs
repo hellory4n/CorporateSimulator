@@ -10,7 +10,7 @@ public class MakeNewCompany : TextureButton {
     public void Click() {
         GameSave newGame = new GameSave();
         // turn the index thing into a string
-        // microsoft why do i always need to break cases
+        // microsoft why do i always need to break cases - NOTE FROM THE FUTURE: skill issues
         switch (Global.NewCompanyDialogIndustryIndex) {
             case 0: newGame.Industries = new string[]{"space"}; break;
             case 1: newGame.Industries = new string[]{"food"}; break;
@@ -28,6 +28,7 @@ public class MakeNewCompany : TextureButton {
         }
         newGame.Name = GetNode<LineEdit>("../CompanyName").Text;
         newGame.Ceo = GetNode<LineEdit>("../CeoName").Text;
+        newGame.MoneyHistory.Add(50000);
 
         #region unlocked research
         switch (newGame.Industries[0]) {
