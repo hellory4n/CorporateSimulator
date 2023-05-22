@@ -112,14 +112,14 @@ margin_right = 1085.0
 margin_bottom = 565.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 2445.0
 custom_constants/separation = 25
 
 [node name="SillyCo" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 165.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/SillyCo"]
 
@@ -177,9 +177,9 @@ valign = 1
 
 [node name="ScamCo" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 190.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 355.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/ScamCo"]
 
@@ -237,9 +237,9 @@ valign = 1
 
 [node name="CoolOil" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 380.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 545.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/CoolOil"]
 
@@ -297,9 +297,9 @@ valign = 1
 
 [node name="BaggedAir" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 570.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 735.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/BaggedAir"]
 
@@ -357,9 +357,9 @@ valign = 1
 
 [node name="RobertTech" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 760.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 925.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/RobertTech"]
 
@@ -417,9 +417,9 @@ valign = 1
 
 [node name="Deliciousness" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 950.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 1115.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Deliciousness"]
 
@@ -477,9 +477,9 @@ valign = 1
 
 [node name="Goggles" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 1140.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 1305.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Goggles"]
 
@@ -537,9 +537,9 @@ valign = 1
 
 [node name="Macrohard" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 1330.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 1495.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Macrohard"]
 
@@ -597,9 +597,9 @@ valign = 1
 
 [node name="Databook" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 1520.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 1685.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Databook"]
 
@@ -657,9 +657,9 @@ valign = 1
 
 [node name="Pineapple" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 1710.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 1875.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Pineapple"]
 
@@ -717,9 +717,9 @@ valign = 1
 
 [node name="Amazing" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 1900.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 2065.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Amazing"]
 
@@ -777,9 +777,9 @@ valign = 1
 
 [node name="Netfilms" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 2090.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 2255.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Netfilms"]
 
@@ -837,9 +837,9 @@ valign = 1
 
 [node name="Meloncars" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 2280.0
-margin_right = 870.0
+margin_right = 770.0
 margin_bottom = 2445.0
-rect_min_size = Vector2( 870, 165 )
+rect_min_size = Vector2( 770, 165 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Meloncars"]
 
