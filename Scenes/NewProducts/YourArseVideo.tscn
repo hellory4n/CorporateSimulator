@@ -45,7 +45,7 @@ margin_top = 98.0
 margin_right = 791.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "YourArse video type"
+text = "OurTube video type"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]

@@ -78,7 +78,7 @@ margin_right = 604.2
 margin_bottom = 126.0
 rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
-text = "New YourArse video"
+text = "New OurTube video"
 valign = 1
 
 [node name="Label2" type="Label" parent="."]

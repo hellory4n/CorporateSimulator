@@ -205,7 +205,7 @@ texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
 script = ExtResource( 20 )
-epicIndex = 2
+epicIndex = 1
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/Sell"]
 margin_right = 300.0
