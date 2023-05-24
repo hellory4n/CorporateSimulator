@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -28,6 +28,10 @@
 [ext_resource path="res://Assets/Speed2Off.png" type="Texture" id=26]
 [ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedFaster.cs" type="Script" id=27]
 [ext_resource path="res://Scripts/UI/TimeSpeed/TimeSpeedFast.cs" type="Script" id=28]
+[ext_resource path="res://Scripts/UI/Lab/LabButton.cs" type="Script" id=29]
+[ext_resource path="res://Assets/Lab.png" type="Texture" id=30]
+[ext_resource path="res://Assets/LabHover.png" type="Texture" id=31]
+[ext_resource path="res://Assets/LabPressed.png" type="Texture" id=32]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -158,3 +162,12 @@ margin_right = 265.0
 margin_bottom = 95.0
 texture_normal = ExtResource( 25 )
 script = ExtResource( 27 )
+
+[node name="Lab" type="TextureButton" parent="."]
+margin_top = 645.0
+margin_right = 240.0
+margin_bottom = 720.0
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 32 )
+texture_hover = ExtResource( 31 )
+script = ExtResource( 29 )

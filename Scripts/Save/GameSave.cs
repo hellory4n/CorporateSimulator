@@ -54,7 +54,7 @@ public class GameSave {
         new Stock("netfilms", 0, 420),
         new Stock("meloncars", 0, 420)
     };
-    public string Version = "0.9";
+    public string Version = "0.10";
     public StoreItem[] Purchased = new StoreItem[]{
         new StoreItem("Bagged Air"),
         new StoreItem("Squaritos"),
@@ -109,6 +109,8 @@ public class GameSave {
     };
     public string Advisor = "no one";
     public List<long> MoneyHistory = new List<long>();
+    public bool LabUnlocked = false;
+    public List<string> LabResearch = new List<string>();
 }
 
 // for compatibility

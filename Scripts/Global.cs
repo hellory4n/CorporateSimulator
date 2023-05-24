@@ -205,4 +205,6 @@ public class Global : Node2D {
     public static bool TechStuff = false;
     public static bool ForestCreation = false;
     public static List<long> MoneyHistory;
+    public static bool LabUnlocked;
+    public static List<string> LabResearch;
 }

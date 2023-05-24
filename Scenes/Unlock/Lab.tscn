@@ -65,7 +65,9 @@ margin_right = 1085.0
 margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Congratulations! You now have 1 billion dollars! That's beyond pretty cool. Taxes increased to $10M. You was also supposed to get a lab but the developer didn't add that yet."
+text = "Congratulations! You now have 1 billion dollars! That's beyond pretty cool. As a reward for achieving something pretty cool, you now have a lab! This lab allows you start researching things you need to take over the world!
+
+Also the taxes were increased to $10 million, you're welcome!"
 autowrap = true
 
 [node name="NoScam" type="TextureButton" parent="."]

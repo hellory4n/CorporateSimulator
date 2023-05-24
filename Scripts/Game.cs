@@ -90,6 +90,8 @@ public class Game : Node2D {
             Global.Purchased = save.Purchased;
             Global.Advisor = save.Advisor;
             Global.MoneyHistory = save.MoneyHistory.ToList();
+            Global.LabUnlocked = save.LabUnlocked;
+            Global.LabResearch = save.LabResearch.ToList();
             #endregion
             file.Close();
             // developing thing

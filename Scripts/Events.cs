@@ -664,7 +664,7 @@ public class Events : Node2D {
             Global.Taxes2 = true;
         }
         #endregion
-        #region more taxes and a lab that doesn't exist yet omg omg omg omg
+        #region more taxes and a lab omg omg omg omg
         if (Global.Money > 1000000000 && !Global.Lab && !Global.PausedTime) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
             Ball OK = (Ball)yes.Instance();
@@ -673,6 +673,7 @@ public class Events : Node2D {
             GetTree().Root.AddChild(OK);
             Global.Taxes = 10000000;
             Global.Lab = true;
+            Global.LabUnlocked = true;
         }
         #endregion
         #region ecs year 1
