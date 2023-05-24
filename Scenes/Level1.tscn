@@ -76,7 +76,7 @@ layer = 128
 [node name="Pause" type="TextureButton" parent="CanvasLayer"]
 margin_left = 25.0
 margin_top = 25.0
-margin_right = 125.0
+margin_right = 90.0
 margin_bottom = 90.0
 shortcut = SubResource( 6 )
 texture_normal = ExtResource( 10 )

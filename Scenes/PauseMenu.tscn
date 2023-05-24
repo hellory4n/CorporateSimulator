@@ -30,9 +30,9 @@ position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 
 [node name="Continue" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 25.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 100.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -53,9 +53,9 @@ text = "Continue"
 valign = 1
 
 [node name="New" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 110.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 185.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -76,9 +76,9 @@ text = "New"
 valign = 1
 
 [node name="Save" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 195.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 270.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -99,9 +99,9 @@ text = "Save"
 valign = 1
 
 [node name="Load" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 280.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 355.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -122,9 +122,9 @@ text = "Load"
 valign = 1
 
 [node name="Settings" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 365.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 440.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -145,9 +145,9 @@ text = "Settings"
 valign = 1
 
 [node name="Credits" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 450.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 525.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -168,9 +168,9 @@ text = "Credits"
 valign = 1
 
 [node name="Exit" type="TextureButton" parent="."]
-margin_left = 150.0
+margin_left = 115.0
 margin_top = 535.0
-margin_right = 550.0
+margin_right = 515.0
 margin_bottom = 610.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
