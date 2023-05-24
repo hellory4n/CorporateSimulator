@@ -172,11 +172,14 @@ public class Game : Node2D {
                 switch (Global.Advisor) {
                     case "george j. miller": Global.Salaries += 100000; break;
                     case "john tiffany james": Global.Salaries += 500000; break;
+                    case "justin case": Global.Salaries += 500000; break;
                     case "mark etin": Global.Salaries += 1000000; break;
+                    case "amon lee hughman": Global.Salaries += 1000000; break;
                     case "linus droppinson": Global.Salaries += 1000000; break;
                     case "treeresa bush": Global.Salaries += 1000000; break;
                     case "chris cool": Global.Salaries += 5000000; break;
                     case "robert elstem": Global.Salaries += 5000000; break;
+                    case "william buffet": Global.Salaries += 5000000; break;
                 }
                 Global.Money -= Global.Salaries;
 
@@ -197,6 +200,14 @@ public class Game : Node2D {
                 Global.Money -= Global.Taxes; // taxes :(
                 Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
                 Global.Week = 1;
+
+                // william buffet advisor
+                if (Global.Advisor == "william buffet") {
+                    Global.Money -= Global.InvestorsWant;
+                    Global.WeeksWithoutPayingInvestors = 0;
+                    Global.InvestorSusometer = 0;
+                    Global.Investors += (int)Global.Investors/10;
+                }
 
                 // statistics
                 Global.MoneyHistory.Add(Global.Money);

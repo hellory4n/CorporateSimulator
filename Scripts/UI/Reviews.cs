@@ -102,7 +102,7 @@ public class Reviews : Node2D {
             if (garbage.Type == "medical" && garbage.Rating < 5 && Global.Money > 4)
                 Global.BadMedicalThing = false;
             
-            if (soRandom.Next(0,10) == 2)
+            if (soRandom.Next(0,10) == 2 && Global.Advisor != "chris cool")
                 Global.Offended = false;
             
             if (soRandom.Next(0,4) == 0 && garbage.Type == "food")
