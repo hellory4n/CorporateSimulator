@@ -187,21 +187,32 @@ public class Game : Node2D {
                 Global.Money -= Global.Salaries;
 
                 // do the monthly money thing
-                Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
-                monthlyMoneyThing.Text = $"Y{Global.Year} M{Global.Month}:\n" +
-                    $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
-                    $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
-                    $"-${String.Format("{0:n0}", Global.MarketingBudget)} marketing\n" +
-                    $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors\n" +
-                    $"+${String.Format("{0:n0}", Global.MonthlySales)} product sales";
-                
+                if (Global.LabUnlocked) {
+                    Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
+                    monthlyMoneyThing.Text = $"Y{Global.Year} M{Global.Month}:\n" +
+                        $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
+                        $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
+                        $"-${String.Format("{0:n0}", Global.MarketingBudget+Global.LabBudget)} marketing and lab\n" +
+                        $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors\n" +
+                        $"+${String.Format("{0:n0}", Global.MonthlySales)} product sales";
+                } else {
+                    Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
+                    monthlyMoneyThing.Text = $"Y{Global.Year} M{Global.Month}:\n" +
+                        $"-${String.Format("{0:n0}", Global.Taxes)} taxes\n" +
+                        $"-${String.Format("{0:n0}", Global.Salaries)} salaries\n" + 
+                        $"-${String.Format("{0:n0}", Global.MarketingBudget)} marketing\n" +
+                        $"+${String.Format("{0:n0}", Global.InvestorPayment)} from investors\n" +
+                        $"+${String.Format("{0:n0}", Global.MonthlySales)} product sales";
+                }
+
                 Global.Salaries = 0;
                 Global.MonthlySales = 0;
                 
                 Global.Month++;
                 Global.Money += Global.InvestorPayment;
                 Global.Money -= Global.Taxes; // taxes :(
-                Global.Money -= Global.MarketingBudget; // go bankrupt speedrun
+                Global.Money -= Global.MarketingBudget; // go bankrupt speedrun NOTE FROM THE FUTURE: mues
+                Global.Money -= Global.LabBudget;
                 Global.Week = 1;
 
                 // william buffet advisor
