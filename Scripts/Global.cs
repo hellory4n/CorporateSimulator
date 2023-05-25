@@ -207,4 +207,5 @@ public class Global : Node2D {
     public static List<long> MoneyHistory;
     public static bool LabUnlocked;
     public static List<string> LabResearch;
+    public static int LabBudget;
 }

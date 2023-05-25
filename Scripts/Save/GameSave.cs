@@ -111,6 +111,7 @@ public class GameSave {
     public List<long> MoneyHistory = new List<long>();
     public bool LabUnlocked = false;
     public List<string> LabResearch = new List<string>();
+    public int LabBudget = 0;
 }
 
 // for compatibility

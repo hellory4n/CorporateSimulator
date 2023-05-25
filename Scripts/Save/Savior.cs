@@ -71,6 +71,7 @@ class Savior {
         save.MoneyHistory = Global.MoneyHistory;
         save.LabUnlocked = Global.LabUnlocked;
         save.LabResearch = Global.LabResearch;
+        save.LabBudget = Global.LabBudget;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

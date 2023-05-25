@@ -92,6 +92,7 @@ public class Game : Node2D {
             Global.MoneyHistory = save.MoneyHistory.ToList();
             Global.LabUnlocked = save.LabUnlocked;
             Global.LabResearch = save.LabResearch.ToList();
+            Global.LabBudget = save.LabBudget;
             #endregion
             file.Close();
             // developing thing
@@ -263,7 +264,8 @@ public class Game : Node2D {
         if (GetNodeOrNull<Node2D>("/root/PauseMenu") != null || GetNodeOrNull<Node2D>("/root/ActionCenter")
         != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null ||
         GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null ||
-        GetNodeOrNull<Node2D>("/root/Settings") != null || GetNodeOrNull<Node2D>("/root/Bankrupt") != null)
+        GetNodeOrNull<Node2D>("/root/Settings") != null || GetNodeOrNull<Node2D>("/root/Bankrupt") != null ||
+        GetNodeOrNull<Node2D>("/root/Lab") != null)
             Global.PausedTime = true;
         else
             Global.PausedTime = false;

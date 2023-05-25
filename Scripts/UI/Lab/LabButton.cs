@@ -16,6 +16,12 @@ public class LabButton : TextureButton {
     }
 
     public void Click() {
-        
+        if (GetNodeOrNull("/root/Lab") == null) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        } else
+            GetNode("/root/Lab").QueueFree();
     }
 }
