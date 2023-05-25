@@ -112,6 +112,8 @@ public class GameSave {
     public bool LabUnlocked = false;
     public List<string> LabResearch = new List<string>();
     public int LabBudget = 0;
+    public int LabThingsToSpend = 0;
+    public string LabCurrentProject = "nothing omgomgomgomg";
 }
 
 // for compatibility
