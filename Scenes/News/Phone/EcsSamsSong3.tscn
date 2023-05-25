@@ -42,7 +42,6 @@ offset = Vector2( 909, 252 )
 
 [node name="Dialog" type="Sprite" parent="."]
 position = Vector2( 640, 372 )
-rotation = 0.000989279
 texture = ExtResource( 4 )
 
 [node name="Title" type="Label" parent="."]
@@ -52,7 +51,6 @@ margin_left = 205.0
 margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
-rect_rotation = -0.204876
 custom_fonts/font = SubResource( 2 )
 text = "Sam's Song"
 valign = 1

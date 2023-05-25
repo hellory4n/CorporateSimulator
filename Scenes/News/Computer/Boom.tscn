@@ -42,7 +42,6 @@ offset = Vector2( 909, 252 )
 
 [node name="Dialog" type="Sprite" parent="."]
 position = Vector2( 640, 372 )
-rotation = 0.000989279
 texture = ExtResource( 3 )
 
 [node name="Title" type="Label" parent="."]

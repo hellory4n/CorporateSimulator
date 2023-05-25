@@ -34,7 +34,6 @@ texture = ExtResource( 7 )
 
 [node name="Dialog" type="Sprite" parent="."]
 position = Vector2( 640, 372 )
-rotation = 0.000989279
 texture = ExtResource( 4 )
 
 [node name="Title" type="Label" parent="."]
