@@ -115,7 +115,6 @@ margin_left = 195.0
 margin_top = 149.0
 margin_right = 1085.0
 margin_bottom = 565.0
-rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
@@ -782,7 +781,7 @@ script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
-Project = "quantum computing"
+Project = "quantum algorithm"
 TotalCost = 500000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
