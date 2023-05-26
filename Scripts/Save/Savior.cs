@@ -74,6 +74,7 @@ class Savior {
         save.LabBudget = Global.LabBudget;
         save.LabThingsToSpend = Global.LabThingsToSpend;
         save.LabCurrentProject = Global.LabCurrentProject;
+        save.LabTotalCost = Global.LabTotalCost;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(

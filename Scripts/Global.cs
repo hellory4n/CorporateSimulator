@@ -210,4 +210,5 @@ public class Global : Node2D {
     public static int LabBudget;
     public static int LabThingsToSpend;
     public static string LabCurrentProject;
+    public static int LabTotalCost;
 }

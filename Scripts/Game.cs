@@ -95,6 +95,7 @@ public class Game : Node2D {
             Global.LabBudget = save.LabBudget;
             Global.LabThingsToSpend = save.LabThingsToSpend;
             Global.LabCurrentProject = save.LabCurrentProject;
+            Global.LabTotalCost = save.LabTotalCost;
             #endregion
             file.Close();
             // developing thing

@@ -114,6 +114,7 @@ public class GameSave {
     public int LabBudget = 0;
     public int LabThingsToSpend = 0;
     public string LabCurrentProject = "nothing omgomgomgomg";
+    public int LabTotalCost = 0;
 }
 
 // for compatibility
