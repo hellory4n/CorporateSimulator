@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -46,6 +46,20 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=10]
 size = 30
 font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 20
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 24
+font_data = SubResource( 13 )
 
 [node name="Dialog" type="Node2D"]
 
@@ -105,12 +119,73 @@ rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
-margin_right = 880.0
+margin_right = 7260.0
 margin_bottom = 394.0
 rect_min_size = Vector2( 880, 394 )
 custom_constants/separation = 330
 
+[node name="Item22" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item22"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item22"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Make a Government"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item22"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "You need this to take over the world
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item22"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "make a government"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item22/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
 [node name="Item" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 330.0
+margin_right = 330.0
 margin_bottom = 394.0
 
 [node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item"]
@@ -156,6 +231,8 @@ script = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
+Project = "lab food"
+TotalCost = 500000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item/ItemBuy"]
 anchor_right = 0.002
@@ -167,7 +244,1229 @@ text = "Research"
 align = 1
 valign = 1
 
+[node name="Item2" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 660.0
+margin_right = 660.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item2"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item2"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Food Made of Plastic"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item2"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "The ULTIMATE way of saving costs. Won't taste as good but who cares?
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item2"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "food made of plastic"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item2/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item3" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 990.0
+margin_right = 990.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item3"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item3"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Food that lasts beyond forever"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item3"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Have you ever wanted to put a sandwich in a table, invent a time machine, go to the end of the universe, and still be able to eat the sandwich? Now you can?
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item3"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "food that lasts beyond forever"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item3/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item4" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1320.0
+margin_right = 1320.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item4"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item4"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Epic Covers"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item4"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This epic technology will allow you make books that makes anyone who looks at it in a store think \"that's cool, i should buy that 5 times\"
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item4"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "epic covers"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item4/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item5" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1650.0
+margin_right = 1650.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item5"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item5"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "4D camera"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item5"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This 4D camera opens a brand new dimension of greatness to your videos and stuff! Revolutionary.
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item5"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "4d camera"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item5/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item6" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 1980.0
+margin_right = 1980.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item6"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item6"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Ridiculous Gimmicks"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item6"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This amazing technology allows you add ridiculous gimmicks to your products, such as a toaster that flies, a fridge that moves, a kettle that endlessly makes tea, or all of them combined!
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item6"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "ridiculous gimmicks"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item6/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item7" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2310.0
+margin_right = 2310.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item7"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item7"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Custom OS"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item7"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "With this, you'll finally be able to ditch Doors and PenguinOS, and create your own option, that can take full advantage of your computers!
+
+Total cost: $250,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item7"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "custom os computer"
+TotalCost = 250000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item7/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item8" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2640.0
+margin_right = 2640.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item8"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item8"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Custom Chip"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item8"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Become capable of creating your own delicious chips only for your computers, which is pretty cool, I think
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item8"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "custom chip computer"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item8/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item9" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 2970.0
+margin_right = 2970.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item9"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "4D UI"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item9"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "A brand-new dimension for the user interfaces of your applications! Everyone who looks at the screenshots of your apps will think \"I NEED TO DOWNLOAD THIS IMMEDIATELY\"
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item9"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "4d ui"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item9/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item10" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3300.0
+margin_right = 3300.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item10"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Quantum Algorithm"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item10"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Through quantum computing, your apps will have epic algorithms that will give you a lot of money and stuff!
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item10"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "quantum computing"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item11" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3630.0
+margin_right = 3630.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item11"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item11"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Short-Form Music"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item11"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "With short-form video, everyone is losing their attention span. That's why we invented short-form music: It's music, but very fast so it only lasts a few seconds
+
+Total cost: $250,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item11"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "short form music"
+TotalCost = 250000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item11/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item12" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 3960.0
+margin_right = 3960.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item12"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item12"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Custom OS"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item12"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This will allow you stop depending on Undroid and make your own operating system! Think of the possibilities!
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item12"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "custom os phone"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item12/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item13" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4290.0
+margin_right = 4290.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item13"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item13"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Custom Chip"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item13"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This will allow you make your very own custom chips for your phones! With this, you can make the perfect chip for your phones, such as a chip that constantly processes images for no reason!
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item13"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "custom chip phone"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item13/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item14" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4620.0
+margin_right = 4620.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item14"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item14"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Endless Sponsorships"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item14"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Make your entire OurTube channel be just sponsorships! Your viewers will love that!
+
+Total cost: $250,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item14"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "endless sponsorships"
+TotalCost = 250000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item14/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item15" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4950.0
+margin_right = 4950.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item15"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item15"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Next-Level Clickbait"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item15"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "This will allow you make epic thumbnails that will make anyone instantly think \"IF I DON'T CLICK ON THIS I'M GONNA EXPLODE\"
+
+Total cost: $250,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item15"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "next-level clickbait"
+TotalCost = 250000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item15/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item16" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5280.0
+margin_right = 5280.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item16"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item16"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Custom Console"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item16"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Make your own amazing console where you can run your epic videogames!
+
+Total cost: $1,000,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item16"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "custom console"
+TotalCost = 1000000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item16/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item17" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5610.0
+margin_right = 5610.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item17"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item17"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Quantum 4D Gameplay"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item17"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Not sure what that means
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item17"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "quantum 4d gameplay"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item17/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item18" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 5940.0
+margin_right = 5940.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item18"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item18"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Quantum 4D Graphics"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item18"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "More real than real life!
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item18"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "quantum 4d graphics"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item18/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item19" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6270.0
+margin_right = 6270.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item19"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item19"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Obnoxious Ads"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item19"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Everyone will know about your products 24/7. Everywhere they look, they'll see your products. There'll be nothing they'll be able to do about it.
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item19"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "obnoxious ads"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item19/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item20" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6600.0
+margin_right = 6600.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item20"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item20"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Ultra Overpriced Products"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item20"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Become capable of making sky-high prices just because your logo is in the product! Cool and normal.
+
+Total cost: $500,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item20"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "ultra overpriced products"
+TotalCost = 500000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item20/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
+[node name="Item21" type="Control" parent="ScrollContainer/HBoxContainer"]
+margin_left = 6930.0
+margin_right = 6930.0
+margin_bottom = 394.0
+
+[node name="Thing" type="Sprite" parent="ScrollContainer/HBoxContainer/Item21"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ItemName" type="Label" parent="ScrollContainer/HBoxContainer/Item21"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 53.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Celebrity Endorsements"
+align = 1
+valign = 1
+
+[node name="ItemDescription" type="Label" parent="ScrollContainer/HBoxContainer/Item21"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 306.666
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Make celebrities show that they use your products because that will definitely make everyone buy them
+
+Total cost: $250,000,000"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ItemBuy" type="TextureButton" parent="ScrollContainer/HBoxContainer/Item21"]
+margin_left = 10.0
+margin_top = 320.0
+margin_right = 290.0
+margin_bottom = 395.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+Project = "celebrity endorsements"
+TotalCost = 250000000
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item21/ItemBuy"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 299.4
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 10 )
+text = "Research"
+align = 1
+valign = 1
+
 [node name="NodeThatOnlyExistsBecauseOfAGodotBugHahaYes" type="Control" parent="ScrollContainer/HBoxContainer"]
-margin_left = 330.0
-margin_right = 330.0
+margin_left = 7260.0
+margin_right = 7260.0
 margin_bottom = 394.0
