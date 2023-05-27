@@ -5,7 +5,7 @@ public class LabResearch : TextureButton {
     [Export]
     string Project = "bruh.com™";
     [Export]
-    int TotalCost = 694201337;
+    long TotalCost = 694201337;
 
     public override void _Ready() {
         // shows things in the correct industry
@@ -97,7 +97,8 @@ public class LabResearch : TextureButton {
                 break;
         }
         // why would you research governments twice, you don't want to create your very own civil war
-        if (Global.LabResearch.Contains(Project)) {
+        if (Global.LabResearch.Contains(Project) && Project != "custom console" && Project != "custom os phone"
+        && Project != "custom chip phone" && Project != "custom os computer" && Project != "custom chip computer") {
             GetParent().QueueFree();
         }
         this.Connect("pressed", this, nameof(Click));

@@ -208,7 +208,7 @@ public class Global : Node2D {
     public static bool LabUnlocked;
     public static List<string> LabResearch;
     public static int LabBudget;
-    public static int LabThingsToSpend;
+    public static long LabThingsToSpend;
     public static string LabCurrentProject;
-    public static int LabTotalCost;
+    public static long LabTotalCost;
 }

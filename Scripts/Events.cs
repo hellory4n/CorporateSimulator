@@ -107,6 +107,9 @@ public class Events : Node2D {
                             price *= 5;
                         }
                     }
+                    if (Global.LabResearch.Contains("obnoxious ads")) {
+                        sales *= 10;
+                    }
 
                     garbageDynamic.Sales += sales;
                     garbageDynamic.MoneyGot += price*sales;

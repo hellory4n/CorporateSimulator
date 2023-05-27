@@ -112,9 +112,9 @@ public class GameSave {
     public bool LabUnlocked = false;
     public List<string> LabResearch = new List<string>();
     public int LabBudget = 0;
-    public int LabThingsToSpend = 0;
+    public long LabThingsToSpend = 0;
     public string LabCurrentProject = "nothing";
-    public int LabTotalCost = 0;
+    public long LabTotalCost = 0;
 }
 
 // for compatibility
