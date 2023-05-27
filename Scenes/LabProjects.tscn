@@ -115,6 +115,7 @@ margin_left = 195.0
 margin_top = 149.0
 margin_right = 1085.0
 margin_bottom = 565.0
+rect_clip_content = false
 scroll_vertical_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
@@ -1311,9 +1312,9 @@ margin_right = 320.0
 margin_bottom = 306.666
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
-text = "Everyone will know about your products 24/7. Everywhere they look, they'll see your products. There'll be nothing they'll be able to do about it.
+text = "Everyone will know about your products 24/7. Everywhere they look, they'll see your products. There'll be nothing they'll be able to do about it. Profits will skyrocket with this
 
-Total cost: $500,000,000"
+Total cost: $5,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -1331,7 +1332,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "obnoxious ads"
-TotalCost = 500000000
+TotalCost = 5000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item19/ItemBuy"]
 anchor_right = 0.002
