@@ -30,7 +30,7 @@ public class ComputerPriceSlider : HSlider {
         Global.ComputerNewProduct.MoneySpent = Global.ComputerNewProduct.Price * 5;
 
         if (Global.Investors/100 > 1)
-            Global.ComputerNewProduct.MoneySpent *= ((int)Global.Investors/100);
+            Global.ComputerNewProduct.MoneySpent *= ((long)Global.Investors/100);
 
         GetNode<Label>("Label").Text = $"Price: ${String.Format("{0:n0}", Global.ComputerNewProduct.Price)} - "
         + $"Development: ${String.Format("{0:n0}", Global.ComputerNewProduct.MoneySpent)}";

@@ -10,7 +10,7 @@ public class GamePrice : Label {
             Global.GameNewProduct.Lore*100 + Global.GameNewProduct.Graphics*100;
         
         if (Global.Investors/50 > 1)
-            Global.GameNewProduct.MoneySpent *= ((int)Global.Investors/50);
+            Global.GameNewProduct.MoneySpent *= ((long)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.GameNewProduct.MoneySpent) +
         " to develop";

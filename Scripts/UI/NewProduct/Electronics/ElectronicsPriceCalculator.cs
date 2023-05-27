@@ -33,7 +33,7 @@ public class ElectronicsPriceCalculator : Label {
             Global.ElectronicsNewProduct.Rating = 10;
 
         if (Global.Investors/100 > 1)
-            Global.ElectronicsNewProduct.MoneySpent *= ((int)Global.Investors/100);
+            Global.ElectronicsNewProduct.MoneySpent *= ((long)Global.Investors/100);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.ElectronicsNewProduct.MoneySpent)
         + " to develop";

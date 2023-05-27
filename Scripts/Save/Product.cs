@@ -1,8 +1,8 @@
 public class Product {
     public string Name = "ben";
     public int Rating = 10;
-    public int Sales = 0;
-    public int MoneySpent = 0;
+    public long Sales = 0;
+    public long MoneySpent = 0;
     public long MoneyGot = 0;
     public string Type = "product";
     public string ReleaseDate = "Y69 M12 W4";

@@ -33,7 +33,7 @@ public class MedicalPriceCalculator : Label {
         }
 
         if (Global.Investors/50 > 1)
-            Global.MedicalNewProduct.MoneySpent *= ((int)Global.Investors/50);
+            Global.MedicalNewProduct.MoneySpent *= ((long)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.MedicalNewProduct.MoneySpent) + " to develop";
         base._Process(delta);

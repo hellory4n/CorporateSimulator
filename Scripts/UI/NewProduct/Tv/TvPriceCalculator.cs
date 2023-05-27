@@ -41,7 +41,7 @@ public class TvPriceCalculator : Label {
             Global.TvNewProduct.MoneySpent += 10000;
         
         if (Global.Investors/50 > 1)
-            Global.TvNewProduct.MoneySpent *= ((int)Global.Investors/50);
+            Global.TvNewProduct.MoneySpent *= ((long)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.TvNewProduct.MoneySpent);
         

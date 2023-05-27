@@ -34,7 +34,7 @@ public class AppPriceCalculator : Label {
             Global.AppNewProduct.Rating = 10;
 
         if (Global.Investors/50 > 1)
-            Global.AppNewProduct.MoneySpent *= ((int)Global.Investors/50);
+            Global.AppNewProduct.MoneySpent *= ((long)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.AppNewProduct.MoneySpent)
         + " to develop";

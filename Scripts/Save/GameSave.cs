@@ -10,7 +10,7 @@ public class GameSave {
     public int Week = 1;
     public int Reputation = 75;
     public int ResearchPoints = 0;
-    public int Investors = 1;
+    public long Investors = 1;
     public int WeeksWithoutPayingInvestors = 0;
     public int InvestorFrequency = 100;
     public int InvestorSusometer = 0;

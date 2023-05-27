@@ -20,12 +20,12 @@ public class Global : Node2D {
     public static string[] Industries;
     public static bool SavesMenuFromNewGame;
     public static int ResearchPoints;
-    public static int Investors;
+    public static long Investors;
     public static int WeeksWithoutPayingInvestors;
-    public static int InvestorsWant;
+    public static long InvestorsWant;
     public static int InvestorFrequency;
     public static float InvestorTimeCounterThing;
-    public static int InvestorPayment;
+    public static long InvestorPayment;
     public static int InvestorSusometer;
     public static float InvestorSusometerCounterThingyUhh;
     public static List<EmployeeSave> Employees;
@@ -53,7 +53,7 @@ public class Global : Node2D {
     public static YourArseProduct YourArseNewProduct = new YourArseProduct();
     public static GameProduct GameNewProduct = new GameProduct();
     public static int MarketingBudget = 0;
-    public static int MonthlySales = 0;
+    public static long MonthlySales = 0;
     /*0 = fine
     1 = ono dialog
     2 = ono dialog already appeared*/

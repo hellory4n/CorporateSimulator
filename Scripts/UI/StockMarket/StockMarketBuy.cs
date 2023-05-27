@@ -6,7 +6,7 @@ public class StockMarketBuy : TextureButton {
     string Company = "bruh inc";
     [Export]
     int epicIndex = 0;
-    int bruh = (int)Global.Money/1000000+1;
+    long bruh = (long)Global.Money/1000000+1;
 
     public override void _Ready() {
         this.Connect("pressed", this, nameof(Click));
@@ -21,7 +21,7 @@ public class StockMarketBuy : TextureButton {
 
     public void Click() {
         Slider uh = GetNode<Slider>("../EpicSlider");
-        int jsjskhsksk = (int)Math.Round((Global.AvailableInvestments[epicIndex].Price*bruh)*uh.Value);
+        long jsjskhsksk = (long)Math.Round((Global.AvailableInvestments[epicIndex].Price*bruh)*uh.Value);
         Global.Investments[epicIndex].Amount += (int)uh.Value;
         Global.Money -= jsjskhsksk;
         // i have to do a mess to make the ui look right

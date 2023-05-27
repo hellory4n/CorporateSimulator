@@ -30,7 +30,7 @@ public class MusicPriceCalculator : Label {
         Global.MusicNewProduct.MoneySpent = (1000 + (Global.MusicNewProduct.Instruments * 10)) * 10;
 
         if (Global.Investors/50 > 1)
-            Global.MusicNewProduct.MoneySpent *= ((int)Global.Investors/50);
+            Global.MusicNewProduct.MoneySpent *= ((long)Global.Investors/50);
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.MusicNewProduct.MoneySpent);
 

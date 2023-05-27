@@ -15,7 +15,7 @@ public class StockMarketSell : TextureButton {
         // update the epic slider
         Slider epicSlider = GetNode<Slider>("../EpicSlider");
         epicSlider.MaxValue = Global.Investments[epicIndex].Amount;
-        int bruh = (int)Global.Money/1000000+1;
+        long bruh = (long)Global.Money/1000000+1;
         if (epicSlider.MaxValue > 0)
             GetNode<Label>("../EpicSlider/Label").Text = $"Stocks owned: {String.Format("{0:n0}", epicSlider.MaxValue)} - Stocks to be sold: {String.Format("{0:n0}", epicSlider.Value)} (${String.Format("{0:n0}", (Global.AvailableInvestments[epicIndex].Price*bruh)*epicSlider.Value)})";
         else
@@ -25,9 +25,9 @@ public class StockMarketSell : TextureButton {
 
     public void Click() {
         // m
-        int bruh = (int)Global.Money/1000000+1;
+        long bruh = (long)Global.Money/1000000+1;
         Slider epicSlider = GetNode<Slider>("../EpicSlider");
-        int moneyMoneyMoney = (Global.AvailableInvestments[epicIndex].Price*bruh)*(int)epicSlider.Value;
+        long moneyMoneyMoney = (Global.AvailableInvestments[epicIndex].Price*bruh)*(int)epicSlider.Value;
         Global.Investments[epicIndex].Amount -= (int)epicSlider.Value;
         Global.Money += moneyMoneyMoney;
         // i have to do a mess to make the ui look right

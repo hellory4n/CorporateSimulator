@@ -27,7 +27,7 @@ public class BookPriceCalculator : Label {
             Global.BookNewProduct.MoneySpent += 10000;
 
         if (Global.Investors/20 > 1)
-            Global.BookNewProduct.MoneySpent *= ((int)Global.Investors/20);
+            Global.BookNewProduct.MoneySpent *= ((long)Global.Investors/20);
 
         this.Text = $"This book will cost ${String.Format("{0:n0}", Global.BookNewProduct.MoneySpent)} to develop";
 
