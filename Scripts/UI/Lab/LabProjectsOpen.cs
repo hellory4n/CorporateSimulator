@@ -7,9 +7,13 @@ public class LabProjectsOpen : TextureButton {
     }
 
     public void Click() {
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/LabProjects.tscn");
-        Node2D OK = (Node2D)yes.Instance();
-        OK.ZIndex = 100;
-        GetTree().Root.AddChild(OK);
+        if (Global.LabCurrentProject == "nothing") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/LabProjects.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        } else {
+            GetNode<Label>("./Label").Text = "You're already researching something!";
+        }
     }
 }

@@ -163,6 +163,21 @@ public class Game : Node2D {
                 if (Global.Advisor == "john tiffany james") {
                     Global.Money += 250000;
                 }
+
+                // epic lab thingies
+                if (Global.LabCurrentProject != "nothing") {
+                    Global.Money -= (int)Global.LabBudget/4;
+                    Global.LabThingsToSpend -= (int)Global.LabBudget/4;
+                    if (Global.LabThingsToSpend < 0) {
+                        Global.LabResearch.Add(Global.LabCurrentProject);
+                        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+                        Ball OK = (Ball)yes.Instance();
+                        OK.Init("unlock", "LabFinishedResearch");
+                        OK.ZIndex = 100;
+                        GetTree().Root.AddChild(OK);
+                        Global.LabCurrentProject = "nothing";
+                    }
+                }
             }
             if (Global.Week > 4) {
                 // chris cool advisor
@@ -215,7 +230,8 @@ public class Game : Node2D {
                 Global.Money += Global.InvestorPayment;
                 Global.Money -= Global.Taxes; // taxes :(
                 Global.Money -= Global.MarketingBudget; // go bankrupt speedrun NOTE FROM THE FUTURE: mues
-                Global.Money -= Global.LabBudget;
+                
+
                 Global.Week = 1;
 
                 // william buffet advisor

@@ -113,7 +113,7 @@ public class GameSave {
     public List<string> LabResearch = new List<string>();
     public int LabBudget = 0;
     public int LabThingsToSpend = 0;
-    public string LabCurrentProject = "nothing omgomgomgomg";
+    public string LabCurrentProject = "nothing";
     public int LabTotalCost = 0;
 }
 
