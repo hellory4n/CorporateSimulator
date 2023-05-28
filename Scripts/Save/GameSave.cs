@@ -115,6 +115,9 @@ public class GameSave {
     public long LabThingsToSpend = 0;
     public string LabCurrentProject = "nothing";
     public long LabTotalCost = 0;
+    public List<Product> CustomOS = new List<Product>();
+    public List<Product> CustomChip = new List<Product>();
+    public List<Product> CustomConsole = new List<Product>();
 }
 
 // for compatibility

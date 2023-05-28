@@ -211,4 +211,7 @@ public class Global : Node2D {
     public static long LabThingsToSpend;
     public static string LabCurrentProject;
     public static long LabTotalCost;
+    public static List<Product> CustomOS;
+    public static List<Product> CustomChip;
+    public static List<Product> CustomConsole;
 }
