@@ -110,9 +110,12 @@ public class Events : Node2D {
                             price *= 5;
                         }
                     }
-                    if (Global.LabResearch.Contains("obnoxious ads")) {
+                    if (Global.LabResearch.Contains("obnoxious ads"))
                         sales *= 10;
-                    }
+                    if (Global.LabResearch.Contains("ultra overpriced products"))
+                        price *= 5;
+                    if (Global.LabResearch.Contains("celebrity endorsements"))
+                        sales *= 2;
 
                     garbageDynamic.Sales += sales;
                     garbageDynamic.MoneyGot += price*sales;

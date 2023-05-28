@@ -582,7 +582,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "With this, you'll finally be able to ditch Doors and PenguinOS, and create your own option, that can take full advantage of your computers!
 
-Total cost: $250,000,000"
+Total cost: $500,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -600,7 +600,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "custom os computer"
-TotalCost = 250000000
+TotalCost = 500000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item7/ItemBuy"]
 anchor_right = 0.002
@@ -1375,7 +1375,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "Become capable of making sky-high prices just because your logo is in the product! Cool and normal.
 
-Total cost: $500,000,000"
+Total cost: $5,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -1393,7 +1393,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "ultra overpriced products"
-TotalCost = 500000000
+TotalCost = 5000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item20/ItemBuy"]
 anchor_right = 0.002
@@ -1436,7 +1436,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "Make celebrities show that they use your products because that will definitely make everyone buy them
 
-Total cost: $250,000,000"
+Total cost: $1,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -1454,7 +1454,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "celebrity endorsements"
-TotalCost = 250000000
+TotalCost = 1000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item21/ItemBuy"]
 anchor_right = 0.002
