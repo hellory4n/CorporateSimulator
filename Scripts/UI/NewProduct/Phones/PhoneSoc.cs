@@ -7,6 +7,11 @@ public class PhoneSoc : VBoxContainer {
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/PhoneSocButton.tscn");
         List<List<object>> cpus = new List<List<object>>();
         #region ohio 30 day trial
+        for (int i = Global.CustomChip.Count - 1; i >= 0 ; i--) {
+            Product chip = Global.CustomChip[i];
+            // moneyspent is used to store the cpu's price cuz yes
+            cpus.Add(new List<object>{Global.CompanyName, chip.Name, chip.Rating.ToString(), chip.MoneySpent.ToString()});
+        }
         if (Global.Year == 1) {
             cpus.Add(new List<object>{"Napdragon", "8 Gen 2", "10", "350"});
             cpus.Add(new List<object>{"Napdragon", "6 Gen 2", "9", "325"});

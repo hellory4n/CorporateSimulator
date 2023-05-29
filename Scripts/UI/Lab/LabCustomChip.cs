@@ -10,6 +10,8 @@ public class LabCustomChip : TextureButton {
 
     public override void _Process(float delta) {
         coolPrice = (int)GetNode<Slider>("../Slider1").Value*20 + (int)GetNode<Slider>("../Slider2").Value*2;
+        if (Global.Industries[0] == "phones")
+            coolPrice = (int)coolPrice/4;
         GetNode<Label>("../Fart").Text = $"The chip will cost ${String.Format("{0:n0}", coolPrice)}";
         base._Process(delta);
     }
