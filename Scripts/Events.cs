@@ -141,6 +141,8 @@ public class Events : Node2D {
                         sales *= 2;
                     if (Global.LabResearch.Contains("quantum 4d graphics"))
                         sales *= 3;
+                    if (Global.LabResearch.Contains("custom console"))
+                        sales *= 5;
 
                     garbageDynamic.Sales += sales;
                     garbageDynamic.MoneyGot += price*sales;

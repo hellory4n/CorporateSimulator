@@ -121,6 +121,12 @@ public class LabResearch : TextureButton {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
         }
+        if (Project == "custom console") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab/CustomConsole.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        }
 
         // uh
         GetParent().GetParent().GetParent().GetParent().QueueFree();
