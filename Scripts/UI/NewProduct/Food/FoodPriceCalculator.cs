@@ -40,6 +40,9 @@ public class FoodPriceCalculator : Label {
         
         if (Global.Investors/50 > 1)
             Global.FoodNewProduct.MoneySpent *= ((long)Global.Investors/50);
+        
+        if (Global.LabResearch.Contains("food made of plastic"))
+            Global.FoodNewProduct.MoneySpent = (int)Global.FoodNewProduct.MoneySpent/2;
 
         Text = "This product will cost $" + String.Format("{0:n0}", Global.FoodNewProduct.MoneySpent) +
         " to develop";

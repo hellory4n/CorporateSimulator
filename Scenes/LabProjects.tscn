@@ -399,7 +399,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "This epic technology will allow you make books that makes anyone who looks at it in a store think \"that's cool, i should buy that 5 times\"
 
-Total cost: $500,000,000"
+Total cost: $5,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -417,7 +417,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "epic covers"
-TotalCost = 500000000
+TotalCost = 5000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item4/ItemBuy"]
 anchor_right = 0.002
@@ -521,7 +521,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "This amazing technology allows you add ridiculous gimmicks to your products, such as a toaster that flies, a fridge that moves, a kettle that endlessly makes tea, or all of them combined!
 
-Total cost: $500,000,000"
+Total cost: $1,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -539,7 +539,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "ridiculous gimmicks"
-TotalCost = 500000000
+TotalCost = 1000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item6/ItemBuy"]
 anchor_right = 0.002
@@ -704,7 +704,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "A brand-new dimension for the user interfaces of your applications! Everyone who looks at the screenshots of your apps will think \"I NEED TO DOWNLOAD THIS IMMEDIATELY\"
 
-Total cost: $500,000,000"
+Total cost: $1,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -722,7 +722,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "4d ui"
-TotalCost = 500000000
+TotalCost = 1000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item9/ItemBuy"]
 anchor_right = 0.002
@@ -765,7 +765,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "Through quantum computing, your apps will have epic algorithms that will give you a lot of money and stuff!
 
-Total cost: $500,000,000"
+Total cost: $1,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -783,7 +783,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "quantum algorithm"
-TotalCost = 500000000
+TotalCost = 1000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item10/ItemBuy"]
 anchor_right = 0.002
@@ -1009,7 +1009,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "Make your entire OurTube channel be just sponsorships! Your viewers will love that!
 
-Total cost: $250,000,000"
+Total cost: $500,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -1027,7 +1027,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "endless sponsorships"
-TotalCost = 250000000
+TotalCost = 500000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item14/ItemBuy"]
 anchor_right = 0.002
@@ -1070,7 +1070,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "This will allow you make epic thumbnails that will make anyone instantly think \"IF I DON'T CLICK ON THIS I'M GONNA EXPLODE\"
 
-Total cost: $250,000,000"
+Total cost: $1,000,000,000"
 align = 1
 valign = 1
 autowrap = true
@@ -1088,7 +1088,7 @@ __meta__ = {
 "_edit_group_": true
 }
 Project = "next-level clickbait"
-TotalCost = 250000000
+TotalCost = 1000000000
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Item15/ItemBuy"]
 anchor_right = 0.002

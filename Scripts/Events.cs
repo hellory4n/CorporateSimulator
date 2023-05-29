@@ -116,6 +116,11 @@ public class Events : Node2D {
                         price *= 5;
                     if (Global.LabResearch.Contains("celebrity endorsements"))
                         sales *= 2;
+                    // vegans will buy your food cuz it's not harming animals
+                    if (garbageProduct.Type == "food" && Global.LabResearch.Contains("lab food"))
+                        sales *= 2;
+                    if (garbageProduct.Type == "food" && Global.LabResearch.Contains("food that lasts beyond forever"))
+                        sales *= 2;
 
                     garbageDynamic.Sales += sales;
                     garbageDynamic.MoneyGot += price*sales;
