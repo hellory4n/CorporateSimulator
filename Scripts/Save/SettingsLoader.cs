@@ -13,6 +13,14 @@ public class SettingsLoader : Node2D {
             GetTree().Root.CallDeferred("add_child", OK);
         }
 
+        // epic exciting legal stuff
+        File aFile = new File();
+        if (!aFile.FileExists("user://legal_stuff")) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/LegalStuff.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            GetTree().Root.CallDeferred("add_child", OK);
+        }
+
         // fullscreen :)
         Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
         base._Ready();
