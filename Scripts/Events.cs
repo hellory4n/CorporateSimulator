@@ -117,10 +117,30 @@ public class Events : Node2D {
                     if (Global.LabResearch.Contains("celebrity endorsements"))
                         sales *= 2;
                     // vegans will buy your food cuz it's not harming animals
-                    if (garbageProduct.Type == "food" && Global.LabResearch.Contains("lab food"))
+                    if (Global.LabResearch.Contains("lab food"))
                         sales *= 2;
-                    if (garbageProduct.Type == "food" && Global.LabResearch.Contains("food that lasts beyond forever"))
+                    if (Global.LabResearch.Contains("food that lasts beyond forever"))
                         sales *= 2;
+                    if (Global.LabResearch.Contains("epic covers"))
+                        sales *= 5;
+                    if (Global.LabResearch.Contains("4d camera"))
+                        sales *= 2;
+                    if (Global.LabResearch.Contains("ridiculous gimmicks"))
+                        sales *= 5;
+                    if (Global.LabResearch.Contains("4d ui"))
+                        sales *= 5;
+                    if (Global.LabResearch.Contains("quantum algorithm"))
+                        sales *= 5;
+                    if (Global.LabResearch.Contains("short form music"))
+                        sales *= 2;
+                    if (Global.LabResearch.Contains("endless sponsorships"))
+                        price *= 2;
+                    if (Global.LabResearch.Contains("next-level clickbait"))
+                        sales *= 5;
+                    if (Global.LabResearch.Contains("quantum 4d gameplay"))
+                        sales *= 2;
+                    if (Global.LabResearch.Contains("quantum 4d graphics"))
+                        sales *= 3;
 
                     garbageDynamic.Sales += sales;
                     garbageDynamic.MoneyGot += price*sales;
