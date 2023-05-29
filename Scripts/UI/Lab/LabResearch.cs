@@ -109,10 +109,18 @@ public class LabResearch : TextureButton {
         Global.LabThingsToSpend = TotalCost;
         Global.LabTotalCost = TotalCost;
 
-        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab/CustomOS.tscn");
-        Node2D OK = (Node2D)yes.Instance();
-        OK.ZIndex = 100;
-        GetTree().Root.AddChild(OK);
+        if (Project == "custom os phone" || Project == "custom os computer") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab/CustomOS.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        }
+        if (Project == "custom chip phone" || Project == "custom chip computer") {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab/CustomChip.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        }
 
         // uh
         GetParent().GetParent().GetParent().GetParent().QueueFree();

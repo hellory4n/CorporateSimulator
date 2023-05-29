@@ -12,7 +12,7 @@ public class LabCustomOS : TextureButton {
         coolOS.Rating = epicRating;
         coolOS.MoneySpent = 500000000;
         coolOS.Name = GetNode<LineEdit>("../ProductName").Text;
-        coolOS.ReleaseDate = "Y"+Global.Year + " M"+Global.Month + "W"+Global.Week;
+        coolOS.ReleaseDate = "Y"+Global.Year + " M"+Global.Month + " W"+Global.Week;
         coolOS.Type = "os";
         Global.CustomOS.Add(coolOS);
         GetParent().QueueFree();
