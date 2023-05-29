@@ -108,6 +108,12 @@ public class LabResearch : TextureButton {
         Global.LabCurrentProject = Project;
         Global.LabThingsToSpend = TotalCost;
         Global.LabTotalCost = TotalCost;
+
+        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Lab/CustomOS.tscn");
+        Node2D OK = (Node2D)yes.Instance();
+        OK.ZIndex = 100;
+        GetTree().Root.AddChild(OK);
+
         // uh
         GetParent().GetParent().GetParent().GetParent().QueueFree();
     }

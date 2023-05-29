@@ -7,6 +7,10 @@ public class ComputerOS : VBoxContainer {
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/NewProducts/ComputerOSButton.tscn");
         List<List<object>> cpus = new List<List<object>>();
         #region operating ohio 30 day trial system
+        for (int i = Global.CustomOS.Count - 1; i >= 0 ; i--) {
+            Product os = Global.CustomOS[i];
+            cpus.Add(new List<object>{Global.CompanyName, os.Name, os.Rating.ToString(), "10"});
+        }
         if (Global.Year == 1 || Global.Year == 2) {
             cpus.Add(new List<object>{"Macrohard", "Doors 11 Pro", "9", "200"});
             cpus.Add(new List<object>{"Macrohard", "Doors 11 Home", "8", "140"});
