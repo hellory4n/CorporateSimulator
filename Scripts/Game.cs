@@ -174,11 +174,21 @@ public class Game : Node2D {
                     Global.LabThingsToSpend -= (int)Global.LabBudget/4;
                     if (Global.LabThingsToSpend < 0) {
                         Global.LabResearch.Add(Global.LabCurrentProject);
-                        var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
-                        Ball OK = (Ball)yes.Instance();
-                        OK.Init("unlock", "LabFinishedResearch");
-                        OK.ZIndex = 100;
-                        GetTree().Root.AddChild(OK);
+                        // unlock the government
+                        if (Global.LabCurrentProject == "make a government") {
+                            Global.GovernmentUnlocked = true;
+                            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+                            Ball OK = (Ball)yes.Instance();
+                            OK.Init("unlock", "Unlock/Government");
+                            OK.ZIndex = 100;
+                            GetTree().Root.AddChild(OK);
+                        } else {
+                            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+                            Ball OK = (Ball)yes.Instance();
+                            OK.Init("unlock", "LabFinishedResearch");
+                            OK.ZIndex = 100;
+                            GetTree().Root.AddChild(OK);
+                        }
                         Global.LabCurrentProject = "nothing";
                     }
                 }
@@ -299,7 +309,7 @@ public class Game : Node2D {
         != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null ||
         GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null ||
         GetNodeOrNull<Node2D>("/root/Settings") != null || GetNodeOrNull<Node2D>("/root/Bankrupt") != null ||
-        GetNodeOrNull<Node2D>("/root/Lab") != null)
+        GetNodeOrNull<Node2D>("/root/Lab") != null || GetNodeOrNull<Node2D>("/root/Government") != null)
             Global.PausedTime = true;
         else
             Global.PausedTime = false;

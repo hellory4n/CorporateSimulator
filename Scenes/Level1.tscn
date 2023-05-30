@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -32,6 +32,10 @@
 [ext_resource path="res://Assets/Lab.png" type="Texture" id=30]
 [ext_resource path="res://Assets/LabHover.png" type="Texture" id=31]
 [ext_resource path="res://Assets/LabPressed.png" type="Texture" id=32]
+[ext_resource path="res://Assets/GovernmentHover.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Government.png" type="Texture" id=34]
+[ext_resource path="res://Assets/GovernmentPressed.png" type="Texture" id=35]
+[ext_resource path="res://Scripts/UI/Government/GovernmentOpen.cs" type="Script" id=36]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -171,3 +175,13 @@ texture_normal = ExtResource( 30 )
 texture_pressed = ExtResource( 32 )
 texture_hover = ExtResource( 31 )
 script = ExtResource( 29 )
+
+[node name="Government" type="TextureButton" parent="."]
+margin_left = 1040.0
+margin_top = 645.0
+margin_right = 1280.0
+margin_bottom = 720.0
+texture_normal = ExtResource( 34 )
+texture_pressed = ExtResource( 35 )
+texture_hover = ExtResource( 33 )
+script = ExtResource( 36 )
