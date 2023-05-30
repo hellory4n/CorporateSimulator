@@ -118,6 +118,7 @@ public class GameSave {
     public List<Product> CustomOS = new List<Product>();
     public List<Product> CustomChip = new List<Product>();
     public List<Product> CustomConsole = new List<Product>();
+    public bool GovernmentUnlocked = false;
 }
 
 // for compatibility

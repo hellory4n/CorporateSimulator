@@ -214,4 +214,5 @@ public class Global : Node2D {
     public static List<Product> CustomOS;
     public static List<Product> CustomChip;
     public static List<Product> CustomConsole;
+    public static bool GovernmentUnlocked = false;
 }

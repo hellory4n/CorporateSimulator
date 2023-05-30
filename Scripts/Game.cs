@@ -99,6 +99,7 @@ public class Game : Node2D {
             Global.CustomOS = save.CustomOS;
             Global.CustomChip = save.CustomChip;
             Global.CustomConsole = save.CustomConsole;
+            Global.GovernmentUnlocked = save.GovernmentUnlocked;
             #endregion
             file.Close();
             // developing thing

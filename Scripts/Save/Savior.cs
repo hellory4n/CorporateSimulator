@@ -78,6 +78,7 @@ class Savior {
         save.CustomOS = Global.CustomOS;
         save.CustomChip = Global.CustomChip;
         save.CustomConsole = Global.CustomConsole;
+        save.GovernmentUnlocked = Global.GovernmentUnlocked;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
