@@ -215,4 +215,11 @@ public class Global : Node2D {
     public static List<Product> CustomChip;
     public static List<Product> CustomConsole;
     public static bool GovernmentUnlocked = false;
+    public static string CountryName;
+    public static CountryDiplomacy UnitedStates;
+    public static CountryDiplomacy China;
+    public static ArmyStuff Army;
+    public static NavyStuff Navy;
+    public static AirForceStuff AirForce;
+    public static List<string> Invaded;
 }

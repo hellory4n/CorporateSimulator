@@ -100,6 +100,13 @@ public class Game : Node2D {
             Global.CustomChip = save.CustomChip;
             Global.CustomConsole = save.CustomConsole;
             Global.GovernmentUnlocked = save.GovernmentUnlocked;
+            Global.CountryName = save.CountryName;
+            Global.UnitedStates = save.UnitedStates;
+            Global.China = save.China;
+            Global.Army = save.Army;
+            Global.Navy = save.Navy;
+            Global.AirForce = save.AirForce;
+            Global.Invaded = save.Invaded;
             #endregion
             file.Close();
             // developing thing

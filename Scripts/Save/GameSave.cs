@@ -119,6 +119,13 @@ public class GameSave {
     public List<Product> CustomChip = new List<Product>();
     public List<Product> CustomConsole = new List<Product>();
     public bool GovernmentUnlocked = false;
+    public string CountryName = "peepeepoopoo land";
+    public CountryDiplomacy UnitedStates = new CountryDiplomacy();
+    public CountryDiplomacy China = new CountryDiplomacy();
+    public ArmyStuff Army = new ArmyStuff();
+    public NavyStuff Navy = new NavyStuff();
+    public AirForceStuff AirForce = new AirForceStuff();
+    public List<string> Invaded = new List<string>();
 }
 
 // for compatibility

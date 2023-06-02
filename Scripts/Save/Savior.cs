@@ -79,6 +79,13 @@ class Savior {
         save.CustomChip = Global.CustomChip;
         save.CustomConsole = Global.CustomConsole;
         save.GovernmentUnlocked = Global.GovernmentUnlocked;
+        save.CountryName = Global.CountryName;
+        save.UnitedStates = Global.UnitedStates;
+        save.China = Global.China;
+        save.Army = Global.Army;
+        save.Navy = Global.Navy;
+        save.AirForce = Global.AirForce;
+        save.Invaded = Global.Invaded;
         #endregion
         file.Open(saveFile, File.ModeFlags.Write);
         file.StoreString(
