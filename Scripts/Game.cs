@@ -225,6 +225,14 @@ public class Game : Node2D {
                 }
                 Global.Money -= Global.Salaries;
 
+                // trade agreeements
+                if (Global.UnitedStates.TradeAgreement) {
+                    Global.Money += 1000000000;
+                }
+                if (Global.China.TradeAgreement) {
+                    Global.Money += 1000000000;
+                }
+
                 // do the monthly money thing
                 if (Global.LabUnlocked) {
                     Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");
