@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scripts/UI/Government/USA/UsaTradeAgreement.cs" type="Script" id=8]
 [ext_resource path="res://Scripts/UI/Government/USA/UsaSabotage.cs" type="Script" id=9]
 [ext_resource path="res://Scripts/UI/Government/USA/UsaGift.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/UI/Government/USA/UsaEspionageOpen.cs" type="Script" id=11]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -98,6 +99,7 @@ margin_bottom = 392.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_group_": true
 }
