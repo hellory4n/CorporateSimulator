@@ -1,0 +1,153 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scripts/UI/Government/USA/UsaSabotagePay.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=2]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=4]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=7]
+[ext_resource path="res://Assets/SliderGrab.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Slider1.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 28
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 700, 75 )
+
+[sub_resource type="StyleBoxEmpty" id=21]
+
+[sub_resource type="StyleBoxEmpty" id=22]
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 32
+font_data = SubResource( 23 )
+
+[node name="Dialog" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 6 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+text = "Sabotage"
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 195.0
+margin_top = 149.0
+margin_right = 1085.0
+margin_bottom = 177.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "How much do you want to pay rebels in the USA?"
+align = 1
+autowrap = true
+
+[node name="DialogOK" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 575.0
+margin_right = 635.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Cancel"
+align = 1
+valign = 1
+
+[node name="Sabotage" type="TextureButton" parent="."]
+margin_left = 645.0
+margin_top = 575.0
+margin_right = 1045.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Sabotage"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Pay Rebels"
+align = 1
+valign = 1
+
+[node name="Slider1" type="HSlider" parent="."]
+margin_left = 290.0
+margin_top = 315.0
+margin_right = 990.0
+margin_bottom = 390.0
+custom_icons/tick = ExtResource( 8 )
+custom_icons/grabber_highlight = ExtResource( 8 )
+custom_icons/grabber = ExtResource( 8 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+max_value = 1e+09
+
+[node name="Label" type="Label" parent="Slider1"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "a lot"
+valign = 1
