@@ -315,9 +315,16 @@ public class Game : Node2D {
         // avoid interesting occasions
         if (Global.Reputation > 100)
             Global.Reputation = 100;
-        
         if (Global.Investors < 0)
             Global.Investors = 0;
+        if (Global.UnitedStates.Friendship > 100)
+            Global.UnitedStates.Friendship = 100;
+        if (Global.UnitedStates.Friendship < 0)
+            Global.UnitedStates.Friendship = 0;
+        if (Global.China.Friendship > 100)
+            Global.China.Friendship = 100;
+        if (Global.China.Friendship < 0)
+            Global.China.Friendship = 0;
         
         // pause time?
         if (GetNodeOrNull<Node2D>("/root/PauseMenu") != null || GetNodeOrNull<Node2D>("/root/ActionCenter")

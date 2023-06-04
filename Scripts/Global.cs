@@ -222,4 +222,5 @@ public class Global : Node2D {
     public static NavyStuff Navy;
     public static AirForceStuff AirForce;
     public static List<string> Invaded;
+    public static string StoreGift = "nothing";
 }

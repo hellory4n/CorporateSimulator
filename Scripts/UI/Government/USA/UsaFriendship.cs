@@ -3,7 +3,7 @@ using System;
 
 public class UsaFriendship : Label {
     public override void _Process(float delta) {
-        Text = "Diplomatic Friendship: " + Global.UnitedStates.Friendship + "%";
+        Text = "Diplomatic Friendship: " + Global.UnitedStates.Friendship.ToString("0.0") + "%";
         // ally
         if (Global.UnitedStates.Friendship > 60) {
             this.AddColorOverride("font_color", new Color(0.242f, 0.726f, 0.285f, 1));

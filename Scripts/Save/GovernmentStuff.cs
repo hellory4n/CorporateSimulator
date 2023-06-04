@@ -1,5 +1,5 @@
 public class CountryDiplomacy {
-    public int Friendship = 50;
+    public double Friendship = 50;
     public bool TradeAgreement = false;
     public bool BeingSpied = false;
 }

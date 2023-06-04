@@ -20,7 +20,14 @@ public class StoreSell : TextureButton {
 
     public void Click() {
         Global.Purchased[ItemID].Amount -= 1;
-        Global.Money += Global.Purchased[ItemID].Price;
+        if (Global.StoreGift != "usa" || Global.StoreGift != "china")
+            Global.Money += Global.Purchased[ItemID].Price;
+        // diplomacy stuff
+        if (Global.StoreGift == "usa")
+            Global.UnitedStates.Friendship += 0.1;
+        if (Global.StoreGift == "china")
+            Global.China.Friendship += 0.1;
+
         if (Global.Purchased[ItemID].Amount == 0) {
             GetParent().QueueFree();
         } else {
