@@ -13,7 +13,7 @@ public class UsaEspionage : Label {
             "The country's official motto is 'In God We Trust.'",
             "The bald eagle is the national bird and symbol of the United States.",
             "The U.S. has a population of over 331 million people.",
-            "New York City is the most populous city in the United States.",
+            "New Pork City is the most populous city in the United States.",
             "Washington, T.C. (the capital) is the capital city of the United States.",
             "The US has the world's largest economy.",
             "The United States has the most powerful military in the world.",
