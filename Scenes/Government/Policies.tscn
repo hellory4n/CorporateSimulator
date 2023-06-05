@@ -1,0 +1,145 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Approve.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/RefusePress.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Thing.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Refuse.png" type="Texture" id=10]
+[ext_resource path="res://Assets/ApprovePress.png" type="Texture" id=11]
+[ext_resource path="res://Assets/ApproveHover.png" type="Texture" id=12]
+[ext_resource path="res://Assets/RefuseHover.png" type="Texture" id=13]
+[ext_resource path="res://Scripts/UI/Government/PolicyThings.cs" type="Script" id=14]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 28
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+font_data = SubResource( 7 )
+
+[node name="Dialog" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 2 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+texture = ExtResource( 1 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+text = "Policies"
+valign = 1
+
+[node name="DialogOK" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 575.0
+margin_right = 840.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
+
+[node name="Approve" type="TextureButton" parent="."]
+margin_left = 263.0
+margin_top = 285.0
+margin_right = 413.0
+margin_bottom = 435.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 12 )
+script = ExtResource( 14 )
+
+[node name="Refuse" type="TextureButton" parent="."]
+margin_left = 867.0
+margin_top = 285.0
+margin_right = 1017.0
+margin_bottom = 435.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 13 )
+script = ExtResource( 14 )
+
+[node name="Thing" type="Sprite" parent="."]
+position = Vector2( 480, 150 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="NewLaw" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 480.0
+margin_top = 175.0
+margin_right = 800.0
+margin_bottom = 208.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "New Law"
+align = 1
+valign = 1
+
+[node name="Law" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 480.0
+margin_top = 217.0
+margin_right = 800.0
+margin_bottom = 545.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "you are not allowed to"
+align = 1
+valign = 1
+autowrap = true
