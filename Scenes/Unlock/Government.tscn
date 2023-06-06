@@ -84,6 +84,8 @@ text = "You have unlocked the government, which allows you take over the world!
 
 We have dumped some sand in the middle of the atlantic ocean, where our new government and company will be hosted (we used to host the company in New Pork City)
 
+You have to upgrade your military and then invade all countries to finish the game. Try invading countries with weak militaries first.
+
 Please give your new empire a name:"
 autowrap = true
 
@@ -112,9 +114,9 @@ valign = 1
 
 [node name="CountryName" type="LineEdit" parent="."]
 margin_left = 290.0
-margin_top = 378.0
+margin_top = 478.0
 margin_right = 990.0
-margin_bottom = 453.0
+margin_bottom = 553.0
 custom_colors/cursor_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 12 )
