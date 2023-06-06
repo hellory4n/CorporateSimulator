@@ -12,7 +12,7 @@
 [ext_resource path="res://Assets/Slider1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/SmallButton.png" type="Texture" id=11]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=12]
-[ext_resource path="res://Scripts/UI/Government/ArmyRating.cs" type="Script" id=13]
+[ext_resource path="res://Scripts/UI/Government/NavyRating.cs" type="Script" id=13]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -80,7 +80,7 @@ margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "Army"
+text = "Navy"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
@@ -141,7 +141,7 @@ margin_right = 482.0
 margin_bottom = 46.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Soldiers: 0/100"
+text = "Sailors: 0/100"
 
 [node name="Cost" type="Label" parent="ScrollContainer/VBoxContainer/Soldiers/Node2D"]
 margin_top = 44.0
@@ -163,8 +163,8 @@ __meta__ = {
 "_edit_group_": true
 }
 Cost = 1000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Soldiers"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Sailors"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Soldiers/Node2D/Upgrade"]
 margin_right = 300.0
@@ -232,7 +232,7 @@ __meta__ = {
 }
 MilitaryThing = 1
 Cost = 5000000
-MilitaryCategoryThing = "army"
+MilitaryCategoryThing = "navy"
 MilitaryNameThing = "Ammo"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Ammo/Node2D/Upgrade"]
@@ -301,8 +301,8 @@ __meta__ = {
 }
 MilitaryThing = 2
 Cost = 10000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Infantry Weapons"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Patrol Boats"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/InfantryWeapons/Node2D/Upgrade"]
 margin_right = 300.0
@@ -370,8 +370,8 @@ __meta__ = {
 }
 MilitaryThing = 3
 Cost = 50000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Armored Cars"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Amphibious"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ArmoredCars/Node2D/Upgrade"]
 margin_right = 300.0
@@ -439,8 +439,8 @@ __meta__ = {
 }
 MilitaryThing = 4
 Cost = 100000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Combat Vehicles"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Ballistic Missiles"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CombatVehicles/Node2D/Upgrade"]
 margin_right = 300.0
@@ -508,8 +508,8 @@ __meta__ = {
 }
 MilitaryThing = 5
 Cost = 500000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Artillery"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Submarines"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Artillery/Node2D/Upgrade"]
 margin_right = 300.0
@@ -577,8 +577,8 @@ __meta__ = {
 }
 MilitaryThing = 6
 Cost = 1000000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "RPG"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Aircraft Carrier"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RPG/Node2D/Upgrade"]
 margin_right = 300.0
@@ -646,8 +646,8 @@ __meta__ = {
 }
 MilitaryThing = 7
 Cost = 5000000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Ballistic Missiles"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Warship"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BallisticMissiles/Node2D/Upgrade"]
 margin_right = 300.0
@@ -715,8 +715,8 @@ __meta__ = {
 }
 MilitaryThing = 8
 Cost = 10000000000
-MilitaryCategoryThing = "army"
-MilitaryNameThing = "Tanks"
+MilitaryCategoryThing = "navy"
+MilitaryNameThing = "Destroyer"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Tanks/Node2D/Upgrade"]
 margin_right = 300.0
@@ -784,7 +784,7 @@ __meta__ = {
 }
 MilitaryThing = 9
 Cost = 50000000000
-MilitaryCategoryThing = "army"
+MilitaryCategoryThing = "navy"
 MilitaryNameThing = "Mass Destruction"
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/MassDestruction/Node2D/Upgrade"]
