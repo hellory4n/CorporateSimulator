@@ -8,45 +8,52 @@ public class MilitaryUpgrade : TextureButton {
     long Cost = 69420;
     [Export]
     string MilitaryCategoryThing = "gun department";
+    [Export]
+    string MilitaryNameThing = "shooty shooty bang bang";
 
-    /*public override void _Process(float delta) {
-        #region this sucks ngl
-        if (MilitaryThing == "Soldiers")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.Soldiers}/100";
-        if (MilitaryThing == "Ammo")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.Ammo}/100";
-        if (MilitaryThing == "Infantry Weapons")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.InfantryWeapons}/100";
-        if (MilitaryThing == "Armored Cars")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.ArmoredCars}/100";
-        if (MilitaryThing == "Combat Vehicles")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.CombatVehicles}/100";
-        if (MilitaryThing == "Artillery")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.Artillery}/100";
-        if (MilitaryThing == "RPG")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.RPG}/100";
-        if (MilitaryThing == "BallisticMissiles")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.BallisticMissiles}/100";
-        if (MilitaryThing == "Tanks")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.Tanks}/100";
-        if (MilitaryThing == "Mass Destruction")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Army.MassDestruction}/100";
-        if (MilitaryThing == "Sailors")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Navy.Sailors}/100";
-        if (MilitaryThing == "Sailoaaaaars")
-            GetNode<Label>("../Name").Text = $"{MilitaryThing}: {Global.Navy.Sailors}/100";
-        #endregion
+    public override void _Ready() {
+        this.Connect("pressed", this, nameof(Click));
+        base._Ready();
+    }
+
+    public override void _Process(float delta) {
+        if (MilitaryCategoryThing == "army")
+            GetNode<Label>("../Name").Text = $"{MilitaryNameThing}: {Global.Army[MilitaryThing]}/100";
+        if (MilitaryCategoryThing == "navy")
+            GetNode<Label>("../Name").Text = $"{MilitaryNameThing}: {Global.Navy[MilitaryThing]}/100";
+        if (MilitaryCategoryThing == "air force")
+            GetNode<Label>("../Name").Text = $"{MilitaryNameThing}: {Global.AirForce[MilitaryThing]}/100";
+
         Slider epicSlider = GetNode<Slider>("../EpicSlider");
-        //GetNode<Label>("../EpicSlider/Label").Text = $"Stocks: {String.Format("{0:n0}", epicSlider.Value)} - Price: ${String.Format("{0:n0}", (Global.AvailableInvestments[epicIndex].Price*bruh)*epicSlider.Value)}";
+        GetNode<Label>("../EpicSlider/Label").Text = $"{epicSlider.Value} selected";
         base._Process(delta);
     }
 
     public void Click() {
+        // epic calculations
         Slider uh = GetNode<Slider>("../EpicSlider");
-        //long jsjskhsksk = (long)Math.Round((Global.AvailableInvestments[epicIndex].Price*bruh)*uh.Value);
-        //Global.Investments[epicIndex].Amount += (int)uh.Value;
-        //Global.Money -= jsjskhsksk;
-        // i have to do a mess to make the ui look right
-        GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
-    }*/
+        int amountWanted = (int)uh.Value;
+        int available = 100;
+
+        if (MilitaryCategoryThing == "army")
+            available = 100-Global.Army[MilitaryThing];
+        if (MilitaryCategoryThing == "navy")
+            available = 100-Global.Navy[MilitaryThing];
+        if (MilitaryCategoryThing == "air force")
+            available = 100-Global.AirForce[MilitaryThing];
+
+        double canBuy = Math.Min(Global.Money / Cost, available);
+        if (canBuy < amountWanted)
+            amountWanted = (int)canBuy;
+        
+        // actually upgrade the cool military
+        if (MilitaryCategoryThing == "army")
+            Global.Army[MilitaryThing] += amountWanted;
+        if (MilitaryCategoryThing == "navy")
+            Global.Navy[MilitaryThing] += amountWanted;
+        if (MilitaryCategoryThing == "air force")
+            Global.AirForce[MilitaryThing] += amountWanted;
+        
+        Global.Money -= Cost * amountWanted;
+    }
 }
