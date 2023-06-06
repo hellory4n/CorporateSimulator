@@ -1,0 +1,948 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Assets/Dialog4.png" type="Texture" id=1]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Industries/Electronics.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/SmallButton.png" type="Texture" id=8]
+[ext_resource path="res://Assets/SmallButtonPressed.png" type="Texture" id=9]
+[ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Industries/Weapons.png" type="Texture" id=11]
+[ext_resource path="res://Assets/SliderGrab.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Slider1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Industries/Phone.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Industries/Food.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Industries/Apps.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Industries/Computers.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Industries/MoviesAndShows.png" type="Texture" id=18]
+[ext_resource path="res://Scripts/UI/StockMarket/StockMarketBuy.cs" type="Script" id=19]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = SubResource( 5 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 700, 75 )
+
+[sub_resource type="StyleBoxEmpty" id=21]
+
+[sub_resource type="StyleBoxEmpty" id=22]
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 32
+font_data = SubResource( 23 )
+
+[node name="Dialog" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 2 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+texture = ExtResource( 1 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+text = "Stock Market"
+valign = 1
+
+[node name="DialogOK" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 575.0
+margin_right = 840.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 205.0
+margin_top = 139.0
+margin_right = 1085.0
+margin_bottom = 565.0
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 770.0
+margin_bottom = 2445.0
+custom_constants/separation = 25
+
+[node name="SillyCo" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_right = 770.0
+margin_bottom = 165.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/SillyCo"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Silly Co Scams Co."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "silly co"
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/SillyCo/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="ScamCo" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 190.0
+margin_right = 770.0
+margin_bottom = 355.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/ScamCo"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Scamco Inc Co LLC"
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "scamco"
+epicIndex = 1
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ScamCo/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="CoolOil" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 380.0
+margin_right = 770.0
+margin_bottom = 545.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/CoolOil"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Cool Oil Company"
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "cool oil"
+epicIndex = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CoolOil/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="BaggedAir" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 570.0
+margin_right = 770.0
+margin_bottom = 735.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/BaggedAir"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Bagged Air Inc."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "bagged air"
+epicIndex = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BaggedAir/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="RobertTech" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 760.0
+margin_right = 770.0
+margin_bottom = 925.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/RobertTech"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Robert Tech Corp."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "robert tech"
+epicIndex = 4
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RobertTech/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Deliciousness" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 950.0
+margin_right = 770.0
+margin_bottom = 1115.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Deliciousness"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Deliciousness LLC"
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "deliciousness"
+epicIndex = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Deliciousness/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Goggles" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1140.0
+margin_right = 770.0
+margin_bottom = 1305.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Goggles"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Goggles LLC"
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "googles"
+epicIndex = 6
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Goggles/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Goggles/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Macrohard" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1330.0
+margin_right = 770.0
+margin_bottom = 1495.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Macrohard"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 552.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Macrohard Corp."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "macrohard"
+epicIndex = 7
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Macrohard/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Databook" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1520.0
+margin_right = 770.0
+margin_bottom = 1685.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Databook"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 577.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Databook Inc."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "databook"
+epicIndex = 8
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Databook/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Databook/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Pineapple" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1710.0
+margin_right = 770.0
+margin_bottom = 1875.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Pineapple"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 577.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Pineapple Inc."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "pineapple"
+epicIndex = 9
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Pineapple/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Amazing" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1900.0
+margin_right = 770.0
+margin_bottom = 2065.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Amazing"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 577.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Amazing.com Inc."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "amazing"
+epicIndex = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Amazing/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Amazing/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Netfilms" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2090.0
+margin_right = 770.0
+margin_bottom = 2255.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Netfilms"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 577.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Netfilms Inc. Corp."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "netfilms"
+epicIndex = 11
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Netfilms/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1
+
+[node name="Meloncars" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2280.0
+margin_right = 770.0
+margin_bottom = 2445.0
+rect_min_size = Vector2( 770, 165 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Meloncars"]
+
+[node name="Industry" type="Sprite" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
+position = Vector2( 0, 7 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="CompanyName" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
+margin_left = 70.0
+margin_top = 14.0
+margin_right = 577.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Meloncars Cars Inc."
+
+[node name="Buy" type="TextureButton" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+script = ExtResource( 19 )
+Company = "meloncars"
+epicIndex = 12
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/Buy"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Buy"
+align = 1
+valign = 1
+
+[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D"]
+margin_left = 40.0
+margin_top = 90.0
+margin_right = 740.0
+margin_bottom = 165.0
+custom_icons/tick = ExtResource( 12 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 18 )
+custom_styles/grabber_area_highlight = SubResource( 21 )
+custom_styles/grabber_area = SubResource( 22 )
+min_value = 1.0
+max_value = 1000.0
+value = 500.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Meloncars/Node2D/EpicSlider"]
+margin_left = 25.0
+margin_right = 700.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 24 )
+text = "this slider doesn't work lol"
+valign = 1

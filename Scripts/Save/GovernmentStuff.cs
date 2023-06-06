@@ -4,7 +4,7 @@ public class CountryDiplomacy {
     public bool BeingSpied = false;
 }
 
-public class ArmyStuff {
+/*public class ArmyStuff {
     public int Soldiers = 0;
     public int Ammo = 0;
     public int InfantryWeapons = 0;
@@ -40,4 +40,4 @@ public class AirForceStuff {
     public int FighterPlanes = 0;
     public int Bombers = 0;
     public int MassDestruction = 0;
-}
+}*/

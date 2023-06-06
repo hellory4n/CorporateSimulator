@@ -218,9 +218,9 @@ public class Global : Node2D {
     public static string CountryName;
     public static CountryDiplomacy UnitedStates;
     public static CountryDiplomacy China;
-    public static ArmyStuff Army;
-    public static NavyStuff Navy;
-    public static AirForceStuff AirForce;
+    public static int[] Army;
+    public static int[] Navy;
+    public static int[] AirForce;
     public static List<string> Invaded;
     public static string StoreGift = "nothing";
 }

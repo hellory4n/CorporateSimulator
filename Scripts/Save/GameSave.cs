@@ -122,9 +122,15 @@ public class GameSave {
     public string CountryName = "peepeepoopoo land";
     public CountryDiplomacy UnitedStates = new CountryDiplomacy();
     public CountryDiplomacy China = new CountryDiplomacy();
-    public ArmyStuff Army = new ArmyStuff();
-    public NavyStuff Navy = new NavyStuff();
-    public AirForceStuff AirForce = new AirForceStuff();
+    public int[] Army = new int[] {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    };
+    public int[] Navy = new int[] {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    };
+    public int[] AirForce = new int[] {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    };
     public List<string> Invaded = new List<string>();
 }
 
