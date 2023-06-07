@@ -223,4 +223,5 @@ public class Global : Node2D {
     public static int[] AirForce;
     public static List<string> Invaded;
     public static string StoreGift = "nothing";
+    public static string InvadedCountry = "sussy nation amongst us";
 }
