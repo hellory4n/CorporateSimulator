@@ -62,7 +62,7 @@ margin_top = 98.0
 margin_right = 604.2
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
-text = "North America"
+text = "South America"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
@@ -96,7 +96,7 @@ margin_bottom = 565.0
 mouse_filter = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_bottom = 1275.0
+margin_bottom = 1175.0
 custom_constants/separation = 25
 
 [node name="Country1" type="Control" parent="ScrollContainer/VBoxContainer"]
@@ -131,10 +131,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Belize"
-Army = 6.0
-Navy = 6.0
-AirForce = 5.5
+CountryName = "Argentina"
+Army = 7.5
+Navy = 7.0
+AirForce = 7.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country1/Node2D/Invade"]
 margin_right = 300.0
@@ -177,10 +177,9 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Canada"
-Army = 7.5
-Navy = 8.0
-AirForce = 8.0
+CountryName = "Bolivia"
+Army = 6.5
+AirForce = 6.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country2/Node2D/Invade"]
 margin_right = 300.0
@@ -223,10 +222,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Costa Rica"
-Army = 5.0
-Navy = 5.0
-AirForce = 5.0
+CountryName = "Brazil"
+Army = 8.5
+Navy = 8.0
+AirForce = 8.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country3/Node2D/Invade"]
 margin_right = 300.0
@@ -269,10 +268,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Cuba"
-Army = 7.0
-Navy = 7.0
-AirForce = 6.5
+CountryName = "Chile"
+Army = 7.5
+Navy = 7.5
+AirForce = 7.5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country4/Node2D/Invade"]
 margin_right = 300.0
@@ -315,10 +314,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Dominican Republic"
-Army = 6.5
-Navy = 7.0
-AirForce = 6.5
+CountryName = "Colombia"
+Army = 8.0
+Navy = 7.5
+AirForce = 7.5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country5/Node2D/Invade"]
 margin_right = 300.0
@@ -361,10 +360,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "El Salvador"
-Army = 5.5
-Navy = 5.5
-AirForce = 5.0
+CountryName = "Ecuador"
+Army = 6.5
+Navy = 6.5
+AirForce = 6.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country6/Node2D/Invade"]
 margin_right = 300.0
@@ -407,10 +406,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Greenland"
-Army = 7.0
-Navy = 7.0
-AirForce = 7.0
+CountryName = "Guyana"
+Army = 5.0
+Navy = 4.0
+AirForce = 4.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country7/Node2D/Invade"]
 margin_right = 300.0
@@ -453,9 +452,8 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Haiti"
-Army = 5.0
-Navy = 5.0
+CountryName = "Paraguay"
+Army = 6.0
 AirForce = 5.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country8/Node2D/Invade"]
@@ -499,10 +497,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Honduras"
-Army = 6.0
-Navy = 6.0
-AirForce = 5.5
+CountryName = "Peru"
+Army = 7.0
+Navy = 7.0
+AirForce = 6.5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country9/Node2D/Invade"]
 margin_right = 300.0
@@ -545,10 +543,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Mexico"
-Army = 7.0
-Navy = 7.5
-AirForce = 7.0
+CountryName = "Suriname"
+Army = 5.5
+Navy = 4.5
+AirForce = 4.5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country10/Node2D/Invade"]
 margin_right = 300.0
@@ -591,8 +589,8 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Nicaragua"
-Army = 6.0
+CountryName = "Uruguay"
+Army = 5.5
 Navy = 5.5
 AirForce = 5.5
 
@@ -637,58 +635,12 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
-CountryName = "Panama"
-Army = 6.0
-Navy = 6.5
-AirForce = 6.0
+CountryName = "Venezuela"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country12/Node2D/Invade"]
-margin_right = 300.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 6 )
-text = "Invade"
-align = 1
-valign = 1
-
-[node name="Country13" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1200.0
-margin_bottom = 1275.0
-rect_min_size = Vector2( 0, 75 )
-
-[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country13"]
-
-[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
-margin_right = 597.0
-margin_bottom = 46.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 6 )
-text = "Suffering Republic"
-
-[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
-margin_top = 44.0
-margin_right = 482.0
-margin_bottom = 74.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 26 )
-text = "•••••••••••••••"
-
-[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
-margin_left = 570.0
-margin_right = 870.0
-margin_bottom = 75.0
-texture_normal = ExtResource( 11 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 4 )
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_group_": true
-}
-CountryName = "United States"
-Army = 9.0
-Navy = 9.5
-AirForce = 9.5
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D/Invade"]
 margin_right = 300.0
 margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )

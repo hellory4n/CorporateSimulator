@@ -1,0 +1,2011 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=2]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=3]
+[ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=4]
+[ext_resource path="res://Assets/SmallButtonPressed.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/UI/Government/Invade.cs" type="Script" id=6]
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=9]
+[ext_resource path="res://Assets/SmallButton.png" type="Texture" id=11]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 38
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=25]
+font_path = "res://Uhh/Ubuntu-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=26]
+size = 26
+font_data = SubResource( 25 )
+
+[node name="Dialog" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 12 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+texture = ExtResource( 7 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+text = "Asia"
+valign = 1
+
+[node name="DialogOK" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 575.0
+margin_right = 840.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 205.0
+margin_top = 139.0
+margin_right = 1085.0
+margin_bottom = 565.0
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_bottom = 4175.0
+custom_constants/separation = 25
+
+[node name="Country1" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_bottom = 75.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country1"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country1/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country1/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country1/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Afghanistan"
+Army = 7.0
+AirForce = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country1/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country2" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 100.0
+margin_bottom = 175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country2"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country2/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country2/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country2/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Armenia"
+Army = 6.5
+AirForce = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country2/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country3" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country3"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country3/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country3/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country3/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Azerbaijan"
+Army = 7.5
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country3/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country4" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 300.0
+margin_bottom = 375.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country4"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country4/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country4/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country4/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Bangladesh"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country4/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country5" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 400.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country5"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country5/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country5/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country5/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Bhutan"
+Army = 5.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country5/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country6" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 500.0
+margin_bottom = 575.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country6"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country6/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country6/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country6/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Brunei"
+Army = 5.5
+Navy = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country6/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country7" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 600.0
+margin_bottom = 675.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country7"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country7/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country7/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country7/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Cambodia"
+Army = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country7/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country8" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 700.0
+margin_bottom = 775.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country8"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country8/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country8/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country8/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "China"
+Army = 9.5
+Navy = 9.0
+AirForce = 9.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country8/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country9" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 800.0
+margin_bottom = 875.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country9"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country9/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country9/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country9/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Georgia"
+Army = 7.0
+AirForce = 6.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country9/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country10" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 900.0
+margin_bottom = 975.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country10"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country10/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country10/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country10/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "India"
+Army = 9.0
+Navy = 8.5
+AirForce = 8.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country10/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country11" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1000.0
+margin_bottom = 1075.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country11"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country11/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country11/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country11/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Indonesia"
+Army = 8.0
+Navy = 8.0
+AirForce = 8.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country11/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country12" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1100.0
+margin_bottom = 1175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country12"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country12/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country12/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country12/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Iran"
+Army = 8.0
+Navy = 7.5
+AirForce = 7.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country12/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country13" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1200.0
+margin_bottom = 1275.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country13"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country13/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Iraq"
+Army = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country13/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country14" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1300.0
+margin_bottom = 1375.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country14"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country14/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country14/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country14/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Israel"
+Army = 9.0
+Navy = 8.0
+AirForce = 9.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country14/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country15" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1400.0
+margin_bottom = 1475.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country15"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country15/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country15/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country15/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Japan"
+Army = 8.0
+Navy = 8.5
+AirForce = 8.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country15/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country16" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1500.0
+margin_bottom = 1575.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country16"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country16/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country16/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country16/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Jordan"
+Army = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country16/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country17" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1600.0
+margin_bottom = 1675.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country17"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country17/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country17/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country17/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Kazakhstan"
+Army = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country17/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country18" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1700.0
+margin_bottom = 1775.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country18"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country18/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country18/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country18/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Kuwait"
+Army = 7.5
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country18/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country19" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1800.0
+margin_bottom = 1875.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country19"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country19/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country19/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country19/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Kyrgystan"
+Army = 6.0
+AirForce = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country19/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country20" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 1900.0
+margin_bottom = 1975.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country20"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country20/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country20/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country20/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Laos"
+Army = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country20/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country21" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2000.0
+margin_bottom = 2075.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country21"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country21/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country21/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country21/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Lebanon"
+Army = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country21/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country22" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2100.0
+margin_bottom = 2175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country22"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country22/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country22/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country22/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Malaysia"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country22/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country23" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2200.0
+margin_bottom = 2275.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country23"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country23/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country23/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country23/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Mongolia"
+Army = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country23/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country24" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2300.0
+margin_bottom = 2375.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country24"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country24/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country24/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country24/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Myanmar"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country24/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country25" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2400.0
+margin_bottom = 2475.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country25"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country25/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country25/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country25/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Nepal"
+Army = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country25/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country26" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2500.0
+margin_bottom = 2575.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country26"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country26/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country26/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country26/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "North Korea"
+Army = 7.5
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country26/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country27" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2600.0
+margin_bottom = 2675.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country27"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country27/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country27/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country27/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Oman"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country27/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country28" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2700.0
+margin_bottom = 2775.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country28"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country28/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country28/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country28/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Pakistan"
+Army = 8.0
+Navy = 7.5
+AirForce = 7.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country28/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country29" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2800.0
+margin_bottom = 2875.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country29"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country29/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country29/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country29/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Phillipines"
+Army = 7.0
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country29/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country30" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 2900.0
+margin_bottom = 2975.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country30"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country30/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country30/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country30/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Qatar"
+Army = 6.5
+Navy = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country30/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country31" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3000.0
+margin_bottom = 3075.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country31"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country31/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country31/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country31/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Saudi Arabia"
+Army = 8.0
+Navy = 7.5
+AirForce = 8.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country31/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country32" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3100.0
+margin_bottom = 3175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country32"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country32/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country32/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country32/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "South Korea"
+Army = 8.0
+Navy = 8.0
+AirForce = 8.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country32/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country33" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3200.0
+margin_bottom = 3275.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country33"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country33/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country33/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country33/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Sri Lanka"
+Army = 6.5
+Navy = 7.0
+AirForce = 6.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country33/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country34" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3300.0
+margin_bottom = 3375.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country34"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country34/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country34/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country34/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Syria"
+Army = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country34/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country35" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3400.0
+margin_bottom = 3475.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country35"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country35/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country35/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country35/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Tajikistan"
+Army = 6.0
+AirForce = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country35/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country36" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3500.0
+margin_bottom = 3575.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country36"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country36/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country36/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country36/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Thailand"
+Army = 7.5
+Navy = 7.5
+AirForce = 7.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country36/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country37" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3600.0
+margin_bottom = 3675.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country37"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Turkey"
+Army = 8.0
+Navy = 7.5
+AirForce = 8.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country38" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3700.0
+margin_bottom = 3775.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country38"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country38/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country38/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country38/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Turkmenistan"
+Army = 6.0
+AirForce = 6.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country38/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country39" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3800.0
+margin_bottom = 3875.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country39"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country39/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country39/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country39/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "United Arab Emirates"
+Army = 7.5
+Navy = 7.0
+AirForce = 7.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country39/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country40" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3900.0
+margin_bottom = 3975.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country40"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country40/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country40/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country40/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Uzbekistan"
+Army = 7.0
+AirForce = 7.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country40/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country41" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 4000.0
+margin_bottom = 4075.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country41"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country41/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country41/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country41/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Vietnam"
+Army = 7.5
+Navy = 7.5
+AirForce = 7.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country41/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country42" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 4100.0
+margin_bottom = 4175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country42"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country42/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country42/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country42/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Yemen"
+Army = 6.0
+AirForce = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country42/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
