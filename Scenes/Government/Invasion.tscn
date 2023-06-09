@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Scripts/UI/Government/AfricaOpen.cs" type="Script" id=31]
 [ext_resource path="res://Scripts/UI/Government/AsiaOpen.cs" type="Script" id=32]
 [ext_resource path="res://Scripts/UI/Government/OceaniaOpen.cs" type="Script" id=33]
+[ext_resource path="res://Scripts/UI/Government/WorldMapOpen.cs" type="Script" id=34]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -165,3 +166,4 @@ margin_bottom = 554.0
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 20 )
 texture_hover = ExtResource( 26 )
+script = ExtResource( 34 )

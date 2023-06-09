@@ -1,0 +1,1338 @@
+[gd_scene load_steps=170 format=2]
+
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
+[ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Assets/World/Mexico.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
+[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
+[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Assets/World/Haiti.png" type="Texture" id=8]
+[ext_resource path="res://Assets/World/UnitedStates.png" type="Texture" id=9]
+[ext_resource path="res://Assets/World/Guatemala.png" type="Texture" id=10]
+[ext_resource path="res://Assets/World/Canada.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/UI/Government/CountryWorldMap.cs" type="Script" id=12]
+[ext_resource path="res://Assets/World/Cuba.png" type="Texture" id=13]
+[ext_resource path="res://Assets/World/Ocean.png" type="Texture" id=14]
+[ext_resource path="res://Assets/World/DominicanRepublic.png" type="Texture" id=15]
+[ext_resource path="res://Assets/World/Belize.png" type="Texture" id=16]
+[ext_resource path="res://Assets/World/CostaRica.png" type="Texture" id=17]
+[ext_resource path="res://Assets/World/Brazil.png" type="Texture" id=18]
+[ext_resource path="res://Assets/World/Argentina.png" type="Texture" id=19]
+[ext_resource path="res://Assets/World/Honduras.png" type="Texture" id=20]
+[ext_resource path="res://Assets/World/Chile.png" type="Texture" id=21]
+[ext_resource path="res://Assets/World/Uruguay.png" type="Texture" id=22]
+[ext_resource path="res://Assets/World/ElSalvador.png" type="Texture" id=23]
+[ext_resource path="res://Assets/World/Suriname.png" type="Texture" id=24]
+[ext_resource path="res://Assets/World/Ecuador.png" type="Texture" id=25]
+[ext_resource path="res://Assets/World/Colombia.png" type="Texture" id=26]
+[ext_resource path="res://Assets/World/Bolivia.png" type="Texture" id=27]
+[ext_resource path="res://Assets/World/Paraguay.png" type="Texture" id=28]
+[ext_resource path="res://Assets/World/Guyana.png" type="Texture" id=29]
+[ext_resource path="res://Assets/World/Panama.png" type="Texture" id=30]
+[ext_resource path="res://Assets/World/Venezuela.png" type="Texture" id=31]
+[ext_resource path="res://Assets/World/Peru.png" type="Texture" id=32]
+[ext_resource path="res://Assets/World/Nicaragua.png" type="Texture" id=33]
+[ext_resource path="res://Assets/World/UnitedKingdom.png" type="Texture" id=34]
+[ext_resource path="res://Assets/World/Belgium.png" type="Texture" id=35]
+[ext_resource path="res://Assets/World/Switzerland.png" type="Texture" id=36]
+[ext_resource path="res://Assets/World/Denmark.png" type="Texture" id=37]
+[ext_resource path="res://Assets/World/Antarctica.png" type="Texture" id=38]
+[ext_resource path="res://Assets/World/Spain.png" type="Texture" id=39]
+[ext_resource path="res://Assets/World/Ireland.png" type="Texture" id=40]
+[ext_resource path="res://Assets/World/Norway.png" type="Texture" id=41]
+[ext_resource path="res://Assets/World/Greenland.png" type="Texture" id=42]
+[ext_resource path="res://Assets/World/Germany.png" type="Texture" id=43]
+[ext_resource path="res://Assets/World/Iceland.png" type="Texture" id=44]
+[ext_resource path="res://Assets/World/France.png" type="Texture" id=45]
+[ext_resource path="res://Assets/World/Finland.png" type="Texture" id=46]
+[ext_resource path="res://Assets/World/Sweden.png" type="Texture" id=47]
+[ext_resource path="res://Assets/World/Italy.png" type="Texture" id=48]
+[ext_resource path="res://Assets/World/Netherlands.png" type="Texture" id=49]
+[ext_resource path="res://Assets/World/Portugal.png" type="Texture" id=50]
+[ext_resource path="res://Assets/World/Austria.png" type="Texture" id=51]
+[ext_resource path="res://Assets/World/Russia.png" type="Texture" id=52]
+[ext_resource path="res://Assets/World/Czechia.png" type="Texture" id=53]
+[ext_resource path="res://Assets/World/Poland.png" type="Texture" id=54]
+[ext_resource path="res://Assets/World/Uzbekistan.png" type="Texture" id=55]
+[ext_resource path="res://Assets/World/Belarus.png" type="Texture" id=56]
+[ext_resource path="res://Assets/World/Estonia.png" type="Texture" id=57]
+[ext_resource path="res://Assets/World/Slovakia.png" type="Texture" id=58]
+[ext_resource path="res://Assets/World/Ukraine.png" type="Texture" id=59]
+[ext_resource path="res://Assets/World/Bulgaria.png" type="Texture" id=60]
+[ext_resource path="res://Assets/World/Hungary.png" type="Texture" id=61]
+[ext_resource path="res://Assets/World/Latvia.png" type="Texture" id=62]
+[ext_resource path="res://Assets/World/NorthMacedonia.png" type="Texture" id=63]
+[ext_resource path="res://Assets/World/Romania.png" type="Texture" id=64]
+[ext_resource path="res://Assets/World/Moldova.png" type="Texture" id=65]
+[ext_resource path="res://Assets/World/BosniaAndHezergovina.png" type="Texture" id=66]
+[ext_resource path="res://Assets/World/Tajikistan.png" type="Texture" id=67]
+[ext_resource path="res://Assets/World/Armenia.png" type="Texture" id=68]
+[ext_resource path="res://Assets/World/Serbia.png" type="Texture" id=69]
+[ext_resource path="res://Assets/World/Slovenia.png" type="Texture" id=70]
+[ext_resource path="res://Assets/World/Albania.png" type="Texture" id=71]
+[ext_resource path="res://Assets/World/Georgia.png" type="Texture" id=72]
+[ext_resource path="res://Assets/World/Azerbaijan.png" type="Texture" id=73]
+[ext_resource path="res://Assets/World/Lithuania.png" type="Texture" id=74]
+[ext_resource path="res://Assets/World/Montenegro.png" type="Texture" id=75]
+[ext_resource path="res://Assets/World/Croatia.png" type="Texture" id=76]
+[ext_resource path="res://Assets/World/Turkmenistan.png" type="Texture" id=77]
+[ext_resource path="res://Assets/World/Kyrgystan.png" type="Texture" id=78]
+[ext_resource path="res://Assets/World/Kazakhstan.png" type="Texture" id=79]
+[ext_resource path="res://Assets/World/Turkey.png" type="Texture" id=80]
+[ext_resource path="res://Assets/World/Greece.png" type="Texture" id=81]
+[ext_resource path="res://Assets/World/Iran.png" type="Texture" id=82]
+[ext_resource path="res://Assets/World/Oman.png" type="Texture" id=83]
+[ext_resource path="res://Assets/World/SaudiArabia.png" type="Texture" id=84]
+[ext_resource path="res://Assets/World/Israel.png" type="Texture" id=85]
+[ext_resource path="res://Assets/World/Syria.png" type="Texture" id=86]
+[ext_resource path="res://Assets/World/Yemen.png" type="Texture" id=87]
+[ext_resource path="res://Assets/World/UAE.png" type="Texture" id=88]
+[ext_resource path="res://Assets/World/Kuwait.png" type="Texture" id=89]
+[ext_resource path="res://Assets/World/Lebanon.png" type="Texture" id=90]
+[ext_resource path="res://Assets/World/Iraq.png" type="Texture" id=91]
+[ext_resource path="res://Assets/World/Jordan.png" type="Texture" id=92]
+[ext_resource path="res://Assets/World/Qatar.png" type="Texture" id=93]
+[ext_resource path="res://Assets/World/China.png" type="Texture" id=94]
+[ext_resource path="res://Assets/World/Mongolia.png" type="Texture" id=95]
+[ext_resource path="res://Assets/World/SouthKorea.png" type="Texture" id=96]
+[ext_resource path="res://Assets/World/Nepal.png" type="Texture" id=97]
+[ext_resource path="res://Assets/World/Afghanistan.png" type="Texture" id=98]
+[ext_resource path="res://Assets/World/Bangladesh.png" type="Texture" id=99]
+[ext_resource path="res://Assets/World/Cambodia.png" type="Texture" id=100]
+[ext_resource path="res://Assets/World/NorthKorea.png" type="Texture" id=101]
+[ext_resource path="res://Assets/World/Japan.png" type="Texture" id=102]
+[ext_resource path="res://Assets/World/Thailand.png" type="Texture" id=103]
+[ext_resource path="res://Assets/World/Phillipines.png" type="Texture" id=104]
+[ext_resource path="res://Assets/World/Bhutan.png" type="Texture" id=105]
+[ext_resource path="res://Assets/World/Myanmar.png" type="Texture" id=106]
+[ext_resource path="res://Assets/World/India.png" type="Texture" id=107]
+[ext_resource path="res://Assets/World/Brunei.png" type="Texture" id=108]
+[ext_resource path="res://Assets/World/Pakistan.png" type="Texture" id=109]
+[ext_resource path="res://Assets/World/Vietnam.png" type="Texture" id=110]
+[ext_resource path="res://Assets/World/Laos.png" type="Texture" id=111]
+[ext_resource path="res://Assets/World/Malaysia.png" type="Texture" id=112]
+[ext_resource path="res://Assets/World/Indonesia.png" type="Texture" id=113]
+[ext_resource path="res://Assets/World/Botswana.png" type="Texture" id=114]
+[ext_resource path="res://Assets/World/EquatorialGuinea.png" type="Texture" id=115]
+[ext_resource path="res://Assets/World/Morroco.png" type="Texture" id=116]
+[ext_resource path="res://Assets/World/Ghana.png" type="Texture" id=117]
+[ext_resource path="res://Assets/World/Mali.png" type="Texture" id=118]
+[ext_resource path="res://Assets/World/Kenya.png" type="Texture" id=119]
+[ext_resource path="res://Assets/World/Djibouti.png" type="Texture" id=120]
+[ext_resource path="res://Assets/World/DRC.png" type="Texture" id=121]
+[ext_resource path="res://Assets/World/Namibia.png" type="Texture" id=122]
+[ext_resource path="res://Assets/World/Mauritania.png" type="Texture" id=123]
+[ext_resource path="res://Assets/World/Burundi.png" type="Texture" id=124]
+[ext_resource path="res://Assets/World/Eritrea.png" type="Texture" id=125]
+[ext_resource path="res://Assets/World/Australia.png" type="Texture" id=126]
+[ext_resource path="res://Assets/World/NewZealand.png" type="Texture" id=127]
+[ext_resource path="res://Assets/World/Egypt.png" type="Texture" id=128]
+[ext_resource path="res://Assets/World/Libya.png" type="Texture" id=129]
+[ext_resource path="res://Assets/World/Niger.png" type="Texture" id=130]
+[ext_resource path="res://Assets/World/PapuaNewGuinea.png" type="Texture" id=131]
+[ext_resource path="res://Assets/World/Eswatini.png" type="Texture" id=132]
+[ext_resource path="res://Assets/World/Tunisia.png" type="Texture" id=133]
+[ext_resource path="res://Assets/World/Algeria.png" type="Texture" id=134]
+[ext_resource path="res://Assets/World/Ethiopia.png" type="Texture" id=135]
+[ext_resource path="res://Assets/World/Sudan.png" type="Texture" id=136]
+[ext_resource path="res://Assets/World/Gambia.png" type="Texture" id=137]
+[ext_resource path="res://Assets/World/Somalia.png" type="Texture" id=138]
+[ext_resource path="res://Assets/World/Chad.png" type="Texture" id=139]
+[ext_resource path="res://Assets/World/BurkinaFaso.png" type="Texture" id=140]
+[ext_resource path="res://Assets/World/Senegal.png" type="Texture" id=141]
+[ext_resource path="res://Assets/World/Guinea.png" type="Texture" id=142]
+[ext_resource path="res://Assets/World/GuineaBissau.png" type="Texture" id=143]
+[ext_resource path="res://Assets/World/Cameroon.png" type="Texture" id=144]
+[ext_resource path="res://Assets/World/Liberia.png" type="Texture" id=145]
+[ext_resource path="res://Assets/World/SierraLeone.png" type="Texture" id=146]
+[ext_resource path="res://Assets/World/IvoryCoast.png" type="Texture" id=147]
+[ext_resource path="res://Assets/World/Togo.png" type="Texture" id=148]
+[ext_resource path="res://Assets/World/Zimbabwe.png" type="Texture" id=149]
+[ext_resource path="res://Assets/World/Benin.png" type="Texture" id=150]
+[ext_resource path="res://Assets/World/Nigeria.png" type="Texture" id=151]
+[ext_resource path="res://Assets/World/Malawi.png" type="Texture" id=152]
+[ext_resource path="res://Assets/World/CentralAfricanRepublic.png" type="Texture" id=153]
+[ext_resource path="res://Assets/World/Mozambique.png" type="Texture" id=154]
+[ext_resource path="res://Assets/World/SouthSudan.png" type="Texture" id=155]
+[ext_resource path="res://Assets/World/Tanzania.png" type="Texture" id=156]
+[ext_resource path="res://Assets/World/Zambia.png" type="Texture" id=157]
+[ext_resource path="res://Assets/World/Gabon.png" type="Texture" id=158]
+[ext_resource path="res://Assets/World/Lesotho.png" type="Texture" id=159]
+[ext_resource path="res://Assets/World/Congo.png" type="Texture" id=160]
+[ext_resource path="res://Assets/World/Uganda.png" type="Texture" id=161]
+[ext_resource path="res://Assets/World/Angola.png" type="Texture" id=162]
+[ext_resource path="res://Assets/World/Madagascar.png" type="Texture" id=163]
+[ext_resource path="res://Assets/World/SouthAfrica.png" type="Texture" id=164]
+[ext_resource path="res://Assets/World/Rwanda.png" type="Texture" id=165]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[node name="Dialog" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1279.0
+margin_bottom = 719.0
+
+[node name="Background" type="Sprite" parent="Control"]
+position = Vector2( -269, 108 )
+texture = ExtResource( 2 )
+offset = Vector2( 909, 252 )
+
+[node name="Dialog" type="Sprite" parent="."]
+position = Vector2( 640, 372 )
+texture = ExtResource( 1 )
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 205.0
+margin_top = 98.0
+margin_right = 604.2
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+text = "World Map"
+valign = 1
+
+[node name="DialogOK" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 575.0
+margin_right = 840.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogOK"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "OK"
+align = 1
+valign = 1
+
+[node name="TheNationsOfTheWorld" type="Control" parent="."]
+margin_left = 246.0
+margin_top = 152.0
+margin_right = 1034.0
+margin_bottom = 552.0
+mouse_filter = 2
+
+[node name="Ocean" type="Sprite" parent="TheNationsOfTheWorld"]
+texture = ExtResource( 14 )
+centered = false
+
+[node name="Antarctica" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 153, 347 )
+texture = ExtResource( 38 )
+centered = false
+
+[node name="UnitedStates" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 29, 28 )
+texture = ExtResource( 9 )
+centered = false
+script = ExtResource( 12 )
+Country = "United States"
+
+[node name="Canada" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 129, 7 )
+texture = ExtResource( 11 )
+centered = false
+script = ExtResource( 12 )
+Country = "Canada"
+
+[node name="Mexico" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 129, 118 )
+texture = ExtResource( 3 )
+centered = false
+script = ExtResource( 12 )
+Country = "Mexico"
+
+[node name="Cuba" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 190, 142 )
+texture = ExtResource( 13 )
+centered = false
+script = ExtResource( 12 )
+Country = "Cuba"
+
+[node name="Haiti" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 212, 150 )
+texture = ExtResource( 8 )
+centered = false
+script = ExtResource( 12 )
+Country = "Haiti"
+
+[node name="DominicanRepublic" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 217.5, 150.5 )
+texture = ExtResource( 15 )
+centered = false
+script = ExtResource( 12 )
+Country = "Dominican Republic"
+
+[node name="Guatemala" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 172, 155 )
+texture = ExtResource( 10 )
+centered = false
+script = ExtResource( 12 )
+Country = "Guatemala"
+
+[node name="Belize" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 179, 154 )
+texture = ExtResource( 16 )
+centered = false
+script = ExtResource( 12 )
+Country = "Belize"
+
+[node name="Honduras" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 178, 160 )
+texture = ExtResource( 20 )
+centered = false
+script = ExtResource( 12 )
+Country = "Honduras"
+
+[node name="ElSalvador" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 176, 164 )
+texture = ExtResource( 23 )
+centered = false
+script = ExtResource( 12 )
+Country = "El Salvador"
+
+[node name="Nicaragua" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 182, 162 )
+texture = ExtResource( 33 )
+centered = false
+script = ExtResource( 12 )
+Country = "Nicaragua"
+
+[node name="CostaRica" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 186, 171 )
+texture = ExtResource( 17 )
+centered = false
+script = ExtResource( 12 )
+Country = "Costa Rica"
+
+[node name="Panama" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 191, 176 )
+texture = ExtResource( 30 )
+centered = false
+script = ExtResource( 12 )
+Country = "Panama"
+
+[node name="Colombia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 199, 169 )
+texture = ExtResource( 26 )
+centered = false
+script = ExtResource( 12 )
+Country = "Colombia"
+
+[node name="Venezuela" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 213, 170 )
+texture = ExtResource( 31 )
+centered = false
+script = ExtResource( 12 )
+Country = "Venezuela"
+
+[node name="Guyana" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 238, 179 )
+texture = ExtResource( 29 )
+centered = false
+script = ExtResource( 12 )
+Country = "Guyana"
+
+[node name="Suriname" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 246, 185 )
+texture = ExtResource( 24 )
+centered = false
+script = ExtResource( 12 )
+Country = "Guyana"
+
+[node name="Ecuador" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 195, 196 )
+texture = ExtResource( 25 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ecuador"
+
+[node name="Peru" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 195, 200 )
+texture = ExtResource( 32 )
+centered = false
+script = ExtResource( 12 )
+Country = "Peru"
+
+[node name="Bolivia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 221, 223 )
+texture = ExtResource( 27 )
+centered = false
+script = ExtResource( 12 )
+Country = "Bolivia"
+
+[node name="Chile" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 142, 242 )
+texture = ExtResource( 21 )
+centered = false
+script = ExtResource( 12 )
+Country = "Chile"
+
+[node name="Argentina" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 226, 253 )
+texture = ExtResource( 19 )
+centered = false
+script = ExtResource( 12 )
+Country = "Argentina"
+
+[node name="Paraguay" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 239, 247 )
+texture = ExtResource( 28 )
+centered = false
+script = ExtResource( 12 )
+Country = "Paraguay"
+
+[node name="Uruguay" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 252, 274 )
+texture = ExtResource( 22 )
+centered = false
+script = ExtResource( 12 )
+Country = "Uruguay"
+
+[node name="Brazil" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 211, 187 )
+texture = ExtResource( 18 )
+centered = false
+script = ExtResource( 12 )
+Country = "Brazil"
+
+[node name="Greenland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 277, 6 )
+texture = ExtResource( 42 )
+centered = false
+script = ExtResource( 12 )
+Country = "Greenland"
+
+[node name="Iceland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 337, 38 )
+texture = ExtResource( 44 )
+centered = false
+script = ExtResource( 12 )
+Country = "Iceland"
+
+[node name="Ireland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 355, 64 )
+texture = ExtResource( 40 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ireland"
+
+[node name="UnitedKingdom" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 360, 52 )
+texture = ExtResource( 34 )
+centered = false
+script = ExtResource( 12 )
+Country = "United Kingdom"
+
+[node name="Norway" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 364, 11 )
+texture = ExtResource( 41 )
+centered = false
+script = ExtResource( 12 )
+Country = "Norway"
+
+[node name="Sweden" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 396, 34 )
+texture = ExtResource( 47 )
+centered = false
+script = ExtResource( 12 )
+Country = "Sweden"
+
+[node name="Finland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 410, 31 )
+texture = ExtResource( 46 )
+centered = false
+script = ExtResource( 12 )
+Country = "Finland"
+
+[node name="Russia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 96, 10 )
+texture = ExtResource( 52 )
+centered = false
+script = ExtResource( 12 )
+Country = "Russia"
+
+[node name="Denmark" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 391, 59 )
+texture = ExtResource( 37 )
+centered = false
+script = ExtResource( 12 )
+Country = "Denmark"
+
+[node name="Germany" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 386, 65 )
+texture = ExtResource( 43 )
+centered = false
+script = ExtResource( 12 )
+Country = "Germany"
+
+[node name="Netherlands" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 382, 68 )
+texture = ExtResource( 49 )
+centered = false
+script = ExtResource( 12 )
+Country = "Netherlands"
+
+[node name="Belgium" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 380, 73 )
+texture = ExtResource( 35 )
+centered = false
+script = ExtResource( 12 )
+Country = "Belgium"
+
+[node name="France" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 253, 74 )
+texture = ExtResource( 45 )
+centered = false
+script = ExtResource( 12 )
+Country = "France"
+
+[node name="Spain" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 334, 92 )
+texture = ExtResource( 39 )
+centered = false
+script = ExtResource( 12 )
+Country = "Spain"
+
+[node name="Portugal" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 314, 95 )
+texture = ExtResource( 50 )
+centered = false
+script = ExtResource( 12 )
+Country = "Portugal"
+
+[node name="Switzerland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 386, 82 )
+texture = ExtResource( 36 )
+centered = false
+script = ExtResource( 12 )
+Country = "Switzerland"
+
+[node name="Austria" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 393, 79 )
+texture = ExtResource( 51 )
+centered = false
+script = ExtResource( 12 )
+Country = "Austria"
+
+[node name="Italy" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 387, 84 )
+texture = ExtResource( 48 )
+centered = false
+script = ExtResource( 12 )
+Country = "Italy"
+
+[node name="Poland" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 402, 65 )
+texture = ExtResource( 54 )
+centered = false
+script = ExtResource( 12 )
+Country = "Poland"
+
+[node name="Czechia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 398, 74 )
+texture = ExtResource( 53 )
+centered = false
+script = ExtResource( 12 )
+Country = "Czechia"
+
+[node name="Hungary" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 406, 80 )
+texture = ExtResource( 61 )
+centered = false
+script = ExtResource( 12 )
+Country = "Hungary"
+
+[node name="Slovakia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 407, 78 )
+texture = ExtResource( 58 )
+centered = false
+script = ExtResource( 12 )
+Country = "Slovakia"
+
+[node name="Estonia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 412, 54 )
+texture = ExtResource( 57 )
+centered = false
+script = ExtResource( 12 )
+Country = "Estonia"
+
+[node name="Latvia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 412, 58 )
+texture = ExtResource( 62 )
+centered = false
+script = ExtResource( 12 )
+Country = "Latvia"
+
+[node name="Lithuania" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 412, 62 )
+texture = ExtResource( 74 )
+centered = false
+script = ExtResource( 12 )
+Country = "Lithuania"
+
+[node name="Belarus" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 418, 62 )
+texture = ExtResource( 56 )
+centered = false
+script = ExtResource( 12 )
+Country = "Belarus"
+
+[node name="Ukraine" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 416, 71 )
+texture = ExtResource( 59 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ukraine"
+
+[node name="Moldova" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 426, 80 )
+texture = ExtResource( 65 )
+centered = false
+script = ExtResource( 12 )
+Country = "Moldova"
+
+[node name="Romania" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 414, 81 )
+texture = ExtResource( 64 )
+centered = false
+script = ExtResource( 12 )
+Country = "Romania"
+
+[node name="Bulgaria" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 418, 91 )
+texture = ExtResource( 60 )
+centered = false
+script = ExtResource( 12 )
+Country = "Bulgaria"
+
+[node name="Serbia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 411, 86 )
+texture = ExtResource( 69 )
+centered = false
+script = ExtResource( 12 )
+Country = "Serbia"
+
+[node name="Slovenia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 401, 84 )
+texture = ExtResource( 70 )
+centered = false
+script = ExtResource( 12 )
+Country = "Slovenia"
+
+[node name="Croatia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 401, 85 )
+texture = ExtResource( 76 )
+centered = false
+script = ExtResource( 12 )
+Country = "Croatia"
+
+[node name="Bosnia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 405, 88 )
+texture = ExtResource( 66 )
+centered = false
+script = ExtResource( 12 )
+Country = "Bosnia & Hezergovina"
+
+[node name="Montenegro" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 411, 92 )
+texture = ExtResource( 75 )
+centered = false
+script = ExtResource( 12 )
+Country = "Montenegro"
+
+[node name="Albania" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 412, 95 )
+texture = ExtResource( 71 )
+centered = false
+script = ExtResource( 12 )
+Country = "Albania"
+
+[node name="NorthMacedonia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 415, 95 )
+texture = ExtResource( 63 )
+centered = false
+script = ExtResource( 12 )
+Country = "North Macedonia"
+
+[node name="Greece" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 414, 97 )
+texture = ExtResource( 81 )
+centered = false
+script = ExtResource( 12 )
+Country = "Greece"
+
+[node name="Turkey" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 425, 97 )
+texture = ExtResource( 80 )
+centered = false
+script = ExtResource( 12 )
+Country = "Turkey"
+
+[node name="Georgia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 452, 92 )
+texture = ExtResource( 72 )
+centered = false
+script = ExtResource( 12 )
+Country = "Georgia"
+
+[node name="Armenia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 460, 98 )
+texture = ExtResource( 68 )
+centered = false
+script = ExtResource( 12 )
+Country = "Armenia"
+
+[node name="Azerbaijan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 463, 96 )
+texture = ExtResource( 73 )
+centered = false
+script = ExtResource( 12 )
+Country = "Azerbaijan"
+
+[node name="Kazakhstan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 462, 64 )
+texture = ExtResource( 79 )
+centered = false
+script = ExtResource( 12 )
+Country = "Kazakhstan"
+
+[node name="Uzbekistan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 482, 87 )
+texture = ExtResource( 55 )
+centered = false
+script = ExtResource( 12 )
+Country = "Uzbekistan"
+
+[node name="Kyrgystan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 513, 93 )
+texture = ExtResource( 78 )
+centered = false
+script = ExtResource( 12 )
+Country = "Kyrgystan"
+
+[node name="Tajikistan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 508, 98 )
+texture = ExtResource( 67 )
+centered = false
+script = ExtResource( 12 )
+Country = "Tajikistan"
+
+[node name="Turkmenistan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 477, 94 )
+texture = ExtResource( 77 )
+centered = false
+script = ExtResource( 12 )
+Country = "Turkmenistan"
+
+[node name="Iran" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 462, 102 )
+texture = ExtResource( 82 )
+centered = false
+script = ExtResource( 12 )
+Country = "Iran"
+
+[node name="Iraq" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 453, 109 )
+texture = ExtResource( 91 )
+centered = false
+script = ExtResource( 12 )
+Country = "Iraq"
+
+[node name="Kuwait" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 469, 126 )
+texture = ExtResource( 89 )
+centered = false
+script = ExtResource( 12 )
+Country = "Kuwait"
+
+[node name="Syria" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 446, 109 )
+texture = ExtResource( 86 )
+centered = false
+script = ExtResource( 12 )
+Country = "Syria"
+
+[node name="Lebanon" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 445, 115 )
+texture = ExtResource( 90 )
+centered = false
+script = ExtResource( 12 )
+Country = "Lebanon"
+
+[node name="Israel" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 444, 119 )
+texture = ExtResource( 85 )
+centered = false
+script = ExtResource( 12 )
+Country = "Israel"
+
+[node name="Jordan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 446, 118 )
+texture = ExtResource( 92 )
+centered = false
+script = ExtResource( 12 )
+Country = "Jordan"
+
+[node name="SaudiArabia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 445, 121 )
+texture = ExtResource( 84 )
+centered = false
+script = ExtResource( 12 )
+Country = "Saudi Arabia"
+
+[node name="Qatar" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 480, 135 )
+texture = ExtResource( 93 )
+centered = false
+script = ExtResource( 12 )
+Country = "Qatar"
+
+[node name="UAE" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 482, 136 )
+texture = ExtResource( 88 )
+centered = false
+script = ExtResource( 12 )
+Country = "United Arab Emirates"
+
+[node name="Oman" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 484, 135 )
+texture = ExtResource( 83 )
+centered = false
+script = ExtResource( 12 )
+Country = "Oman"
+
+[node name="Yemen" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 464, 154 )
+texture = ExtResource( 87 )
+centered = false
+script = ExtResource( 12 )
+Country = "Yemen"
+
+[node name="Afghanistan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 498, 105 )
+texture = ExtResource( 98 )
+centered = false
+script = ExtResource( 12 )
+Country = "Afghanistan"
+
+[node name="Pakistan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 500, 108 )
+texture = ExtResource( 109 )
+centered = false
+script = ExtResource( 12 )
+Country = "Pakistan"
+
+[node name="China" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 521, 68 )
+texture = ExtResource( 94 )
+centered = false
+script = ExtResource( 12 )
+Country = "China"
+
+[node name="Mongolia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 541, 71 )
+texture = ExtResource( 95 )
+centered = false
+script = ExtResource( 12 )
+Country = "Mongolia"
+
+[node name="NorthKorea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 624, 94 )
+texture = ExtResource( 101 )
+centered = false
+script = ExtResource( 12 )
+Country = "North Korea"
+
+[node name="SouthKorea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 630, 105 )
+texture = ExtResource( 96 )
+centered = false
+script = ExtResource( 12 )
+Country = "North Korea"
+
+[node name="Japan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 636, 87 )
+texture = ExtResource( 102 )
+centered = false
+script = ExtResource( 12 )
+Country = "Japan"
+
+[node name="India" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 517, 112 )
+texture = ExtResource( 107 )
+centered = false
+script = ExtResource( 12 )
+Country = "India"
+
+[node name="Nepal" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 541, 125 )
+texture = ExtResource( 97 )
+centered = false
+script = ExtResource( 12 )
+Country = "Nepal"
+
+[node name="Bhutan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 560, 130 )
+texture = ExtResource( 105 )
+centered = false
+script = ExtResource( 12 )
+Country = "Bhutan"
+
+[node name="Bangladesh" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 559, 134 )
+texture = ExtResource( 99 )
+centered = false
+script = ExtResource( 12 )
+Country = "Bangladesh"
+
+[node name="Myanmar" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 568, 130 )
+texture = ExtResource( 106 )
+centered = false
+script = ExtResource( 12 )
+Country = "Myanmar"
+
+[node name="Thailand" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 580, 150 )
+texture = ExtResource( 103 )
+centered = false
+script = ExtResource( 12 )
+Country = "Thailand"
+
+[node name="Laos" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 586, 145 )
+texture = ExtResource( 111 )
+centered = false
+script = ExtResource( 12 )
+Country = "Laos"
+
+[node name="Cambodia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 592, 164 )
+texture = ExtResource( 100 )
+centered = false
+script = ExtResource( 12 )
+Country = "Cambodia"
+
+[node name="Vietnam" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 589, 143 )
+texture = ExtResource( 110 )
+centered = false
+script = ExtResource( 12 )
+Country = "Vietnam"
+
+[node name="Phillipines" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 627, 149 )
+texture = ExtResource( 104 )
+centered = false
+script = ExtResource( 12 )
+Country = "Phillipines"
+
+[node name="Malaysia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 587, 183 )
+texture = ExtResource( 112 )
+centered = false
+script = ExtResource( 12 )
+Country = "Malaysia"
+
+[node name="Brunei" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 621, 187 )
+texture = ExtResource( 108 )
+centered = false
+script = ExtResource( 12 )
+Country = "Brunei"
+
+[node name="Indonesia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 577, 186 )
+texture = ExtResource( 113 )
+centered = false
+script = ExtResource( 12 )
+Country = "Indonesia"
+
+[node name="PapuaNewGuinea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 676, 204 )
+texture = ExtResource( 131 )
+centered = false
+script = ExtResource( 12 )
+Country = "Papua New Guinea"
+
+[node name="Australia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 611, 226 )
+texture = ExtResource( 126 )
+centered = false
+script = ExtResource( 12 )
+Country = "Australia"
+
+[node name="NewZealand" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 688, 285 )
+texture = ExtResource( 127 )
+centered = false
+script = ExtResource( 12 )
+Country = "New Zealand"
+
+[node name="Egypt" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 424, 122 )
+texture = ExtResource( 128 )
+centered = false
+script = ExtResource( 12 )
+Country = "Egypt"
+
+[node name="Libya" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 392, 119 )
+texture = ExtResource( 129 )
+centered = false
+script = ExtResource( 12 )
+Country = "Libya"
+
+[node name="Tunisia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 388, 109 )
+texture = ExtResource( 133 )
+centered = false
+script = ExtResource( 12 )
+Country = "Tunisia"
+
+[node name="Algeria" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 354, 109 )
+texture = ExtResource( 134 )
+centered = false
+script = ExtResource( 12 )
+Country = "Algeria"
+
+[node name="Morroco" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 335, 112 )
+texture = ExtResource( 116 )
+centered = false
+script = ExtResource( 12 )
+Country = "Morroco"
+
+[node name="Mauritania" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 335, 133 )
+texture = ExtResource( 123 )
+centered = false
+script = ExtResource( 12 )
+Country = "Mauritania"
+
+[node name="Mali" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 345, 139 )
+texture = ExtResource( 118 )
+centered = false
+script = ExtResource( 12 )
+Country = "Mali"
+
+[node name="Niger" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 372, 143 )
+texture = ExtResource( 130 )
+centered = false
+script = ExtResource( 12 )
+Country = "Niger"
+
+[node name="Chad" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 401, 143 )
+texture = ExtResource( 139 )
+centered = false
+script = ExtResource( 12 )
+Country = "Chad"
+
+[node name="Sudan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 419, 143 )
+texture = ExtResource( 136 )
+centered = false
+script = ExtResource( 12 )
+Country = "Sudan"
+
+[node name="BurkinaFaso" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 359, 164 )
+texture = ExtResource( 140 )
+centered = false
+script = ExtResource( 12 )
+Country = "Burkina Faso"
+
+[node name="Senegal" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 334, 160 )
+texture = ExtResource( 141 )
+centered = false
+script = ExtResource( 12 )
+Country = "Senegal"
+
+[node name="Gambia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 335, 167 )
+texture = ExtResource( 137 )
+centered = false
+script = ExtResource( 12 )
+Country = "Gambia"
+
+[node name="Guinea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 339, 170 )
+texture = ExtResource( 142 )
+centered = false
+script = ExtResource( 12 )
+Country = "Guinea"
+
+[node name="GuineaBissau" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 335, 170 )
+texture = ExtResource( 143 )
+centered = false
+script = ExtResource( 12 )
+Country = "Guinea-Bissau"
+
+[node name="SierraLeone" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 342, 176 )
+texture = ExtResource( 146 )
+centered = false
+script = ExtResource( 12 )
+Country = "Sierra Leone"
+
+[node name="Liberia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 346, 180 )
+texture = ExtResource( 145 )
+centered = false
+script = ExtResource( 12 )
+Country = "Liberia"
+
+[node name="IvoryCoast" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 353, 174 )
+texture = ExtResource( 147 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ivory Coast"
+
+[node name="Ghana" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 364, 173 )
+texture = ExtResource( 117 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ghana"
+
+[node name="Togo" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 371, 173 )
+texture = ExtResource( 148 )
+centered = false
+script = ExtResource( 12 )
+Country = "Togo"
+
+[node name="Benin" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 373, 170 )
+texture = ExtResource( 150 )
+centered = false
+script = ExtResource( 12 )
+Country = "Benin"
+
+[node name="Nigeria" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 377, 167 )
+texture = ExtResource( 151 )
+centered = false
+script = ExtResource( 12 )
+Country = "Nigeria"
+
+[node name="Cameroon" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 390, 169 )
+texture = ExtResource( 144 )
+centered = false
+script = ExtResource( 12 )
+Country = "Cameroon"
+
+[node name="Car" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 403, 174 )
+texture = ExtResource( 153 )
+centered = false
+script = ExtResource( 12 )
+Country = "Central African Republic"
+
+[node name="SouthSudan" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 422, 171 )
+texture = ExtResource( 155 )
+centered = false
+script = ExtResource( 12 )
+Country = "South Sudan"
+
+[node name="Ethiopia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 443, 164 )
+texture = ExtResource( 135 )
+centered = false
+script = ExtResource( 12 )
+Country = "Ethiopia"
+
+[node name="Eritrea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 450, 156 )
+texture = ExtResource( 125 )
+centered = false
+script = ExtResource( 12 )
+Country = "Eritrea"
+
+[node name="Djibouti" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 462, 169 )
+texture = ExtResource( 120 )
+centered = false
+script = ExtResource( 12 )
+Country = "Djibouti"
+
+[node name="Somalia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 461, 171 )
+texture = ExtResource( 138 )
+centered = false
+script = ExtResource( 12 )
+Country = "Somalia"
+
+[node name="EquatorialGuinea" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 390, 192 )
+texture = ExtResource( 115 )
+centered = false
+script = ExtResource( 12 )
+Country = "Equatorial Guinea"
+
+[node name="Gabon" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 390, 195 )
+texture = ExtResource( 158 )
+centered = false
+script = ExtResource( 12 )
+Country = "Gabon"
+
+[node name="Congo" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 396, 192 )
+texture = ExtResource( 160 )
+centered = false
+script = ExtResource( 12 )
+Country = "Republic of the Congo"
+
+[node name="DRC" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 398, 188 )
+texture = ExtResource( 121 )
+centered = false
+script = ExtResource( 12 )
+Country = "Democratic Republic of Congo"
+
+[node name="Uganda" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 436, 190 )
+texture = ExtResource( 161 )
+centered = false
+script = ExtResource( 12 )
+Country = "Uganda"
+
+[node name="Kenya" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 446, 190 )
+texture = ExtResource( 119 )
+centered = false
+script = ExtResource( 12 )
+Country = "Kenya"
+
+[node name="Tanzania" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 436, 203 )
+texture = ExtResource( 156 )
+centered = false
+script = ExtResource( 12 )
+Country = "Tanzania"
+
+[node name="Rwanda" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 434, 204 )
+texture = ExtResource( 165 )
+centered = false
+script = ExtResource( 12 )
+Country = "Rwanda"
+
+[node name="Burundi" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 435, 206 )
+texture = ExtResource( 124 )
+centered = false
+script = ExtResource( 12 )
+Country = "Burundi"
+
+[node name="Angola" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 397, 212 )
+texture = ExtResource( 162 )
+centered = false
+script = ExtResource( 12 )
+Country = "Angola"
+
+[node name="Zambia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 419, 221 )
+texture = ExtResource( 157 )
+centered = false
+script = ExtResource( 12 )
+Country = "Zambia"
+
+[node name="Mozambique" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 437, 227 )
+texture = ExtResource( 154 )
+centered = false
+script = ExtResource( 12 )
+Country = "Mozambique"
+
+[node name="Malawi" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 442, 224 )
+texture = ExtResource( 152 )
+centered = false
+script = ExtResource( 12 )
+Country = "Malawi"
+
+[node name="Namibia" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 397, 243 )
+texture = ExtResource( 122 )
+centered = false
+script = ExtResource( 12 )
+Country = "Namibia"
+
+[node name="Botswana" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 414, 245 )
+texture = ExtResource( 114 )
+centered = false
+script = ExtResource( 12 )
+Country = "Botswana"
+
+[node name="Zimbabwe" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 426, 240 )
+texture = ExtResource( 149 )
+centered = false
+script = ExtResource( 12 )
+Country = "Zimbabwe"
+
+[node name="SouthAfrica" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 407, 256 )
+texture = ExtResource( 164 )
+centered = false
+script = ExtResource( 12 )
+Country = "South Africa"
+
+[node name="Lesotho" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 429, 272 )
+texture = ExtResource( 159 )
+centered = false
+script = ExtResource( 12 )
+Country = "Lesotho"
+
+[node name="Eswatini" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 437, 265 )
+texture = ExtResource( 132 )
+centered = false
+script = ExtResource( 12 )
+Country = "Eswatini"
+
+[node name="Madagascar" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 465, 229 )
+texture = ExtResource( 163 )
+centered = false
+script = ExtResource( 12 )
+Country = "Madagascar"
