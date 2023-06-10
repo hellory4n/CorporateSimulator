@@ -1,15 +1,19 @@
+using System.Collections.Generic;
+
 public class AchievementSave {
-    public bool CorporateSimulator = false;
-    public bool Multimillionaire = false;
-    public bool Billionaire = false;
-    public bool BusinessBoomin = false;
-    public bool WealthBeyondComprehension = false;
-    public bool Oopsie = false;
-    public bool TogetherStrong = false;
-    public bool WorkHarderNotSmarter = false;
-    public bool Untouchable = false;
-    public bool SussyBusinessAmongstUs = false;
-    public bool DecadeOfProgress = false;
-    public bool CorporateEmpire = false;
-    public bool Unstoppable = false;
+    public Dictionary<string, bool> Achievements = new Dictionary<string, bool>{
+        {"Corporate Simulator", false},
+        {"Multimillionaire", false},
+        {"Billionaire", false},
+        {"Business Boomin'", false},
+        {"Wealth Beyond Comprehension", false},
+        {"Oopsie", false},
+        {"Together Strong", false},
+        {"Work Harder, Not Smarter", false},
+        {"Untouchable", false},
+        {"Sussy Business Amongst Us", false},
+        {"Decade of Progress", false},
+        {"Corporate Empire", false},
+        {"Unstoppable", false}
+    };
 }

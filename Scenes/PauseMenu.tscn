@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/UI/Pause/Continue.cs" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Scripts/UI/Pause/Save.cs" type="Script" id=9]
 [ext_resource path="res://Scripts/UI/Pause/Load.cs" type="Script" id=10]
 [ext_resource path="res://Scripts/UI/Pause/New.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/UI/Pause/AchievementsOpen.cs" type="Script" id=12]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -167,11 +168,34 @@ custom_fonts/font = SubResource( 4 )
 text = "Credits"
 valign = 1
 
-[node name="Exit" type="TextureButton" parent="."]
+[node name="Achievements" type="TextureButton" parent="."]
 margin_left = 115.0
 margin_top = 535.0
 margin_right = 515.0
 margin_bottom = 610.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Achievements"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_left = 15.0
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Achievements"
+valign = 1
+
+[node name="Exit" type="TextureButton" parent="."]
+margin_left = 115.0
+margin_top = 620.0
+margin_right = 515.0
+margin_bottom = 695.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )

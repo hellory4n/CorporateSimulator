@@ -331,7 +331,8 @@ public class Game : Node2D {
         != null || GetNodeOrNull<Node2D>("/root/CreditsThing") != null ||
         GetNodeOrNull<Node2D>("/root/PauseThingy") != null || GetNodeOrNull<Node2D>("/root/Tutorial") != null ||
         GetNodeOrNull<Node2D>("/root/Settings") != null || GetNodeOrNull<Node2D>("/root/Bankrupt") != null ||
-        GetNodeOrNull<Node2D>("/root/Lab") != null || GetNodeOrNull<Node2D>("/root/Government") != null)
+        GetNodeOrNull<Node2D>("/root/Lab") != null || GetNodeOrNull<Node2D>("/root/Government") != null ||
+        GetNodeOrNull<Node2D>("/root/Achievements") != null)
             Global.PausedTime = true;
         else
             Global.PausedTime = false;
