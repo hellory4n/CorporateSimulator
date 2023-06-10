@@ -4,6 +4,7 @@ using System;
 public class SettingsLoader : Node2D {
     public override void _Ready() {
         Global.Settings = Savior.CreateFileStuff();
+        Global.Achievements = Savior.CreateAchievements();
         
         // music :)
         if (Global.Settings.Music) {

@@ -25,8 +25,6 @@ class Savior {
         return settings;
     }
 
-
-
     public static void SaveSettings(SettingsSave settings) {
         File file = new File();
         file.Open("user://settings.json", File.ModeFlags.Write);
@@ -112,5 +110,35 @@ class Savior {
         );
         file.Close();
         return obama;
+    }
+
+    public static AchievementSave CreateAchievements() {
+        // ben
+        File file = new File();
+        AchievementSave achievements = new AchievementSave();
+
+        if (!file.FileExists("user://achievements.json")) {
+            file.Open("user://achievements.json", File.ModeFlags.Write);
+            file.StoreString(
+                JsonConvert.SerializeObject(achievements)
+            );
+            file.Close();
+        } else {
+            file.Open("user://achievements.json", File.ModeFlags.Read);
+            achievements = JsonConvert.DeserializeObject<AchievementSave>(
+                file.GetAsText()
+            );
+            file.Close();
+        }
+
+        return achievements;
+    }
+
+    public static void SaveAchievements(AchievementSave achievements) {
+        File file = new File();
+        file.Open("user://achievements.json", File.ModeFlags.Write);
+        file.StoreString(
+            JsonConvert.SerializeObject(achievements)
+        );
     }
 }
