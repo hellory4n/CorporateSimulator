@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/business.png" type="Texture" id=2]
@@ -36,10 +36,6 @@
 [ext_resource path="res://Assets/Government.png" type="Texture" id=34]
 [ext_resource path="res://Assets/GovernmentPressed.png" type="Texture" id=35]
 [ext_resource path="res://Scripts/UI/Government/GovernmentOpen.cs" type="Script" id=36]
-[ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=37]
-[ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=38]
-[ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=39]
-[ext_resource path="res://Scripts/UI/Achievements/AchievementTest.cs" type="Script" id=40]
 
 [sub_resource type="InputEventKey" id=5]
 pressed = true
@@ -61,13 +57,6 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = SubResource( 3 )
-
-[sub_resource type="DynamicFontData" id=9]
-font_path = "res://Uhh/Ubuntu-Bold.ttf"
-
-[sub_resource type="DynamicFont" id=10]
-size = 40
-font_data = SubResource( 9 )
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -196,26 +185,3 @@ texture_normal = ExtResource( 34 )
 texture_pressed = ExtResource( 35 )
 texture_hover = ExtResource( 33 )
 script = ExtResource( 36 )
-
-[node name="AchievementTest" type="TextureButton" parent="."]
-margin_left = 288.0
-margin_top = 399.0
-margin_right = 688.0
-margin_bottom = 474.0
-texture_normal = ExtResource( 37 )
-texture_pressed = ExtResource( 38 )
-texture_hover = ExtResource( 39 )
-script = ExtResource( 40 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Label" type="Label" parent="AchievementTest"]
-anchor_right = 0.002
-anchor_bottom = 0.011
-margin_right = 399.2
-margin_bottom = 74.175
-custom_fonts/font = SubResource( 10 )
-text = "achievement test"
-align = 1
-valign = 1

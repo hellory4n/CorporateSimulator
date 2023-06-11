@@ -33,3 +33,4 @@ custom_fonts/font = SubResource( 2 )
 text = "uhhhh"
 align = 1
 valign = 1
+autowrap = true

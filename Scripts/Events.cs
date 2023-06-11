@@ -1686,6 +1686,157 @@ public class Events : Node2D {
             Global.ForestCreation = false;
         }
         #endregion
+        #region unlock achievement sheet
+        if (!Global.Achievements.Achievements["Multimillionaire"] && Global.Money > 100000000) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Multimillionaire");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Multimillionaire"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Billionaire"] && Global.Money > 1000000000) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Billionaire");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Billionaire"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Business Boomin'"] && Global.Money > 100000000000) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Business Boomin'");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Business Boomin'"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Wealth Beyond Comprehension"] && Global.Money > 1000000000000) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Wealth Beyond Comprehension");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Wealth Beyond Comprehension"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+        
+        if (!Global.Achievements.Achievements["Oopsie"] && Global.Money < -50000) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Oopsie");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Oopsie"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Together Strong"] && Global.Employees.Count > 99) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Together Strong");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Together Strong"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Work Harder, Not Smarter"]) {
+            int stupid = 0;
+            foreach (var bruh in Global.Employees) {
+                if (bruh.Rating == 0)
+                    stupid++;
+            }
+            if (stupid > 24) {
+                var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+                var OK = (AchievementUnlock)yes.Instance();
+                OK.Init("Work Harder, Not Smarter");
+                OK.ZIndex = 420;
+                OK.Position = new Vector2(440, -75);
+                GetTree().Root.AddChild(OK);
+                Global.Achievements.Achievements["Work Harder, Not Smarter"] = true;
+                Savior.SaveAchievements(Global.Achievements);
+            }
+        }
+
+        if (!Global.Achievements.Achievements["Untouchable"] && Global.Reputation == 100) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Untouchable");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Untouchable"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+        
+        if (!Global.Achievements.Achievements["Sussy Business Amongst Us"] && Global.Reputation < 15) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Suspicious Business Amongst Us");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Sussy Business Amongst Us"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Decade of Progress"] && Global.Year > 9) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Decade of Progress");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Decade of Progress"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Corporate Empire"] && Global.Invaded.Count > 24) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Corporate Empire");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Corporate Empire"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+        #endregion
+        
+        if (!Global.Achievements.Achievements["Unstoppable"] && Global.Invaded.Count > 78) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Unstoppable");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Unstoppable"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
+
+        if (!Global.Achievements.Achievements["Corporate Simulator"] && Global.Invaded.Count == 157) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
+            var OK = (AchievementUnlock)yes.Instance();
+            OK.Init("Corporate Simulator");
+            OK.ZIndex = 420;
+            OK.Position = new Vector2(440, -75);
+            GetTree().Root.AddChild(OK);
+            Global.Achievements.Achievements["Corporate Simulator"] = true;
+            Savior.SaveAchievements(Global.Achievements);
+        }
         base._Process(delta);
     }
 }

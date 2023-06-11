@@ -410,7 +410,7 @@ margin_top = 66.0
 margin_right = 870.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 26 )
-text = "Have 10 employees with a rating of 0/10"
+text = "Have 25 employees with a rating of 0/10"
 align = 1
 valign = 1
 
@@ -562,7 +562,7 @@ margin_top = 66.0
 margin_right = 870.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 26 )
-text = "Invade an entire continent"
+text = "Invade 25 countries"
 align = 1
 valign = 1
 
