@@ -11,7 +11,7 @@ public class AchievementTest : TextureButton {
         var OK = (AchievementUnlock)yes.Instance();
         OK.Init("Corporate Simulator");
         OK.ZIndex = 420;
-        OK.Position = new Vector2(440, 0);
+        OK.Position = new Vector2(440, -75);
         GetTree().Root.AddChild(OK);
     }
 }

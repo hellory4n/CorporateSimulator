@@ -29,6 +29,10 @@ public class RealDeleteEverything : TextureButton {
             fart.Remove("user://game7.json");
         if (farted.FileExists("user://game8.json"))
             fart.Remove("user://game8.json");
+        if (farted.FileExists("user://legal_stuff"))
+            fart.Remove("user://legal_stuff");
+        if (farted.FileExists("user://achievements.json"))
+            fart.Remove("user://achievements.json");
         
         GetTree().Quit();
     }

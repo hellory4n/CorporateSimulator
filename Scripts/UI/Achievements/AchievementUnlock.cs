@@ -4,6 +4,10 @@ using System;
 public class AchievementUnlock : Node2D {
     string achievement;
     Texture icon;
+    // 0: hi
+    // 1: doing nothing
+    // 2: ok bye
+    int animationMode = 0;
 
     public void Init(string achievementThatIsCool) {
         achievement = achievementThatIsCool;
@@ -54,5 +58,48 @@ public class AchievementUnlock : Node2D {
 
         GetNode<Sprite>("./Fart").Texture = icon;
         GetNode<Label>("./Achievement").Text = achievement;
+
+        AudioStreamPlayer bsgksj = new AudioStreamPlayer();
+        bsgksj.Stream = ResourceLoader.Load<AudioStreamMP3>("res://Uhh/achievement.mp3");
+        bsgksj.Autoplay = true;
+        AddChild(bsgksj);
+    }
+
+    public override void _Process(float delta) {
+        // cool animation
+        if (animationMode == 0) {
+            if (Position.y > 0) {
+                // wait a bit before going away
+                Timer timer = new Timer();
+                timer.Connect("timeout", this, nameof(Bruh));
+                timer.WaitTime = 3;
+                timer.OneShot = true;
+                AddChild(timer);
+                timer.Start();
+                Position = new Vector2(440, 0);
+                animationMode = 1;
+            }
+
+            if (Position.y < 0) {
+                Position = new Vector2(Position.x, Position.y + 200 * delta);
+            }
+        } else if (animationMode == 2) {
+            Position = new Vector2(Position.x, Position.y - 200 * delta);
+        }
+        base._Process(delta);
+    }
+
+    public void Bruh() {
+        animationMode = 2;
+        Timer timer = new Timer();
+        timer.Connect("timeout", this, nameof(Excrutiation));
+        timer.WaitTime = 10;
+        timer.OneShot = true;
+        AddChild(timer);
+        timer.Start();
+    }
+
+    public void Excrutiation() {
+        QueueFree();
     }
 }
