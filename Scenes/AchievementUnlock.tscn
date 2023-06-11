@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/AchievementYouHaveUnlockedSomething.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/UI/Achievements/AchievementUnlock.cs" type="Script" id=2]
+[ext_resource path="res://Assets/Store/White.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[node name="AchievementUnlock" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AchievementYouHaveUnlockedSomething" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Fart" type="Sprite" parent="."]
+position = Vector2( 40, 10 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Achievement" type="Label" parent="."]
+margin_left = 90.0
+margin_right = 395.0
+margin_bottom = 70.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "uhhhh"
+align = 1
+valign = 1
