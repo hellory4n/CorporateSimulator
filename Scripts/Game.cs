@@ -233,6 +233,9 @@ public class Game : Node2D {
                     Global.Money += 1000000000;
                 }
 
+                // the more countries, the more money
+                Global.Money += Global.Invaded.Count*5000000000;
+
                 // do the monthly money thing
                 if (Global.LabUnlocked) {
                     Label monthlyMoneyThing = GetNode<Label>("MonthlyMoneyStuff");

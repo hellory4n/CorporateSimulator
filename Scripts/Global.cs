@@ -225,4 +225,6 @@ public class Global : Node2D {
     public static string StoreGift = "nothing";
     public static string InvadedCountry = "sussy nation amongst us";
     public static AchievementSave Achievements;
+    public static bool AiDomination = false;
+    public static bool GameFinished = false;
 }

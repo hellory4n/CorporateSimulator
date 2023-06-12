@@ -14,9 +14,9 @@ public class Events : Node2D {
                 Global.Products[Global.Products.Count-1]));
             object garbage = Global.Products[Global.Products.Count-1];
             dynamic garbageDynamic = Global.Products[Global.Products.Count-1];
-            int price = 0;
+            long price = 0;
             double saleRate = 160;
-            int sales = 100;
+            long sales = 100;
 
             // garbage price
             if (garbageProduct.Type == "computer") {
@@ -1814,7 +1814,6 @@ public class Events : Node2D {
             Global.Achievements.Achievements["Corporate Empire"] = true;
             Savior.SaveAchievements(Global.Achievements);
         }
-        #endregion
         
         if (!Global.Achievements.Achievements["Unstoppable"] && Global.Invaded.Count > 78) {
             var yes = (PackedScene)ResourceLoader.Load("res://Scenes/AchievementUnlock.tscn");
@@ -1837,6 +1836,27 @@ public class Events : Node2D {
             Global.Achievements.Achievements["Corporate Simulator"] = true;
             Savior.SaveAchievements(Global.Achievements);
         }
+        #endregion
+        #region ai takes over the world
+        if (Global.Year==11 && Global.Month==1 && Global.Week==1 && !Global.AiDomination && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("email", "AiDomination");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.AiDomination = true;
+        }
+        #endregion
+        #region world domination
+        if (Global.Invaded.Count == 157 && !Global.GameFinished && !Global.PausedTime) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Ball.tscn");
+            Ball OK = (Ball)yes.Instance();
+            OK.Init("end", "GameFinished");
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+            Global.AiDomination = true;
+        }
+        #endregion
         base._Process(delta);
     }
 }

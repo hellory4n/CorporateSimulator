@@ -362,7 +362,7 @@ position = Vector2( 246, 185 )
 texture = ExtResource( 24 )
 centered = false
 script = ExtResource( 12 )
-Country = "Guyana"
+Country = "Suriname"
 
 [node name="Ecuador" type="Sprite" parent="TheNationsOfTheWorld"]
 position = Vector2( 195, 196 )
