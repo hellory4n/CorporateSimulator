@@ -7,7 +7,8 @@ public class MusicManager : AudioStreamPlayer {
         "Pain LLC",
         "Tax Fraud",
         "Very Chill Moosic for Taking Over the World",
-        "We Hate Customers"
+        "We Hate Customers",
+        "Slavery"
     };
     string currentMoosic = "none";
 
