@@ -169,6 +169,32 @@ public class LoadGame : TextureButton {
                 Global.UranusLanding = false;
                 Global.UranusState = false;
                 Global.SpaceZPissRingFinish = false;
+                Global.TimeSpeedMenu = false;
+                Global.TimeSpeed = 1;
+                Global.RipAllGameData = false;
+                Global.Rooster = false;
+                Global.Hola = false;
+                Global.GameStation5Pro = false;
+                Global.XcubeSeriesZ = false;
+                Global.WeUs = false;
+                Global.XcubeWrong = false;
+                Global.GameStation6 = false;
+                Global.Standing = false;
+                Global.StandingRip = false;
+                Global.WeAll = false;
+                Global.YearOfTheGame = false;
+                Global.DiscontinuedProduct = false;
+                Global.DarkStoneInvestment = false;
+                Global.DarkStonePay = false;
+                Global.CompanyThatWillSoonExplode = "none :)";
+                Global.Lawsuits = false;
+                Global.HumanRelations = false;
+                Global.TechStuff = false;
+                Global.ForestCreation = false;
+                Global.StoreGift = "nothing";
+                Global.InvadedCountry = "sussy nation amongst us";
+                Global.AiDomination = false;
+                Global.GameFinished = false;
                 #endregion
 
                 Game game_ = (Game)game.Instance();

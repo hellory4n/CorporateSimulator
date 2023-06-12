@@ -19,7 +19,11 @@ public class ResearchButton : TextureButton {
     }
 
     public void Click() {
-        if (Global.ResearchPoints >= ok.Price) { // TODO: fix a thing with robert elstem
+        int coolPrice = ok.Price;
+        if (Global.Advisor == "robert elstem")
+            ok.Price = ok.Price-((int)ok.Price/10);
+
+        if (Global.ResearchPoints >= coolPrice) {
             Global.Researched.Add(ok);
             Global.UnlockedResearch.Remove(ok);
             // robert elstem advisor again

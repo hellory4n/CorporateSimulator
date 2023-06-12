@@ -164,6 +164,19 @@ public class Events : Node2D {
             GD.Print("price: " + price);*/
         }
         #endregion
+        #region Bankrupt
+        if (Global.Money < -50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Bankrupt.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            Global.PausedTime = true;
+            GetTree().Root.AddChild(OK);
+            // you can't play when you're bankrupt
+            GetNode<Node2D>("/root/Game").QueueFree();
+            if (GetNodeOrNull<Timer>("/root/Autosave") != null)
+                GetNode<Timer>("/root/Autosave").QueueFree();
+            QueueFree();
+        }
+        #endregion
         #region Debt
         if (Global.Money < 0 && Global.DebtOno == 0)
             Global.DebtOno = 1;
@@ -175,14 +188,6 @@ public class Events : Node2D {
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
             Global.DebtOno = 2;
-        }
-        #endregion
-        #region Bankrupt
-        if (Global.Money < -50000 && GetNodeOrNull<Node2D>("/root/Bankrupt") == null && Global.DebtOno < 3) {
-            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/Bankrupt.tscn");
-            Node2D OK = (Node2D)yes.Instance();
-            Global.PausedTime = true;
-            GetTree().Root.AddChild(OK);
         }
         #endregion
         #region No reputation
