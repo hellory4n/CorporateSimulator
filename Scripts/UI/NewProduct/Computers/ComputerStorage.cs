@@ -185,7 +185,7 @@ public class ComputerStorage : VBoxContainer {
             cpus.Add(new List<object>{"HDD", "32000", "2", "700"});
             cpus.Add(new List<object>{"HDD", "16000", "1", "600"});
             cpus.Add(new List<object>{"HDD", "8000", "0", "500"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"SSD 2", "4000000", "10", "2600"});
             cpus.Add(new List<object>{"SSD 2", "2000000", "9", "2400"});
             cpus.Add(new List<object>{"SSD 2", "1000000", "8", "2200"});

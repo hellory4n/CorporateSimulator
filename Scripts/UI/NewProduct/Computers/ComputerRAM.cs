@@ -102,7 +102,7 @@ public class ComputerRAM : VBoxContainer {
             cpus.Add(new List<object>{"128", "200", "2"});
             cpus.Add(new List<object>{"64", "100", "1"});
             cpus.Add(new List<object>{"32", "70", "0"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"65536", "1100", "10"});
             cpus.Add(new List<object>{"32768", "1000", "9"});
             cpus.Add(new List<object>{"16384", "900", "8"});

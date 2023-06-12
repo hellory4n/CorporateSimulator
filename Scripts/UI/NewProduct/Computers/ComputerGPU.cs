@@ -514,7 +514,7 @@ public class ComputerGPU : VBoxContainer {
             cpus.Add(new List<object>{"AND", "10600", "2", "700"});
             cpus.Add(new List<object>{"AND", "10500", "1", "550"});
             cpus.Add(new List<object>{"AND", "10400", "0", "500"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"Novideo", "13K90", "10", "3800"});
             cpus.Add(new List<object>{"Novideo", "13K80", "9", "3300"});
             cpus.Add(new List<object>{"Novideo", "13K70", "8", "3000"});

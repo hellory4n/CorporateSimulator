@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Slavery.mp3-9b31da75d524bc78cba2ba994e8d6e98.mp3str"
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

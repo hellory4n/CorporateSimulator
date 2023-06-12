@@ -443,7 +443,7 @@ public class ComputerCPU : VBoxContainer {
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Furiously Fast", "10", "2000"});
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Furious", "9", "2200"});
             cpus.Add(new List<object>{"Pineapple", "Mark 9 Fast", "8", "2400"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"In Tells", "Onion u9 6th gen", "10", "2200"});
             cpus.Add(new List<object>{"In Tells", "Onion u7 6th gen", "9", "2000"});
             cpus.Add(new List<object>{"In Tells", "Onion u5 6th gen", "8", "1800"});

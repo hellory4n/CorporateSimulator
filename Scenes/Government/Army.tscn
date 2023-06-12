@@ -1,15 +1,13 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=1]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=2]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=3]
 [ext_resource path="res://Assets/SmallButtonHover.png" type="Texture" id=4]
 [ext_resource path="res://Assets/SmallButtonPressed.png" type="Texture" id=5]
-[ext_resource path="res://Assets/SliderGrab.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Dialog4.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Dialog.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/UI/Government/MilitaryUpgrade.cs" type="Script" id=8]
 [ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=9]
-[ext_resource path="res://Assets/Slider1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/SmallButton.png" type="Texture" id=11]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=12]
 [ext_resource path="res://Scripts/UI/Government/ArmyRating.cs" type="Script" id=13]
@@ -42,21 +40,6 @@ font_path = "res://Uhh/Ubuntu-Regular.ttf"
 size = 32
 font_data = SubResource( 25 )
 
-[sub_resource type="StyleBoxTexture" id=18]
-texture = ExtResource( 10 )
-region_rect = Rect2( 0, 0, 700, 75 )
-
-[sub_resource type="StyleBoxEmpty" id=21]
-
-[sub_resource type="StyleBoxEmpty" id=22]
-
-[sub_resource type="DynamicFontData" id=23]
-font_path = "res://Uhh/Ubuntu-Bold.ttf"
-
-[sub_resource type="DynamicFont" id=24]
-size = 32
-font_data = SubResource( 23 )
-
 [node name="Dialog" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
@@ -70,7 +53,7 @@ offset = Vector2( 909, 252 )
 
 [node name="Dialog" type="Sprite" parent="."]
 position = Vector2( 640, 372 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
 [node name="Title" type="Label" parent="."]
 anchor_right = 0.002
@@ -114,13 +97,14 @@ margin_bottom = 565.0
 mouse_filter = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 770.0
-margin_bottom = 1944.0
+margin_right = 870.0
+margin_bottom = 1044.0
 custom_constants/separation = 25
 
 [node name="Rating" type="Label" parent="ScrollContainer/VBoxContainer"]
-margin_right = 770.0
+margin_right = 870.0
 margin_bottom = 44.0
+rect_min_size = Vector2( 870, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Army: 6.9/10"
@@ -130,9 +114,9 @@ script = ExtResource( 13 )
 
 [node name="Soldiers" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 69.0
-margin_right = 770.0
-margin_bottom = 234.0
-rect_min_size = Vector2( 770, 165 )
+margin_right = 870.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Soldiers"]
 
@@ -152,8 +136,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $100,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Soldiers/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -174,33 +158,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Soldiers/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Soldiers/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="Ammo" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 259.0
-margin_right = 770.0
-margin_bottom = 424.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 169.0
+margin_right = 870.0
+margin_bottom = 244.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Ammo"]
 
@@ -220,8 +182,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $500,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Ammo/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -243,33 +205,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Ammo/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Ammo/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="InfantryWeapons" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 449.0
-margin_right = 770.0
-margin_bottom = 614.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 269.0
+margin_right = 870.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/InfantryWeapons"]
 
@@ -289,8 +229,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $1,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/InfantryWeapons/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -312,33 +252,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/InfantryWeapons/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/InfantryWeapons/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="ArmoredCars" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 639.0
-margin_right = 770.0
-margin_bottom = 804.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 369.0
+margin_right = 870.0
+margin_bottom = 444.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/ArmoredCars"]
 
@@ -358,8 +276,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $5,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/ArmoredCars/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -381,33 +299,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/ArmoredCars/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/ArmoredCars/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="CombatVehicles" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 829.0
-margin_right = 770.0
-margin_bottom = 994.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 469.0
+margin_right = 870.0
+margin_bottom = 544.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/CombatVehicles"]
 
@@ -427,8 +323,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $10,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/CombatVehicles/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -450,33 +346,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/CombatVehicles/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CombatVehicles/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="Artillery" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1019.0
-margin_right = 770.0
-margin_bottom = 1184.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 569.0
+margin_right = 870.0
+margin_bottom = 644.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Artillery"]
 
@@ -496,8 +370,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $50,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Artillery/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -519,33 +393,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Artillery/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Artillery/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="RPG" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1209.0
-margin_right = 770.0
-margin_bottom = 1374.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 669.0
+margin_right = 870.0
+margin_bottom = 744.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/RPG"]
 
@@ -565,8 +417,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $100,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/RPG/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -588,33 +440,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/RPG/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/RPG/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="BallisticMissiles" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1399.0
-margin_right = 770.0
-margin_bottom = 1564.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 769.0
+margin_right = 870.0
+margin_bottom = 844.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/BallisticMissiles"]
 
@@ -634,8 +464,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $500,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/BallisticMissiles/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -657,33 +487,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/BallisticMissiles/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/BallisticMissiles/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="Tanks" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1589.0
-margin_right = 770.0
-margin_bottom = 1754.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 869.0
+margin_right = 870.0
+margin_bottom = 944.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Tanks"]
 
@@ -703,8 +511,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $1,000,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Tanks/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -726,33 +534,11 @@ text = "Upgrade"
 align = 1
 valign = 1
 
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/Tanks/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Tanks/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
-valign = 1
-
 [node name="MassDestruction" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 1779.0
-margin_right = 770.0
-margin_bottom = 1944.0
-rect_min_size = Vector2( 770, 165 )
+margin_top = 969.0
+margin_right = 870.0
+margin_bottom = 1044.0
+rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/MassDestruction"]
 
@@ -772,8 +558,8 @@ custom_fonts/font = SubResource( 26 )
 text = "Each costs $5,000,000,000"
 
 [node name="Upgrade" type="TextureButton" parent="ScrollContainer/VBoxContainer/MassDestruction/Node2D"]
-margin_left = 470.0
-margin_right = 770.0
+margin_left = 570.0
+margin_right = 870.0
 margin_bottom = 75.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 5 )
@@ -793,26 +579,4 @@ margin_bottom = 75.0
 custom_fonts/font = SubResource( 6 )
 text = "Upgrade"
 align = 1
-valign = 1
-
-[node name="EpicSlider" type="HSlider" parent="ScrollContainer/VBoxContainer/MassDestruction/Node2D"]
-margin_left = 40.0
-margin_top = 90.0
-margin_right = 740.0
-margin_bottom = 165.0
-custom_icons/tick = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 18 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-min_value = 1.0
-value = 50.0
-
-[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/MassDestruction/Node2D/EpicSlider"]
-margin_left = 25.0
-margin_right = 700.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 24 )
-text = "jffsf"
 valign = 1

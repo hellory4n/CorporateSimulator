@@ -94,7 +94,7 @@ public class PhoneStorage : VBoxContainer {
             cpus.Add(new List<object>{"1024", "2", "360"});
             cpus.Add(new List<object>{"512", "1", "180"});
             cpus.Add(new List<object>{"256", "0", "90"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"524288", "10", "1200"});
             cpus.Add(new List<object>{"262144", "9", "1100"});
             cpus.Add(new List<object>{"131072", "8", "1000"});

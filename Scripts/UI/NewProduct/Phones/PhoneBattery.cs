@@ -105,7 +105,7 @@ public class PhoneBattery : VBoxContainer {
             cpus.Add(new List<object>{"24", "2", "30"});
             cpus.Add(new List<object>{"18", "1", "25"});
             cpus.Add(new List<object>{"12", "0", "20"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"78", "10", "75"});
             cpus.Add(new List<object>{"72", "9", "70"});
             cpus.Add(new List<object>{"66", "8", "65"});

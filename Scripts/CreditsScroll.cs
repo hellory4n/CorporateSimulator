@@ -11,7 +11,7 @@ public class CreditsScroll : Label {
         RectPosition = new Vector2(RectPosition.x, RectPosition.y-(50*delta));
         GD.Print(RectPosition.y);
 
-        if (RectPosition.y < -2700)
+        if (RectPosition.y < -3000)
             GetParent().QueueFree();
 
         base._Process(delta);

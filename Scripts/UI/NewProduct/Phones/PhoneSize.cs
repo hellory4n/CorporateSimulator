@@ -109,7 +109,7 @@ public class PhoneSize : VBoxContainer {
             cpus.Add(new List<object>{"7", "2", "50"});
             cpus.Add(new List<object>{"6.5", "1", "45"});
             cpus.Add(new List<object>{"6", "0", "40"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"11.5", "10", "95"});
             cpus.Add(new List<object>{"11", "9", "90"});
             cpus.Add(new List<object>{"10.5", "8", "85"});

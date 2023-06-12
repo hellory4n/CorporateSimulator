@@ -53,7 +53,7 @@ public class ComputerOS : VBoxContainer {
             cpus.Add(new List<object>{"Penguin Co", "PenguinOS 3", "9", "0"});
             cpus.Add(new List<object>{"Penguin Co", "PenguinOS 2", "8", "0"});
             cpus.Add(new List<object>{"Penguin Co", "PenguinOS", "7", "0"});
-        } else if (Global.Year == 9 || Global.Year == 10) {
+        } else if (Global.Year > 8) {
             cpus.Add(new List<object>{"Macrohard", "Doors Infinity Thrice Pro", "10", "200"});
             cpus.Add(new List<object>{"Macrohard", "Doors Infinity Thrice Home", "9", "140"});
             cpus.Add(new List<object>{"Macrohard", "Doors Infinity Twice Pro", "9", "200"});

@@ -1,4 +1,4 @@
-[gd_scene load_steps=170 format=2]
+[gd_scene load_steps=171 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -165,6 +165,7 @@
 [ext_resource path="res://Assets/World/Madagascar.png" type="Texture" id=163]
 [ext_resource path="res://Assets/World/SouthAfrica.png" type="Texture" id=164]
 [ext_resource path="res://Assets/World/Rwanda.png" type="Texture" id=165]
+[ext_resource path="res://Assets/World/SriLanka.png" type="Texture" id=166]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -873,7 +874,7 @@ position = Vector2( 630, 105 )
 texture = ExtResource( 96 )
 centered = false
 script = ExtResource( 12 )
-Country = "North Korea"
+Country = "South Korea"
 
 [node name="Japan" type="Sprite" parent="TheNationsOfTheWorld"]
 position = Vector2( 636, 87 )
@@ -888,6 +889,13 @@ texture = ExtResource( 107 )
 centered = false
 script = ExtResource( 12 )
 Country = "India"
+
+[node name="SriLanka" type="Sprite" parent="TheNationsOfTheWorld"]
+position = Vector2( 546, 175 )
+texture = ExtResource( 166 )
+centered = false
+script = ExtResource( 12 )
+Country = "Sri Lanka"
 
 [node name="Nepal" type="Sprite" parent="TheNationsOfTheWorld"]
 position = Vector2( 541, 125 )

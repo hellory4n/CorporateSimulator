@@ -696,7 +696,7 @@ public class PhoneSoc : VBoxContainer {
             cpus.Add(new List<object>{"MovieTek", "Dimension 9900", "2", "240"});
             cpus.Add(new List<object>{"MovieTek", "Dimension 9700", "1", "220"});
             cpus.Add(new List<object>{"MovieTek", "Dimension 9500", "0", "200"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"Napdragon", "Insomniadragon 8 Gen 1", "10", "575"});
             cpus.Add(new List<object>{"Napdragon", "Insomniadragon 6 Gen 1", "9", "550"});
             cpus.Add(new List<object>{"Napdragon", "Insomniadragon 4 Gen 1", "8", "525"});

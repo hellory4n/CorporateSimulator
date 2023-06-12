@@ -23,16 +23,13 @@ public class MilitaryUpgrade : TextureButton {
             GetNode<Label>("../Name").Text = $"{MilitaryNameThing}: {Global.Navy[MilitaryThing]}/100";
         if (MilitaryCategoryThing == "air force")
             GetNode<Label>("../Name").Text = $"{MilitaryNameThing}: {Global.AirForce[MilitaryThing]}/100";
-
-        Slider epicSlider = GetNode<Slider>("../EpicSlider");
-        GetNode<Label>("../EpicSlider/Label").Text = $"{epicSlider.Value} selected";
+        
+        GetNode<Label>("../Cost").Text = $"Can cost up to ${String.Format("{0:n0}", Cost*100)}";
         base._Process(delta);
     }
 
     public void Click() {
         // epic calculations
-        Slider uh = GetNode<Slider>("../EpicSlider");
-        int amountWanted = (int)uh.Value;
         int available = 100;
 
         if (MilitaryCategoryThing == "army")
@@ -43,17 +40,15 @@ public class MilitaryUpgrade : TextureButton {
             available = 100-Global.AirForce[MilitaryThing];
 
         double canBuy = Math.Min(Global.Money / Cost, available);
-        if (canBuy < amountWanted)
-            amountWanted = (int)canBuy;
         
         // actually upgrade the cool military
         if (MilitaryCategoryThing == "army")
-            Global.Army[MilitaryThing] += amountWanted;
+            Global.Army[MilitaryThing] += (int)canBuy;
         if (MilitaryCategoryThing == "navy")
-            Global.Navy[MilitaryThing] += amountWanted;
+            Global.Navy[MilitaryThing] += (int)canBuy;
         if (MilitaryCategoryThing == "air force")
-            Global.AirForce[MilitaryThing] += amountWanted;
+            Global.AirForce[MilitaryThing] += (int)canBuy;
         
-        Global.Money -= Cost * amountWanted;
+        Global.Money -= Cost * (int)canBuy;
     }
 }

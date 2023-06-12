@@ -96,7 +96,7 @@ margin_bottom = 565.0
 mouse_filter = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_bottom = 3575.0
+margin_bottom = 3675.0
 custom_constants/separation = 25
 
 [node name="Country1" type="Control" parent="ScrollContainer/VBoxContainer"]
@@ -1508,9 +1508,53 @@ text = "Invade"
 align = 1
 valign = 1
 
-[node name="Country32" type="Control" parent="ScrollContainer/VBoxContainer"]
+[node name="Country37" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 3100.0
 margin_bottom = 3175.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country37"]
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_right = 597.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Suffering Republic"
+
+[node name="Military" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_top = 44.0
+margin_right = 482.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "•••••••••••••••"
+
+[node name="Invade" type="TextureButton" parent="ScrollContainer/VBoxContainer/Country37/Node2D"]
+margin_left = 570.0
+margin_right = 870.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+CountryName = "Slovenia"
+Army = 5.5
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Country37/Node2D/Invade"]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 6 )
+text = "Invade"
+align = 1
+valign = 1
+
+[node name="Country32" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_top = 3200.0
+margin_bottom = 3275.0
 rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country32"]
@@ -1555,8 +1599,8 @@ align = 1
 valign = 1
 
 [node name="Country33" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 3200.0
-margin_bottom = 3275.0
+margin_top = 3300.0
+margin_bottom = 3375.0
 rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country33"]
@@ -1601,8 +1645,8 @@ align = 1
 valign = 1
 
 [node name="Country34" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 3300.0
-margin_bottom = 3375.0
+margin_top = 3400.0
+margin_bottom = 3475.0
 rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country34"]
@@ -1646,8 +1690,8 @@ align = 1
 valign = 1
 
 [node name="Country35" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 3400.0
-margin_bottom = 3475.0
+margin_top = 3500.0
+margin_bottom = 3575.0
 rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country35"]
@@ -1692,8 +1736,8 @@ align = 1
 valign = 1
 
 [node name="Country36" type="Control" parent="ScrollContainer/VBoxContainer"]
-margin_top = 3500.0
-margin_bottom = 3575.0
+margin_top = 3600.0
+margin_bottom = 3675.0
 rect_min_size = Vector2( 0, 75 )
 
 [node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Country36"]

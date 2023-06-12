@@ -89,7 +89,7 @@ public class PhoneRam : VBoxContainer {
             cpus.Add(new List<object>{"16", "50", "2"});
             cpus.Add(new List<object>{"8", "40", "1"});
             cpus.Add(new List<object>{"4", "30", "0"});
-        } else if (Global.Year == 10) {
+        } else if (Global.Year > 9) {
             cpus.Add(new List<object>{"8192", "140", "10"});
             cpus.Add(new List<object>{"4096", "130", "9"});
             cpus.Add(new List<object>{"2048", "120", "8"});
