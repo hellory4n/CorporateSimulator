@@ -54,6 +54,20 @@ public class Game : Node2D {
                 file.Seek(0);
                 file.StoreString(oldSaveStuff);
             }
+            if (painsave.Version == "0.9") {
+                ZeroDotNineGameSave painsave2 = JsonConvert.DeserializeObject<ZeroDotNineGameSave>(
+                    file.GetAsText()
+                );
+                painsave2.Version = "0.9";
+                // we don't want the game to keep converting the save
+                file.StoreString(JsonConvert.SerializeObject(painsave2));
+                string oldSaveStuff = file.GetAsText();
+                oldSaveStuff = oldSaveStuff.Substring(0, oldSaveStuff.Length-1);
+                // i hope you have an ultraveryreallytotallywidescreen display
+                oldSaveStuff += ",\"LabUnlocked\":false,\"LabResearch\":[],\"LabBudget\":0,\"LabThingsToSpend\":0,\"LabCurrentProject\":\"nothing\",\"LabTotalCost\":0,\"CustomOS\":[],\"CustomChip\":[],\"CustomConsole\":[],\"GovernmentUnlocked\":false,\"CountryName\":\"peepeepoopoo land\",\"UnitedStates\":{\"Friendship\":50.0,\"TradeAgreement\":false,\"BeingSpied\":false},\"China\":{\"Friendship\":50.0,\"TradeAgreement\":false,\"BeingSpied\":false},\"Army\":[0,0,0,0,0,0,0,0,0,0],\"Navy\":[0,0,0,0,0,0,0,0,0,0],\"AirForce\":[0,0,0,0,0,0,0,0,0,0],\"Invaded\":[]}";
+                file.Seek(0);
+                file.StoreString(oldSaveStuff);
+            }
             
             // now we load it again but as a new save
             save = JsonConvert.DeserializeObject<GameSave>(
