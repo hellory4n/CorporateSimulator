@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Uhh/ending.webm" type="VideoStream" id=1]
+[ext_resource path="res://Scripts/UI/End/EndFinishVideo.cs" type="Script" id=2]
+
+[node name="EndingVideo" type="Node2D"]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+stream = ExtResource( 1 )
+autoplay = true
+expand = false
+script = ExtResource( 2 )

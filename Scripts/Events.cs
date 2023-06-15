@@ -1859,7 +1859,7 @@ public class Events : Node2D {
             OK.Init("end", "GameFinished");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
-            Global.AiDomination = true;
+            Global.GameFinished = true;
         }
         #endregion
         base._Process(delta);

@@ -131,6 +131,8 @@ public class Game : Node2D {
                 Global.Taxes2 = true;
             if (Global.Money > 1000000000)
                 Global.Lab = true;
+            if (Global.Invaded.Count == 157)
+                Global.GameFinished = true;
             
             // do we show the tutorial
             File aFile = new File(); // this is a string i think
