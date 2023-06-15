@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
 [ext_resource path="res://Assets/ThisIsHire.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/UI/Default/DialogOk.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/UI/Employees/StopHiring.cs" type="Script" id=4]
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
@@ -127,7 +127,6 @@ margin_left = 490.0
 margin_top = 263.0
 margin_right = 789.0
 margin_bottom = 297.0
-rect_rotation = -0.204876
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Employee Name"
@@ -142,7 +141,6 @@ margin_left = 490.0
 margin_top = 302.0
 margin_right = 789.0
 margin_bottom = 336.0
-rect_rotation = -0.204876
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "Rating: 69/420

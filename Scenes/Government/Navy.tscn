@@ -114,7 +114,6 @@ script = ExtResource( 13 )
 
 [node name="Soldiers" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 69.0
-margin_right = 870.0
 margin_bottom = 144.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -160,7 +159,6 @@ valign = 1
 
 [node name="Ammo" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 169.0
-margin_right = 870.0
 margin_bottom = 244.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -207,7 +205,6 @@ valign = 1
 
 [node name="InfantryWeapons" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 269.0
-margin_right = 870.0
 margin_bottom = 344.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -254,7 +251,6 @@ valign = 1
 
 [node name="ArmoredCars" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 369.0
-margin_right = 870.0
 margin_bottom = 444.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -301,7 +297,6 @@ valign = 1
 
 [node name="CombatVehicles" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 469.0
-margin_right = 870.0
 margin_bottom = 544.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -348,7 +343,6 @@ valign = 1
 
 [node name="Artillery" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 569.0
-margin_right = 870.0
 margin_bottom = 644.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -395,7 +389,6 @@ valign = 1
 
 [node name="RPG" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 669.0
-margin_right = 870.0
 margin_bottom = 744.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -442,7 +435,6 @@ valign = 1
 
 [node name="BallisticMissiles" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 769.0
-margin_right = 870.0
 margin_bottom = 844.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -489,7 +481,6 @@ valign = 1
 
 [node name="Tanks" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 869.0
-margin_right = 870.0
 margin_bottom = 944.0
 rect_min_size = Vector2( 0, 75 )
 
@@ -536,7 +527,6 @@ valign = 1
 
 [node name="MassDestruction" type="Control" parent="ScrollContainer/VBoxContainer"]
 margin_top = 969.0
-margin_right = 870.0
 margin_bottom = 1044.0
 rect_min_size = Vector2( 0, 75 )
 

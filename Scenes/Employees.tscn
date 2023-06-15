@@ -63,11 +63,9 @@ margin_left = 195.0
 margin_top = 139.0
 margin_right = 1083.0
 margin_bottom = 568.0
-rect_rotation = -0.204876
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 11 )
-text = "You don't have employees.
-Reopen this dialog to refresh"
+text = "You don't have employees."
 align = 1
 valign = 1
 
