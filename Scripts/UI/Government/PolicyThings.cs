@@ -39,7 +39,13 @@ public class PolicyThings : TextureButton {
         Global.CountryName + " is a nation that can be defined in a single word: awdsmfafoothimaaafootafootwhscuseme.",
         "The minister of education must always be the great leader's pet",
         "Putting pineapple on pizza is considered an act of terrorism",
-        "You cannot call a computer a \"gaming pc\" if it has a 10 year old processor"
+        "You cannot call a computer a \"gaming pc\" if it has a 10 year old processor",
+        "Everyone can own guns",
+        "Putting the cheese before the patty in a burger is a federal warcrime",
+        "No monopolies because they're very uncool",
+        "Short-form video is illegal and using it would put you on a death sentence",
+        "You need to have more than 10 IQ to live in the country",
+        "A potato is legally classified as a device"
     };
 
     public override void _Ready() {
