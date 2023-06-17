@@ -135,7 +135,7 @@ public class Game : Node2D {
                 Global.Lab = true;
             if (Global.Invaded.Count == 157)
                 Global.GameFinished = true;
-            
+
             // do we show the tutorial
             File aFile = new File(); // this is a string i think
             if (!aFile.FileExists("user://first_time")) {

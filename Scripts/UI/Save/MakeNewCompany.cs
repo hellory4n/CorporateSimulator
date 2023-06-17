@@ -155,7 +155,7 @@ public class MakeNewCompany : TextureButton {
                     new ResearchSave("Clickbait", 50),
                     new ResearchSave("Fantastic music", 50),
                     new ResearchSave("Sponsorships", 50),
-                    new ResearchSave("YourArse Shorts", 50),
+                    new ResearchSave("OurTube Shorts", 50),
                     new ResearchSave("SEO optimization", 50),
                     new ResearchSave("Merchandise", 50),
                 });

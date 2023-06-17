@@ -102,7 +102,6 @@ custom_fonts/font = SubResource( 8 )
 text = "review reviews"
 align = 1
 autowrap = true
-clip_text = true
 
 [node name="Rating1" type="Label" parent="."]
 anchor_right = 0.002

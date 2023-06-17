@@ -170,6 +170,7 @@ public class Events : Node2D {
             Node2D OK = (Node2D)yes.Instance();
             Global.PausedTime = true;
             GetTree().Root.AddChild(OK);
+            Savior.SaveGame(Global.SaveFile);
             // you can't play when you're bankrupt
             GetNode<Node2D>("/root/Game").QueueFree();
             if (GetNodeOrNull<Timer>("/root/Autosave") != null)
@@ -280,7 +281,14 @@ public class Events : Node2D {
             OK.Init("unlock", "Unlock/Marketing2");
             OK.ZIndex = 100;
             GetTree().Root.AddChild(OK);
-            Global.UnlockedResearch.Add(new ResearchSave("Overpriced products", 75));
+            bool foundResearchThing = false;
+            foreach (var item in Global.Researched) {
+                if (item.Name == "Overpriced products") {
+                    foundResearchThing = true;
+                }
+            }
+            if (!foundResearchThing)
+                Global.UnlockedResearch.Add(new ResearchSave("Overpriced products", 75));
             Global.UnlockMarketing2 = true;
         }
         #endregion

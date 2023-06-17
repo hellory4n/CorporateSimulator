@@ -907,3 +907,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/godot,csharp,dotnetcore,visualstudio,visualstudiocode,rider,intellij,linux,macos,windows,android,git
 
+android/
