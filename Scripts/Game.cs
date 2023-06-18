@@ -148,6 +148,10 @@ public class Game : Node2D {
     }
 
     public override void _Process(float delta) {
+        // too much of everything can be bad, even money
+        if (Global.Money > 9000000000000000000)
+            Global.Money = 9000000000000000000;
+
         if (Input.IsPhysicalKeyPressed((int)Godot.KeyList.F11))
             OS.WindowFullscreen = !OS.WindowFullscreen;
 
