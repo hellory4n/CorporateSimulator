@@ -20,10 +20,16 @@ public class StockMarketBuy : TextureButton {
     }
 
     public void Click() {
-        Slider uh = GetNode<Slider>("../EpicSlider");
-        long jsjskhsksk = (long)Math.Round((Global.AvailableInvestments[epicIndex].Price*bruh)*uh.Value);
-        Global.Investments[epicIndex].Amount += (int)uh.Value;
-        Global.Money -= jsjskhsksk;
+        int amountWanted = (int)GetNode<Slider>("../EpicSlider").Value;
+        long price = Global.AvailableInvestments[epicIndex].Price*bruh;
+        // avoid people going bankrupt after buying too many stocks
+        double maxQuantity = Global.Money / price;
+        if (maxQuantity < amountWanted) {
+            amountWanted = (int)maxQuantity;
+        }
+
+        Global.Investments[epicIndex].Amount += amountWanted;
+        Global.Money -= price*amountWanted;
         // i have to do a mess to make the ui look right
         GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
     }
