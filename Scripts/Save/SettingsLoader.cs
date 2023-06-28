@@ -24,6 +24,8 @@ public class SettingsLoader : Node2D {
 
         // fullscreen :)
         Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
+
+        Modding.LoadMods();
         base._Ready();
     }
 
