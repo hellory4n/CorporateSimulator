@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using Godot;
 
-public class Modding {
-    public static void LoadMods() {
+public class Mod : Node2D {
+    public override void _Ready() {
+        // load cool mods :)
         Directory modfolder = new Directory();
         List<string> mods = new List<string>();
         if (modfolder.DirExists("user://mods")) {
@@ -24,8 +25,16 @@ public class Modding {
             }
         }
 
-        foreach (var item in mods) {
-            GD.Print("Loaded mod: " + item);
+        foreach (var coolMod in mods) {
+            // now we have to find a script
+            File modfile = new File();
+            if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
+                var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                Node2D OK = (Node2D)yes.Instance();
+                GetTree().Root.CallDeferred("add_child", OK);
+            }
+            GD.Print("Loaded mod: " + coolMod);
         }
+        base._Ready();
     }
 }

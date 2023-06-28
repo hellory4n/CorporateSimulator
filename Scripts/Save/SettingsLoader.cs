@@ -25,7 +25,11 @@ public class SettingsLoader : Node2D {
         // fullscreen :)
         Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
 
-        Modding.LoadMods();
+        // mods :)
+        var yesw = (PackedScene)ResourceLoader.Load("res://Scenes/Modding.tscn");
+        Node2D OKw = (Node2D)yesw.Instance();
+        GetTree().Root.CallDeferred("add_child", OKw);
+
         base._Ready();
     }
 
