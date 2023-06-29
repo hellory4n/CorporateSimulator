@@ -30,10 +30,10 @@ public class Mod : Node2D {
             File modfile = new File();
             if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
                 var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                GD.Print("Loaded mod: " + coolMod);
                 Node2D OK = (Node2D)yes.Instance();
                 GetTree().Root.CallDeferred("add_child", OK);
             }
-            GD.Print("Loaded mod: " + coolMod);
         }
         base._Ready();
     }
