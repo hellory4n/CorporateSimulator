@@ -29,10 +29,24 @@ public class Mod : Node2D {
             // now we have to find a script
             File modfile = new File();
             if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
-                var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
-                GD.Print("Loaded mod: " + coolMod);
-                Node2D OK = (Node2D)yes.Instance();
-                GetTree().Root.CallDeferred("add_child", OK);
+                // don't load a mod for a different version of the game, wouldn't be cool tee bee eich
+                if (modfile.FileExists($"user://mods/{coolMod}/cs-version")) {
+                    modfile.Open($"user://mods/{coolMod}/cs-version", File.ModeFlags.Read);
+                    string fart = modfile.GetAsText();
+                    // TODO: update this if i update the game again
+                    if (!fart.StartsWith("1.1.0")) {
+                        Global.IncompatibleMod = coolMod;
+                        Global.IncompatibleModVersion = fart;
+                        var ye2s = (PackedScene)ResourceLoader.Load($"res://Scenes/IncompatibleMod.tscn");
+                        Node2D O2K = (Node2D)ye2s.Instance();
+                        GetTree().Root.CallDeferred("add_child", O2K);
+                    } else {
+                        var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                        GD.Print("Loaded mod: " + coolMod);
+                        Node2D OK = (Node2D)yes.Instance();
+                        GetTree().Root.CallDeferred("add_child", OK);
+                    }
+                }
             }
         }
         base._Ready();
