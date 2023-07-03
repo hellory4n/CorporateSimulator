@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Scripts/UI/Settings/PrivacyPolicy.cs" type="Script" id=26]
 [ext_resource path="res://Scripts/UI/Settings/License.cs" type="Script" id=27]
 [ext_resource path="res://Scripts/UI/Settings/Discord.cs" type="Script" id=28]
+[ext_resource path="res://Scripts/UI/Settings/ModManagerOpen.cs" type="Script" id=29]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -95,9 +96,9 @@ custom_fonts/font = SubResource( 6 )
 text = "cfgyuiojhdfxriolkjhftyuiopöliufrytguiloluytfretyjukilopoiuyyui"
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 440.0
+margin_left = 645.0
 margin_top = 575.0
-margin_right = 840.0
+margin_right = 1045.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -114,6 +115,29 @@ margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 4 )
 text = "Done"
+align = 1
+valign = 1
+
+[node name="ModManager" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 575.0
+margin_right = 635.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 29 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="ModManager"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 4 )
+text = "Mod Manager"
 align = 1
 valign = 1
 
