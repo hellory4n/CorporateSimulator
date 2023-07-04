@@ -2,7 +2,8 @@ using Godot;
 using System;
 
 public class InstallMod : TextureButton {
-    private FileDialog folderDialog;
+    FileDialog folderDialog;
+    string modName;
 
     public override void _Ready() {
         CanvasLayer coolThingy = new CanvasLayer();
@@ -11,6 +12,7 @@ public class InstallMod : TextureButton {
         folderDialog.Mode = FileDialog.ModeEnum.OpenDir;
         folderDialog.Access = FileDialog.AccessEnum.Filesystem;
 
+        // use the correct home folder
         if (OS.GetName() == "Android")
             folderDialog.CurrentDir = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
         else
@@ -22,33 +24,33 @@ public class InstallMod : TextureButton {
         this.Connect("pressed", this, nameof(Click));
     }
 
-    public void OnFolderSelected(string dir) {
-        string folderPath = dir;
-        string destinationPath = $"user://mods/{System.IO.Path.GetFileName(folderPath)}/";
-        
-        string[] files = System.IO.Directory.GetFiles(folderPath);
+    public void OnFolderSelected(string epicCoolMod) {
+        modName = System.IO.Path.GetFileName(epicCoolMod);
+        System.IO.Directory.CreateDirectory($"{OS.GetUserDataDir()}/mods/{modName}/");
+        CopyFolder(epicCoolMod);
+        GD.Print("successfully installed mod");
+    }
+
+    public void CopyFolder(string epicCoolMod) {
+        string[] files = System.IO.Directory.GetFiles(epicCoolMod);
         foreach (string file in files) {
             string fileName = System.IO.Path.GetFileName(file);
-            string destinationFile = System.IO.Path.Combine(destinationPath, fileName);
-            
-            var newMod = new File();
-            newMod.Open(file, File.ModeFlags.Read);
-            
-            var jhjk = new File();
-            jhjk.Open(destinationFile, File.ModeFlags.Write);
-            jhjk.StoreBuffer(newMod.GetBuffer((int)newMod.GetLen()));
-            jhjk.Close();
-            
-            newMod.Close();
+            string destinationFile = System.IO.Path.Combine(OS.GetUserDataDir()+"/mods/"+modName+"/", fileName);
+            System.IO.File.Copy(file, destinationFile, true);
         }
-        
-        GD.Print("successfully installed mod");
+
+        // we need this so you can have a mod with folders
+        string[] subfolders = System.IO.Directory.GetDirectories(epicCoolMod);
+        foreach (string subfolder in subfolders) {
+            string folderName = System.IO.Path.GetFileName(subfolder);
+            string destinationSubfolder = System.IO.Path.Combine(epicCoolMod, folderName);
+            CopyFolder(subfolder);
+        }
     }
 
     public void Click() {
         folderDialog.Popup_();
         folderDialog.RectPosition = new Vector2(140, 60);
         folderDialog.RectMinSize = new Vector2(1000, 600);
-        GD.Print("hi buttonpress");
     }
 }
