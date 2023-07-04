@@ -32,27 +32,27 @@ public class InstallMod : TextureButton {
         string[] pureIncompetence = epicCoolMod.Split("/");
         install.MakeDir($"user://mods/{pureIncompetence[pureIncompetence.Length-1]}");
 
-        CopyFolder(source, $"user://mods/{pureIncompetence[pureIncompetence.Length-1]}", epicCoolMod);
+        CopyFolder(epicCoolMod, $"user://mods/{pureIncompetence[pureIncompetence.Length-1]}/");
 
         GD.Print("successfully installed mod");
     }
 
-    public void CopyFolder(Directory source, string path, string sourcePath) {
-        source.ListDirBegin(true);
-        while (true) {
-            string next = source.GetNext();
-            // don't keep looking for stuff forever, that would be bad
-            if (next == "")
-                break;
-
-            /*if (source.CurrentIsDir()) {
-                source.MakeDir(next);
-                Directory sufferingTbh = new Directory();
-                sufferingTbh.Open($"{path}/{next}/");
-                CopyFolder(sufferingTbh, $"{path}/{next}/");
-            } else {*/
-                source.Copy($"{sourcePath}/{next}",path);
-            //}
+    public void CopyFolder(string from, string to) {
+        Directory dir = new Directory();
+        if (!dir.DirExists(to))
+            dir.MakeDirRecursive(to);
+        if (dir.Open(from) == Error.Ok) {
+            dir.ListDirBegin(true);
+            string filename = dir.GetNext();
+            while (filename != "") {
+                if (dir.CurrentIsDir())
+                    CopyFolder($"{from}/{filename}", $"{to}/{filename}");
+                else
+                    dir.Copy($"{from}/{filename}", $"{to}/{filename}");
+                filename = dir.GetNext();
+            }
+        } else {
+            GD.PushWarning($"Error copying {from} to {to}");
         }
 }
 
