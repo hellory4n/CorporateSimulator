@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/ButtonMenu.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/UI/Mods/ModList.cs" type="Script" id=8]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -71,11 +72,32 @@ text = "OK"
 align = 1
 valign = 1
 
-[node name="InstallMod" type="TextureButton" parent="."]
-margin_left = 440.0
-margin_top = 150.0
-margin_right = 840.0
-margin_bottom = 225.0
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 195.0
+margin_top = 139.0
+margin_right = 1085.0
+margin_bottom = 565.0
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 890.0
+margin_bottom = 85.0
+custom_constants/separation = 10
+script = ExtResource( 8 )
+
+[node name="Control" type="Control" parent="ScrollContainer/VBoxContainer"]
+margin_right = 890.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 890, 85 )
+mouse_filter = 2
+
+[node name="Node2D" type="Node2D" parent="ScrollContainer/VBoxContainer/Control"]
+
+[node name="InstallMod" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control/Node2D"]
+margin_left = 245.0
+margin_top = 10.0
+margin_right = 645.0
+margin_bottom = 85.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
@@ -84,7 +106,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="InstallMod"]
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/Node2D/InstallMod"]
 anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
@@ -93,8 +115,3 @@ custom_fonts/font = SubResource( 4 )
 text = "Install Mod"
 align = 1
 valign = 1
-
-[node name="FileDialog" type="FileDialog" parent="."]
-margin_right = 315.0
-margin_bottom = 130.0
-rect_min_size = Vector2( 150, 52.5 )
