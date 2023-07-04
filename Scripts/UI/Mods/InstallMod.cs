@@ -3,7 +3,7 @@ using System;
 
 public class InstallMod : TextureButton {
     FileDialog folderDialog;
-    string modName;
+    string modPath;
 
     public override void _Ready() {
         CanvasLayer coolThingy = new CanvasLayer();
@@ -25,28 +25,36 @@ public class InstallMod : TextureButton {
     }
 
     public void OnFolderSelected(string epicCoolMod) {
-        modName = System.IO.Path.GetFileName(epicCoolMod);
-        System.IO.Directory.CreateDirectory($"{OS.GetUserDataDir()}/mods/{modName}/");
-        CopyFolder(epicCoolMod);
+        // folder stuff or something idk lol
+        Directory source = new Directory();
+        source.Open(epicCoolMod);
+        Directory install = new Directory();
+        string[] pureIncompetence = epicCoolMod.Split("/");
+        install.MakeDir($"user://mods/{pureIncompetence[pureIncompetence.Length-1]}");
+
+        CopyFolder(source, $"user://mods/{pureIncompetence[pureIncompetence.Length-1]}", epicCoolMod);
+
         GD.Print("successfully installed mod");
     }
 
-    public void CopyFolder(string epicCoolMod) {
-        string[] files = System.IO.Directory.GetFiles(epicCoolMod);
-        foreach (string file in files) {
-            string fileName = System.IO.Path.GetFileName(file);
-            string destinationFile = System.IO.Path.Combine(OS.GetUserDataDir()+"/mods/"+modName+"/", fileName);
-            System.IO.File.Copy(file, destinationFile, true);
-        }
+    public void CopyFolder(Directory source, string path, string sourcePath) {
+        source.ListDirBegin(true);
+        while (true) {
+            string next = source.GetNext();
+            // don't keep looking for stuff forever, that would be bad
+            if (next == "")
+                break;
 
-        // we need this so you can have a mod with folders
-        string[] subfolders = System.IO.Directory.GetDirectories(epicCoolMod);
-        foreach (string subfolder in subfolders) {
-            string folderName = System.IO.Path.GetFileName(subfolder);
-            string destinationSubfolder = System.IO.Path.Combine(epicCoolMod, folderName);
-            CopyFolder(subfolder);
+            /*if (source.CurrentIsDir()) {
+                source.MakeDir(next);
+                Directory sufferingTbh = new Directory();
+                sufferingTbh.Open($"{path}/{next}/");
+                CopyFolder(sufferingTbh, $"{path}/{next}/");
+            } else {*/
+                source.Copy($"{sourcePath}/{next}",path);
+            //}
         }
-    }
+}
 
     public void Click() {
         folderDialog.Popup_();
