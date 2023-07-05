@@ -59,8 +59,15 @@ public class InstallMod : TextureButton {
                 }
             }
         }
-
+        
         GD.Print("successfully installed mod");
+
+        // restart the mod list
+        var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
+        Node2D mOK = (Node2D)myes.Instance();
+        mOK.ZIndex = 100;
+        GetTree().Root.AddChild(mOK);
+        GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
     }
 
     public void CopyFolder(string from, string to) {

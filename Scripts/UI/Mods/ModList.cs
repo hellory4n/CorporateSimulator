@@ -23,31 +23,50 @@ public class ModList : VBoxContainer {
         }
 
         // make a massive mess
-        foreach (var mod in mods) {
-            // control is required to make it show properly in the scroll thing, node2d is so i can make it have
-            // a cooler look and stuff
-            Control whytho = new Control();
-            Node2D sillyness = new Node2D();
+        if (mods.Count > 0) {
+            foreach (var mod in mods) {
+                // control is required to make it show properly in the scroll thing, node2d is so i can make it have
+                // a cooler look and stuff
+                Control whytho = new Control();
+                Node2D sillyness = new Node2D();
 
-            whytho.RectMinSize = new Vector2(890, 84);
-            AddChild(whytho);
-            whytho.AddChild(sillyness);
+                whytho.RectMinSize = new Vector2(890, 84);
+                AddChild(whytho);
+                whytho.AddChild(sillyness);
 
+                // epic font :)
+                DynamicFont font = new DynamicFont();
+                font.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
+                font.Size = 40;
+
+                // mod name
+                Label name = new Label();
+                name.Text = mod;
+                name.AddColorOverride("font_color", new Color(0,0,0,1));
+                name.AddFontOverride("font", font);
+                name.RectPosition = new Vector2(10, 0);
+                name.Valign = Label.VAlign.Center;
+                name.RectSize = new Vector2(580, 84);
+                name.ClipText = true;
+                sillyness.AddChild(name);
+            }
+        } else {
             // epic font :)
             DynamicFont font = new DynamicFont();
-            font.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
-            font.Size = 40;
+            font.FontData = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Regular.ttf");
+            font.Size = 24;
 
-            // mod name
-            Label name = new Label();
-            name.Text = mod;
-            name.AddColorOverride("font_color", new Color(0,0,0,1));
-            name.AddFontOverride("font", font);
-            name.RectPosition = new Vector2(10, 0);
-            name.Valign = Label.VAlign.Center;
-            name.RectSize = new Vector2(580, 84);
-            name.ClipText = true;
-            sillyness.AddChild(name);
+            // uh oh you don't have mods, download malware NOW!
+            Label doitnow = new Label();
+            doitnow.Text = "You don't have any mods. Get some from our Discord server!";
+            doitnow.AddColorOverride("font_color", new Color(0,0,0,1));
+            doitnow.AddFontOverride("font", font);
+            doitnow.RectPosition = new Vector2(0, 95);
+            doitnow.Align = Label.AlignEnum.Center;
+            doitnow.Valign = Label.VAlign.Center;
+            doitnow.RectMinSize = new Vector2(890, 330);
+
+            AddChild(doitnow);
         }
         base._Ready();
     }
