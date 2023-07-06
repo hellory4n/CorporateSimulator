@@ -33,41 +33,52 @@ public class InstallMod : TextureButton {
         Directory install = new Directory();
         string[] pureIncompetence = epicCoolMod.Split("/");
         string coolMod = pureIncompetence[pureIncompetence.Length-1];
-        install.MakeDir($"user://mods/{coolMod}");
 
-        CopyFolder(epicCoolMod, $"user://mods/{coolMod}/");
-
-        // run the mod so the user doesn't have to restart the game
-        File modfile = new File();
-        if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
-            // don't load a mod for a different version of the game, wouldn't be cool tee bee eich
-            if (modfile.FileExists($"user://mods/{coolMod}/cs-version")) {
-                modfile.Open($"user://mods/{coolMod}/cs-version", File.ModeFlags.Read);
-                string fart = modfile.GetAsText();
-                // TODO: update this if i update the game again
-                if (!fart.StartsWith("1.1.0")) {
-                    Global.IncompatibleMod = coolMod;
-                    Global.IncompatibleModVersion = fart;
-                    var ye2s = (PackedScene)ResourceLoader.Load($"res://Scenes/IncompatibleMod.tscn");
-                    Node2D O2K = (Node2D)ye2s.Instance();
-                    GetTree().Root.CallDeferred("add_child", O2K);
-                } else {
-                    var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
-                    GD.Print("Loaded mod: " + coolMod);
-                    Node2D OK = (Node2D)yes.Instance();
-                    GetTree().Root.CallDeferred("add_child", OK);
+        // don't install an incompatible mod :)
+        File gjhjf = new File();
+        if (gjhjf.Open($"{epicCoolMod}/cs-version", File.ModeFlags.Read) == Error.Ok) {
+            string j = gjhjf.GetAsText();
+            if (j.StartsWith("1.1.0")) {
+                install.MakeDir($"user://mods/{coolMod}");
+                CopyFolder(epicCoolMod, $"user://mods/{coolMod}/");
+                
+                // run the mod so the user doesn't have to restart the game
+                File modfile = new File();
+                if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
+                    // don't load a mod for a different version of the game, wouldn't be cool tee bee eich
+                    if (modfile.FileExists($"user://mods/{coolMod}/cs-version")) {
+                        modfile.Open($"user://mods/{coolMod}/cs-version", File.ModeFlags.Read);
+                        string fart = modfile.GetAsText();
+                        // TODO: update this if i update the game again
+                        if (!fart.StartsWith("1.1.0")) {
+                            Global.IncompatibleMod = coolMod;
+                            Global.IncompatibleModVersion = fart;
+                            var ye2s = (PackedScene)ResourceLoader.Load($"res://Scenes/IncompatibleMod.tscn");
+                            Node2D O2K = (Node2D)ye2s.Instance();
+                            GetTree().Root.CallDeferred("add_child", O2K);
+                        } else {
+                            var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                            GD.Print("Loaded mod: " + coolMod);
+                            Node2D OK = (Node2D)yes.Instance();
+                            GetTree().Root.CallDeferred("add_child", OK);
+                        }
+                    }
                 }
-            }
-        }
-        
-        GD.Print("successfully installed mod");
+                
+                GD.Print("successfully installed mod");
 
-        // restart the mod list
-        var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
-        Node2D mOK = (Node2D)myes.Instance();
-        mOK.ZIndex = 100;
-        GetTree().Root.AddChild(mOK);
-        GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
+                // restart the mod list
+                var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
+                Node2D mOK = (Node2D)myes.Instance();
+                mOK.ZIndex = 100;
+                GetTree().Root.AddChild(mOK);
+                GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
+            } else {
+                GetNode<Label>("./Label").Text = "Incompatible Mod!";
+            }
+        } else {
+            GetNode<Label>("./Label").Text = "Broken Mod!";
+        }
     }
 
     public void CopyFolder(string from, string to) {
