@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/UI/Mods/RemoveMod.cs" type="Script" id=1]
+[ext_resource path="res://Assets/SmallDanger.png" type="Texture" id=2]
+[ext_resource path="res://Assets/SmallDangerHover.png" type="Texture" id=3]
+[ext_resource path="res://Assets/SmallDangerPress.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = SubResource( 1 )
+
+[node name="Pain" type="TextureButton"]
+margin_right = 300.0
+margin_bottom = 75.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 300.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 2 )
+text = "Remove Mod"
+align = 1
+valign = 1
+autowrap = true

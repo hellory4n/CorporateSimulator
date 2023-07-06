@@ -49,6 +49,13 @@ public class ModList : VBoxContainer {
                 name.RectSize = new Vector2(580, 84);
                 name.ClipText = true;
                 sillyness.AddChild(name);
+
+                // very much epic button
+                var yes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManagerRemoveMod.tscn");
+                RemoveMod OK = (RemoveMod)yes.Instance();
+                OK.RectPosition = new Vector2(570, 4);
+                OK.Init($"user://mods/{mod}");
+                sillyness.AddChild(OK);
             }
         } else {
             // epic font :)
@@ -64,7 +71,7 @@ public class ModList : VBoxContainer {
             doitnow.RectPosition = new Vector2(0, 95);
             doitnow.Align = Label.AlignEnum.Center;
             doitnow.Valign = Label.VAlign.Center;
-            doitnow.RectMinSize = new Vector2(890, 330);
+            doitnow.RectMinSize = new Vector2(890, 290);
 
             AddChild(doitnow);
         }

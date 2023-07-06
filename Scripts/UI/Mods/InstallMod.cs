@@ -87,7 +87,7 @@ public class InstallMod : TextureButton {
         } else {
             GD.PushWarning($"Error copying {from} to {to}");
         }
-}
+    }
 
     public void Click() {
         folderDialog.Popup_();
