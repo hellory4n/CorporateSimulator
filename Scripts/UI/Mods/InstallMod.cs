@@ -59,32 +59,27 @@ public class InstallMod : TextureButton {
         if (gjhjf.Open($"{epicCoolMod}/cs-version", File.ModeFlags.Read) == Error.Ok) {
             string j = gjhjf.GetAsText();
             if (j.StartsWith("1.1.0")) {
-                // don't install the same mod twice, that would be uncool tee bee eich
-                if (!mods.Contains(coolMod)) {
-                    install.MakeDir($"user://mods/{coolMod}");
-                    CopyFolder(epicCoolMod, $"user://mods/{coolMod}/");
-                    
-                    // run the mod so the user doesn't have to restart the game
-                    File modfile = new File();
-                    if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
-                        var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
-                        GD.Print("Loaded mod: " + coolMod);
-                        Node2D OK = (Node2D)yes.Instance();
-                        GetTree().Root.CallDeferred("add_child", OK);
-                    }
-                    
-                    GD.Print("successfully installed mod");
-                    mods.Add(coolMod);
-
-                    // restart the mod list
-                    var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
-                    Node2D mOK = (Node2D)myes.Instance();
-                    mOK.ZIndex = 100;
-                    GetTree().Root.AddChild(mOK);
-                    GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
-                } else {
-                    GetNode<Label>("./Label").Text = "Mod already installed!";
+                install.MakeDir($"user://mods/{coolMod}");
+                CopyFolder(epicCoolMod, $"user://mods/{coolMod}/");
+                
+                // run the mod so the user doesn't have to restart the game
+                File modfile = new File();
+                if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
+                    var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                    GD.Print("Loaded mod: " + coolMod);
+                    Node2D OK = (Node2D)yes.Instance();
+                    GetTree().Root.CallDeferred("add_child", OK);
                 }
+                
+                GD.Print("successfully installed mod");
+                mods.Add(coolMod);
+
+                // restart the mod list
+                var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
+                Node2D mOK = (Node2D)myes.Instance();
+                mOK.ZIndex = 100;
+                GetTree().Root.AddChild(mOK);
+                GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
             } else {
                 GetNode<Label>("./Label").Text = "Incompatible Mod!";
             }
