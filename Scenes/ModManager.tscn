@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackgroundComplete.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/PressedButtonMenu.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HoverButtonMenu.png" type="Texture" id=7]
 [ext_resource path="res://Scripts/UI/Mods/ModList.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/UI/Mods/DeveloperOptions.cs" type="Script" id=9]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -15,6 +16,13 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 [sub_resource type="DynamicFont" id=2]
 size = 24
 font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+font_data = SubResource( 7 )
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Uhh/Ubuntu-Bold.ttf"
@@ -57,9 +65,9 @@ text = "Mod Manager"
 valign = 1
 
 [node name="DialogOK" type="TextureButton" parent="."]
-margin_left = 440.0
+margin_left = 645.0
 margin_top = 575.0
-margin_right = 840.0
+margin_right = 1045.0
 margin_bottom = 650.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
@@ -74,8 +82,31 @@ anchor_right = 0.002
 anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 8 )
 text = "OK"
+align = 1
+valign = 1
+
+[node name="DeveloperOptions" type="TextureButton" parent="."]
+margin_left = 235.0
+margin_top = 575.0
+margin_right = 635.0
+margin_bottom = 650.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DeveloperOptions"]
+anchor_right = 0.002
+anchor_bottom = 0.011
+margin_right = 399.2
+margin_bottom = 74.175
+custom_fonts/font = SubResource( 8 )
+text = "Developer Options"
 align = 1
 valign = 1
 
