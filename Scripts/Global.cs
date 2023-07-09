@@ -229,4 +229,5 @@ public class Global : Node2D {
     public static bool GameFinished = false;
     public static string IncompatibleMod = "bruh";
     public static string IncompatibleModVersion = "1.69";
+    public static string DeveloperMod = "nothing";
 }

@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class InstallMod : TextureButton {
     FileDialog folderDialog;
-    string modPath;
-    List<string> mods = new List<string>();
 
     public override void _Ready() {
         CanvasLayer coolThingy = new CanvasLayer();
@@ -26,24 +24,6 @@ public class InstallMod : TextureButton {
         AddChild(coolThingy);
         coolThingy.AddChild(folderDialog);
         this.Connect("pressed", this, nameof(Click));
-
-        // prevent people from installing the same mod twice part 1
-        Directory modfolder = new Directory();
-        List<string> mods = new List<string>();
-        if (modfolder.DirExists("user://mods")) {
-            modfolder.Open("user://mods/");
-            modfolder.ListDirBegin(true);
-            while (true) {
-                string nextFolder = modfolder.GetNext();
-                // don't keep looking for mods forever, that would be bad
-                if (nextFolder == "")
-                    break;
-                
-                if (modfolder.CurrentIsDir()) {
-                    mods.Add(nextFolder);
-                }
-            }
-        }
     }
 
     public void OnFolderSelected(string epicCoolMod) {
@@ -72,7 +52,6 @@ public class InstallMod : TextureButton {
                 }
                 
                 GD.Print("successfully installed mod");
-                mods.Add(coolMod);
 
                 // restart the mod list
                 var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");
