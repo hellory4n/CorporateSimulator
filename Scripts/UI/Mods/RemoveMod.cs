@@ -26,10 +26,12 @@ public class RemoveMod : TextureButton {
         // stop the mod from running
         GetNode<Node2D>($"/root/{mainNode}").QueueFree();
 
-        DeleteFolder(modPath);
-        // delete the folder itself
         Directory m = new Directory();
-        m.Remove(modPath);
+        if (m.DirExists(modPath)) {
+            DeleteFolder(modPath);
+            // delete the folder itself        
+            m.Remove(modPath);
+        }
         
         // restart the mod list
         var myes = (PackedScene)ResourceLoader.Load("res://Scenes/ModManager.tscn");

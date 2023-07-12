@@ -20,16 +20,19 @@ public class DeveloperRemoveMod : TextureButton {
         }
 
         // stop the mod from running
-        GetNode<Node2D>($"/root/{mainNode}").QueueFree();
+        if (GetNodeOrNull<Node2D>($"/root/{mainNode}") != null)
+            GetNode<Node2D>($"/root/{mainNode}").QueueFree();
 
         string[] pureIncompetence = Global.DeveloperMod.Split("/");
         string coolMod = pureIncompetence[pureIncompetence.Length-1];
         modPath = $"user://mods/{coolMod}/";
 
-        DeleteFolder(modPath);
-        // delete the folder itself
         Directory m = new Directory();
-        m.Remove(modPath);
+        if (m.DirExists(modPath)) {
+            DeleteFolder(modPath);
+            // delete the folder itself        
+            m.Remove(modPath);
+        }
     }
 
     public void DeleteFolder(string path) {
