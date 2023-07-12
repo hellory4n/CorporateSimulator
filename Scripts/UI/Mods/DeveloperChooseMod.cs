@@ -14,6 +14,9 @@ public class DeveloperChooseMod : TextureButton
         // make it be stuck in a specific place forever
         folderDialog.MouseFilter = Control.MouseFilterEnum.Ignore;
 
+        // make it not look like shit
+        folderDialog.Theme = ResourceLoader.Load<Theme>("res://Scripts/UI/epiccoolthemething.tres");
+
         // use the correct home folder
         if (OS.GetName() == "Android")
             folderDialog.CurrentDir = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
