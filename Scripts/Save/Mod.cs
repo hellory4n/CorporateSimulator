@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Godot;
+using Newtonsoft.Json;
 
 public class Mod : Node2D {
     public override void _Ready() {
@@ -30,13 +31,11 @@ public class Mod : Node2D {
             File modfile = new File();
             if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
                 // don't load a mod for a different version of the game, wouldn't be cool tee bee eich
-                if (modfile.FileExists($"user://mods/{coolMod}/cs-version")) {
-                    modfile.Open($"user://mods/{coolMod}/cs-version", File.ModeFlags.Read);
-                    string fart = modfile.GetAsText();
-                    // TODO: update this if i update the game again
-                    if (!fart.StartsWith("1.1.0")) {
+                if (modfile.Open($"user://mods/{coolMod}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
+                    string j = JsonConvert.DeserializeObject<ModInfo>(modfile.GetAsText()).GameVersion;
+                    if (j == "1.1.0") {
                         Global.IncompatibleMod = coolMod;
-                        Global.IncompatibleModVersion = fart;
+                        Global.IncompatibleModVersion = j;
                         var ye2s = (PackedScene)ResourceLoader.Load($"res://Scenes/IncompatibleMod.tscn");
                         Node2D O2K = (Node2D)ye2s.Instance();
                         GetTree().Root.CallDeferred("add_child", O2K);
