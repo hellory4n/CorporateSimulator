@@ -33,7 +33,7 @@ public class Mod : Node2D {
                 // don't load a mod for a different version of the game, wouldn't be cool tee bee eich
                 if (modfile.Open($"user://mods/{coolMod}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
                     string j = JsonConvert.DeserializeObject<ModInfo>(modfile.GetAsText()).GameVersion;
-                    if (j == "1.1.0") {
+                    if (j != "1.1.0") {
                         Global.IncompatibleMod = coolMod;
                         Global.IncompatibleModVersion = j;
                         var ye2s = (PackedScene)ResourceLoader.Load($"res://Scenes/IncompatibleMod.tscn");
