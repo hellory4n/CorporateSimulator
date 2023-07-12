@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class RemoveMod : TextureButton {
     string modPath;
@@ -13,6 +14,18 @@ public class RemoveMod : TextureButton {
     }
 
     public void Click() {
+        // find the name of the main node so we can stop running it
+        File gjhjf = new File();
+        string mainNode = "";
+        if (gjhjf.Open($"{modPath}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
+            mainNode = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).MainNode;
+        } else {
+            GD.PushWarning("Mod seems to be broken");
+        }
+
+        // stop the mod from running
+        GetNode<Node2D>($"/root/{mainNode}").QueueFree();
+
         DeleteFolder(modPath);
         // delete the folder itself
         Directory m = new Directory();

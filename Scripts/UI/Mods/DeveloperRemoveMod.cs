@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class DeveloperRemoveMod : TextureButton {
     string modPath;
@@ -9,6 +10,18 @@ public class DeveloperRemoveMod : TextureButton {
     }
 
     public void Click() {
+        // find the name of the main node so we can stop running it
+        File gjhjf = new File();
+        string mainNode = "";
+        if (gjhjf.Open($"{modPath}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
+            mainNode = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).MainNode;
+        } else {
+            GD.PushWarning("Mod seems to be broken");
+        }
+
+        // stop the mod from running
+        GetNode<Node2D>($"/root/{mainNode}").QueueFree();
+
         string[] pureIncompetence = Global.DeveloperMod.Split("/");
         string coolMod = pureIncompetence[pureIncompetence.Length-1];
         modPath = $"user://mods/{coolMod}/";
@@ -17,14 +30,6 @@ public class DeveloperRemoveMod : TextureButton {
         // delete the folder itself
         Directory m = new Directory();
         m.Remove(modPath);
-
-        // stop the mod from running :)
-        string coolNode = GetNode<LineEdit>("../MainNode").Text;
-        if (GetNodeOrNull<Node2D>($"/root/{coolNode}") != null) {
-            GetNode<Node2D>($"/root/{coolNode}").QueueFree();
-        } else {
-            GD.PushWarning($"Failed to stop running \"{coolMod}\"");
-        }
     }
 
     public void DeleteFolder(string path) {

@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using Newtonsoft.Json;
 
 public class DeveloperInstallMod : TextureButton {
     FileDialog folderDialog;
@@ -18,9 +19,9 @@ public class DeveloperInstallMod : TextureButton {
 
             // don't install an incompatible mod :)
             File gjhjf = new File();
-            if (gjhjf.Open($"{Global.DeveloperMod}/cs-version", File.ModeFlags.Read) == Error.Ok) {
-                string j = gjhjf.GetAsText();
-                if (j.StartsWith("1.1.0")) {
+            if (gjhjf.Open($"{Global.DeveloperMod}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
+                string j = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).GameVersion;
+                if (j == "1.1.0") {
                     install.MakeDir($"user://mods/{coolMod}");
                     CopyFolder(Global.DeveloperMod, $"user://mods/{coolMod}/");
                     

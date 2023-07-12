@@ -1,6 +1,6 @@
 using Godot;
 using System;
-using System.Collections.Generic;
+using Newtonsoft.Json;
 
 public class InstallMod : TextureButton {
     FileDialog folderDialog;
@@ -36,9 +36,9 @@ public class InstallMod : TextureButton {
 
         // don't install an incompatible mod :)
         File gjhjf = new File();
-        if (gjhjf.Open($"{epicCoolMod}/cs-version", File.ModeFlags.Read) == Error.Ok) {
-            string j = gjhjf.GetAsText();
-            if (j.StartsWith("1.1.0")) {
+        if (gjhjf.Open($"{epicCoolMod}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
+            string j = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).GameVersion;
+            if (j == "1.1.0") {
                 install.MakeDir($"user://mods/{coolMod}");
                 CopyFolder(epicCoolMod, $"user://mods/{coolMod}/");
                 
@@ -58,6 +58,7 @@ public class InstallMod : TextureButton {
                 Node2D mOK = (Node2D)myes.Instance();
                 mOK.ZIndex = 100;
                 GetTree().Root.AddChild(mOK);
+                // i have to do weird things to make the ui look right
                 GetParent().GetParent().GetParent().GetParent().GetParent().QueueFree();
             } else {
                 GetNode<Label>("./Label").Text = "Incompatible Mod!";
