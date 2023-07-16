@@ -77,6 +77,8 @@ public class DeveloperInstallMod : TextureButton {
                             // allow mods still access the game's files
                             if (!line.EndsWith("# CS PATH")) {
                                 newContent += line.Replace("res://", to) + "\n";
+                            } else {
+                                newContent += line;
                             }
                         }
                         ye.Close();
