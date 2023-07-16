@@ -54,10 +54,41 @@ public class DeveloperInstallMod : TextureButton {
             dir.ListDirBegin(true);
             string filename = dir.GetNext();
             while (filename != "") {
-                if (dir.CurrentIsDir())
-                    CopyFolder($"{from}/{filename}", $"{to}/{filename}");
-                else
-                    dir.Copy($"{from}/{filename}", $"{to}/{filename}");
+                if (dir.CurrentIsDir()) {
+                    // copying the source control stuff wouldn't be nice
+                    // also don't copy folders that just waste space
+                    if (filename != ".git" && filename != ".hg" && filename != ".svn" && filename != ".tfvc"
+                    && filename != ".mono" && filename != ".vscode" && filename != "")
+                        CopyFolder($"{from}/{filename}", $"{to}/{filename}");
+                } else {
+                    // godot makes the mod's files refer to res://, which when running the mod would result in the
+                    // game looking for the files in the game folder and not the mod folder, causing a crash
+                    // this is probably stupid
+
+                    // only convert files if they probably reference paths with res://
+                    if (filename.EndsWith(".tres") || filename.EndsWith(".tscn") || filename.EndsWith(".import") ||
+                    filename.EndsWith(".gd")) {
+                        File ye = new File();
+                        ye.Open($"{from}/{filename}", File.ModeFlags.Read);
+                        string hmues = ye.GetAsText();
+                        string[] coolLines = hmues.Split("\n");
+                        string newContent = "";
+                        foreach (var line in coolLines) {
+                            // allow mods still access the game's files
+                            if (!line.EndsWith("# CS PATH")) {
+                                newContent += line.Replace("res://", to) + "\n";
+                            }
+                        }
+                        ye.Close();
+
+                        File j = new File();
+                        j.Open($"{to}/{filename}", File.ModeFlags.Write);
+                        j.StoreString(newContent);
+                        j.Close();
+                    } else {
+                        dir.Copy($"{from}/{filename}", $"{to}/{filename}");
+                    }
+                }
                 filename = dir.GetNext();
             }
         } else {
