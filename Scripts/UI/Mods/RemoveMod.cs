@@ -48,12 +48,10 @@ public class RemoveMod : TextureButton {
             string filename = dir.GetNext();
             while (filename != "") {
                 if (dir.CurrentIsDir()) {
-                    GD.Print($"deleting {path}/{filename}");
                     DeleteFolder($"{path}/{filename}");
                     dir.Remove($"{path}/{filename}/");
                 }
                 else {
-                    GD.Print($"deleting {path}/{filename}");
                     dir.Remove($"{path}/{filename}");
                 }
                 filename = dir.GetNext();
