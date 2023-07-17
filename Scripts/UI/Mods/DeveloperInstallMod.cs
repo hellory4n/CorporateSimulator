@@ -20,18 +20,21 @@ public class DeveloperInstallMod : TextureButton {
             // don't install an incompatible mod :)
             File gjhjf = new File();
             if (gjhjf.Open($"{Global.DeveloperMod}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
-                string j = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).GameVersion;
+                ModInfo pain = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText());
+                string j = pain.GameVersion;
                 if (j == "1.1.0") {
                     install.MakeDir($"user://mods/{coolMod}");
                     CopyFolder(Global.DeveloperMod, $"user://mods/{coolMod}/");
                     
                     // run the mod so the user doesn't have to restart the game
-                    File modfile = new File();
-                    if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
-                        var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
-                        GD.Print("Loaded mod: " + coolMod);
-                        Node2D OK = (Node2D)yes.Instance();
-                        GetTree().Root.CallDeferred("add_child", OK);
+                    if (GetNodeOrNull<Node2D>($"/root/{pain.MainNode}") == null) {
+                        File modfile = new File();
+                        if (modfile.FileExists($"user://mods/{coolMod}/main.tscn")) {
+                            var yes = (PackedScene)ResourceLoader.Load($"user://mods/{coolMod}/main.tscn");
+                            GD.Print("Loaded mod: " + coolMod);
+                            Node2D OK = (Node2D)yes.Instance();
+                            GetTree().Root.CallDeferred("add_child", OK);
+                        }
                     }
                     
                     GD.Print("successfully installed mod");

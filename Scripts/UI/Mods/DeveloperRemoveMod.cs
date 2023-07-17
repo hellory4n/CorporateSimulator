@@ -10,6 +10,10 @@ public class DeveloperRemoveMod : TextureButton {
     }
 
     public void Click() {
+        string[] pureIncompetence = Global.DeveloperMod.Split("/");
+        string coolMod = pureIncompetence[pureIncompetence.Length-1];
+        modPath = $"user://mods/{coolMod}/";
+
         // find the name of the main node so we can stop running it
         File gjhjf = new File();
         string mainNode = "";
@@ -19,13 +23,9 @@ public class DeveloperRemoveMod : TextureButton {
             GD.PushWarning("Mod seems to be broken");
         }
 
-        // stop the mod from running
+        GD.Print($"ye: {modPath}/modinfo.json");
         if (GetNodeOrNull<Node2D>($"/root/{mainNode}") != null)
-            GetNode<Node2D>($"/root/{mainNode}").QueueFree();
-
-        string[] pureIncompetence = Global.DeveloperMod.Split("/");
-        string coolMod = pureIncompetence[pureIncompetence.Length-1];
-        modPath = $"user://mods/{coolMod}/";
+            GetNode<Node2D>($"/root/{mainNode}").QueueFree();        
 
         Directory m = new Directory();
         if (m.DirExists(modPath)) {
