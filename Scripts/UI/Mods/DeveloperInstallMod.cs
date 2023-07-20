@@ -62,7 +62,7 @@ public class DeveloperInstallMod : TextureButton {
                     // also don't copy folders that just waste space
                     if (filename != ".git" && filename != ".hg" && filename != ".svn" && filename != ".tfvc"
                     && filename != ".mono" && filename != ".vscode" && filename != "")
-                        CopyFolder($"{from}/{filename}", $"{to}/{filename}");
+                        CopyFolder($"{from}/{filename}", $"{to}/{filename}/");
                 } else {
                     // godot makes the mod's files refer to res://, which when running the mod would result in the
                     // game looking for the files in the game folder and not the mod folder, causing a crash
