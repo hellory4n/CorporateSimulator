@@ -81,7 +81,7 @@ public class DeveloperInstallMod : TextureButton {
                             if (!line.EndsWith("# CS PATH")) {
                                 newContent += line.Replace("res://", to) + "\n";
                             } else {
-                                newContent += line;
+                                newContent += line + "\n";
                             }
                         }
                         ye.Close();
