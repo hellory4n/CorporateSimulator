@@ -30,8 +30,10 @@ public class ModApi : Node {
         }
         if (size == "small") {
             disabled.Texture = ResourceLoader.Load<Texture>("res://Assets/SmallDisabledButton.png");
+            button.RectSize = new Vector2(300, 75);
         } else {
             disabled.Texture = ResourceLoader.Load<Texture>("res://Assets/DisabledButton.png");
+            button.RectSize = new Vector2(400, 75);
         }
 
         // make the cool font
@@ -45,5 +47,6 @@ public class ModApi : Node {
         button.AddStyleboxOverride("pressed", pressed);
         button.AddStyleboxOverride("disabled", disabled);
         button.AddFontOverride("font", afont);
+        button.AddColorOverride("font_color", new Color(1,1,1,1));
     }
 }
