@@ -2,7 +2,11 @@ using System;
 using Godot;
 
 public class ModApi : Node {
-    public static void CSButton(Button button, string type="normal", string size="normal", int fontSize=40) {
+    // this probably means something
+    static ModApi instance;
+    public static ModApi Instance => instance;
+
+    public void CSButton(Button button, string type="normal", string size="normal", int fontSize=40) {
         DynamicFontData mues = ResourceLoader.Load<DynamicFontData>("res://Uhh/Ubuntu-Bold.ttf");
 
         // load very epic backgrounds for the button
