@@ -22,6 +22,7 @@ config/windows_native_icon="res://icon.ico"
 
 Global="*res://Scenes/Global.tscn"
 GlobalScript="*res://Scripts/Global.cs"
+ModApi="*res://Scripts/Save/ModApi.cs"
 SettingsLoader="res://Scenes/SettingsLoader.tscn"
 
 [display]
