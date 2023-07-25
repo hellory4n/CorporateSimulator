@@ -41,6 +41,7 @@ public class DeveloperInstallMod : TextureButton {
                 } else {
                     GetNode<Label>("./Label").Text = "Incompatible Mod!";
                 }
+                gjhjf.Close();
             } else {
                 GetNode<Label>("./Label").Text = "Broken Mod!";
             }
@@ -96,6 +97,7 @@ public class DeveloperInstallMod : TextureButton {
                 }
                 filename = dir.GetNext();
             }
+            dir.ListDirEnd();
         } else {
             GD.PushWarning($"Error copying {from} to {to}");
         }

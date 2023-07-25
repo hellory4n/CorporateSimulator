@@ -19,6 +19,7 @@ public class RemoveMod : TextureButton {
         string mainNode = "";
         if (gjhjf.Open($"{modPath}/modinfo.json", File.ModeFlags.Read) == Error.Ok) {
             mainNode = JsonConvert.DeserializeObject<ModInfo>(gjhjf.GetAsText()).MainNode;
+            gjhjf.Close();
         } else {
             GD.PushWarning("Mod seems to be broken");
         }
@@ -56,6 +57,7 @@ public class RemoveMod : TextureButton {
                 }
                 filename = dir.GetNext();
             }
+            dir.ListDirEnd();
         } else {
             GD.PushWarning($"Error deleting {path}");
         }

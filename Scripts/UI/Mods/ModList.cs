@@ -20,6 +20,7 @@ public class ModList : VBoxContainer {
                     mods.Add(nextFolder);
                 }
             }
+            modfolder.ListDirEnd();
         }
 
         // make a massive mess
