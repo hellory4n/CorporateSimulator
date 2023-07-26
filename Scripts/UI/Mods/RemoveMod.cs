@@ -25,7 +25,8 @@ public class RemoveMod : TextureButton {
         }
 
         // stop the mod from running
-        GetNode<Node2D>($"/root/{mainNode}").QueueFree();
+        if (GetNodeOrNull<Node2D>($"/root/{mainNode}") != null)
+            GetNode<Node2D>($"/root/{mainNode}").QueueFree();
 
         Directory m = new Directory();
         if (m.DirExists(modPath)) {
