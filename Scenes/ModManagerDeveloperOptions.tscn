@@ -112,7 +112,7 @@ anchor_bottom = 0.011
 margin_right = 399.2
 margin_bottom = 74.175
 custom_fonts/font = SubResource( 16 )
-text = "Logs"
+text = "Past Logs"
 align = 1
 valign = 1
 
@@ -124,7 +124,6 @@ margin_bottom = 555.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 7 )
-script = ExtResource( 11 )
 __meta__ = {
 "_edit_group_": true
 }
