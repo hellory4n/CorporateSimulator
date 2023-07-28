@@ -231,4 +231,5 @@ public class Global : Node2D {
     public static string IncompatibleModVersion = "1.69";
     public static string DeveloperMod = "nothing";
     public static string CurrentLogFile = "nuh uh";
+    public static string SceneTreeViewerPath = "/root/";
 }
