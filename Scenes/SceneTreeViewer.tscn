@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Dialog.png" type="Texture" id=1]
 [ext_resource path="res://Assets/DialogBackground.png" type="Texture" id=2]
@@ -23,11 +23,15 @@ size = 40
 font_data = SubResource( 3 )
 
 [sub_resource type="DynamicFontData" id=5]
-font_path = "res://Uhh/Ubuntu-Regular.ttf"
+font_path = "res://Uhh/Ubuntu-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
 size = 24
 font_data = SubResource( 5 )
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
 
 [node name="Dialog" type="Node2D"]
 
@@ -78,23 +82,15 @@ text = "OK"
 align = 1
 valign = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="Tree" type="Tree" parent="."]
 margin_left = 205.0
 margin_top = 140.0
-margin_right = 217.0
-margin_bottom = 152.0
+margin_right = 245.0
+margin_bottom = 180.0
 rect_min_size = Vector2( 880, 425 )
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 880.0
-margin_bottom = 28.0
-
-[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer"]
-margin_right = 880.0
-margin_bottom = 28.0
-rect_min_size = Vector2( 880, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "scene tree lol"
-autowrap = true
+custom_styles/bg_focus = SubResource( 7 )
+custom_styles/bg = SubResource( 8 )
+columns = 69420
 script = ExtResource( 3 )
