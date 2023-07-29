@@ -17,7 +17,7 @@ public class SceneTreeViewerThing : TextureButton {
         string coolType = pain.GetType().Name;
         Script script = (Script)pain.GetScript();
         if (script != null) {
-            coolType = ClassDB.GetParentClass(script.ResourceName);
+            coolType = pain.GetClass();
         }
         GetNode<Label>("./Label").Text = $"{pain.Name} - {coolType}";
     }

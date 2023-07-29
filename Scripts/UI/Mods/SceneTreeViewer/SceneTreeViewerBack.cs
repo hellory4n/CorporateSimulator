@@ -7,8 +7,12 @@ public class SceneTreeViewerBack : TextureButton {
     }
 
     public void Click() {
-        Node currentNode = GetNode<Node>(Global.SceneTreeViewerPath);
-        Global.SceneTreeViewerPath = currentNode.GetParent().GetPath()+"/";
+        try {
+            Node currentNode = GetNode<Node>(Global.SceneTreeViewerPath);
+            Global.SceneTreeViewerPath = currentNode.GetParent().GetPath()+"/";
+        } catch {
+            Global.SceneTreeViewerPath = "/root/";
+        }
         var yes = (PackedScene)ResourceLoader.Load("res://Scenes/SceneTreeViewer.tscn");
         Node2D OK = (Node2D)yes.Instance();
         OK.ZIndex = 100;

@@ -35,6 +35,13 @@ public class SettingsLoader : Node2D {
 
     public override void _Process(float delta) {
         Godot.OS.WindowFullscreen = Global.Settings.Fullscreen;
+
+        if (Input.IsActionJustReleased("ef_twelve")) {
+            var yes = (PackedScene)ResourceLoader.Load("res://Scenes/SceneTreeViewer.tscn");
+            Node2D OK = (Node2D)yes.Instance();
+            OK.ZIndex = 100;
+            GetTree().Root.AddChild(OK);
+        }
         base._Process(delta);
     }
 }
