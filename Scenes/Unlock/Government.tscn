@@ -45,7 +45,7 @@ region_rect = Rect2( 0, 0, 700, 75 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 700, 75 )
 
-[node name="Dialog" type="Node2D"]
+[node name="GovernmentUnlock" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0

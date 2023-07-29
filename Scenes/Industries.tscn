@@ -51,7 +51,7 @@ font_data = SubResource( 9 )
 
 [sub_resource type="StyleBoxEmpty" id=11]
 
-[node name="NewCompany" type="Node2D"]
+[node name="Industries" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0

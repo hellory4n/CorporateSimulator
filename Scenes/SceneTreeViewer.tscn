@@ -30,7 +30,7 @@ font_path = "res://Uhh/Ubuntu-Regular.ttf"
 size = 24
 font_data = SubResource( 5 )
 
-[node name="Dialog" type="Node2D"]
+[node name="SceneTreeViewer" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0

@@ -39,7 +39,7 @@ font_path = "res://Uhh/Ubuntu-Regular.ttf"
 size = 26
 font_data = SubResource( 25 )
 
-[node name="Dialog" type="Node2D"]
+[node name="Asia" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0

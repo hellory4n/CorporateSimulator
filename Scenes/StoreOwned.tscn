@@ -131,7 +131,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 28
 font_data = SubResource( 19 )
 
-[node name="Dialog" type="Node2D"]
+[node name="StoreOwned" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0

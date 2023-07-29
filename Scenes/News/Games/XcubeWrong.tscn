@@ -29,7 +29,7 @@ font_path = "res://Uhh/Ubuntu-Bold.ttf"
 size = 40
 font_data = SubResource( 3 )
 
-[node name="YourMom1" type="Node2D"]
+[node name="XcubeWrong" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 1279.0
